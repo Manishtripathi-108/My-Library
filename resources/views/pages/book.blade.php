@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Book Page">
     @pushOnce('styles')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
@@ -52,7 +52,6 @@
             }
 
             /*-------------------- Pages --------------------*/
-
             .pages [class^="page-num-"] {
                 background-image: url("https://img00.deviantart.net/cbb9/i/2005/258/c/4/paper_texture_v5_by_bashcorpo.jpg");
                 background-size: auto 100%;
