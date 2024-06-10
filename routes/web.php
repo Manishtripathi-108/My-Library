@@ -13,3 +13,7 @@ Route::get('/book-page', function () {
 Route::get('/background-building', function () {
     return view('pages.bg-building');
 })->name('background-building');
+
+Route::get('/background-sunrise', function () {
+    return view('pages.bg-sunrise');
+})->name('background-sunrise');
