@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#ffffff">
 
     {{-- styles --}}
+    <script src="https://cdn.tailwindcss.com"></script>
     @stack('styles')
 
 </head>

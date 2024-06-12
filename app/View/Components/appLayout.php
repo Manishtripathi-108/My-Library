@@ -10,7 +10,7 @@ class AppLayout extends Component
 
     public function __construct($title = null)
     {
-        $this->title = $title;
+        $this->title = ucwords($title);
     }
 
     public function render()
