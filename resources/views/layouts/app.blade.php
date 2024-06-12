@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="Author" content="Manish Tripathi">
+    <meta name="Developer" content="Manish Tripathi">
+    <meta name="Owner" content="Manish Tripathi">
 
     <title>{{ $title ? $title . ' | ' . config('app.name', 'Component Library') : config('app.name', 'Component Library') }}</title>
 
@@ -17,8 +20,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    {{-- styles --}}
+    <!-- styles -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- scripts -->
     @stack('styles')
 
 </head>
