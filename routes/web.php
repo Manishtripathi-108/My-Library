@@ -24,6 +24,11 @@ Route::prefix('pages')->group(function () {
         return view('pages.bg-sunrise');
     })->name('background-sunrise');
 
+    // Order Confirmation Page
+    Route::get('/order-confirmation', function () {
+        return view('pages.order-confirmation');
+    })->name('order-confirmation');
+
 });
 
 // Route for the auth pages

@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:700,400%7CKarla:700,400%7CKarla:700,700");
 
 * {
     font-family: "Poppins", sans-serif;
+}
+
+.playfair-display-font {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.karla-font {
+    font-family: "karla", Arial, sans-serif !important;
 }
