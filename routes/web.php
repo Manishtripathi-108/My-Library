@@ -34,3 +34,9 @@ Route::prefix('auth')->group(function () {
     })->name('page-1');
 
 });
+
+
+// Route for the cards
+Route::get('/cards', function () {
+    return view('cards.index');
+});
