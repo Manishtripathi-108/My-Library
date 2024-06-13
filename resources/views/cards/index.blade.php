@@ -2,8 +2,13 @@
 
     <div class="m-10 flex flex-col gap-10">
 
-        @include('cards.tag-card', ['slot' => 'Tag Card 1'])
+        <div class="flex gap-10">
 
+            @include('cards.badge-card')
+
+            @include('cards.comment')
+
+        </div>
         @include('cards.reflect-hover')
     </div>
 
