@@ -28,7 +28,6 @@ Route::prefix('pages')->group(function () {
     Route::get('/order-confirmation', function () {
         return view('pages.order-confirmation');
     })->name('order-confirmation');
-
 });
 
 // Route for the auth pages
@@ -37,7 +36,6 @@ Route::prefix('auth')->group(function () {
     Route::get('/login-signup-single', function () {
         return view('auth.login-signup-single');
     })->name('page-1');
-
 });
 
 
