@@ -43,3 +43,8 @@ Route::prefix('auth')->group(function () {
 Route::get('/cards', function () {
     return view('cards.index');
 });
+
+// Route for the buttons
+Route::get('/buttons', function () {
+    return view('buttons.index');
+});
