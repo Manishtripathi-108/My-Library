@@ -48,3 +48,12 @@ Route::get('/cards', function () {
 Route::get('/buttons', function () {
     return view('buttons.index');
 });
+
+
+// Route for the neumorphism
+Route::prefix('neumorphism')->group(function () {
+
+    Route::get('/', function () {
+        return view('neumorphism.index');
+    })->name('neumorphism');
+});
