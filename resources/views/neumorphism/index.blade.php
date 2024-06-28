@@ -8,6 +8,10 @@
 				@include('neumorphism.product-card')
 			</x-cards-section.card>
 
+			<x-cards-section.card title="Product Cards">
+				@include('neumorphism.product-card', ['type' => 1])
+			</x-cards-section.card>
+
 		</x-cards-section>
 
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}
