@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="font-sans antialiased bg-[#ecf0f3]">
+<body class="bg-primary font-sans antialiased">
 	{{-- Page Content --}}
 	<main>
 		{{ $slot }}
