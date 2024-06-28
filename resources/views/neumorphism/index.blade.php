@@ -12,6 +12,14 @@
 				@include('neumorphism.product-card', ['type' => 1])
 			</x-cards-section.card>
 
+			<x-cards-section.card title="Product Cards">
+				@include('neumorphism.product-card', ['type' => 1])
+			</x-cards-section.card>
+
+			<x-cards-section.card class="lg:col-span-3 md:col-span-3" title="featured product item">
+				@include('neumorphism.product-card', ['type' => 2])
+			</x-cards-section.card>
+
 		</x-cards-section>
 
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}

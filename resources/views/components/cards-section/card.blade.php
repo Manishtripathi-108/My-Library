@@ -5,6 +5,6 @@
 		{{ $slot }}
 	</div>
 	<h3 class="karla-font mt-3 text-center text-xl tracking-wider">
-		{{ $title }}
+		{{ ucwords($title) }}
 	</h3>
 </div>

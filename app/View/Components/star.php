@@ -17,16 +17,6 @@ class Star extends Component
 
     public function render(): View|Closure|string
     {
-        $stars = '';
-
-        for ($i = 0; $i < 5; $i++) {
-            if ($i < $this->rating) {
-                $stars .= view('components.star')->render();
-            } else {
-                $stars .= view('components.star-empty')->render();
-            }
-        }
-
-        return $stars;
+        return view('components.star');
     }
 }
