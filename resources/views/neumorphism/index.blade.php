@@ -1,23 +1,41 @@
 <x-app-layout>
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
-		<div class="grid h-full items-center justify-center">
-			<h2 class="playfair-display-font mb-2 text-center text-2xl font-bold text-[rgb(57,74,86)]">
-				Icons / Buttons
-			</h2>
-			@include('neumorphism.color-change-icons')
-		</div>
 
-		<div class="grid h-full items-center justify-center">
-			<h2 class="playfair-display-font mb-2 text-center text-2xl font-bold text-[#394a56]">
-				Neumorphism Radio Buttons
-			</h2>
-			@include('neumorphism.radio-btn')
-		</div>
+		{{-- ------------------------------ Product Cards ----------------------------- --}}
+		<x-cards-section title="">
 
-		<div class="grid h-full items-center justify-center">
-			<h2 class="playfair-display-font mb-2 text-center text-2xl font-bold text-[#394a56]">
-				Neumorphism Switch
-			</h2>
-			@include('neumorphism.switch')
-		</div>
+			<x-cards-section.card title="Product Cards">
+				@include('neumorphism.product-card')
+			</x-cards-section.card>
+
+		</x-cards-section>
+
+		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}
+		<x-cards-section title="Buttons & Icons">
+
+			<x-cards-section.card title="Color Change Icons">
+				@include('neumorphism.color-change-icons')
+			</x-cards-section.card>
+
+		</x-cards-section>
+
+		{{-- ------------------------------ Switches ----------------------------- --}}
+		<x-cards-section title="Switches">
+
+			<x-cards-section.card title="Switch">
+				@include('neumorphism.switch')
+			</x-cards-section.card>
+
+		</x-cards-section>
+
+		{{-- ------------------------------ Buttons ----------------------------- --}}
+		<x-cards-section title="Radio Buttons">
+
+			<x-cards-section.card title="Radio Button">
+				@include('neumorphism.radio-btn')
+			</x-cards-section.card>
+
+		</x-cards-section>
+
+	</div>
 </x-app-layout>
