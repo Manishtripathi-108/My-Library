@@ -21,11 +21,11 @@
 			</x-cards-section.card>
 
 			<x-cards-section.card title="Product Cards">
-				@include('neumorphism.product-card', ['type' => 1])
+				@include('neumorphism.product-card', ['type' => 2])
 			</x-cards-section.card>
 
 			<x-cards-section.card class="md:col-span-3 lg:col-span-3" title="featured product item">
-				@include('neumorphism.product-card', ['type' => 2])
+				@include('neumorphism.product-card', ['type' => 3])
 			</x-cards-section.card>
 
 		</x-cards-section>
