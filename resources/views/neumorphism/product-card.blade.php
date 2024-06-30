@@ -54,7 +54,6 @@
 									4.7
 								</span>
 								<span class="karla-font ml-3 flex items-center text-sm text-green-600">
-									<span class="fas fa-shopping-cart mr-1"></span>
 									<x-svg.cart	 class="h-5 w-5" />
 									150 orders
 								</span>
@@ -70,7 +69,7 @@
 							<span class="karla-font">₹199.00</span>
 						</div>
 						<span class="karla-font mt-1 flex items-center text-sm text-green-700">
-							<x-svg.truck class="h-5 w-5" />
+							<x-svg.truck class="h-5 w-5 mr-1" />
 							Free shipping
 						</span>
 						<div class="mt-4 w-5/6">
