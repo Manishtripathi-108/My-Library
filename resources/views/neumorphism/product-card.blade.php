@@ -13,7 +13,7 @@
 				</h3>
 
 				<div class="flex gap-10 items-center py-3 text-gray-700">
-					<div class="neu-shadow-inset karla-font rounded-lg px-3 py-2 text-center">$879</div>
+					<div class="neu-shadow-inset-sm karla-font rounded-lg px-3 py-2 text-center">$879</div>
 					<a class="neu-btn neu-icon-only-btn p-3 transition-colors duration-300 hover:text-[#1979ef]" href="">
 						<x-svg.cart class="h-6 w-6" />
 					</a>

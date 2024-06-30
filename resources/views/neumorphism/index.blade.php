@@ -16,11 +16,11 @@
 				@include('neumorphism.product-card')
 			</x-cards-section.card>
 
-			<x-cards-section.card title="Product with Rating">
+			<x-cards-section.card title="Product without shadow">
 				@include('neumorphism.product-card', ['type' => 1])
 			</x-cards-section.card>
 
-			<x-cards-section.card title="Product Cards">
+			<x-cards-section.card title="Product with Rating">
 				@include('neumorphism.product-card', ['type' => 2])
 			</x-cards-section.card>
 

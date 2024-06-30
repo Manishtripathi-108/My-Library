@@ -24,17 +24,17 @@
 
 			<form action="#">
 				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset-lg bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="username" placeholder="Username" required>
+					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="username" placeholder="Username" required>
 					<x-svg.user class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset-lg bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="email" placeholder="Email" required>
+					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="email" placeholder="Email" required>
 					<x-svg.mail class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset-lg bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="password" placeholder="Password" required>
+					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="password" placeholder="Password" required>
 					<x-svg.lock class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
