@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="flex justify-center bg-yellow-700 dark:bg-gray-800">
+    <div class="flex justify-center bg-yellow-700 dark:bg-dark">
         <div class="rounded-lg bg-white px-8 dark:bg-gray-900 md:my-5 md:w-11/12 md:px-14">
 
             {{-- Logo --}}

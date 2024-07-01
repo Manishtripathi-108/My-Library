@@ -21,60 +21,58 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- styles -->
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	{{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+	{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
-	<!-- scripts -->
+	<!-- Scripts -->
+	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	@stack('styles')
-
-	<style>
-		#toggleDarkMode {
-			width: 100px;
-			height: 100px;
-			appearance: none;
-			box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-				10px 10px 15px rgba(70, 70, 70, 0.15);
-			border-radius: 50%;
-			border: solid 8px #ecf0f3;
-			outline: none;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			cursor: pointer;
-		}
-
-		.toggleDarkMode-on {
-			box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-				10px 10px 15px rgba(70, 70, 70, 0.15),
-				inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-				inset 10px 10px 15px rgba(70, 70, 70, 0.15) !important;
-		}
-	</style>
-
-	<script>
-		tailwind.config = {
-			content: ["./*.html"],
-			darkMode: "class"
-		};
-	</script>
-
 </head>
 
-<body class="bg-primary font-sans antialiased">
-	{{-- Header --}}
-	<header class="bg-secondary flex items-center justify-between p-4 text-white">
-		<button class="bg-red-700 dark:bg-black" id="toggleDarkMode" title="Toggle Dark Mode">
-			<x-svg.sun class="block h-6 w-6 dark:hidden" />
-			<x-svg.moon class="hidden h-6 w-6 dark:block" />
-		</button>
-	</header>
+<body class="bg-light-primary font-sans antialiased dark:bg-dark-primary">
+	<div class="bg-light-primary dark:bg-dark-primary">
+		<livewire:layout.navigation />
+
+		<!-- Page Heading -->
+		@if (isset($header))
+			<header class="bg-white shadow dark:bg-dark-primary">
+				<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+					{{ $header }}
+				</div>
+			</header>
+		@endif
+	</div>
+
 	{{-- Page Content --}}
 	<main>
 		{{ $slot }}
 	</main>
 
+	{{-- Dark Mode Toggle --}}
+	<script>
+		const toggleDarkModeButton = document.getElementById("toggleDarkMode");
+
+		// Function to toggle dark mode
+		const toggleDarkMode = () => {
+			document.documentElement.classList.toggle("dark");
+			// Save the current mode to localStorage
+			const isDarkMode = document.documentElement.classList.contains("dark");
+			localStorage.setItem("darkMode", isDarkMode);
+		};
+
+		// Add click event listener to the button
+		toggleDarkModeButton.addEventListener("click", toggleDarkMode);
+
+		// Check the localStorage and apply the mode
+		if (localStorage.getItem("darkMode") === "true" || !(darkMode in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+	</script>
+
 	@stack('scripts')
-	<script src="{{ asset('js/app.js') }}"></script>
+
 </body>
 
 </html>
