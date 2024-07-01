@@ -1,4 +1,10 @@
 <x-app-layout>
+	<x-slot name="header">
+		<h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-dark-text">
+			{{ __('Neumorphism UI') }}
+		</h2>
+	</x-slot>
+
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
 		<x-cards-section title="Login & Signup">

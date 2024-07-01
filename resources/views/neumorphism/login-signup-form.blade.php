@@ -19,28 +19,28 @@
 	{{--                                    signup                                  --}}
 	{{-- -------------------------------------------------------------------------- --}}
 	@case('signup')
-		<div class="neu-shadow-outset p-6">
-			<div class="playfair-display-font mb-4 text-2xl font-semibold text-gray-800">Sign Up</div>
+		<div class="shadow-neu-outset p-6">
+			<div class="font-playfair mb-4 text-2xl font-semibold text-gray-800">Sign Up</div>
 
 			<form action="#">
-				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="username" placeholder="Username" required>
+				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
+					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="username" placeholder="Username" required>
 					<x-svg.user class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
-				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="email" placeholder="Email" required>
+				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
+					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="email" placeholder="Email" required>
 					<x-svg.mail class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
-				<div class="group relative mb-4 flex items-center text-gray-500 hover:text-gray-800">
-					<input class="neu-shadow-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="password" placeholder="Password" required>
+				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
+					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="password" placeholder="Password" required>
 					<x-svg.lock class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
 				</div>
 
 				<button class="neu-btn my-2 w-full border-none px-5 py-2 text-sm font-semibold tracking-wider text-gray-800">Sign Up</button>
 
-				<h4 class="karla-font mt-4 text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
+				<h4 class="font-karla mt-4 text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
 				<div class="mt-2 flex w-full items-center justify-evenly text-white">
 					<span class="neu-btn neu-icon-only-btn-outset bg-blue-400 p-3 hover:bg-[#ecf0f3] hover:text-blue-400">
 						<x-svg.twitter class="h-6 w-6" />
@@ -54,8 +54,8 @@
 				</div>
 
 				<div class="mt-2">
-					<a class="karla-font text-lg tracking-wide text-gray-600">Already have an account?</a>
-					<a class="karla-font text-lg tracking-wide text-blue-500" href="#">Sign In</a>
+					<a class="font-karla text-lg tracking-wide text-gray-600">Already have an account?</a>
+					<a class="font-karla text-lg tracking-wide text-blue-500" href="#">Sign In</a>
 				</div>
 
 			</form>

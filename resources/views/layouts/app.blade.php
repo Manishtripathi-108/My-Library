@@ -21,6 +21,10 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- styles -->
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+		@import url("https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:700,400%7CKarla:700,400%7CKarla:700,700");
+	</style>
 	{{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 	{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
@@ -35,7 +39,7 @@
 
 		<!-- Page Heading -->
 		@if (isset($header))
-			<header class="bg-white shadow dark:bg-dark-primary">
+			<header class="bg-light-primary shadow dark:bg-dark-primary dark:shadow-dark-secondary">
 				<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
 					{{ $header }}
 				</div>
