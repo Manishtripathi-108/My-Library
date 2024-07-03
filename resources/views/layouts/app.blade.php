@@ -20,15 +20,13 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<!-- styles -->
+	<!-- Fonts -->
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 		@import url("https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:700,400%7CKarla:700,400%7CKarla:700,700");
 	</style>
-	{{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-	{{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
-	<!-- Scripts -->
+	<!-- Scripts & Styles -->
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	@stack('styles')
 </head>

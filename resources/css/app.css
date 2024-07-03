@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+* {
+    font-family: "Poppins", sans-serif;
+}
 
+html {
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@layer utilities {
     /*-- -------------------------------- text -------------------------------- */
     .text-primary {
         @apply text-light-text;
@@ -57,7 +65,6 @@
     }
 
     /*-- -------------------------------- shadow -------------------------------- */
-    
 }
 
 @layer components {
