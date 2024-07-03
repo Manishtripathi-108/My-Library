@@ -1,31 +1,31 @@
 <x-app-layout>
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
-		<x-cards-section title="Card Components">
+		<x-grid title="Card Components">
 
-			<x-cards-section.card title="Basic Card Component" isNeumorphism='true'>
+			<x-grid.item title="Basic Card Component" isNeumorphism='true'>
 				@include('cards.image-card', ['type' => 2])
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card title="Image Card Component" isNeumorphism='true'>
+			<x-grid.item title="Image Card Component" isNeumorphism='true'>
 				@include('cards.image-card', ['type' => 1])
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card title="Badge Card Component" isNeumorphism='true'>
+			<x-grid.item title="Badge Card Component" isNeumorphism='true'>
 				@include('cards.badge-card')
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card title="Icon Card Component" isNeumorphism='true'>
+			<x-grid.item title="Icon Card Component" isNeumorphism='true'>
 				@include('cards.icon-card')
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
-		<x-cards-section title="Card Hover Components">
+		<x-grid title="Card Hover Components">
 
-			<x-cards-section.card title="Reflect Hover Card Component" isNeumorphism='true'>
+			<x-grid.item title="Reflect Hover Card Component" isNeumorphism='true'>
 				@include('cards.reflect-hover')
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 	</div>
 </x-app-layout>

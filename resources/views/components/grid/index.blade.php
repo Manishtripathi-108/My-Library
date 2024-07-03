@@ -1,7 +1,7 @@
 @props(['title' => ''])
 
 <section class="w-full">
-	<h2 class="font-playfair mb-5 text-center text-2xl font-bold tracking-wider text-light-text-secondary dark:text-dark-text-secondary">
+	<h2 class="font-playfair mb-5 text-center text-2xl font-bold tracking-wider -secondary dark:text-dark-text-secondary">
 		{{ ucwords($title) }}
 	</h2>
 

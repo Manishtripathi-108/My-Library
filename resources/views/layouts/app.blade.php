@@ -33,13 +33,13 @@
 	@stack('styles')
 </head>
 
-<body class="bg-light-primary font-sans antialiased dark:bg-dark-primary">
-	<div class="bg-light-primary dark:bg-dark-primary">
+<body class="bg-primary font-sans antialiased">
+	<div class="bg-primary">
 		<livewire:layout.navigation />
 
 		<!-- Page Heading -->
 		@if (isset($header))
-			<header class="bg-light-primary shadow dark:bg-dark-primary dark:shadow-dark-secondary">
+			<header class="bg-primary shadow dark:shadow-dark-secondary">
 				<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
 					{{ $header }}
 				</div>

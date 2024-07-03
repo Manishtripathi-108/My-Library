@@ -80,7 +80,7 @@ html {
 }
 
 /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
-.neu-icon-only-btn-outset {
+.shadow-neu-icon-outset dark shadow-neu-dark-icon-outset {
     border: none;
     border-radius: 50%;
     padding: 0.5rem;

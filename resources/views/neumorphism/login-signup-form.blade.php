@@ -19,36 +19,37 @@
 	{{--                                    signup                                  --}}
 	{{-- -------------------------------------------------------------------------- --}}
 	@case('signup')
-		<div class="shadow-neu-outset p-6">
-			<div class="font-playfair mb-4 text-2xl font-semibold text-gray-800">Sign Up</div>
+		<div class="rounded-lg p-6 shadow-neu-outset">
+			<div class="mb-4 font-playfair text-2xl font-semibold text-primary">Sign Up</div>
 
 			<form action="#">
-				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
-					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="username" placeholder="Username" required>
-					<x-svg.user class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
+				<div class="group relative mb-4 flex items-center">
+					<input class="peer w-full appearance-none rounded-xl border-none bg-primary py-4 pl-11 pr-5 shadow-neu-inset-sm outline-none placeholder:tracking-wide hover:shadow-neu focus:shadow-neu focus:placeholder:text-primary group-hover:placeholder:text-primary dark:bg-dark-primary dark:shadow-neu-dark-inset-sm dark:hover:shadow-neu-dark " type="text" placeholder="Username" required>
+					<x-svg.user class="absolute left-3 h-6 w-6 text-secondary peer-focus:text-primary" />
 				</div>
 
-				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
-					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="email" placeholder="Email" required>
-					<x-svg.mail class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
+				<div class="group relative mb-4 flex items-center">
+					<input class="peer w-full appearance-none rounded-xl border-none bg-primary py-4 pl-11 pr-5 shadow-neu-inset-sm outline-none placeholder:tracking-wide hover:shadow-neu focus:shadow-neu focus:placeholder:text-primary group-hover:placeholder:text-primary dark:bg-dark-primary dark:shadow-neu-dark-inset-sm dark:hover:shadow-neu-dark " type="email" placeholder="Email" required>
+					<x-svg.mail class="absolute left-3 h-6 w-6 text-secondary peer-focus:text-primary" />
 				</div>
 
-				<div class="group relative mb-4 flex items-center text-light-text-secondary hover:text-gray-800">
-					<input class="shadow-neu-inset bg-primary peer w-full appearance-none rounded-xl py-4 pl-11 pr-5 outline-none placeholder:tracking-wide group-hover:placeholder:text-gray-800 focus:placeholder:text-gray-800" type="password" placeholder="Password" required>
-					<x-svg.lock class="absolute left-3 h-6 w-6 text-current peer-focus:text-gray-800" />
+				<div class="group relative mb-4 flex items-center">
+					<input class="peer w-full appearance-none rounded-xl border-none bg-primary py-4 pl-11 pr-5 shadow-neu-inset-sm outline-none placeholder:tracking-wide hover:shadow-neu focus:shadow-neu focus:placeholder:text-primary group-hover:placeholder:text-primary dark:bg-dark-primary dark:shadow-neu-dark-inset-sm dark:hover:shadow-neu-dark " type="password" placeholder="Password" required>
+					<x-svg.lock class="absolute left-3 h-6 w-6 text-secondary peer-focus:text-primary" />
 				</div>
 
-				<button class="neu-btn my-2 w-full border-none px-5 py-2 text-sm font-semibold tracking-wider text-gray-800">Sign Up</button>
-
-				<h4 class="font-karla mt-4 text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
+				<div class="flex items-center justify-end w-full">
+					<button class="neu-btn dark:neu-dark-btn my-2 w-28 px-5 py-2 text-sm font-semibold tracking-wider text-primary shadow-neu-md active:shadow-neu-inset-sm dark:shadow-neu-dark-sm dark:hover:text-dark-text dark:active:shadow-neu-dark-inset-sm">Sign Up</button>
+				</div>
+				<h4 class="mt-4 font-karla text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
 				<div class="mt-2 flex w-full items-center justify-evenly text-white">
-					<span class="neu-btn neu-icon-only-btn-outset bg-blue-400 p-3 hover:bg-[#ecf0f3] hover:text-blue-400">
+					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none dark:shadow-neu-dark-icon-outset bg-blue-400 p-3 hover:bg-[#ecf0f3] hover:text-blue-400 dark:hover:bg-dark-secondary">
 						<x-svg.twitter class="h-6 w-6" />
 					</span>
-					<span class="neu-btn neu-icon-only-btn-outset bg-blue-600 p-3 hover:bg-[#ecf0f3] hover:text-blue-600">
+					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none dark:shadow-neu-dark-icon-outset bg-blue-600 p-3 hover:bg-[#ecf0f3] hover:text-blue-600 dark:hover:bg-dark-secondary">
 						<x-svg.facebook class="h-6 w-6" />
 					</span>
-					<span class="neu-btn neu-icon-only-btn-outset bg-red-500 p-3 hover:bg-[#ecf0f3] hover:text-red-500">
+					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none dark:shadow-neu-dark-icon-outset bg-red-500 p-3 hover:bg-[#ecf0f3] hover:text-red-500 dark:hover:bg-dark-secondary">
 						<x-svg.google class="h-6 w-6" />
 					</span>
 				</div>

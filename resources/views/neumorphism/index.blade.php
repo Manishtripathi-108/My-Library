@@ -7,61 +7,61 @@
 
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
-		<x-cards-section title="Login & Signup">
+		<x-grid title="Login & Signup">
 
-			<x-cards-section.card title="Signup Form">
+			<x-grid.item title="Signup Form">
 				@include('neumorphism.login-signup-form', ['type' => 'signup'])
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
 		{{-- ------------------------------ Product Cards ----------------------------- --}}
-		<x-cards-section title="Product Cards">
+		<x-grid title="Product Cards">
 
-			<x-cards-section.card title="Simple Card">
+			<x-grid.item title="Simple Card">
 				@include('neumorphism.product-card')
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card title="Product without shadow">
+			<x-grid.item title="Product without shadow">
 				@include('neumorphism.product-card', ['type' => 1])
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card title="Product with Rating">
+			<x-grid.item title="Product with Rating">
 				@include('neumorphism.product-card', ['type' => 2])
-			</x-cards-section.card>
+			</x-grid.item>
 
-			<x-cards-section.card class="md:col-span-3 lg:col-span-3" title="featured product item">
+			<x-grid.item class="md:col-span-3 lg:col-span-3" title="featured product item">
 				@include('neumorphism.product-card', ['type' => 3])
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}
-		<x-cards-section title="Buttons & Icons">
+		<x-grid title="Buttons & Icons">
 
-			<x-cards-section.card title="Color Change Icons">
+			<x-grid.item title="Color Change Icons">
 				@include('neumorphism.color-change-icons')
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
 		{{-- ------------------------------ Switches ----------------------------- --}}
-		<x-cards-section title="Switches">
+		<x-grid title="Switches">
 
-			<x-cards-section.card title="Switch">
+			<x-grid.item title="Switch">
 				@include('neumorphism.switch')
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
 		{{-- ------------------------------ Buttons ----------------------------- --}}
-		<x-cards-section title="Radio Buttons">
+		<x-grid title="Radio Buttons">
 
-			<x-cards-section.card title="Radio Button">
+			<x-grid.item title="Radio Button">
 				@include('neumorphism.radio-btn')
-			</x-cards-section.card>
+			</x-grid.item>
 
-		</x-cards-section>
+		</x-grid>
 
 	</div>
 </x-app-layout>
