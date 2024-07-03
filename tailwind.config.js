@@ -12,6 +12,9 @@ export default {
 
     theme: {
         extend: {
+            backgroundImage: {
+                'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
+            },
             colors: {
                 light: {
                     primary: "#FFE9D0",
@@ -21,6 +24,7 @@ export default {
                     highlight: "#B1AFFF",
                     text: "#1B1B1B",
                     'text-secondary': '#555555',
+                    'text-tertiary': '#6f7378',
                 },
                 dark: {
                     primary: "#121212",
@@ -30,15 +34,23 @@ export default {
                     highlight: "#8888FF",
                     text: "#FFE9D0",
                     'text-secondary': '#aaaaaa',
+                    'text-tertiary': '#88929c',
                 },
             },
             boxShadow: {
                 'neu-sun': '6px 6px 13px #cca48e, -6px -6px 13px #fff6d6',
                 'neu-moon': 'inset 4px 4px 9px #131313, inset -4px -4px 9px #4d4d4d, 4px 4px 9px #131313, -4px -4px 9px #4d4d4d',
-                'neu': '6px 6px 6px #d2d6d8, -6px -6px 6px #ffffff',
-                'neu-inset': 'inset 4px 4px 8px 0px #bdc8d5, inset -4px -4px 8px 0px #ffffff',
-                'neu-inset-sm': 'inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff',
-                'neu-outset': '#45566754 7px 7px 15px 0px, #5165790a -8px -8px 15px 0px,#51657959 -5px -4px 13px 0px inset, #fffffff0 6px 7px 12px 0px inset',
+                'neu': '6px 6px 9px #e6d2bb, -6px -6px 9px #ffffe5',
+                'neu-md': '5px 5px 10px #ccbaa6, -5px -5px 10px #fffffa',
+                'neu-inset-xs': 'inset 4px 4px 5px #dbc8b3, inset -4px -4px 5px #ffffed',
+                'neu-inset-sm': 'inset 4px 3px 3px 0px #dbc8b3, inset -2px -4px 4px 0px #ffffff',
+                'neu-inset': 'inset 6px 6px 12px #665d53, inset -6px -6px 12px #ffffff',
+                'neu-outset': '2.19px 2.05px 26.30px 1px rgba(0, 0, 0, 0.40), 0px 0px 113.40px 0px rgba(255, 255, 255, 0.27), inset -5px 0px 7.50px rgba(34, 34, 34, 0.24), inset 0px 5px 7.50px rgba(214, 214, 214, 0.24), inset 5px 0px 7.50px rgba(221, 221, 221, 0.24), inset 0px -5px 7.50px rgba(41, 41, 41, 0.24)',
+                'neu-icon-outset': ' #00000040 5px 5px 7px 0px, #FFFFFF40 2px 2px 5px 0px inset, #00000080 -3px -3px 5px 0px inset',
+                'neu-dark-sm': '4px 4px 10px #000000, -4px -4px 10px #ffe9d03b',
+                'neu-dark': '6px 6px 12px #000000, -6px -6px 12px #ffe9d03b',
+                'neu-dark-inset-sm': 'inset 4px 3px 3px 0px #000000, inset -2px -4px 4px 0px #3d3d3d;',
+                'neu-dark-icon-outset': '#5b5b5b40 5px 5px 7px 0px, #00000080 2px 2px 5px 0px inset, #FFFFFF40 -3px -3px 5px 0px inset',
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],

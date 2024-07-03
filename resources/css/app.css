@@ -1,3 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+    /*-- -------------------------------- text -------------------------------- */
+    .text-primary {
+        @apply text-light-text;
+        @apply dark:text-dark-text;
+    }
+
+    .text-secondary {
+        @apply text-light-text-secondary;
+        @apply dark:text-dark-text-secondary;
+    }
+
+    .text-tertiary {
+        @apply text-light-text-tertiary;
+        @apply dark:text-dark-text-tertiary;
+    }
+
+    .text-accent {
+        @apply text-light-accent;
+        @apply dark:text-dark-accent;
+    }
+
+    .text-highlight {
+        @apply text-light-highlight;
+        @apply dark:text-dark-highlight;
+    }
+
+    /*-- -------------------------------- bg -------------------------------- */
+    .bg-primary {
+        @apply bg-light-primary;
+        @apply dark:bg-dark-primary;
+    }
+
+    .bg-secondary {
+        @apply bg-light-secondary;
+        @apply dark:bg-dark-secondary;
+    }
+
+    .bg-dim {
+        @apply bg-light-primary-dim;
+        @apply dark:bg-dark-primary-dim;
+    }
+
+    .bg-accent {
+        @apply bg-light-accent;
+        @apply dark:bg-dark-accent;
+    }
+
+    .bg-highlight {
+        @apply bg-light-highlight;
+        @apply dark:bg-dark-highlight;
+    }
+
+    /*-- -------------------------------- shadow -------------------------------- */
+    
+}
+
+@layer components {
+    .neu-badge {
+        @apply text-light-text-secondary;
+        border: 0.8px solid #ead2b6;
+        border-radius: 160px;
+        box-shadow: inset 2px 2px 5px #d6c4af, inset -2px -2px 5px #fffff1;
+        text-align: center;
+    }
+
+    .neu-dark-badge {
+        @apply text-dark-text-secondary;
+        border: 0.8px solid #353535;
+        border-radius: 160px;
+        box-shadow: inset 3px 3px 3px #000000, inset -3px -3px 3px #2e2e2e;
+        text-align: center;
+    }
+
+    /*-- -------------------------------- neu-btn -------------------------------- */
+    .neu-btn {
+        @apply text-light-text-secondary;
+        text-align: center;
+        border: 0.8px solid #ead2b6;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #edd9c1, -2px -2px 5px #fff9df;
+        transition: all 0.3s;
+    }
+
+    .neu-btn:active {
+        box-shadow: inset 5px 5px 7px #edd9c1, -5px -5px 7px #fff9df;
+    }
+
+    .neu-btn:hover,
+    .neu-btn:focus {
+        @apply text-light-text;
+        transform: scale(1.05);
+    }
+
+    .neu-dark-btn {
+        @apply text-dark-text-secondary;
+        text-align: center;
+        border: 0.8px solid #353535;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px #070707, -2px -2px 4px #3d3d3d;
+        transition: all 0.3s;
+    }
+
+    .neu-dark-btn:hover,
+    .neu-dark-btn:focus {
+        @apply text-dark-text;
+        transform: scale(1.05);
+    }
+
+    .neu-dark-btn:active {
+        box-shadow: inset 5px 5px 5px #000000, inset -5px -5px 5px #3d3d3d;
+    }
+
+    /*-- -------------------------------- neu-icon-btn -------------------------------- */
+    .neu-icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-size: small;
+    }
+
+    /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
+    .neu-icon-only-btn {
+        border-radius: 50%;
+        padding: 0.5rem;
+        box-shadow: 5px 5px 10px #edd9c1, -5px -5px 10px #fff9df;
+    }
+}
