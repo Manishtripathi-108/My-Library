@@ -3,7 +3,6 @@
 
 * {
     font-family: "Poppins", sans-serif;
-    --bg-primary: #ecf0f3;
 }
 
 html {
@@ -11,34 +10,29 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.bg-primary {
-    background-color: var(--bg-primary);
-}
-
-.playfair-display-font {
+.font-playfair {
     font-family: "Playfair Display", Georgia, serif;
 }
 
-.karla-font {
+.font-karla {
     font-family: "karla", Arial, sans-serif !important;
 }
 
-/*-- -------------------------------- neu-shadow -------------------------------- */
-.neu-shadow {
-    box-shadow: 6px 6px 6px #d2d6d8,
-        -6px -6px 6px #ffffff !important;
+/*-- -------------------------------- shadow-neu -------------------------------- */
+.shadow-neu {
+    box-shadow: 6px 6px 6px #d2d6d8, -6px -6px 6px #ffffff !important;
 }
 
-.neu-shadow-outset {
+.shadow-neu-outset {
     box-shadow: #45566754 7px 7px 15px 0px, #5165790a -8px -8px 15px 0px,
         #51657959 -5px -4px 13px 0px inset, #fffffff0 6px 7px 12px 0px inset !important;
 }
 
-.neu-shadow-inset {
+.shadow-neu-inset {
     box-shadow: inset 4px 4px 8px 0px #bdc8d5, inset -4px -4px 8px 0px #ffffff !important;
 }
 
-.neu-shadow-inset-sm {
+.shadow-neu-inset-sm {
     box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #ffffff !important;
 }
 

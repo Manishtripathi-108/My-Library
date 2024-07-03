@@ -15,6 +15,7 @@ export default {
             colors: {
                 light: {
                     primary: "#FFE9D0",
+                    'primary-dim': '#fff0e0',
                     secondary: "#FFCDB2",
                     accent: "#44CCFF",
                     highlight: "#B1AFFF",
@@ -22,11 +23,12 @@ export default {
                     'text-secondary': '#555555',
                 },
                 dark: {
-                    primary: "#1B1B1B",
+                    primary: "#121212",
+                    'primary-dim': '#1D1D1D',
                     secondary: "#303030",
                     accent: "#66CCFF",
                     highlight: "#8888FF",
-                    text: "#f1f1f1",
+                    text: "#FFE9D0",
                     'text-secondary': '#aaaaaa',
                 },
             },
