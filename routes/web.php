@@ -59,11 +59,14 @@ Route::get('/buttons', function () {
     return view('buttons.index');
 });
 
-
 // Route for the neumorphism
 Route::prefix('neumorphism')->group(function () {
 
     Route::get('/', function () {
         return view('neumorphism.index');
     })->name('neumorphism');
+
+    Route::get('/shadows', function () {
+        return view('neumorphism.shadows');
+    })->name('neumorphism.shadows');
 });

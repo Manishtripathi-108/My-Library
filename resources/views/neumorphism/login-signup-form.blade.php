@@ -19,7 +19,7 @@
 	{{--                                    signup                                  --}}
 	{{-- -------------------------------------------------------------------------- --}}
 	@case('signup')
-		<div class="shadow-neu-outset-lg rounded-lg p-6">
+		<div class="shadow-neu-outset-lg dark:shadow-neu-dark-outset-lg rounded-lg p-6">
 			<div class="text-primary mb-4 font-playfair text-2xl font-semibold">Sign Up</div>
 
 			<form action="#">
