@@ -45,19 +45,19 @@ Route::prefix('auth')->group(function () {
 
     Route::get('/login-signup-single', function () {
         return view('auth.login-signup-single');
-    })->name('page-1');
+    })->name('auth.page-1');
 });
 
 
 // Route for the cards
 Route::get('/cards', function () {
     return view('cards.index');
-});
+})->name('cards');
 
 // Route for the buttons
 Route::get('/buttons', function () {
     return view('buttons.index');
-});
+})->name('buttons');
 
 // Route for the neumorphism
 Route::prefix('neumorphism')->group(function () {

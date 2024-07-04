@@ -1,4 +1,32 @@
 <x-app-layout title="Welcome Page">
-    <h1>Welcome to My Component Library</h1>
-    <p>This is the content of the welcome page.</p>
+	<x-slot name="header">
+		<h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-dark-text">
+			{{ __('Welcome To Home Page') }}
+		</h2>
+	</x-slot>
+	<div class="*:flex *:items-center *:justify-center m-5 grid grid-cols-8 gap-4">
+		{{-- Auth --}}
+		<a class="neu-btn" href="{{ route('register') }}">Register</a>
+		<a class="neu-btn" href="{{ route('login') }}">Login</a>
+
+		{{-- Pages --}}
+		<a class="neu-btn" href="{{ route('book-page') }}">Book</a>
+		<a class="neu-btn" href="{{ route('background-building') }}">Background Building</a>
+		<a class="neu-btn" href="{{ route('background-sunrise') }}">Background Sunrise</a>
+		<a class="neu-btn" href="{{ route('order-confirmation') }}">Order Confirm</a>
+
+		{{-- Auth Page --}}
+		<a class="neu-btn" href="{{ route('auth.page-1') }}">Auth Page</a>
+
+		{{-- Cards --}}
+		<a class="neu-btn" href="{{ route('cards') }}">Cards</a>
+
+		{{-- Buttons --}}
+		<a class="neu-btn" href="{{ route('buttons') }}">Buttons</a>
+
+		{{-- Neumorphism --}}
+		<a class="neu-btn" href="{{ route('neumorphism') }}">Neumorphism</a>
+		<a class="neu-btn" href="{{ route('neumorphism.shadows') }}">Neumorphism Shadows</a>
+
+	</div>
 </x-app-layout>
