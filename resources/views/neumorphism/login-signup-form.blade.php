@@ -19,7 +19,7 @@
 	{{--                                    signup                                  --}}
 	{{-- -------------------------------------------------------------------------- --}}
 	@case('signup')
-		<div class="shadow-neu-outset-lg dark:shadow-neu-dark-outset-lg rounded-lg p-6">
+		<div class="rounded-lg p-6 shadow-neu-outset-lg dark:shadow-neu-dark-outset-lg">
 			<div class="text-primary mb-4 font-playfair text-2xl font-semibold">Sign Up</div>
 
 			<form action="#">
@@ -43,17 +43,17 @@
 				</div>
 				<h4 class="mt-4 font-karla text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
 				<div class="mt-2 flex w-full items-center justify-evenly text-white">
-					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none bg-blue-400 p-3 hover:bg-[#ecf0f3] hover:text-blue-400 dark:shadow-neu-dark-icon-outset dark:hover:bg-dark-secondary">
+					<button class="neu-btn outline-none rounded-full border-none bg-blue-400 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-blue-400 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
 						<x-svg.twitter class="h-6 w-6" />
-					</span>
-					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none bg-blue-600 p-3 hover:bg-[#ecf0f3] hover:text-blue-600 dark:shadow-neu-dark-icon-outset dark:hover:bg-dark-secondary">
+					</button>
+					<button class="neu-btn outline-none rounded-full border-none bg-blue-600 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-blue-600 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
 						<x-svg.facebook class="h-6 w-6" />
-					</span>
-					<span class="neu-btn shadow-neu-icon-outset rounded-full border-none bg-red-500 p-3 hover:bg-[#ecf0f3] hover:text-red-500 dark:shadow-neu-dark-icon-outset dark:hover:bg-dark-secondary">
+					</button>
+					<button class="neu-btn outline-none rounded-full border-none bg-red-500 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-red-500 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
 						<x-svg.google class="h-6 w-6" />
-					</span>
+					</button>
 				</div>
-
+				
 				<div class="mt-2">
 					<a class="font-karla text-lg tracking-wide text-gray-600">Already have an account?</a>
 					<a class="font-karla text-lg tracking-wide text-blue-500" href="#">Sign In</a>
