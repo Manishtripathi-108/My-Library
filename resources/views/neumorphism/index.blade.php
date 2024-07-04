@@ -40,7 +40,7 @@
 		<x-grid title="Buttons & Icons">
 
 			<x-grid.item title="Color Change Icons">
-				@include('neumorphism.color-change-icons')
+				@include('neumorphism.icons')
 			</x-grid.item>
 
 		</x-grid>

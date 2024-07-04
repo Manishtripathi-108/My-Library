@@ -15,6 +15,7 @@
 		<div class="shadow-neu-inset-sm">shadow-neu-inset-sm</div>
 		<div class="shadow-neu-inset-xl">shadow-neu-inset-xl</div>
 		<div class="shadow-neu-outset-sm">shadow-neu-outset-sm</div>
+		<div class="shadow-neu-outset-md">shadow-neu-outset-md</div>
 		<div class="shadow-neu-outset-lg">shadow-neu-outset-lg</div>
 	</div>
 
@@ -30,6 +31,7 @@
 		<div class="shadow-neu-dark-inset-xs">shadow-neu-dark-inset-xs</div>
 		<div class="shadow-neu-dark-inset-sm">shadow-neu-dark-inset-sm</div>
 		<div class="shadow-neu-dark-outset-sm">shadow-neu-dark-outset-sm</div>
+		<div class="shadow-neu-dark-outset-md">shadow-neu-dark-outset-md</div>
 		<div class="shadow-neu-dark-outset-lg">shadow-neu-dark-outset-lg</div>
 	</div>
 
