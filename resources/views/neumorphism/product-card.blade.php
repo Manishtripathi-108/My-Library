@@ -4,16 +4,18 @@
 	@case(1)
 		<div class="max-w-[350px] lg:w-full">
 			<div class="overflow-hidden rounded-lg">
-				<img class="h-auto w-full" src="{{ asset('images/products/watch.jpeg') }}" alt="" />
+				<img class="h-auto w-full border-gray-300 dark:border-gray-500 border rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="" />
 
 				<h3 class="mt-3 font-semibold">
-					<a class="font-karla text-xl font-bold tracking-wide text-primary transition-colors duration-300 hover:text-accent" href="">
+					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wide transition-colors duration-300" href="">
 						Future Watch 1
 					</a>
 				</h3>
 
 				<div class="flex items-center gap-10 py-3">
-					<div class="rounded-lg px-3 py-2 text-center font-karla shadow-neu-inset-sm dark:text-dark-text-secondary dark:shadow-neu-dark-inset-sm">$879</div>
+					<div class="rounded-lg px-3 py-2 text-center font-karla shadow-neu-inset-sm dark:text-dark-text-secondary dark:shadow-neu-dark-inset-sm">
+						₹7999.00
+					</div>
 					<a class="neu-btn dark:bg-dark dark:neu-dark-btn rounded-full bg-btn-gradient p-3 transition-colors duration-300 hover:bg-none hover:text-blue-500 active:shadow-neu-inset-sm dark:border-none dark:bg-none dark:text-dark-text-secondary dark:hover:text-blue-500" href="">
 						<x-svg.cart class="h-6 w-6" />
 					</a>
@@ -27,13 +29,13 @@
 
 	@case(2)
 		<div class="max-w-[350px] lg:w-full">
-			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu">
+			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
 				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
-				<div class="border-t border-gray-300 p-4">
-					<a class="font-karla text-xl font-bold text-primary hover:text-accent " href="#">
-						Future Watch
+				<div class="border-t border-gray-300 p-4 dark:border-gray-500">
+					<a class="text-primary hover:text-accent font-karla text-xl font-bold" href="#">
+						Future Watch 2
 					</a>
-					<h3 class="text-md mt-2 font-karla font-light text-secondary">
+					<h3 class="text-md text-secondary mt-2 font-karla font-light">
 						Future Watch is a smartwatch that is from the future. It has all the features that you can imagine.
 					</h3>
 
@@ -45,10 +47,10 @@
 					</div>
 
 					<div class="mt-3 flex items-center justify-between">
-						<span class="font-karla text-lg text-primary">
-							₹299.00
+						<span class="text-primary font-karla text-lg">
+							₹7999.00
 						</span>
-						<a class="neu-icon-btn neu-btn dark:neu-dark-btn py-1 font-karla text-sm" href="#">
+						<a class="neu-icon-btn neu-btn dark:neu-dark-btn font-karla text-sm" href="#">
 							<x-svg.add-to-cart class="h-5 w-5" />
 							Add to cart
 						</a>
@@ -60,14 +62,14 @@
 
 	@case(3)
 		<div class="max-w-[350px] md:max-w-fit lg:w-full">
-			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 p-6 shadow-neu">
+			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
 				<div class="flex flex-col items-center md:flex-row">
 					<a class="w-full md:w-1/4" href="#">
 						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
 					</a>
 
 					<div class="mt-4 w-full md:mt-0 md:w-1/2 md:px-4">
-						<a class="title font-karla text-xl font-bold tracking-wider text-primary" href="#">
+						<a class="title text-primary hover:text-accent font-karla text-xl font-bold tracking-wider" href="#">
 							Future Watch Series 0
 						</a>
 
@@ -82,13 +84,13 @@
 							</span>
 						</div>
 
-						<p class="font-karla text-primary">
+						<p class="text-secondary font-karla text-sm tracking-wide">
 							Future Watch Series 0 is a smartwatch that is from the future. It has all the features that you can imagine. It has a 4.7 rating and 150 orders.
 						</p>
 					</div>
 					<div class="mt-4 flex w-full flex-col items-end md:mt-0 md:w-1/4">
-						<div class="flex items-center text-primary">
-							<span class="mr-2 font-karla text-red-600 line-through">₹299.00</span>
+						<div class="text-primary flex items-center">
+							<span class="mr-2 font-karla text-red-600 line-through">₹7999.00</span>
 							<span class="font-karla">₹199.00</span>
 						</div>
 
@@ -101,7 +103,7 @@
 							<a class="neu-btn mb-3 inline-flex w-full items-center justify-center text-sm" href="#">
 								Details
 							</a>
-							<a class="neu-icon-btn w-full text-sm" href="#">
+							<a class="neu-icon-btn neu-btn w-full text-sm" href="#">
 								<x-svg.add-to-cart class="h-5 w-5" />
 								Wishlist
 							</a>
@@ -115,11 +117,11 @@
 
 	@default
 		<div class="max-w-[350px] lg:w-full">
-			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu">
+			<div class="relative flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
 				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
-				<div class="border-t border-gray-300 p-4">
-					<a class="font-karla text-xl font-bold tracking-wider text-primary" href="#">Future Watch</a>
-					<div class="text-md mt-2 font-karla text-gray-600">₹299.00</div>
+				<div class="border-t border-gray-300 p-4 dark:border-gray-500">
+					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wider" href="#">Future Watch</a>
+					<div class="text-md mt-2 font-karla text-gray-600">₹7999.00</div>
 				</div>
 			</div>
 		</div>

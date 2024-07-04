@@ -25,8 +25,8 @@
 
 	<div class="*:size-60 *:text-center *:text-xs *:bg-dark-primary *:col-span-1 *:rounded-lg *:text-dark-text *:tracking-wider *:flex *:justify-center *:items-center grid md:grid-cols-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 place-items-center justify-center gap-8 bg-dark-primary p-4 font-karla">
 		<div class="shadow-neu-dark-xs">shadow-neu-dark-xs</div>
-		<div class="shadow-neu-dark-md">shadow-neu-dark-sm</div>
-		<div class="shadow-neu-dark-lg">shadow-neu-dark-md</div>
+		<div class="shadow-neu-dark-md">shadow-neu-dark-md</div>
+		<div class="shadow-neu-dark-lg">shadow-neu-dark-lg</div>
 		<div class="shadow-neu-dark-inset-xs">shadow-neu-dark-inset-xs</div>
 		<div class="shadow-neu-dark-inset-sm">shadow-neu-dark-inset-sm</div>
 		<div class="shadow-neu-dark-outset-sm">shadow-neu-dark-outset-sm</div>
