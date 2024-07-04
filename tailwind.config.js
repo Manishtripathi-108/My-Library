@@ -42,12 +42,14 @@ export default {
                 'neu-moon': 'inset 4px 4px 9px #131313, inset -4px -4px 9px #4d4d4d, 4px 4px 9px #131313, -4px -4px 9px #4d4d4d',
 
                 'neu-xs': '2px 2px 4px #ccbaa6, -2px -2px 4px #fffffa',
-                'neu-md': '-5px -5px 9px #fff9df, 5px 5px 9px #edd9c1',
+                'neu-md-soft': '-5px -5px 9px #fff9df, 5px 5px 9px #edd9c1',
                 'neu-lg': '6px 6px 9px #ccb7ac, -6px -6px 9px #ffffe5',
                 'neu-xl': '6px 6px 13px #cca48e, -6px -6px 9px #ffffe5',
+                'neu-xl-soft': '-10px -10px 15px #fff9df, 10px 10px 15px #4c4c4c40',
 
                 'neu-inset-xs': 'inset 2px 2px 5px #d6c4af, inset -2px -2px 5px #fffff1',
                 'neu-inset-sm': 'inset 4px 3px 3px 0px #dbc8b3, inset -2px -4px 4px 0px #ffffff',
+                'neu-inset-lg': '-10px -10px 15px #fff9df, 10px 10px 15px #4c4c4c40, inset -10px -10px 15px #fff9df, inset 10px 10px 15px #4c4c4c40',
                 'neu-inset-xl': 'inset 6px 6px 12px #665d53, inset -6px -6px 12px #ffffff',
 
                 'neu-outset-sm': '#00000040 5px 5px 7px 0px, #FFFFFF40 2px 2px 5px 0px inset, #00000080 -3px -3px 5px 0px inset',

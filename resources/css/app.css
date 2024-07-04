@@ -134,12 +134,13 @@ html {
 
     /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
     .neu-icon-only-btn {
-        @apply rounded-full bg-btn-gradient p-2 shadow-neu-md;
+        @apply rounded-full bg-btn-gradient p-2 shadow-neu-md-soft;
 
         /* dark mode */
         @apply dark:shadow-neu-dark-md;
     }
 
+    /*-- -------------------------------- neu-inset-input -------------------------------- */
     .neu-inset-input {
         @apply bg-primary appearance-none rounded-xl border-none shadow-neu-inset-sm outline-none 
         placeholder:tracking-wide;
@@ -151,13 +152,24 @@ html {
     .neu-inset-input:focus,
     .neu-inset-input:hover,
     .neu-inset-input:active {
-        @apply shadow-neu-md placeholder:text-primary;
+        @apply shadow-neu-md-soft placeholder:text-primary;
 
         /* dark mode */
         @apply dark:shadow-neu-dark-md;
     }
-}
 
+    /*-- -------------------------------- neu-inset-checkbox -------------------------------- */
+    .neu-inset-checkbox {
+        @apply appearance-none rounded-full  border-8 border-light-secondary bg-primary  outline-none flex items-center justify-center cursor-pointer size-52 shadow-neu-xl-soft;
+
+        /* dark mode */
+        @apply dark:border-dark-secondary;
+    }
+
+    .neu-inset-checkbox:hover {
+        @apply shadow-neu-inset-lg;
+    }
+}
 @layer utilities {
     /*-- -------------------------------- text -------------------------------- */
     .text-primary {
