@@ -11,6 +11,64 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
+@layer components {
+    .neu-badge {
+        @apply text-secondary text-center border-[0.8px] border-[#ead2b6];
+
+        /* dark mode */
+        @apply dark:border-[#353535] rounded-full dark:shadow-neu-dark-inset-xs;
+    }
+
+    /*-- -------------------------------- neu-btn -------------------------------- */
+    .neu-btn {
+        @apply text-secondary text-center tracking-wider border-[0.8px] border-[#ead2b6] py-2 px-4 rounded-lg transition-all duration-300 shadow-neu-xs;
+
+        /* dark mode */
+        @apply dark:border-[#353535] dark:shadow-neu-dark-xs;
+    }
+
+    .neu-btn:active {
+        @apply text-primary shadow-neu-inset-sm;
+
+        /* dark mode*/
+        @apply dark:shadow-neu-dark-inset-xs;
+    }
+
+    .neu-btn:hover,
+    .neu-btn:focus {
+        @apply text-primary transform scale-105;
+    }
+    /*-- -------------------------------- neu-icon-btn -------------------------------- */
+    .neu-icon-btn {
+        @apply flex justify-center items-center gap-2 text-sm;
+    }
+
+    /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
+    .neu-icon-only-btn {
+        @apply rounded-full bg-btn-gradient p-2 shadow-neu-md;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-md;
+    }
+
+    .neu-inset-input {
+        @apply bg-primary appearance-none rounded-xl border-none shadow-neu-inset-sm outline-none 
+        placeholder:tracking-wide;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-inset-sm;
+    }
+
+    .neu-inset-input:focus,
+    .neu-inset-input:hover,
+    .neu-inset-input:active {
+        @apply shadow-neu-md placeholder:text-primary;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-md;
+    }
+}
+
 @layer utilities {
     /*-- -------------------------------- text -------------------------------- */
     .text-primary {
@@ -65,79 +123,4 @@ html {
     }
 
     /*-- -------------------------------- shadow -------------------------------- */
-}
-
-@layer components {
-    .neu-badge {
-        @apply text-light-text-secondary;
-        border: 0.8px solid #ead2b6;
-        border-radius: 160px;
-        box-shadow: inset 2px 2px 5px #d6c4af, inset -2px -2px 5px #fffff1;
-        text-align: center;
-    }
-
-    .neu-dark-badge {
-        @apply text-dark-text-secondary;
-        border: 0.8px solid #353535;
-        border-radius: 160px;
-        box-shadow: inset 3px 3px 3px #000000, inset -3px -3px 3px #2e2e2e;
-        text-align: center;
-    }
-
-    /*-- -------------------------------- neu-btn -------------------------------- */
-    .neu-btn {
-        @apply text-light-text-secondary;
-        text-align: center;
-        border: 0.8px solid #ead2b6;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px #edd9c1, -2px -2px 5px #fff9df;
-        transition: all 0.3s;
-    }
-
-    .neu-btn:active {
-        box-shadow: inset 5px 5px 7px #edd9c1, -5px -5px 7px #fff9df;
-    }
-
-    .neu-btn:hover,
-    .neu-btn:focus {
-        @apply text-light-text;
-        transform: scale(1.05);
-    }
-
-    .neu-dark-btn {
-        @apply text-dark-text-secondary;
-        text-align: center;
-        border: 0.8px solid #353535;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        box-shadow: 2px 2px 4px #070707, -2px -2px 4px #3d3d3d;
-        transition: all 0.3s;
-    }
-
-    .neu-dark-btn:hover,
-    .neu-dark-btn:focus {
-        @apply text-dark-text;
-        transform: scale(1.05);
-    }
-
-    .neu-dark-btn:active {
-        box-shadow: inset 5px 5px 5px #000000, inset -5px -5px 5px #3d3d3d;
-    }
-
-    /*-- -------------------------------- neu-icon-btn -------------------------------- */
-    .neu-icon-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 0.5rem;
-        font-size: small;
-    }
-
-    /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
-    .neu-icon-only-btn {
-        border-radius: 50%;
-        padding: 0.5rem;
-        box-shadow: 5px 5px 10px #edd9c1, -5px -5px 10px #fff9df;
-    }
 }

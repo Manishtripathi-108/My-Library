@@ -18,7 +18,8 @@
 	<link href="{{ asset('site.webmanifest') }}" rel="manifest">
 	<link href="{{ asset('safari-pinned-tab.svg') }}" rel="mask-icon" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#FFE9D0">
+	<meta name="dark-theme-color" content="#121212">
 
 	<!-- Fonts -->
 	<style>
