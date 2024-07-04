@@ -4,8 +4,7 @@
 		<style>
 			@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
-			html,
-			body {
+			.login-html {
 				position: relative;
 				min-height: 100vh;
 				background-color: #E1E8EE;
@@ -277,7 +276,7 @@
 		</style>
 	@endPushOnce
 
-	<body>
+	<div class="login-html">
 		<div class="form-structor">
 			<div class="signup">
 				<h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
@@ -299,7 +298,7 @@
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
 
 	@pushOnce('scripts')
 		<script>
