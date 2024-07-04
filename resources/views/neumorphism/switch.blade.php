@@ -1,9 +1,9 @@
-@pushOnce('styles')
+{{-- @pushOnce('styles')
 	<style>
 		input[type="checkbox"]::after {
 			content: url({{ asset('images/logo.svg') }});
 		}
 	</style>
-@endPushOnce
+@endPushOnce --}}
 
-<div class="neu-inset-checkbox"></div>
+<input class="neu-inset-checkbox" type="checkbox">

@@ -160,14 +160,10 @@ html {
 
     /*-- -------------------------------- neu-inset-checkbox -------------------------------- */
     .neu-inset-checkbox {
-        @apply appearance-none rounded-full  border-8 border-light-secondary bg-primary  outline-none flex items-center justify-center cursor-pointer size-52 shadow-neu-xl-soft;
+        @apply appearance-none rounded-full  border-8 border-light-secondary bg-primary outline-none flex items-center justify-center cursor-pointer size-52 shadow-neu-xl-soft checked:shadow-neu-inset-lg;
 
         /* dark mode */
-        @apply dark:border-dark-secondary;
-    }
-
-    .neu-inset-checkbox:hover {
-        @apply shadow-neu-inset-lg;
+        @apply dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-md;
     }
 }
 @layer utilities {
