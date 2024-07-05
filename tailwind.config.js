@@ -13,13 +13,28 @@ export default {
     theme: {
         extend: {
             animation: {
-                'slide-bottom': 'slide-bottom 0.5s ease-out forwards',
+                'slide-top': 'slide-top 0.3s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
+                'slide-bottom': 'slide-bottom 0.3s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
+                'scale-up-center': 'scale-up-center 0.4s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
+                'scale-down-center': 'scale-down-center 0.4s ease-out forwards',
             },
             keyframes: {
-                'slide-bottom': {
-                    '0%': { transform: 'translateY(0)' },
-                    '100%': { transform: 'translateY(-150px)' },
+                'slide-top': {
+                    '0%': { transform: 'translateY(160px)' },
+                    '100%': { transform: 'translateY(-200px)' },
                 },
+                'slide-bottom': {
+                    '0%': { transform: 'translateY(-200px)' },
+                    '100%': { transform: 'translateY(160px)' },
+                },
+                'scale-up-center': {
+                    '0%': { transform: 'scale(0)', opacity: '0' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                'scale-down-center': {
+                    '0%': { transform: 'scale(1)', opacity: '1' },
+                    '100%': { transform: 'scale(0)', opacity: '0' },
+                }
             },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
