@@ -12,6 +12,15 @@ export default {
 
     theme: {
         extend: {
+            animation: {
+                'slide-bottom': 'slide-bottom 0.5s ease-out forwards',
+            },
+            keyframes: {
+                'slide-bottom': {
+                    '0%': { transform: 'translateY(0)' },
+                    '100%': { transform: 'translateY(-150px)' },
+                },
+            },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
             },
