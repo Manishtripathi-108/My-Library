@@ -1,33 +1,33 @@
 <div class="flex items-center justify-center">
-	<div class="bg-table group h-[550px] w-[350px] overflow-hidden rounded-3xl transition-all duration-500" id="sign_form">
-		<div class="mt-4 flex w-full flex-col items-center justify-center">
-			<h2 class="text-primary font-bolder mt-12 cursor-pointer font-playfair text-3xl transition-transform duration-300" id="sign_up">
-				<span class="text-secondary hidden text-sm transition-transform duration-300">or</span>
+	<div class="bg-table h-[550px] w-[350px] overflow-hidden rounded-3xl transition-all duration-500" id="sign_form">
+		<form class="mt-4 flex w-full flex-col items-center justify-center">
+			<button class="font-bolder z-10 mt-12 cursor-pointer font-playfair text-3xl text-light-primary transition-transform duration-300" id="sign_up">
+				<span class="hidden text-sm text-light-secondary transition-transform duration-300 dark:text-gray-300">or</span>
 				Sign up
-			</h2>
+			</button>
 
 			<div class="mx-auto mt-12 w-60 overflow-hidden rounded-2xl transition-opacity duration-300" id="sign_inputs">
-				<input class="bg-secondary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border-none p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300" type="text" placeholder="Name" />
-				<input class="bg-secondary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border border-x-0 border-y-gray-500 p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300" type="email" placeholder="Email" />
-				<input class="bg-secondary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border-none p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300" type="password" placeholder="Password" />
+				<input class="bg-secondary active:bg-primary focus:bg-primary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border-none p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300 hover:bg-dark-primary" type="text" placeholder="Name" />
+				<input class="bg-secondary active:bg-primary focus:bg-primary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border border-x-0 border-y-gray-500 p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300 hover:bg-dark-primary" type="email" placeholder="Email" />
+				<input class="bg-secondary active:bg-primary focus:bg-primary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border-none p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300 hover:bg-dark-primary" type="password" placeholder="Password" />
 			</div>
-			<button class="mt-2 w-60 rounded-2xl bg-[#00000090] p-4 font-karla font-bold tracking-wider backdrop-blur-sm transition-all duration-300 hover:bg-black hover:text-dark-text hover:backdrop-blur-none" id="sign_btn" type="submit" title="Sign Up">Sign up</button>
-		</div>
+			<button class="mt-2 w-60 rounded-2xl bg-[#00000090] p-4 font-karla font-bold tracking-wider text-light-secondary backdrop-blur-sm transition-all duration-300 hover:bg-black hover:text-dark-text hover:backdrop-blur-none focus:bg-black dark:bg-[#FFE9D090] dark:text-light-text dark:hover:bg-[#FFE9D0] dark:hover:text-dark-primary dark:focus:bg-[#FFE9D0] dark:focus:text-dark-primary" id="sign_btn" type="submit" title="Sign Up">Sign up</button>
+		</form>
 
-		<div class="bg-secondary relative flex h-full w-full translate-y-40 transform flex-col items-center justify-start transition-all duration-500" id="login_form">
-			<x-svg.curve class="relative bottom-[70px] text-light-secondary" />
+		<form class="bg-secondary relative flex h-full w-full translate-y-40 transform flex-col items-center justify-start transition-all duration-500" id="login_form">
+			<x-svg.curve class="relative bottom-[70px] text-light-secondary dark:text-dark-secondary" />
 
-			<h2 class="text-primary font-bolder z-10 -mt-[100px] cursor-pointer font-playfair text-3xl transition-transform duration-300" id="login">
+			<button class="text-primary font-bolder z-10 -mt-[100px] cursor-pointer font-playfair text-3xl transition-transform duration-300" id="login">
 				<span class="text-secondary text-sm transition-transform duration-300">or</span>
 				Log in
-			</h2>
+			</button>
 
 			<div class="mx-auto mt-12 w-60 overflow-hidden rounded-2xl transition-opacity duration-300" id="login_inputs">
 				<input class="bg-primary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border border-x-0 border-b border-t-0 border-gray-500 p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300" type="email" placeholder="Email" />
 				<input class="bg-primary focus:placeholder:text-primary focus:text-primary hover:placeholder:text-primary active:text-primary w-full appearance-none border-none p-3 font-karla font-light tracking-wide opacity-80 outline-none transition-all duration-300" type="password" placeholder="Password" />
 			</div>
-			<button class="mt-2 w-60 rounded-2xl bg-[#85ADC1] p-4 font-karla font-bold tracking-wider transition-all duration-300 hover:bg-black hover:text-dark-text" id="login_btn" title="Log in">Log in</button>
-		</div>
+			<button class="mt-2 w-60 rounded-2xl bg-[#85ADC1] p-4 font-karla font-bold tracking-wider transition-all duration-300 hover:bg-black hover:text-dark-text dark:hover:bg-[#FFE9D0] dark:hover:text-dark-primary" id="login_btn" title="Log in">Log in</button>
+		</form>
 	</div>
 </div>
 
@@ -43,65 +43,42 @@
 		const loginInputs = document.getElementById('login_inputs');
 		const loginBtn = document.getElementById('login_btn');
 
-		const toggleForms = (showSignUp) => {
-			signInputs.classList.toggle('hidden', !showSignUp);
-			loginInputs.classList.toggle('hidden', showSignUp);
-			signBtn.classList.toggle('hidden', !showSignUp);
-			loginBtn.classList.toggle('hidden', showSignUp);
-			loginForm.classList.toggle('translate-y-40', showSignUp); //208px
-			loginForm.classList.toggle('translate-y-16', !showSignUp); //64px
-			signUpOr.classList.toggle('hidden', !showSignUp);
-			loginOr.classList.toggle('hidden', showSignUp);
-
-			if (showSignUp) {
-				loginForm.classList.add('translate-y-40');
-				loginForm.classList.remove('translate-y-16');
-				loginForm.classList.remove('animate-slide-bottom');
-			} else {
-				loginForm.classList.add('translate-y-16');
-				loginForm.classList.remove('translate-y-40');
-				loginForm.classList.remove('animate-slide-top');
-			}
-		};
-
 		let enableShowSignUp = false;
 
-		const animate = (showSignUp) => {
-
+		const toggleForms = (showSignUp) => {
 			// Prevent redundant animation if sign-up form is already visible on page load
 			if (!enableShowSignUp && showSignUp) {
 				return
 			};
 
-			
-			loginForm.classList.toggle('animate-slide-bottom', showSignUp);
-			loginForm.classList.toggle('animate-slide-top', !showSignUp);
-			loginInputs.classList.toggle('animate-scale-down-center', showSignUp);
-			loginInputs.classList.toggle('animate-scale-up-center', !showSignUp);
-			signUp.classList.toggle('mt-12', showSignUp);
+			// Login Prompt
 			login.classList.toggle('-mt-[50px]', !showSignUp);
-			signInputs.classList.toggle('animate-scale-up-center', showSignUp);
-			signInputs.classList.toggle('animate-scale-down-center', !showSignUp);
-			signBtn.classList.toggle('animate-scale-up-center', showSignUp);
-			signBtn.classList.toggle('animate-scale-down-center', !showSignUp);
-			loginBtn.classList.toggle('animate-scale-down-center', showSignUp);
-			loginBtn.classList.toggle('animate-scale-up-center', !showSignUp);
+			loginForm.classList.toggle('animate-auth-slide-bottom', showSignUp);
+			loginForm.classList.toggle('animate-auth-slide-top', !showSignUp);
+			loginInputs.classList.toggle('animate-auth-scale-down-center', showSignUp);
+			loginInputs.classList.toggle('animate-auth-scale-up-center', !showSignUp);
+			loginBtn.classList.toggle('animate-auth-scale-down-center', showSignUp);
+			loginBtn.classList.toggle('animate-auth-scale-up-center', !showSignUp);
+
+			// Sign Up Prompt
+			signUp.classList.toggle('mt-12', showSignUp);
+			signInputs.classList.toggle('animate-auth-scale-up-center', showSignUp);
+			signInputs.classList.toggle('animate-auth-scale-down-center', !showSignUp);
+			signBtn.classList.toggle('animate-auth-scale-up-center', showSignUp);
+			signBtn.classList.toggle('animate-auth-scale-down-center', !showSignUp);
+
+			// Hide or show the 'or' text
 			signUpOr.classList.toggle('hidden', showSignUp);
 			loginOr.classList.toggle('hidden', !showSignUp);
 
-
-
-
+			// Change the font size of the form title
 			document.getElementById('sign_up').classList.toggle('text-lg', !showSignUp);
 			document.getElementById('login').classList.toggle('text-lg', showSignUp);
 
 			enableShowSignUp = true;
-
-			// Todo: Fix the issue with smooth transition
-			// setTimeout(() => toggleForms(showSignUp), 300);
 		};
 
-		document.getElementById('sign_up').addEventListener('click', () => animate(true));
-		document.getElementById('login').addEventListener('click', () => animate(false));
+		document.getElementById('sign_up').addEventListener('click', () => toggleForms(true));
+		document.getElementById('login').addEventListener('click', () => toggleForms(false));
 	</script>
 @endpush
