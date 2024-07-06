@@ -43,8 +43,8 @@ Route::prefix('pages')->group(function () {
 // Route for the auth pages
 Route::prefix('auth')->group(function () {
 
-    Route::get('/login-signup-single', function () {
-        return view('auth.login-signup-single');
+    Route::get('/login-signup', function () {
+        return view('auth.login-signup');
     })->name('auth.page-1');
 });
 
