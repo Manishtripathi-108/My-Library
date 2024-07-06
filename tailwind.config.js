@@ -38,6 +38,7 @@ export default {
             },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
+                'btn-gradient-dark': 'linear-gradient(145deg, #1f1f1f, #2e2e2e)',
             },
             colors: {
                 light: {

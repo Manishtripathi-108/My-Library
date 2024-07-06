@@ -1,7 +1,7 @@
 <div class="flex items-center justify-center">
 	<div class="bg-table h-[550px] w-[350px] overflow-hidden rounded-3xl transition-all duration-500" id="sign_form">
 		<form class="mt-4 flex w-full flex-col items-center justify-center">
-			<button class="font-bolder z-10 mt-12 cursor-pointer font-playfair text-3xl text-light-primary transition-transform duration-300" id="sign_up">
+			<button type="button" class="font-bolder z-10 mt-12 cursor-pointer font-playfair text-3xl text-light-primary transition-transform duration-300" id="sign_up">
 				<span class="hidden text-sm text-light-secondary transition-transform duration-300 dark:text-gray-300">or</span>
 				Sign up
 			</button>
@@ -17,7 +17,7 @@
 		<form class="bg-secondary relative flex h-full w-full translate-y-40 transform flex-col items-center justify-start transition-all duration-500" id="login_form">
 			<x-svg.curve class="relative bottom-[70px] text-light-secondary dark:text-dark-secondary" />
 
-			<button class="text-primary font-bolder z-10 -mt-[100px] cursor-pointer font-playfair text-3xl transition-transform duration-300" id="login">
+			<button type="button" class="text-primary font-bolder z-10 -mt-[100px] cursor-pointer font-playfair text-3xl transition-transform duration-300" id="login">
 				<span class="text-secondary text-sm transition-transform duration-300">or</span>
 				Log in
 			</button>

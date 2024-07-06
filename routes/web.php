@@ -45,7 +45,7 @@ Route::prefix('auth')->group(function () {
 
     Route::get('/login-signup', function () {
         return view('auth.login-signup');
-    })->name('auth.page-1');
+    })->name('auth.login-signup');
 });
 
 
