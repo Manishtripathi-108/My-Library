@@ -1,122 +1,30 @@
-@pushOnce('styles')
-	<style>
-		.body {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			background-color: #ecf0f3;
-		}
-
-		.neu-radio-group {
-			padding: 48px 64px;
-			border-radius: 16px;
-			background: #ecf0f3;
-			box-shadow:
-				4px 4px 4px 0px #d1d9e6 inset,
-				-4px -4px 4px 0px #ffffff inset;
-		}
-
-		.neu-radio-wrapper {
-			margin: 8px 0;
-		}
-
-		.neu-radio-state {
-			position: absolute;
-			top: 0;
-			right: 0;
-			opacity: 1e-5;
-			pointer-events: none;
-		}
-
-		.neu-radio-label {
-			display: inline-flex;
-			align-items: center;
-			cursor: pointer;
-			color: #394a56;
-		}
-
-		.neu-radio-text {
-			margin-left: 16px;
-			opacity: .6;
-			transition: opacity .2s linear, transform .2s ease-out;
-		}
-
-		.neu-radio-indicator {
-			position: relative;
-			border-radius: 50%;
-			height: 30px;
-			width: 30px;
-			box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6;
-			overflow: hidden;
-		}
-
-		.neu-radio-indicator::before,
-		.neu-radio-indicator::after {
-			content: '';
-			position: absolute;
-			top: 10%;
-			left: 10%;
-			height: 80%;
-			width: 80%;
-			border-radius: 50%;
-		}
-
-		.neu-radio-indicator::before {
-			box-shadow:
-				-4px -2px 4px 0px #d1d9e6,
-				4px 2px 8px 0px #fff;
-		}
-
-		.neu-radio-indicator::after {
-			background-color: #ecf0f3;
-			box-shadow: -4px -2px 4px 0px #fff, 4px 2px 8px 0px #d1d9e6;
-			transform: scale3d(1, 1, 1);
-			transition: opacity .25s ease-in-out, transform .25s ease-in-out;
-		}
-
-		.neu-radio-state:checked~.neu-radio-label .neu-radio-indicator::after {
-			transform: scale3d(.975, .975, 1) translate3d(0, 10%, 0);
-			opacity: 0;
-		}
-
-		.neu-radio-state:focus~.neu-radio-label .neu-radio-text {
-			transform: translate3d(8px, 0, 0);
-			opacity: 1;
-		}
-
-		.neu-radio-label:hover .neu-radio-text {
-			opacity: 1;
-		}
-	</style>
-@endPushOnce
-
-<div class="neu-radio-group">
-	<div class="neu-radio-wrapper">
-		<input class="neu-radio-state" id="a" name="app" type="radio" value="a">
-		<label class="neu-radio-label" for="a">
-			<div class="neu-radio-indicator"></div>
-			<span class="neu-radio-text">close</span>
+<div class="bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs">
+	<div class="mx-0 my-2">
+		<label class="text-secondary group/label inline-flex cursor-pointer items-center" for="a">
+			<input class="peer/state absolute right-0 top-0" id="a" name="app" type="radio" value="a">
+			<div class="size-8 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft peer-checked/state:before:shadow-neu-inset-xs"></div>
+			<span class="ml-4 font-karla opacity-60 transition-all group-hover/label:translate-x-2 group-hover/label:opacity-100 peer-checked/state:translate-x-2 peer-checked/state:opacity-100 peer-focus/state:opacity-100">close</span>
 		</label>
 	</div>
-	<div class="neu-radio-wrapper">
-		<input class="neu-radio-state" id="b" name="app" type="radio" value="b">
-		<label class="neu-radio-label" for="b">
-			<div class="neu-radio-indicator"></div>
-			<span class="neu-radio-text">remove</span>
+	<div class="mx-0 my-2">
+		<label class="text-secondary group/label inline-flex cursor-pointer items-center" for="b">
+			<input class="peer/state absolute right-0 top-0" id="b" name="app" type="radio" value="b">
+			<div class="size-8 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft peer-checked/state:before:shadow-neu-inset-xs"></div>
+			<span class="ml-4 font-karla opacity-60 transition-all group-hover/label:translate-x-2 group-hover/label:opacity-100 peer-checked/state:translate-x-2 peer-checked/state:opacity-100 peer-focus/state:opacity-100">remove</span>
 		</label>
 	</div>
-	<div class="neu-radio-wrapper">
-		<input class="neu-radio-state" id="c" name="app" type="radio" value="c">
-		<label class="neu-radio-label" for="c">
-			<div class="neu-radio-indicator"></div>
-			<span class="neu-radio-text">delete</span>
+	<div class="mx-0 my-2">
+		<label class="text-secondary group/label inline-flex cursor-pointer items-center" for="c">
+			<input class="peer/state absolute right-0 top-0" id="c" name="app" type="radio" value="c">
+			<div class="size-8 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft peer-checked/state:before:shadow-neu-inset-xs"></div>
+			<span class="ml-4 font-karla opacity-60 transition-all group-hover/label:translate-x-2 group-hover/label:opacity-100 peer-checked/state:translate-x-2 peer-checked/state:opacity-100 peer-focus/state:opacity-100">delete</span>
 		</label>
 	</div>
-	<div class="neu-radio-wrapper">
-		<input class="neu-radio-state" id="d" name="app" type="radio" value="d">
-		<label class="neu-radio-label" for="d">
-			<div class="neu-radio-indicator"></div>
-			<span class="neu-radio-text">all of the above</span>
+	<div class="mx-0 my-2">
+		<label class="text-secondary group/label inline-flex cursor-pointer items-center" for="d">
+			<input class="peer/state absolute right-0 top-0" id="d" name="app" type="radio" value="d">
+			<div class="size-8 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft peer-checked/state:before:shadow-neu-inset-xs"></div>
+			<span class="ml-4 font-karla opacity-60 transition-all group-hover/label:translate-x-2 group-hover/label:opacity-100 peer-checked/state:translate-x-2 peer-checked/state:opacity-100 peer-focus/state:opacity-100">all of the above</span>
 		</label>
 	</div>
 </div>

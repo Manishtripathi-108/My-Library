@@ -13,10 +13,10 @@ export default {
     theme: {
         extend: {
             animation: {
-                'auth-slide-top': 'auth-slide-top 0.3s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
-                'auth-slide-bottom': 'auth-slide-bottom 0.3s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
-                'auth-scale-up-center': 'auth-scale-up-center 0.4s cubic-bezier(0.18,0.89,0.32,1.27) forwards',
-                'auth-scale-down-center': 'auth-scale-down-center 0.4s ease-out forwards',
+                'auth-slide-top': 'auth-slide-top 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-slide-bottom': 'auth-slide-bottom 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-scale-up-center': 'auth-scale-up-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-scale-down-center': 'auth-scale-down-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
             },
             keyframes: {
                 'auth-slide-top': {

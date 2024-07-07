@@ -16,7 +16,7 @@
 		<a class="neu-btn" href="{{ route('order-confirmation') }}">Order Confirm</a>
 
 		{{-- Auth Page --}}
-		<a class="neu-btn" href="{{ route('auth.page-1') }}">Auth Page</a>
+		<a class="neu-btn" href="{{ route('auth.login-signup') }}">Auth Page</a>
 
 		{{-- Cards --}}
 		<a class="neu-btn" href="{{ route('cards') }}">Cards</a>
