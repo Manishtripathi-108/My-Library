@@ -7,20 +7,22 @@
 
 	<x-grid title="Clocks">
 
-        {{-- Simple Clock --}}
+		{{-- Simple Clock --}}
 		<x-grid.item title="Simple Clock">
 			<div class="flex-center w-full">
 				<div class="size-80 flex-center text-secondary relative rounded-full border-2 border-light-primary text-xl shadow-neu-inset-md dark:border-dark-primary dark:shadow-neu-dark-inset-md [&>*:nth-child(3n)]:text-4xl [&>*:nth-child(3n)]:font-bold" id="clock">
 
 					@for ($i = 1; $i <= 12; $i++)
-						<div class="absolute h-[95%] font-playfair" id="{{ $i }}" style="transform: rotateZ({{ $i * 30 }}deg);">{{ $i }}</div>
+						<div class="absolute h-[95%]" id="{{ $i }}" style="transform: rotateZ({{ $i * 30 }}deg);">
+							<span class="inline-block font-playfair" style="transform: rotateZ(-{{ $i * 30 }}deg);">{{ $i }}</span>
+						</div>
 					@endfor
 
 				</div>
 			</div>
 		</x-grid.item>
 
-        {{-- Clock with Working Hands and image for dial--}}
+		{{-- Clock with Working Hands and image for dial --}}
 		<x-grid.item title="Clock with Working Hands and dial image">
 			<div class="flex-center w-full">
 				<div class="size-80 flex-center before:size-4 bg-clock rounded-full border-4 border-solid border-light-primary shadow-neu-inset-md before:z-50 before:rounded-full before:bg-dark-secondary dark:border-dark-primary dark:shadow-neu-dark-inset-md">
@@ -37,13 +39,15 @@
 			</div>
 		</x-grid.item>
 
-        {{-- Clock with Working Hands and Numbers --}}
+		{{-- Clock with Working Hands and Numbers --}}
 		<x-grid.item title="Clock with Working Hands and Numbers">
 			<div class="flex-center w-full">
 				<div class="size-80 before:size-4 flex-center text-secondary relative rounded-full border-4 border-solid border-light-primary text-xl shadow-neu-inset-md before:z-50 before:rounded-full before:bg-dark-secondary dark:border-dark-primary dark:shadow-neu-dark-inset-md [&>*:nth-child(3n)]:text-4xl [&>*:nth-child(3n)]:font-bold" id="clock">
 
 					@for ($i = 1; $i <= 12; $i++)
-						<div class="absolute h-[95%] font-playfair" id="{{ $i }}" style="transform: rotateZ({{ $i * 30 }}deg);">{{ $i }}</div>
+						<div class="absolute h-[95%]" id="{{ $i }}" style="transform: rotateZ({{ $i * 30 }}deg);">
+							<span class="inline-block font-playfair" style="transform: rotateZ(-{{ $i * 30 }}deg);">{{ $i }}</span>
+						</div>
 					@endfor
 
 					<div class="size-40 absolute">
