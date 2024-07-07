@@ -24,17 +24,17 @@
 
 			<form action="#">
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="text" placeholder="Username" required>
+					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="text" placeholder="Username" required>
 					<x-svg.user class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="email" placeholder="Email" required>
+					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="email" placeholder="Email" required>
 					<x-svg.mail class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="password" placeholder="Password" required>
+					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="password" placeholder="Password" required>
 					<x-svg.lock class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 
@@ -43,17 +43,17 @@
 				</div>
 				<h4 class="mt-4 font-karla text-lg tracking-wide text-gray-600">or Sign Up with social platforms</h4>
 				<div class="mt-2 flex w-full items-center justify-evenly text-white">
-					<button class="neu-btn outline-none rounded-full border-none bg-blue-400 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-blue-400 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
+					<button class="neu-btn hover:bg-primary active:bg-primary rounded-full border-none bg-blue-400 p-3 text-white shadow-neu-outset-sm outline-none hover:text-blue-400 dark:text-white dark:shadow-neu-dark-outset-sm">
 						<x-svg.twitter class="h-6 w-6" />
 					</button>
-					<button class="neu-btn outline-none rounded-full border-none bg-blue-600 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-blue-600 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
+					<button class="neu-btn hover:bg-primary active:bg-primary rounded-full border-none bg-blue-600 p-3 text-white shadow-neu-outset-sm outline-none hover:text-blue-600 dark:text-white dark:shadow-neu-dark-outset-sm">
 						<x-svg.facebook class="h-6 w-6" />
 					</button>
-					<button class="neu-btn outline-none rounded-full border-none bg-red-500 p-3 text-white dark:text-white shadow-neu-outset-sm hover:text-red-500 hover:bg-primary active:bg-primary dark:shadow-neu-dark-outset-sm">
+					<button class="neu-btn hover:bg-primary active:bg-primary rounded-full border-none bg-red-500 p-3 text-white shadow-neu-outset-sm outline-none hover:text-red-500 dark:text-white dark:shadow-neu-dark-outset-sm">
 						<x-svg.google class="h-6 w-6" />
 					</button>
 				</div>
-				
+
 				<div class="mt-2">
 					<a class="font-karla text-lg tracking-wide text-gray-600">Already have an account?</a>
 					<a class="font-karla text-lg tracking-wide text-blue-500" href="#">Sign In</a>
