@@ -14,26 +14,6 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.clock {
-    @apply size-80 flex-center shadow-neu-inset-md rounded-full border-4 border-solid border-light-primary before:content-[''] before:size-4 before:z-50 before:rounded-full before:bg-dark-secondary;
-    background: url("https://res.cloudinary.com/drymsmld5/image/upload/v1591030972/Codepen/Neumorphism%20Clock/clock-layout_ajtmw8.png")
-        center/contain no-repeat;
-}
-
-/* .hr::before {
-    @apply content-[""] absolute w-2 h-20 z-10 rounded-t-full
-    bg-light-secondary;
-}
-
-.mn::before {
-    @apply content-[""] absolute w-1 h-24 z-20 rounded-t-full bg-dark-secondary;
-}
-
-.sc::before {
-    @apply content-[""] absolute w-0.5 h-36 z-30 rounded-t-full
-    bg-dark-secondary;
-} */
-
 @layer components {
     .neu-badge {
         @apply text-secondary text-center border-[0.8px] border-[#ead2b6];
