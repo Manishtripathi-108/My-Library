@@ -28,12 +28,12 @@ export default {
                     '100%': { transform: 'translateY(160px)' },
                 },
                 'auth-scale-up-center': {
-                    '0%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden'},
-                    '100%': { transform: 'scale(1)', opacity: '1', visibility: 'visible'},
+                    '0%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
+                    '100%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
                 },
                 'auth-scale-down-center': {
-                    '0%': { transform: 'scale(1)', opacity: '1', visibility: 'visible'},
-                    '100%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden'},
+                    '0%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
+                    '100%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
                 }
             },
             backgroundImage: {
@@ -74,6 +74,7 @@ export default {
 
                 'neu-inset-xs': 'inset 2px 2px 5px #d6c4af, inset -2px -2px 5px #fffff1',
                 'neu-inset-sm': 'inset 4px 3px 3px 0px #dbc8b3, inset -2px -4px 4px 0px #ffffff',
+                'neu-inset-md': '#FFFFFF0D 0px -15px 15px 0px, #FFFFFF0D 0px -15px 15px 0px inset, #00000033 0px 15px 15px 0px, #00000021 0px 15px 15px 0px inset',
                 'neu-inset-lg': '-10px -10px 15px #fff9df, 10px 10px 15px #4c4c4c40, inset -10px -10px 15px #fff9df, inset 10px 10px 15px #4c4c4c40',
                 'neu-inset-xl': 'inset 6px 6px 12px #665d53, inset -6px -6px 12px #ffffff',
 
@@ -88,7 +89,8 @@ export default {
 
                 'neu-dark-inset-xs': 'inset 3px 3px 3px #000000, inset -3px -3px 3px #2e2e2e',
                 'neu-dark-inset-sm': 'inset 4px 3px 3px #000000, inset -2px -4px 4px #3d3d3d',
-                'neu-dark-inset-md': '-10px -10px 15px #ffe9d03b, 10px 10px 15px #000000, inset -10px -10px 15px #ffe9d03b, inset 10px 10px 15px #000000',
+                'neu-dark-inset-md': ' #000000E8 0px -15px 15px 0px, #0E0E0ED1 0px -15px 15px 0px inset, #060606 0px -15px 15px 0px, #101010E0 0px -15px 15px 0px inset',
+                'neu-dark-inset-lg': '-10px -10px 15px #ffe9d03b, 10px 10px 15px #000000, inset -10px -10px 15px #ffe9d03b, inset 10px 10px 15px #000000',
 
                 'neu-dark-outset-sm': '15px 5px 19px 7.5px rgba(0, 0, 0, 0.21), 0px 0px 21px rgba(255, 255, 255, 0.14), inset -3.5px 0 5px hsla(0, 0%, 3.015%, 0.18), inset 0 3.5px 5px hsla(0, 0%, 67.101%, 0.18), inset 3.5px 0 5px hsla(0, 0%, 82.985%, 0.18), inset 0 -3.5px 5px hsla(0, 0%, 3.015%, 0.18)',
                 'neu-dark-outset-md': '12px 10px 22px 7.5px rgba(0, 0, 0, 0.37), 0px 0px 32px rgba(255, 255, 255, 0.25), inset -3.5px 0 5px hsla(100, 0%, 11.15%, 0.32), inset 0 3.5px 5px hsla(100, 0%, 81.47%, 0.32), inset 3.5px 0 5px hsla(100, 0%, 88.86%, 0.32), inset 0 -3.5px 5px hsla(100, 0%, 11.15%, 0.32)',

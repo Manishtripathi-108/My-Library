@@ -69,4 +69,8 @@ Route::prefix('neumorphism')->group(function () {
     Route::get('/shadows', function () {
         return view('neumorphism.shadows');
     })->name('neumorphism.shadows');
+
+    Route::get('/clock', function () {
+        return view('neumorphism.clock');
+    })->name('neumorphism.clock');
 });

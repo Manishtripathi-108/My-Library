@@ -14,6 +14,26 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.clock {
+    @apply size-80 flex-center shadow-neu-inset-md rounded-full border-4 border-solid border-light-primary before:content-[''] before:size-4 before:z-50 before:rounded-full before:bg-dark-secondary;
+    background: url("https://res.cloudinary.com/drymsmld5/image/upload/v1591030972/Codepen/Neumorphism%20Clock/clock-layout_ajtmw8.png")
+        center/contain no-repeat;
+}
+
+/* .hr::before {
+    @apply content-[""] absolute w-2 h-20 z-10 rounded-t-full
+    bg-light-secondary;
+}
+
+.mn::before {
+    @apply content-[""] absolute w-1 h-24 z-20 rounded-t-full bg-dark-secondary;
+}
+
+.sc::before {
+    @apply content-[""] absolute w-0.5 h-36 z-30 rounded-t-full
+    bg-dark-secondary;
+} */
+
 @layer components {
     .neu-badge {
         @apply text-secondary text-center border-[0.8px] border-[#ead2b6];
@@ -77,10 +97,19 @@ html {
         @apply appearance-none rounded-full  border-8 border-light-secondary bg-primary outline-none flex items-center justify-center cursor-pointer size-52 shadow-neu-xl-soft checked:shadow-neu-inset-lg;
 
         /* dark mode */
-        @apply dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-md;
+        @apply dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-lg;
     }
 }
+
 @layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .grid-center {
+        @apply grid place-items-center;
+    }
+
     /*-- -------------------------------- text -------------------------------- */
     .text-primary {
         @apply text-light-text;
@@ -269,11 +298,7 @@ html {
 
     .pattern-dark-waves {
         background-color: #12121280;
-        background-image: radial-gradient(
-                circle at 0 0,
-                #303030,
-                #121212
-            ),
+        background-image: radial-gradient(circle at 0 0, #303030, #121212),
             repeating-radial-gradient(
                 circle at 0 0,
                 #303030,
@@ -303,6 +328,13 @@ html {
                 20px,
             linear-gradient(315deg, #30303055 25%, transparent 25%) 0px 0/ 20px 20px,
             linear-gradient(45deg, #303030 25%, #121212 25%) 0px 0/ 20px 20px;
+    }
+
+    .bg-clock {
+        background: url("https://res.cloudinary.com/drymsmld5/image/upload/v1591030972/Codepen/Neumorphism%20Clock/clock-layout_ajtmw8.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     /*-- -------------------------------- bg -------------------------------- */

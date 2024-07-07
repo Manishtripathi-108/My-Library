@@ -6,6 +6,15 @@
 	</x-slot>
 
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
+		{{-- ------------------------------ Clock ----------------------------- --}}
+		{{-- <x-grid title="Clock">
+
+			<x-grid.item title="Clock">
+				@include('neumorphism.clock')
+			</x-grid.item>
+
+		</x-grid> --}}
+
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
 		<x-grid title="Login & Signup">
 
