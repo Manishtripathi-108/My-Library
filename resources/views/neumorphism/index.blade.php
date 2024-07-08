@@ -63,11 +63,73 @@
 
 		</x-grid>
 
-		{{-- ------------------------------ Buttons ----------------------------- --}}
+		{{-- ------------------------------ Radio Buttons ----------------------------- --}}
 		<x-grid title="Radio Buttons">
 
 			<x-grid.item title="Radio Button">
 				@include('neumorphism.radio-btn')
+			</x-grid.item>
+
+		</x-grid>
+
+		{{-- ------------------------------ It is What it is ----------------------------- --}}
+		<x-grid title="It is What it is">
+
+			<x-grid.item title="Some Bars">
+
+				<div class="mt-6 flex flex-row">
+					<div class="-mt-24 flex h-72 w-2/3 justify-between gap-5 pb-2 pl-10">
+						<div class="flex flex-col justify-end">
+							<div class="flex h-32 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-24 w-full rounded-3xl bg-primary"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-primary"></div>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end">
+							<div class="flex h-28 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-16 w-full rounded-3xl bg-secondary"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-secondary"></div>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end">
+							<div class="flex h-52 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-44 w-full rounded-3xl bg-accent"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-accent"></div>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end">
+							<div class="flex h-36 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-24 w-full rounded-3xl bg-highlight"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-highlight"></div>
+							</div>
+						</div>
+						<div class="flex flex-col justify-end">
+							<div class="flex h-44 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-32 w-full rounded-3xl bg-dim"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-dim"></div>
+							</div>
+						</div>
+						{{-- <div class="flex flex-col justify-end">
+							<div class="flex h-32 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+								<div class="h-24 w-full rounded-3xl bg-green-700"></div>
+							</div>
+							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
+								<div class="h-5 w-5 rounded-full bg-green-700"></div>
+							</div>
+						</div> --}}
+					</div>
+				</div>
+
 			</x-grid.item>
 
 		</x-grid>
