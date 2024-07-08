@@ -66,6 +66,13 @@
 		// Add click event listener to the button
 		toggleDarkModeButton.addEventListener("click", toggleDarkMode);
 
+		// Add keyboard shortcut to toggle dark mode (Alt + X)
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "x" && e.altKey) {
+				toggleDarkMode();
+			}
+		});
+
 		// Check the localStorage and apply the mode
 		if (localStorage.getItem("darkMode") === "true" || !(darkMode in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches) {
 			document.documentElement.classList.add("dark");
