@@ -38,6 +38,10 @@
 				@include('neumorphism.product-card', ['type' => 4])
 			</x-grid.item>
 
+			<x-grid.item title="Checkout summary">
+				@include('neumorphism.product-card', ['type' => 5])
+			</x-grid.item>
+
 		</x-grid>
 
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}

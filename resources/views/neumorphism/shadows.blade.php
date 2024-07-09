@@ -44,7 +44,7 @@
 
 		{{-- Double Shadows --}}
 		<div class="p-4 shadow-neu-inset-md">
-			<div class="size-full flex-center rounded-2xl p-2 shadow-neu-lg">shadow-neu-inset-lg-soft & shadow-neu-lg-soft</div>
+			<div class="size-full flex-center rounded-2xl p-2 shadow-neu-lg">shadow-neu-inset-md & shadow-neu-lg</div>
 		</div>
 	</div>
 

@@ -164,9 +164,29 @@
 		</div>
 	@break
 
-	
+	{{-- Checkout Summary --}}
+	@case(5)
+		<div class="bg-primary border-light rounded-lg p-3 shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
+			<div class="rounded-lg border border-light-secondary p-4 font-medium shadow-neu-lg dark:border-dark-secondary dark:shadow-neu-dark-md">
+				<h3 class="text-primary font-playfair text-xl">Cart Summary</h3>
+				<ul class="mt-4">
+					<li class="text-secondary flex rounded-t-lg border border-b-0 border-light-secondary p-4 font-light dark:border-dark-secondary">
+						<span class="font-karla">Subtotal</span>
+						<span class="ml-auto font-karla">$398.00</span>
+					</li>
+					<li class="flex rounded-b-lg border border-light-secondary p-4 text-lg dark:border-dark-secondary">
+						<span class="font-karla">Total</span>
+						<span class="ml-auto font-karla">$398.00</span>
+					</li>
+				</ul>
+				<a class="neu-btn mb-4 mt-6 block font-karla" href="#">Proceed to Checkout</a>
+				<small class="text-secondary font-karla">Taxes may apply before placing an order.</small>
+			</div>
+		</div>
+	@break
 
 	{{-- Simple Product card --}}
+
 	@default
 		<div class="max-w-[350px] lg:w-full">
 			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
