@@ -6,15 +6,6 @@
 	</x-slot>
 
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
-		{{-- ------------------------------ Clock ----------------------------- --}}
-		{{-- <x-grid title="Clock">
-
-			<x-grid.item title="Clock">
-				@include('neumorphism.clock')
-			</x-grid.item>
-
-		</x-grid> --}}
-
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
 		<x-grid title="Login & Signup">
 
@@ -41,6 +32,10 @@
 
 			<x-grid.item class="md:col-span-3 lg:col-span-3" title="featured product item">
 				@include('neumorphism.product-card', ['type' => 3])
+			</x-grid.item>
+
+			<x-grid.item class="md:col-span-3 lg:col-span-3" title="Checkout Card">
+				@include('neumorphism.product-card', ['type' => 4])
 			</x-grid.item>
 
 		</x-grid>
@@ -81,42 +76,42 @@
 					<div class="-mt-24 flex h-72 w-2/3 justify-between gap-5 pb-2 pl-10">
 						<div class="flex flex-col justify-end">
 							<div class="flex h-32 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-								<div class="h-24 w-full rounded-3xl bg-primary"></div>
+								<div class="bg-primary h-24 w-full rounded-3xl"></div>
 							</div>
 							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
-								<div class="h-5 w-5 rounded-full bg-primary"></div>
+								<div class="bg-primary h-5 w-5 rounded-full"></div>
 							</div>
 						</div>
 						<div class="flex flex-col justify-end">
 							<div class="flex h-28 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-								<div class="h-16 w-full rounded-3xl bg-secondary"></div>
+								<div class="bg-secondary h-16 w-full rounded-3xl"></div>
 							</div>
 							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
-								<div class="h-5 w-5 rounded-full bg-secondary"></div>
+								<div class="bg-secondary h-5 w-5 rounded-full"></div>
 							</div>
 						</div>
 						<div class="flex flex-col justify-end">
 							<div class="flex h-52 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-								<div class="h-44 w-full rounded-3xl bg-accent"></div>
+								<div class="bg-accent h-44 w-full rounded-3xl"></div>
 							</div>
 							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
-								<div class="h-5 w-5 rounded-full bg-accent"></div>
+								<div class="bg-accent h-5 w-5 rounded-full"></div>
 							</div>
 						</div>
 						<div class="flex flex-col justify-end">
 							<div class="flex h-36 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-								<div class="h-24 w-full rounded-3xl bg-highlight"></div>
+								<div class="bg-highlight h-24 w-full rounded-3xl"></div>
 							</div>
 							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
-								<div class="h-5 w-5 rounded-full bg-highlight"></div>
+								<div class="bg-highlight h-5 w-5 rounded-full"></div>
 							</div>
 						</div>
 						<div class="flex flex-col justify-end">
 							<div class="flex h-44 flex-col items-center justify-end rounded-3xl shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-								<div class="h-32 w-full rounded-3xl bg-dim"></div>
+								<div class="bg-dim h-32 w-full rounded-3xl"></div>
 							</div>
 							<div class="mt-2 flex h-8 w-8 items-center justify-center rounded-full shadow-neu-xs dark:shadow-neu-dark-xs">
-								<div class="h-5 w-5 rounded-full bg-dim"></div>
+								<div class="bg-dim h-5 w-5 rounded-full"></div>
 							</div>
 						</div>
 						{{-- <div class="flex flex-col justify-end">
