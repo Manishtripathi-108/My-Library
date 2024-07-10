@@ -31,7 +31,6 @@
 	</div>
 
 	<div class="flex-center mt-10 p-10">
-		
 
 	</div>
 </x-app-layout>

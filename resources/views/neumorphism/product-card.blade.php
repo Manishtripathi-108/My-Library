@@ -3,9 +3,9 @@
 @switch($type)
 	{{-- Product without shadow --}}
 	@case(1)
-		<div class="max-w-[350px] lg:w-full">
+		<div class="max-w-[350px]">
 			<div class="overflow-hidden rounded-lg">
-				<img class="h-auto w-full rounded-lg border border-gray-300 dark:border-gray-500" src="{{ asset('images/products/watch.jpeg') }}" alt="" />
+				<img class="h-auto w-full rounded-lg border border-gray-300 dark:border-gray-700" src="{{ asset('images/products/watch.jpeg') }}" alt="" />
 
 				<h3 class="mt-3 font-semibold">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wide transition-colors duration-300" href="">
@@ -30,10 +30,10 @@
 
 	{{-- Product with Rating --}}
 	@case(2)
-		<div class="max-w-[350px] lg:w-full">
-			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
+		<div class="max-w-[350px]">
+			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
-				<div class="border-t border-gray-300 p-4 dark:border-gray-500">
+				<div class="border-t border-gray-300 p-4 dark:border-gray-700">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold" href="#">
 						Future Watch 2
 					</a>
@@ -64,8 +64,8 @@
 
 	{{-- featured product item --}}
 	@case(3)
-		<div class="max-w-[350px] md:max-w-fit lg:w-full">
-			<div class="flex flex-col break-words rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
+		<div class="max-w-[350px] md:max-w-fit lg:max-w-full">
+			<div class="flex flex-col break-words rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 				<div class="flex flex-col items-center md:flex-row">
 					<a class="w-full md:w-1/4" href="#">
 						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
@@ -120,8 +120,8 @@
 
 	{{-- Checkout card --}}
 	@case(4)
-		<div class="max-w-[350px] md:max-w-fit lg:w-full">
-			<div class="flex items-center gap-4 rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
+		<div class="max-w-[350px] md:max-w-full">
+			<div class="flex items-center gap-4 rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 
 				<a class="w-2/3 md:w-1/3" href="#">
 					<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
@@ -166,7 +166,7 @@
 
 	{{-- Checkout Summary --}}
 	@case(5)
-		<div class="bg-primary border-light rounded-lg p-3 shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
+		<div class="bg-primary rounded-lg p-3 shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
 			<div class="rounded-lg border border-light-secondary p-4 font-medium shadow-neu-lg dark:border-dark-secondary dark:shadow-neu-dark-md">
 				<h3 class="text-primary font-playfair text-xl">Cart Summary</h3>
 				<ul class="mt-4">
@@ -174,7 +174,7 @@
 						<span class="font-karla">Subtotal</span>
 						<span class="ml-auto font-karla">$398.00</span>
 					</li>
-					<li class="flex rounded-b-lg border border-light-secondary p-4 text-lg dark:border-dark-secondary">
+					<li class="text-primary flex rounded-b-lg border border-light-secondary p-4 text-lg dark:border-dark-secondary">
 						<span class="font-karla">Total</span>
 						<span class="ml-auto font-karla">$398.00</span>
 					</li>
@@ -185,13 +185,84 @@
 		</div>
 	@break
 
+	{{-- Checkout summary 2 --}}
+	@case(6)
+		<div class="max-w-[450px] md:max-w-full">
+			<div class="bg-primary break-words rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
+				<h3 class="text-primary mb-6 font-playfair text-xl">Items (2)</h3>
+
+				{{-- item --}}
+				<div class="mb-4 flex flex-wrap">
+					<a class="w-2/3 md:w-1/3" href="#">
+						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+					</a>
+
+					{{-- item details --}}
+					<div class="relative max-w-full flex-1 flex-grow px-4">
+						<a class="text-primary hover:text-accent font-playfair text-sm tracking-wider md:text-xl" href="">
+							Future Watch Series 0
+						</a>
+						<ul class="text-secondary mt-4 pl-3">
+							<li class="text-xs">Transport: Free transport</li>
+							<li class="text-xs">Return: 1 month</li>
+							<li class="text-xs">Warranty: 24 months</li>
+						</ul>
+					</div>
+				</div>
+
+				{{-- item --}}
+				<div class="mb-4 flex flex-wrap">
+					<a class="w-2/3 md:w-1/3" href="#">
+						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+					</a>
+
+					{{-- item details --}}
+					<div class="relative max-w-full flex-1 flex-grow px-4">
+						<a class="text-primary hover:text-accent font-playfair text-sm tracking-wider md:text-xl" href="">
+							Future Watch Series 0
+						</a>
+						<ul class="text-secondary mt-4 pl-3">
+							<li class="text-xs">Transport: Free transport</li>
+							<li class="text-xs">Return: 1 month</li>
+							<li class="text-xs">Warranty: 24 months</li>
+						</ul>
+					</div>
+				</div>
+
+				{{-- list & Btn --}}
+				<div class="flex-center flex-col">
+					<ul class="mt-3 flex w-full flex-col">
+						<li class="text-secondary flex rounded-t-md border border-dark-secondary px-6 py-3">
+							<span>Subtotal</span>
+							<span class="ml-auto">$398.00</span>
+						</li>
+						<li class="text-secondary flex border border-y-0 border-dark-secondary px-6 py-3">
+							<span>Tax</span>
+							<span class="ml-auto">$18.00</span>
+						</li>
+						<li class="text-primary flex rounded-b border border-dark-secondary px-6 py-3 font-playfair font-medium">
+							<span>Total</span>
+							<span class="ml-auto">$416.00</span>
+						</li>
+					</ul>
+
+					<a class="neu-btn bg-primary mb-3 mt-4 inline-block w-full select-none px-3 py-1" href="#">Place Order</a>
+					<div class="text-secondary text-xs">
+						By placing the order you are confirming that you are over 16 years of age and you agree with our
+						<a class="text-highlight hover:text-accent font-karla" href="#">Terms and Conditions</a>.
+					</div>
+				</div>
+			</div>
+		</div>
+	@break
+
 	{{-- Simple Product card --}}
 
 	@default
 		<div class="max-w-[350px] lg:w-full">
-			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-500 dark:shadow-neu-dark-md">
+			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
-				<div class="border-t border-gray-300 p-4 dark:border-gray-500">
+				<div class="border-t border-gray-300 p-4 dark:border-gray-700">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wider" href="#">Future Watch</a>
 					<div class="text-md mt-2 font-karla text-gray-600">₹7999.00</div>
 				</div>
