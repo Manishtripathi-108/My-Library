@@ -51,6 +51,11 @@
 				@include('neumorphism.icons')
 			</x-grid.item>
 
+			{{-- Hamburger --}}
+			<x-grid.item title="hamburger">
+				@include('neumorphism.icons', ['type' => 1])
+			</x-grid.item>
+
 		</x-grid>
 
 		{{-- ------------------------------ Switches ----------------------------- --}}
