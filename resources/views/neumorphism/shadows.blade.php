@@ -1,18 +1,4 @@
 <x-app-layout>
-
-	@pushOnce('styles')
-		<style>
-			.s-1 {
-				box-shadow: #ccb7ac 6px 6px 12px 0px, #ffffe5 -6px -6px 12px 0px;
-				;
-			}
-
-			.s-2 {
-				box-shadow: #ccb7ac 2px 2px 5px 0px inset, #ffffe5 -3px -3px 7px 0px inset;
-			}
-		</style>
-	@endPushOnce
-
 	{{-- Light Shadows --}}
 	<h2 class="bg-light-primary py-5 text-center font-playfair text-2xl font-bold tracking-wider text-light-text-secondary">
 		Light Shadows
@@ -58,6 +44,7 @@
 
 		{{-- Neumorphism Shadows dark --}}
 		<div class="shadow-neu-dark-xs">shadow-neu-dark-xs</div>
+		<div class="shadow-neu-dark-sm">shadow-neu-dark-sm</div>
 		<div class="shadow-neu-dark-md">shadow-neu-dark-md</div>
 		<div class="shadow-neu-dark-lg">shadow-neu-dark-lg</div>
 		<div class="shadow-neu-dark-xl">shadow-neu-dark-xl</div>
