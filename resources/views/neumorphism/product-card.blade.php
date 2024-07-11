@@ -257,7 +257,6 @@
 	@break
 
 	{{-- Simple Product card --}}
-
 	@default
 		<div class="max-w-[350px] lg:w-full">
 			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">

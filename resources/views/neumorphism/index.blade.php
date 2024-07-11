@@ -80,6 +80,15 @@
 
 		</x-grid>
 
+		{{-- ------------------------------ Tab ----------------------------- --}}
+		<x-grid title="Tab">
+
+			<x-grid.item title="Tab">
+				@include('neumorphism.tab')
+			</x-grid.item>
+
+		</x-grid>
+
 		{{-- ------------------------------ It is What it is ----------------------------- --}}
 		<x-grid title="It is What it is">
 
