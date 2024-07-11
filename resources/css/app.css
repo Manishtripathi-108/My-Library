@@ -79,6 +79,19 @@ html {
         /* dark mode */
         @apply dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-lg;
     }
+
+    /*-- -------------------------------- neu-inset-input-with-icon -------------------------------- */
+    .neu-inset-icon-input-container {
+        @apply flex w-full items-center rounded-lg border border-light-secondary dark:border-dark-secondary;
+    }
+
+    .neu-inset-icon-input-icon {
+        @apply size-10 text-secondary border-r border-light-secondary px-2 py-1 dark:border-dark-secondary;
+    }
+
+    .neu-inset-icon-input {
+        @apply bg-primary active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-primary active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary w-full appearance-none rounded-r-lg border-none px-4 py-2 font-karla shadow-neu-inset-md placeholder:tracking-wide dark:shadow-neu-dark-inset-md;
+    }
 }
 
 @layer utilities {
