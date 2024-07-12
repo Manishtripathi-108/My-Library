@@ -1,4 +1,4 @@
-@props(['title' => '', 'isNeumorphism' => false, 'htmlCode' => '', 'cssCode' => ''])
+@props(['title' => '', 'isNeumorphism' => false, 'htmlCode' => $slot, 'cssCode' => ''])
 
 <div x-data="{ code_open: false }" {{ $attributes->class(['col-span-1 w-full mt-10 border-b border-gray-600 pb-10', 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm p-4' => $isNeumorphism]) }}>
 	<h3 class="text-secondary mb-8 font-alegreya text-2xl font-bold tracking-wider">
