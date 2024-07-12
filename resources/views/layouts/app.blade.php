@@ -25,6 +25,7 @@
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 		@import url("https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:700,400%7CKarla:700,400%7CKarla:700,700");
+		@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap")
 	</style>
 
 	<!-- Scripts & Styles -->

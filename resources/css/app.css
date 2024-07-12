@@ -95,6 +95,21 @@ html {
 }
 
 @layer utilities {
+    .scrollbar-thin {
+        &::-webkit-scrollbar {
+            width: 4px; /* Set the width of the scrollbar */
+            height: 4px; /* Set the height of the scrollbar for vertical scrollbar */ 
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #888; /* Set the color of the scrollbar thumb */
+            border-radius: 10px; /* Set the border radius of the scrollbar thumb */
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Set the color of the scrollbar thumb on hover */
+        }
+    }
+
+    /*-- -------------------------------- flex & grid -------------------------------- */
     .flex-center {
         @apply flex justify-center items-center;
     }

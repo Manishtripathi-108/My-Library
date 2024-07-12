@@ -4,7 +4,7 @@
 		@include('neumorphism.side-nav')
 
 		{{-- Content --}}
-		<div class="h-svh flex w-full flex-col flex-wrap gap-x-6 gap-y-10 scrollbar-thin overflow-y-auto py-10 pr-6">
+		<div class="h-svh scrollbar-thin overflow-y-auto">
 			<x-slot name="header">
 				<h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-dark-text">
 					{{ __('Neumorphism UI') }}
@@ -36,11 +36,11 @@
 						@include('neumorphism.product-card', ['type' => 2])
 					</x-grid.item>
 
-					<x-grid.item class="md:col-span-3 lg:col-span-3" title="featured product item">
+					<x-grid.item title="featured product item">
 						@include('neumorphism.product-card', ['type' => 3])
 					</x-grid.item>
 
-					<x-grid.item class="md:col-span-3 lg:col-span-3" title="Checkout Card">
+					<x-grid.item title="Checkout Card">
 						@include('neumorphism.product-card', ['type' => 4])
 					</x-grid.item>
 
@@ -159,5 +159,8 @@
 
 			</div>
 		</div>
+
+		@include('neumorphism.side-nav')
+
 	</div>
 </x-app-layout>

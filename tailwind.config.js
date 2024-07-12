@@ -103,6 +103,7 @@ export default {
                 poppins: ['Poppins', 'sans-serif'],
                 playfair: ['"Playfair Display"', 'Georgia', 'serif'],
                 karla: ['Karla', 'Arial', 'sans-serif'],
+                alegreya: ['Alegreya', 'serif'],
             },
         },
     },
