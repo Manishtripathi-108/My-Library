@@ -47,7 +47,7 @@ export default {
                     accent: "#44CCFF",
                     highlight: "#B1AFFF",
                     text: "#1B1B1B",
-                    'text-secondary': '#555555',
+                    'text-secondary': '#767676',
                     'text-tertiary': '#6f7378',
                 },
                 dark: {

@@ -25,7 +25,7 @@
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 		@import url("https://fonts.googleapis.com/css?family=Karla:400,700%7CPlayfair+Display:700,400%7CKarla:700,400%7CKarla:700,700");
-		@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap")
+		@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
 	</style>
 
 	<!-- Scripts & Styles -->
@@ -33,7 +33,8 @@
 	@stack('styles')
 </head>
 
-<body class="bg-primary font-sans antialiased">
+<body class="bg-primary scrollbar-thin font-sans antialiased">
+	{{-- Nav & Header --}}
 	<div class="bg-primary">
 		<livewire:layout.navigation />
 
@@ -47,10 +48,26 @@
 		@endif
 	</div>
 
-	{{-- Page Content --}}
-	<main>
-		{{ $slot }}
-	</main>
+	<div class="flex w-full justify-normal gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
+		{{-- Sidenav --}}
+		@if (isset($leftSidenav))
+			<nav class="scrollbar-thin sticky top-0 ml-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="leftSidenav">
+				{{ $leftSidenav }}
+			</nav>
+		@endif
+
+		{{-- Page Content --}}
+		<main class="{{ isset($leftSidenav) ? 'md:w-2/3' : '' }} w-full">
+			{{ $slot }}
+		</main>
+
+		{{-- Right Sidenav --}}
+		@if (isset($rightSidenav))
+			<nav class="scrollbar-thin sticky top-0 mr-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="rightSidenav">
+				{{ $rightSidenav }}
+			</nav>
+		@endif
+	</div>
 
 	{{-- Dark Mode Toggle --}}
 	<script>
