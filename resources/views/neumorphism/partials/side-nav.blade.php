@@ -1,4 +1,4 @@
-<nav class="bg-primary ml-10 mt-2 h-dvh px-2 py-5" id="nav-sidebar">
+<nav class="bg-primary h-dvh ml-10 mt-2 px-2 py-5" id="nav-sidebar">
 
 	@php
 		$currentUrl = url()->current();

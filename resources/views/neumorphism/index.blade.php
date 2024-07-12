@@ -1,7 +1,7 @@
 <x-app-layout>
 	<div class="flex w-full justify-normal gap-5">
 		{{-- Sidebar --}}
-		@include('neumorphism.side-nav')
+		@include('neumorphism.partials.side-nav')
 
 		{{-- Content --}}
 		<div class="h-svh scrollbar-thin overflow-y-auto">
@@ -48,7 +48,7 @@
 						@include('neumorphism.product-card', ['type' => 5])
 					</x-grid.item>
 
-					<x-grid.item title="Checkout summary">
+					<x-grid.item title="Checkout summary 2">
 						@include('neumorphism.product-card', ['type' => 6])
 					</x-grid.item>
 
@@ -160,7 +160,53 @@
 			</div>
 		</div>
 
-		@include('neumorphism.side-nav')
+		<nav class="bg-primary h-dvh mr-10 mt-2 px-2 py-5">
+			<ul class="ml-4" id="right-sidenav">
+				{{-- to be filled by js --}}
+			</ul>
+		</nav>
 
 	</div>
+
+	@pushOnce('scripts')
+		<script>
+			const gridItems = document.querySelectorAll('.grid-items');
+			const navItems = document.querySelector('#right-sidenav');
+
+			gridItems.forEach((item) => {
+				const title = item.querySelector('h3').textContent;
+
+				item.id = title.toLowerCase().replace(/ /g, '-');
+
+				const li = document.createElement('li');
+				li.innerHTML = `
+					<a class="text-secondary hover:text-accent flex items-center justify-start px-3 py-1 font-karla text-sm text-nowrap tracking-wide transition-all" href="#${item.id}">
+						${title}
+					</a>
+				`;
+
+				navItems.appendChild(li);
+
+				li.addEventListener('click', () => {
+					item.scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+
+				item.addEventListener('click', () => {
+					li.scrollIntoView({
+						behavior: 'smooth'
+					});
+				});
+
+				item.addEventListener('mouseenter', () => {
+					li.classList.add('text-accent');
+				});
+
+				item.addEventListener('mouseleave', () => {
+					li.classList.remove('text-accent');
+				});
+			});
+		</script>
+	@endPushOnce
 </x-app-layout>
