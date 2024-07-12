@@ -1,10 +1,10 @@
 <x-app-layout>
-	<div class="flex w-full justify-normal gap-5">
+	<div class="flex w-full justify-normal gap-5" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
 		{{-- Sidebar --}}
 		@include('neumorphism.partials.side-nav')
 
 		{{-- Content --}}
-		<div class="h-svh scrollbar-thin overflow-y-auto">
+		<div class="">
 			<x-slot name="header">
 				<h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-dark-text">
 					{{ __('Neumorphism UI') }}
@@ -160,15 +160,85 @@
 			</div>
 		</div>
 
-		<nav class="bg-primary h-dvh mr-10 mt-2 px-2 py-5">
+		<nav class="bg-primary h-dvh scrollbar-thin min-w-fit sticky top-0 mr-5 mt-2 overflow-y-auto px-2 py-5">
 			<ul class="ml-4" id="right-sidenav">
-				{{-- to be filled by js --}}
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#signup-form" @click.prevent="scrollToComponent('#signup-form')">
+						Signup Form
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#simple-card" @click.prevent="scrollToComponent('#simple-card')">
+						Simple Card
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#product-without-shadow" @click.prevent="scrollToComponent('#product-without-shadow')">
+						Product Without Shadow
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#product-with-rating" @click.prevent="scrollToComponent('#product-with-rating')">
+						Product With Rating
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#featured-product-item" @click.prevent="scrollToComponent('#featured-product-item')">
+						Featured Product Item
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#checkout-card" @click.prevent="scrollToComponent('#checkout-card')">
+						Checkout Card
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#checkout-summary" @click.prevent="scrollToComponent('#checkout-summary')">
+						Checkout Summary
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#checkout-summary-2" @click.prevent="scrollToComponent('#checkout-summary-2')">
+						Checkout Summary 2
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#color-change-icons" @click.prevent="scrollToComponent('#color-change-icons')">
+						Color Change Icons
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#hamburger" @click.prevent="scrollToComponent('#hamburger')">
+						Hamburger
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#switch" @click.prevent="scrollToComponent('#switch')">
+						Switch
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#radio-button" @click.prevent="scrollToComponent('#radio-button')">
+						Radio Button
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#tab" @click.prevent="scrollToComponent('#tab')">
+						Tab
+					</a>
+				</li>
+				<li>
+					<a class="text-secondary hover:text-accent text-nowrap flex items-center justify-start px-3 py-1 font-karla text-sm tracking-wide transition-all" href="#some-bars" @click.prevent="scrollToComponent('#some-bars')">
+						Some Bars
+					</a>
+				</li>
 			</ul>
+
 		</nav>
 
 	</div>
 
-	@pushOnce('scripts')
+	{{-- @pushOnce('scripts')
 		<script>
 			const gridItems = document.querySelectorAll('.grid-items');
 			const navItems = document.querySelector('#right-sidenav');
@@ -186,27 +256,7 @@
 				`;
 
 				navItems.appendChild(li);
-
-				li.addEventListener('click', () => {
-					item.scrollIntoView({
-						behavior: 'smooth'
-					});
-				});
-
-				item.addEventListener('click', () => {
-					li.scrollIntoView({
-						behavior: 'smooth'
-					});
-				});
-
-				item.addEventListener('mouseenter', () => {
-					li.classList.add('text-accent');
-				});
-
-				item.addEventListener('mouseleave', () => {
-					li.classList.remove('text-accent');
-				});
 			});
 		</script>
-	@endPushOnce
+	@endPushOnce --}}
 </x-app-layout>
