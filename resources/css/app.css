@@ -30,17 +30,19 @@ html {
         @apply dark:border-[#353535] dark:shadow-neu-dark-xs;
     }
 
-    .neu-btn:active {
+    .neu-btn.active,
+    x .neu-btn:active {
         @apply text-primary shadow-neu-inset-sm;
 
         /* dark mode*/
         @apply dark:shadow-neu-dark-inset-xs;
     }
 
-    .neu-btn:hover,
-    .neu-btn:focus {
+    .neu-btn:hover:not(.active),
+    .neu-btn:focus:not(.active) {
         @apply text-primary transform scale-105;
     }
+
     /*-- -------------------------------- neu-icon-btn -------------------------------- */
     .neu-icon-btn {
         @apply flex justify-center items-center gap-2 text-sm;
@@ -98,7 +100,7 @@ html {
     .scrollbar-thin {
         &::-webkit-scrollbar {
             width: 4px; /* Set the width of the scrollbar */
-            height: 4px; /* Set the height of the scrollbar for vertical scrollbar */ 
+            height: 4px; /* Set the height of the scrollbar for vertical scrollbar */
         }
         &::-webkit-scrollbar-thumb {
             background: #888; /* Set the color of the scrollbar thumb */
