@@ -51,7 +51,7 @@
 	<div class="flex w-full justify-normal gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
 		{{-- Sidenav --}}
 		@if (isset($leftSidenav))
-			<nav class="scrollbar-thin sticky top-0 ml-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="leftSidenav">
+			<nav class="scrollbar-thin sticky top-0 ml-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="left-Sidenav">
 				{{ $leftSidenav }}
 			</nav>
 		@endif
@@ -63,7 +63,7 @@
 
 		{{-- Right Sidenav --}}
 		@if (isset($rightSidenav))
-			<nav class="scrollbar-thin sticky top-0 mr-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="rightSidenav">
+			<nav class="scrollbar-thin sticky top-0 mr-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="right-sidenav" x-data="sidebarNavigation" @scroll.window="updateActiveId">
 				{{ $rightSidenav }}
 			</nav>
 		@endif
@@ -97,6 +97,31 @@
 		} else {
 			document.documentElement.classList.remove("dark");
 		}
+	</script>
+
+	{{-- AlpineJS --}}
+	<script>
+		document.addEventListener('alpine:init', () => {
+			Alpine.data('sidebarNavigation', () => ({
+				activeId: '',
+				scrollToComponent(id) {
+					document.querySelector(id).scrollIntoView({
+						behavior: 'smooth'
+					});
+					this.activeId = id;
+				},
+				updateActiveId() {
+					const links = document.querySelectorAll('#right-sidenav a[href^="#"]');
+					links.forEach(link => {
+						const id = link.getAttribute('href');
+						const section = document.querySelector(id);
+						if (section.getBoundingClientRect().top <= window.innerHeight / 2 && section.getBoundingClientRect().bottom >= window.innerHeight / 2) {
+							this.activeId = id;
+						}
+					});
+				}
+			}));
+		});
 	</script>
 
 	@stack('scripts')
