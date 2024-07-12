@@ -7,14 +7,10 @@
 		<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Home</a>
 	</li>
 
-	<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 transition-all">
-		<a class="{{ $currentUrl == route('neumorphism') ? 'text-primary' : '' }}" href="{{ route('neumorphism') }}">Neumorphism</a>
-	</li>
-
 	<li class="text-secondary text-nowrap flex flex-col items-start justify-center px-3 py-1">
-		<a class="{{ $currentUrl == route('home') ? 'text-primary ' : '' }}" href="{{ route('home') }}">Components</a>
+		<a class="{{ $currentUrl == route('neumorphism') ? 'text-primary' : '' }}" href="{{ route('neumorphism') }}">Neumorphism</a>
 
-		<ul class="ml-2 mt-2">
+		<ul class="ml-2">
 			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Accordions</a>
 			</li>
