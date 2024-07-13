@@ -48,22 +48,22 @@
 		@endif
 	</div>
 
-	<div class="flex w-full justify-normal gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
+	<div class="flex w-full justify-normal md:gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
 		{{-- Sidenav --}}
 		@if (isset($leftSidenav))
-			<nav class="scrollbar-thin sticky top-0 ml-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="left-Sidenav">
+			<nav class="scrollbar-thin sticky top-0 ml-1 mt-2 hidden h-screen min-w-[16%] overflow-y-auto px-2 py-5 md:block lg:ml-5" id="left-Sidenav">
 				{{ $leftSidenav }}
 			</nav>
 		@endif
 
 		{{-- Page Content --}}
-		<main class="{{ isset($leftSidenav) ? 'md:w-2/3' : '' }} w-full">
+		<main class="{{ isset($leftSidenav) || isset($rightSidenav) ? 'md:w-2/3' : '' }} w-full">
 			{{ $slot }}
 		</main>
 
 		{{-- Right Sidenav --}}
 		@if (isset($rightSidenav))
-			<nav class="scrollbar-thin sticky top-0 mr-5 mt-2 h-screen w-1/6 overflow-y-auto px-2 py-5" id="right-sidenav" x-data="sidebarNavigation" @scroll.window="updateActiveId">
+			<nav class="scrollbar-thin sticky top-0 mr-1 mt-2 hidden h-screen min-w-[16%] overflow-y-auto px-2 py-5 sm:block lg:mr-5" id="right-sidenav" x-data="sidebarNavigation" @scroll.window="updateActiveId">
 				{{ $rightSidenav }}
 			</nav>
 		@endif

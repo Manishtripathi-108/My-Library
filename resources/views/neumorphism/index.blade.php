@@ -13,7 +13,7 @@
 	</x-slot>
 
 	{{-- Content --}}
-	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
+	<div class="flex flex-col items-center justify-center gap-y-5 p-5 md:px-2">
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
 		<x-grid title="Login & Signup">
 
@@ -163,7 +163,7 @@
 
 	{{-- Right Sidenav --}}
 	<x-slot name="rightSidenav">
-		<ul class="ml-4">
+		<ul class="lg:ml-4">
 			<x-sidenav-list>Signup Form</x-sidenav-list>
 			<x-sidenav-list>Simple Card</x-sidenav-list>
 			<x-sidenav-list>Product Without Shadow</x-sidenav-list>

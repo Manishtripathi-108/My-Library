@@ -2,92 +2,92 @@
 	$currentUrl = url()->current();
 @endphp
 
-<ul class="ml-4">
-	<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 transition-all">
+<ul>
+	<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 transition-all">
 		<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Home</a>
 	</li>
 
-	<li class="text-secondary text-nowrap flex flex-col items-start justify-center px-3 py-1">
+	<li class="text-secondary flex flex-col items-start justify-center px-3 py-1">
 		<a class="{{ $currentUrl == route('neumorphism') ? 'text-primary' : '' }}" href="{{ route('neumorphism') }}">Neumorphism</a>
 
-		<ul class="ml-2">
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+		<ul>
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Accordions</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Alerts</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Badges</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Cards</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Bootstrap Carousels</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Breadcrumbs</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Buttons</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">E-Commerce</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Forms</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Icon boxes</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Modals</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Navs</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Navbars</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Pagination</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Popovers</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tables</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tabs</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Toasts</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Timelines</a>
 			</li>
 
-			<li class="text-secondary hover:text-primary text-nowrap flex items-center justify-start px-3 py-1 text-xs transition-all">
+			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
 				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tooltips</a>
 			</li>
 
