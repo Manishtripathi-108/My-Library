@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JokeController;
+
+Route::get('/joke', [JokeController::class, 'getJoke']);
+Route::get('/jokes/{number}', [JokeController::class, 'getJokes']);
+Route::get('/joke/{category}', [JokeController::class, 'getJokeByCategory']);
+Route::get('/jokes/{category}/{number}', [JokeController::class, 'getJokesByCategory']);
+
 
 Route::get('/', function () {
     return view('welcome');

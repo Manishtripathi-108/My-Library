@@ -36,55 +36,70 @@
 			<!-- Form Container A: Create Account -->
 			<div class="bg-primary absolute left-[calc(100%-600px)] top-0 z-[100] flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="aContainer">
 				<form class="flex h-full w-full flex-col items-center justify-center" method="" action="" x-ref="aForm">
-					<h2 class="form_title text-primary text-3xl font-bold leading-[3]">Create Account</h2>
-					<div class="flex-center">
+					<h2 class="form_title text-primary mb-8 text-3xl font-bold">Create Account</h2>
+					<div class="flex-center text-primary">
 						<x-svg.lock class="size-7" />
 						<x-svg.lock class="size-7" />
 						<x-svg.lock class="size-7" />
 					</div>
-					<span class="mb-3 mt-8">or use email for registration</span>
-					<input class="bg-primary my-1 w-3/5 rounded-lg border-none py-2 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs" type="text" placeholder="Name">
-					<input class="bg-primary my-1 w-3/5 rounded-lg border-none py-2 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs" type="text" placeholder="Email">
-					<input class="bg-primary my-1 w-3/5 rounded-lg border-none py-2 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs" type="password" placeholder="Password">
-					<button class="neu-btn mt-3" @click.prevent="preventDefault">SIGN UP</button>
+					<span class="text-secondary mb-3 mt-8">or use email for registration</span>
+
+					@php
+						$class = 'bg-primary my-1 w-3/5 rounded-lg border-none py-3 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs dark:shadow-neu-dark-inset-xs';
+						$types = ['text', 'email', 'password'];
+						$placeholder = ['Name', 'Email', 'Password'];
+					@endphp
+					
+					@foreach ($types as $type)
+						<input class="{{ $class }}" type="{{ $type }}" placeholder="{{ $placeholder[$loop->index] }}">
+					@endforeach
+					
+					<button class="neu-btn mt-12" @click.prevent="preventDefault">SIGN UP</button>
 				</form>
 			</div>
 
 			<!-- Form Container B: Sign In -->
 			<div class="bg-primary absolute left-[calc(100%-600px)] top-0 z-0 flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="bContainer">
 				<form class="flex h-full w-full flex-col items-center justify-center" x-ref="bForm" method="" action="">
-					<h2 class="form_title text-primary text-3xl font-bold leading-[3]">Sign in to Website</h2>
-					<div class="flex-center">
+					<h2 class="form_title text-primary mb-8 text-3xl font-bold">Sign in to Website</h2>
+					<div class="flex-center text-primary">
 						<x-svg.lock class="size-7" />
 						<x-svg.lock class="size-7" />
 						<x-svg.lock class="size-7" />
 					</div>
-					<span class="mb-3 mt-8">or use your email account</span>
-					<input class="bg-primary my-1 w-3/5 rounded-lg border-none py-2 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs" type="text" placeholder="Email">
-					<input class="bg-primary my-1 w-3/5 rounded-lg border-none py-2 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs" type="password" placeholder="Password">
-					<a class="text-primary mt-6 border-b border-solid border-b-[#a0a5a8] text-[15px] leading-loose">Forgot your password?</a>
-					<button class="neu-btn mt-3" @click.prevent="preventDefault">SIGN IN</button>
+					<span class="text-secondary mb-3 mt-8">or use your email account</span>
+
+					@for ($i = 1; $i < 3; $i++)
+						<input class="{{ $class }}" type="{{ $types[$i] }}" placeholder="{{ $placeholder[$i] }}">
+					@endfor
+
+					<a class="text-primary mb-8 mt-6 border-b border-solid border-b-[#a0a5a8] text-[15px]">Forgot your password?</a>
+					<button class="neu-btn mt-12" @click.prevent="preventDefault">SIGN IN</button>
 				</form>
 			</div>
 
 			<!-- Switch Container -->
-			<div class="bg-primary absolute left-0 top-0 z-[200] flex h-full w-2/5 items-center justify-center overflow-hidden p-[50px] shadow-[4px_4px_10px_#d1d9e6,-4px_-4px_10px_#f9f9f9] transition-all duration-[1.25s]" x-ref="switchCtn">
+			<div class="bg-primary absolute left-0 top-0 z-[200] flex h-full w-2/5 items-center justify-center overflow-hidden p-[50px] shadow-neu-md-soft transition-all duration-[1.25s] dark:shadow-neu-dark-md" x-ref="switchCtn">
 				<!-- Background Circles for Animation -->
-				<div class="switch__circle bg-primary absolute bottom-[-60%] left-[-60%] h-[500px] w-[500px] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s]"></div>
-				<div class="switch__circle bg-primary size-[350px] absolute bottom-[-60%] left-[-60%] top-[-30%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s]"></div>
+				<div class="switch__circle bg-primary absolute bottom-[-60%] left-[-60%] h-[500px] w-[500px] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
+				<div class="switch__circle bg-primary size-[350px] absolute bottom-[-60%] left-[-60%] top-[-30%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
 
 				<!-- Switch Content 1: Sign In -->
 				<div class="px-13 absolute flex w-full flex-col items-center justify-center py-12 transition-all duration-[1.25s]" x-ref="switchC1">
-					<h2 class="switch__title text-3xl font-bold leading-[3] text-[#181818]">Welcome Back !</h2>
-					<p class="switch__description text-center text-sm leading-[1.6] tracking-[0.25px]">To keep connected with us please login with your personal info</p>
-					<button class="neu-btn mt-3" @click="changeForm">SIGN IN</button>
+					<h2 class="text-primary mb-8 text-3xl font-bold">Welcome Back !</h2>
+					<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
+						<x-joke />
+					</p>
+					<button class="neu-btn mt-12" @click="changeForm">SIGN IN</button>
 				</div>
 
 				<!-- Switch Content 2: Sign Up -->
 				<div class="px-13 invisible absolute flex w-full flex-col items-center justify-center py-12 opacity-0 transition-all duration-[1.25s]" x-ref="switchC2">
-					<h2 class="switch__title text-3xl font-bold leading-[3] text-[#181818]">Hello Friend !</h2>
-					<p class="switch__description text-center text-sm leading-[1.6] tracking-[0.25px]">Enter your personal details and start journey with us</p>
-					<button class="neu-btn mt-3" @click="changeForm">SIGN UP</button>
+					<h2 class="text-primary mb-8 text-3xl font-bold">Hello Friend !</h2>
+					<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
+						<x-joke />
+					</p>
+					<button class="neu-btn mt-12" @click="changeForm">SIGN UP</button>
 				</div>
 			</div>
 		</div>
