@@ -16,6 +16,7 @@ export default {
                 'auth-slide-bottom': 'auth-slide-bottom 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-scale-up-center': 'auth-scale-up-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-scale-down-center': 'auth-scale-down-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-slider': 'auth-slider 1.25s',
             },
             keyframes: {
                 'auth-slide-top': {
@@ -33,7 +34,11 @@ export default {
                 'auth-scale-down-center': {
                     '0%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
                     '100%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
-                }
+                },
+                'auth-slider': {
+                    '0%, 10%, 100%': { width: '400px' },
+                    '30%, 50%': { width: '500px' },
+                },
             },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
