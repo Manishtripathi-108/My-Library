@@ -21,6 +21,10 @@
 				@include('neumorphism.login-signup-form', ['type' => 'signup'])
 			</x-grid.item>
 
+			<x-grid.item title="Login & Signup Form">
+				@include('neumorphism.login-signup-form', ['type' => 'log-sign'])
+			</x-grid.item>
+
 		</x-grid>
 
 		{{-- ------------------------------ Product Cards ----------------------------- --}}
@@ -165,6 +169,7 @@
 	<x-slot name="rightSidenav">
 		<ul class="lg:ml-4">
 			<x-sidenav-list>Signup Form</x-sidenav-list>
+			<x-sidenav-list>Login & Signup Form</x-sidenav-list>
 			<x-sidenav-list>Simple Card</x-sidenav-list>
 			<x-sidenav-list>Product Without Shadow</x-sidenav-list>
 			<x-sidenav-list>Product With Rating</x-sidenav-list>
