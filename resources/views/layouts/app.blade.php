@@ -33,7 +33,7 @@
 	@stack('styles')
 </head>
 
-<body class="bg-primary scrollbar-thin font-sans antialiased">
+<body class="bg-primary scrollbar-thin font-sans antialiased" x-data="{ sidenav_open: false }">
 	{{-- Nav & Header --}}
 	<div class="bg-primary">
 		<livewire:layout.navigation />
@@ -48,10 +48,10 @@
 		@endif
 	</div>
 
-	<div class="flex w-full justify-normal md:gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
+	<div class="relative flex w-full justify-normal md:gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
 		{{-- Sidenav --}}
 		@if (isset($leftSidenav))
-			<nav class="scrollbar-thin sticky top-0 ml-1 mt-2 hidden h-screen min-w-[16%] overflow-y-auto px-2 py-5 md:block lg:ml-5" id="left-Sidenav">
+			<nav class="scrollbar-thin bg-primary top-0 ml-1 mt-2 hidden h-screen w-2/3 overflow-y-auto px-2 py-5 sm:w-1/2 md:block md:w-[16%] lg:ml-5" id="left-Sidenav" :class="{ 'block absolute z-10': sidenav_open, 'hidden sticky': !sidenav_open }">
 				{{ $leftSidenav }}
 			</nav>
 		@endif

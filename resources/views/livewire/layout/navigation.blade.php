@@ -20,6 +20,16 @@ new class extends Component {
 		<div class="flex h-16 justify-between">
 			<div class="flex">
 
+				<!-- Hamburger -->
+				<div class="flex items-center md:hidden">
+					<button class="hover:bg-secondary hover:text-secondary focus:text-secondary text-primary focus:bg-primary inline-flex items-center justify-center rounded-md p-2 transition duration-150 ease-in-out focus:outline-none" @click="sidenav_open = ! sidenav_open">
+						<svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+							<path class="inline-flex" :class="{ 'hidden': sidenav_open, 'inline-flex': !sidenav_open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							<path class="hidden" :class="{ 'hidden': !sidenav_open, 'inline-flex': sidenav_open }" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+					</button>
+				</div>
+
 				<!-- Dark Mode Toggle -->
 				<div class="mx-3 flex shrink-0 items-center sm:mr-10">
 					<button class="size-12 flex cursor-pointer appearance-none items-center justify-center rounded-full shadow-neu-sun outline-none dark:border-dark-secondary dark:bg-dark-primary dark:shadow-neu-moon" id="toggleDarkMode" title="Toggle Dark Mode">
