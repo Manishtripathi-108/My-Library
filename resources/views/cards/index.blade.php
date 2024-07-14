@@ -27,13 +27,13 @@
 				@include('cards.icon-card')
 			</x-grid.item>
 
-			<x-grid.item title="Copy Page Card Component">
-				@include('cards.copy-page-card')
+			<x-grid.item title="Notebook Page Card Component">
+				@include('cards.notebook-page-card')
 			</x-grid.item>
 
-		</x-grid>
-
-		<x-grid title="Card Hover Components">
+			<x-grid.item title="Notebook Page Card Component 2">
+				@include('cards.notebook-page-card', ['type' => 1])
+			</x-grid.item>
 
 			<x-grid.item title="Reflect Hover Card Component">
 				@include('cards.reflect-hover')
@@ -49,7 +49,8 @@
 			<x-sidenav-list>Image Card Component</x-sidenav-list>
 			<x-sidenav-list>Badge Card Component</x-sidenav-list>
 			<x-sidenav-list>Icon Card Component</x-sidenav-list>
-			<x-sidenav-list>Copy Page Card Component</x-sidenav-list>
+			<x-sidenav-list>Notebook Page Card Component</x-sidenav-list>
+			<x-sidenav-list>Notebook Page Card Component 2</x-sidenav-list>
 			<x-sidenav-list>Reflect Hover Card Component</x-sidenav-list>
 		</ul>
 	</x-slot>
