@@ -55,16 +55,19 @@ Route::prefix('auth')->group(function () {
     })->name('auth.login-signup');
 });
 
+// Route for the Components
+Route::prefix('components')->group(function () {
 
-// Route for the cards
-Route::get('/cards', function () {
-    return view('cards.index');
-})->name('cards');
+    // Route for the cards
+    Route::get('/cards', function () {
+        return view('cards.index');
+    })->name('cards');
 
-// Route for the buttons
-Route::get('/buttons', function () {
-    return view('buttons.index');
-})->name('buttons');
+    // Route for the buttons
+    Route::get('/buttons', function () {
+        return view('buttons.index');
+    })->name('buttons');
+});
 
 // Route for the neumorphism
 Route::prefix('neumorphism')->group(function () {

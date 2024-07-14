@@ -1,120 +1,72 @@
-@php
-	$currentUrl = url()->current();
-@endphp
-
-<ul>
+<div>
+	{{-- Home --}}
 	<x-sidenav-link :href="route('home')" :active="request()->routeIs('home')" wire:navigate>
 		{{ __('Home') }}
 	</x-sidenav-link>
 
-	{{-- <li class="text-secondary flex flex-col items-start justify-center px-3 py-1">
-		<a class="{{ $currentUrl == route('neumorphism') ? 'text-primary' : '' }}" href="{{ route('neumorphism') }}">Neumorphism</a>
+	{{-- Auth --}}
+	<x-sidenav-link :href="route('auth.login-signup')" :active="request()->routeIs('auth.login-signup')" wire:navigate>
+		{{ __('Auth Page') }}
+	</x-sidenav-link>
 
-		<ul>
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Accordions</a>
-			</li>
+	{{-- Neumorphism --}}
+	<div x-data="{ open: {{ request()->is('neumorphism*') ? 'true' : 'false' }} }">
+		<a class="cursor-pointer select-none px-3 py-1 transition-all" href="{{ route('neumorphism') }}" style="-webkit-tap-highlight-color: transparent;" wire:navigate :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+			{{ __('Neumorphism') }}
+		</a>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Alerts</a>
-			</li>
+		<div class="ml-2" x-show="open" x-transition>
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.shadows')" :active="request()->routeIs('neumorphism.shadows')" wire:navigate>
+				{{ __('Neumorphism Shadows') }}
+			</x-sidenav-link>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Badges</a>
-			</li>
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.clock')" :active="request()->routeIs('neumorphism.clock')" wire:navigate>
+				{{ __('Neumorphism Clock') }}
+			</x-sidenav-link>
+		</div>
+	</div>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Cards</a>
-			</li>
+	{{-- Components --}}
+	<div x-data="{ open: {{ request()->is('components/*') ? 'true' : 'false' }} }">
+		<span class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+			{{ __('Components') }}
+		</span>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Bootstrap Carousels</a>
-			</li>
+		<div class="ml-2" x-show="open" x-transition>
+			<x-sidenav-link class="text-xs" :href="route('cards')" :active="request()->routeIs('cards')" wire:navigate>
+				{{ __('Cards') }}
+			</x-sidenav-link>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Breadcrumbs</a>
-			</li>
+			<x-sidenav-link class="text-xs" :href="route('buttons')" :active="request()->routeIs('buttons')" wire:navigate>
+				{{ __('Buttons') }}
+			</x-sidenav-link>
+		</div>
+	</div>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Buttons</a>
-			</li>
+	{{-- BG-Pages --}}
+	<div x-data="{ open: {{ request()->is('pages/*') ? 'true' : 'false' }} }">
+		<span class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+			{{ __('Background Pages') }}
+		</span>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">E-Commerce</a>
-			</li>
+		<div class="ml-2" x-show="open" x-transition>
+			<x-sidenav-link class="text-xs" :href="route('book-page')" :active="request()->routeIs('book-page')" wire:navigate>
+				{{ __('Book') }}
+			</x-sidenav-link>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Forms</a>
-			</li>
+			<x-sidenav-link class="text-xs" :href="route('background-building')" :active="request()->routeIs('background-building')" wire:navigate>
+				{{ __('Background Building') }}
+			</x-sidenav-link>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Icon boxes</a>
-			</li>
+			<x-sidenav-link class="text-xs" :href="route('background-sunrise')" :active="request()->routeIs('background-sunrise')" wire:navigate>
+				{{ __('Background Sunrise') }}
+			</x-sidenav-link>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Modals</a>
-			</li>
+			<x-sidenav-link class="text-xs" :href="route('order-confirmation')" :active="request()->routeIs('order-confirmation')" wire:navigate>
+				{{ __('Order Confirm') }}
+			</x-sidenav-link>
+		</div>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Navs</a>
-			</li>
+	</div>
+</div>
 
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Navbars</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Pagination</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Popovers</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tables</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tabs</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Toasts</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Timelines</a>
-			</li>
-
-			<li class="text-secondary hover:text-primary flex items-center justify-start px-3 py-1 text-xs transition-all">
-				<a class="{{ $currentUrl == route('home') ? 'text-primary' : '' }}" href="{{ route('home') }}">Tooltips</a>
-			</li>
-
-		</ul>
-	</li> --}}
-</ul>
-
-{{-- <div x-data="{ open: false }" class="flex h-screen">
-    <div :class="open ? 'w-64' : 'w-20'" class="bg-gray-800 text-white transition-all duration-300">
-        <button @click="open = ! open" class="p-4 focus:outline-none">
-            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-        <div class="p-4" x-show="open" x-transition>
-            <ul>
-                <li class="mb-4"><a href="#" class="block p-2 hover:bg-gray-700">Dashboard</a></li>
-                <li class="mb-4"><a href="#" class="block p-2 hover:bg-gray-700">Profile</a></li>
-                <li class="mb-4"><a href="#" class="block p-2 hover:bg-gray-700">Settings</a></li>
-                <li class="mb-4"><a href="#" class="block p-2 hover:bg-gray-700">Logout</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="flex-1 p-10">
-        <!-- Main content goes here -->
-    </div>
-</div> --}}
