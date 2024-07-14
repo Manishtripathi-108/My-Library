@@ -18,6 +18,10 @@
 				@include('cards.icon-card')
 			</x-grid.item>
 
+			<x-grid.item title="Copy Page Card Component" isNeumorphism='true'>
+				@include('cards.copy-page-card')
+			</x-grid.item>
+
 		</x-grid>
 
 		<x-grid title="Card Hover Components">
