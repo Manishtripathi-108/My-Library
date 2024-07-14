@@ -18,91 +18,91 @@
 		<div class="ml-2" x-show="open" x-transition>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.accordions')" :active="request()->routeIs('neumorphism.accordions')" wire:navigate>
-				{{ __('Neumorphism Accordions') }}
+				{{ __('Accordions') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.alerts')" :active="request()->routeIs('neumorphism.alerts')" wire:navigate>
-				{{ __('Neumorphism Alerts') }}
+				{{ __('Alerts') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.badges')" :active="request()->routeIs('neumorphism.badges')" wire:navigate>
-				{{ __('Neumorphism Badges') }}
+				{{ __('Badges') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.cards')" :active="request()->routeIs('neumorphism.cards')" wire:navigate>
-				{{ __('Neumorphism Cards') }}
+				{{ __('Cards') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.bootstrap-carousels')" :active="request()->routeIs('neumorphism.bootstrap-carousels')" wire:navigate>
-				{{ __('Neumorphism Bootstrap Carousels') }}
+				{{ __('Bootstrap Carousels') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.breadcrumbs')" :active="request()->routeIs('neumorphism.breadcrumbs')" wire:navigate>
-				{{ __('Neumorphism Breadcrumbs') }}
+				{{ __('Breadcrumbs') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.buttons')" :active="request()->routeIs('neumorphism.buttons')" wire:navigate>
-				{{ __('Neumorphism Buttons') }}
+				{{ __('Buttons') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.clock')" :active="request()->routeIs('neumorphism.clock')" wire:navigate>
-				{{ __('Neumorphism Clock') }}
+				{{ __('Clock') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.e-commerce')" :active="request()->routeIs('neumorphism.e-commerce')" wire:navigate>
-				{{ __('Neumorphism E-Commerce') }}
+				{{ __('E-Commerce') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.forms')" :active="request()->routeIs('neumorphism.forms')" wire:navigate>
-				{{ __('Neumorphism Forms') }}
+				{{ __('Forms') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.icon-boxes')" :active="request()->routeIs('neumorphism.icon-boxes')" wire:navigate>
-				{{ __('Neumorphism Icon Boxes') }}
+				{{ __('Icon Boxes') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.modals')" :active="request()->routeIs('neumorphism.modals')" wire:navigate>
-				{{ __('Neumorphism Modals') }}
+				{{ __('Modals') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.navs')" :active="request()->routeIs('neumorphism.navs')" wire:navigate>
-				{{ __('Neumorphism Navs') }}
+				{{ __('Navs') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.navbars')" :active="request()->routeIs('neumorphism.navbars')" wire:navigate>
-				{{ __('Neumorphism Navbars') }}
+				{{ __('Navbars') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.pagination')" :active="request()->routeIs('neumorphism.pagination')" wire:navigate>
-				{{ __('Neumorphism Pagination') }}
+				{{ __('Paginations') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.popovers')" :active="request()->routeIs('neumorphism.popovers')" wire:navigate>
-				{{ __('Neumorphism Popovers') }}
+				{{ __('Popovers') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.shadows')" :active="request()->routeIs('neumorphism.shadows')" wire:navigate>
-				{{ __('Neumorphism Shadows') }}
+				{{ __('Shadows') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.tables')" :active="request()->routeIs('neumorphism.tables')" wire:navigate>
-				{{ __('Neumorphism Tables') }}
+				{{ __('Tables') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.tabs')" :active="request()->routeIs('neumorphism.tabs')" wire:navigate>
-				{{ __('Neumorphism Tabs') }}
+				{{ __('Tabs') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.toasts')" :active="request()->routeIs('neumorphism.toasts')" wire:navigate>
-				{{ __('Neumorphism Toasts') }}
+				{{ __('Toasts') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.timelines')" :active="request()->routeIs('neumorphism.timelines')" wire:navigate>
-				{{ __('Neumorphism Timelines') }}
+				{{ __('Timelines') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.tooltips')" :active="request()->routeIs('neumorphism.tooltips')" wire:navigate>
-				{{ __('Neumorphism Tooltips') }}
+				{{ __('Tooltips') }}
 			</x-sidenav-link>
 		</div>
 	</div>
