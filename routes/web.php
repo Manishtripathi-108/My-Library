@@ -69,18 +69,98 @@ Route::prefix('components')->group(function () {
     })->name('buttons');
 });
 
-// Route for the neumorphism
+// Route for the neumorphism components
 Route::prefix('neumorphism')->group(function () {
 
     Route::get('/', function () {
         return view('neumorphism.index');
     })->name('neumorphism');
 
-    Route::get('/shadows', function () {
-        return view('neumorphism.shadows');
-    })->name('neumorphism.shadows');
+    Route::get('/accordions', function () {
+        return view('neumorphism.accordions');
+    })->name('neumorphism.accordions');
+
+    Route::get('/alerts', function () {
+        return view('neumorphism.alerts');
+    })->name('neumorphism.alerts');
+
+    Route::get('/badges', function () {
+        return view('neumorphism.badges');
+    })->name('neumorphism.badges');
+
+    Route::get('/cards', function () {
+        return view('neumorphism.cards');
+    })->name('neumorphism.cards');
+
+    Route::get('/bootstrap-carousels', function () {
+        return view('neumorphism.bootstrap-carousels');
+    })->name('neumorphism.bootstrap-carousels');
+
+    Route::get('/breadcrumbs', function () {
+        return view('neumorphism.breadcrumbs');
+    })->name('neumorphism.breadcrumbs');
+
+    Route::get('/buttons', function () {
+        return view('neumorphism.buttons');
+    })->name('neumorphism.buttons');
 
     Route::get('/clock', function () {
         return view('neumorphism.clock');
     })->name('neumorphism.clock');
+
+    Route::get('/e-commerce', function () {
+        return view('neumorphism.e-commerce');
+    })->name('neumorphism.e-commerce');
+
+    Route::get('/forms', function () {
+        return view('neumorphism.forms');
+    })->name('neumorphism.forms');
+
+    Route::get('/icon-boxes', function () {
+        return view('neumorphism.icon-boxes');
+    })->name('neumorphism.icon-boxes');
+
+    Route::get('/modals', function () {
+        return view('neumorphism.modals');
+    })->name('neumorphism.modals');
+
+    Route::get('/navs', function () {
+        return view('neumorphism.navs');
+    })->name('neumorphism.navs');
+
+    Route::get('/navbars', function () {
+        return view('neumorphism.navbars');
+    })->name('neumorphism.navbars');
+
+    Route::get('/pagination', function () {
+        return view('neumorphism.pagination');
+    })->name('neumorphism.pagination');
+
+    Route::get('/popovers', function () {
+        return view('neumorphism.popovers');
+    })->name('neumorphism.popovers');
+
+    Route::get('/shadows', function () {
+        return view('neumorphism.shadows');
+    })->name('neumorphism.shadows');
+
+    Route::get('/tables', function () {
+        return view('neumorphism.tables');
+    })->name('neumorphism.tables');
+
+    Route::get('/tabs', function () {
+        return view('neumorphism.tabs');
+    })->name('neumorphism.tabs');
+
+    Route::get('/toasts', function () {
+        return view('neumorphism.toasts');
+    })->name('neumorphism.toasts');
+
+    Route::get('/timelines', function () {
+        return view('neumorphism.timelines');
+    })->name('neumorphism.timelines');
+
+    Route::get('/tooltips', function () {
+        return view('neumorphism.tooltips');
+    })->name('neumorphism.tooltips');
 });
