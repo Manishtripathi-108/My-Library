@@ -1,12 +1,15 @@
 @props(['title' => '', 'description' => ''])
 
-<section class="w-full">
+<section {{ $attributes->merge(['class' => 'w-full']) }}>
 	<h2 class="text-primary mb-3 font-playfair text-2xl font-bold tracking-wider">
 		{{ ucwords($title) }}
 	</h2>
-	<div class="text-secondary font-karla text-sm">
-		{{ $description }}
-	</div>
+
+	@if ($description != '')
+		<div class="text-secondary font-karla text-sm">
+			{{ $description }}
+		</div>
+	@endif
 
 	<div class="mb-2 grid place-items-center gap-4 p-3">
 
