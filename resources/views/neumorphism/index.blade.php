@@ -1,17 +1,5 @@
 <x-app-layout>
 
-	{{-- Header --}}
-	<x-slot name="header">
-		<h2 class="text-xl font-semibold leading-tight text-gray-800 dark:text-dark-text">
-			{{ __('Neumorphism UI') }}
-		</h2>
-	</x-slot>
-
-	{{-- Sidebar --}}
-	<x-slot name="leftSidenav">
-		@include('neumorphism.partials.side-nav')
-	</x-slot>
-
 	{{-- Content --}}
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5 md:px-2">
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}

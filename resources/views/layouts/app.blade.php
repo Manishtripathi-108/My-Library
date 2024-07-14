@@ -50,14 +50,12 @@
 
 	<div class="relative flex w-full justify-normal md:gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
 		{{-- Sidenav --}}
-		@if (isset($leftSidenav))
-			<nav class="scrollbar-thin bg-primary top-0 ml-1 mt-2 hidden h-screen w-2/3 overflow-y-auto px-2 py-5 sm:w-1/2 md:block md:w-[16%] lg:ml-5" id="left-Sidenav" :class="{ 'block absolute z-10': sidenav_open, 'hidden sticky': !sidenav_open }">
-				{{ $leftSidenav }}
-			</nav>
-		@endif
+		<nav class="scrollbar-thin bg-primary top-0 ml-1 mt-2 hidden h-screen w-2/3 overflow-y-auto px-2 py-5 sm:w-1/2 md:block md:w-[16%] lg:ml-5" id="left-Sidenav" :class="{ 'block absolute z-10': sidenav_open, 'hidden sticky': !sidenav_open }">
+			<livewire:layout.left-sidenav />
+		</nav>
 
 		{{-- Page Content --}}
-		<main class="{{ isset($leftSidenav) || isset($rightSidenav) ? 'md:w-2/3' : '' }} w-full">
+		<main class="w-full md:w-2/3">
 			{{ $slot }}
 		</main>
 
