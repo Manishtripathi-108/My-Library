@@ -60,6 +60,14 @@
 
 		</x-grid>
 
+		{{-- ------------------------------ Cards ----------------------------- --}}
+		<x-grid title="Cards">
+			<x-grid.item title="Profile Card">
+				@include('neumorphism.cards')
+			</x-grid.item>
+
+		</x-grid>
+
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}
 		<x-grid title="Buttons & Icons">
 
@@ -177,6 +185,7 @@
 			<x-sidenav-list>Checkout Card</x-sidenav-list>
 			<x-sidenav-list>Checkout Summary</x-sidenav-list>
 			<x-sidenav-list>Checkout Summary 2</x-sidenav-list>
+			<x-sidenav-list>Profile Card</x-sidenav-list>
 			<x-sidenav-list>Color Change Icons</x-sidenav-list>
 			<x-sidenav-list>Hamburger</x-sidenav-list>
 			<x-sidenav-list>Switch</x-sidenav-list>

@@ -31,7 +31,7 @@ html {
     }
 
     .neu-btn.active,
-    x .neu-btn:active {
+    .neu-btn:active {
         @apply text-primary shadow-neu-inset-sm;
         color: #767676;
         /* dark mode*/
