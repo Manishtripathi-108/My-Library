@@ -41,4 +41,16 @@
 
 		</x-grid>
 	</div>
+
+	{{-- Right Sidenav --}}
+	<x-slot name="rightSidenav">
+		<ul class="lg:ml-4">
+			<x-sidenav-list>Basic Card Component</x-sidenav-list>
+			<x-sidenav-list>Image Card Component</x-sidenav-list>
+			<x-sidenav-list>Badge Card Component</x-sidenav-list>
+			<x-sidenav-list>Icon Card Component</x-sidenav-list>
+			<x-sidenav-list>Copy Page Card Component</x-sidenav-list>
+			<x-sidenav-list>Reflect Hover Card Component</x-sidenav-list>
+		</ul>
+	</x-slot>
 </x-app-layout>

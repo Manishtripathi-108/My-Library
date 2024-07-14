@@ -1,9 +1,4 @@
 <x-app-layout title="Welcome Page">
-	<x-slot name="header">
-		<h2 class="text-secondary text-xl font-semibold leading-tight dark:text-dark-text">
-			{{ __('Welcome To Home Page') }}
-		</h2>
-	</x-slot>
 	<div class="*:flex *:text-xs *:items-center *:justify-center m-5 grid grid-cols-4 gap-4 md:grid-cols-8">
 		{{-- Auth --}}
 		<a class="neu-btn" href="{{ route('register') }}">Register</a>

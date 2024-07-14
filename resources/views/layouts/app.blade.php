@@ -34,18 +34,9 @@
 </head>
 
 <body class="bg-primary scrollbar-thin font-sans antialiased" x-data="{ sidenav_open: false }">
-	{{-- Nav & Header --}}
+	{{-- Nav --}}
 	<div class="bg-primary">
 		<livewire:layout.navigation />
-
-		<!-- Page Heading -->
-		@if (isset($header))
-			<header class="bg-primary shadow dark:shadow-dark-secondary">
-				<div class="*:font-alegreya *:tracking-wide mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-					{{ $header }}
-				</div>
-			</header>
-		@endif
 	</div>
 
 	<div class="relative flex w-full justify-normal md:gap-2" x-data="{ scrollToComponent(id) { document.querySelector(id).scrollIntoView({ behavior: 'smooth' }); } }">
