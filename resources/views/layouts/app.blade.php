@@ -69,7 +69,7 @@
 		@endif
 	</div>
 
-	{{-- Dark Mode Toggle --}}
+	{{-- ------------------------Dark Mode Toggle------------------------ --}}
 	<script>
 		const toggleDarkModeButton = document.getElementById("toggleDarkMode");
 
@@ -99,7 +99,7 @@
 		}
 	</script>
 
-	{{-- AlpineJS --}}
+	{{-- -----------------------------AlpineJS----------------------------- --}}
 	<script>
 		document.addEventListener('alpine:init', () => {
 			Alpine.data('sidebarNavigation', () => ({
