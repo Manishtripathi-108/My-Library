@@ -95,9 +95,15 @@ export default {
                 'swash-in': 'swashIn 1s',
                 'swash-out': 'swashOut 1s',
 
-                
-
-
+                /* ---------------------------------- Tin ---------------------------------- */
+                'tin-down-in': 'tinDownIn 1s',
+                'tin-down-out': 'tinDownOut 1s',
+                'tin-left-in': 'tinLeftIn 1s',
+                'tin-left-out': 'tinLeftOut 1s',
+                'tin-right-in': 'tinRightIn 1s',
+                'tin-right-out': 'tinRightOut 1s',
+                'tin-up-in': 'tinUpIn 1s',
+                'tin-up-out': 'tinUpOut 1s',
 
             },
             keyframes: {
@@ -387,6 +393,48 @@ export default {
                     '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
                     '80%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
                     '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
+                },
+
+                /* ---------------------------------- Tin ---------------------------------- */
+                tinDownIn: {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                },
+                tinDownOut: {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
+                },
+                tinLeftIn: {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                },
+                tinLeftOut: {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
+                },
+                tinRightIn: {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                },
+                tinRightOut: {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
+                },
+                tinUpIn: {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                },
+                tinUpOut: {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
                 },
 
 
