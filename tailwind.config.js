@@ -17,8 +17,91 @@ export default {
                 'auth-scale-up-center': 'auth-scale-up-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-scale-down-center': 'auth-scale-down-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-slider': 'auth-slider 1.25s',
+
+                /* ---------------------------------- Space --------------------------------- */
+                'space-out-up': 'spaceOutUp 1s infinite',
+                'space-out-right': 'spaceOutRight 1s infinite',
+                'space-out-down': 'spaceOutDown 1s infinite',
+                'space-out-left': 'spaceOutLeft 1s infinite',
+                'space-in-up': 'spaceInUp 1s infinite',
+                'space-in-right': 'spaceInRight 1s infinite',
+                'space-in-down': 'spaceInDown 1s infinite',
+                'space-in-left': 'spaceInLeft 1s infinite',
+
+                /* ------------------------------- Perspective ------------------------------ */
+                'perspective-down': 'perspectiveDown 1s',
+                'perspective-down-return': 'perspectiveDownReturn 1s',
+                'perspective-left': 'perspectiveLeft 1s',
+                'perspective-left-return': 'perspectiveLeftReturn 1s',
+                'perspective-right': 'perspectiveRight 1s',
+                'perspective-right-return': 'perspectiveRightReturn 1s',
+                'perspective-up': 'perspectiveUp 1s',
+                'perspective-up-return': 'perspectiveUpReturn 1s',
+
+                /* ---------------------------------- Rotate --------------------------------- */
+                'rotate-down': 'rotateDown 1s',
+                'rotate-left': 'rotateLeft 1s',
+                'rotate-right': 'rotateRight 1s',
+                'rotate-up': 'rotateUp 1s',
+
+                /* ---------------------------------- Slide --------------------------------- */
+                'slide-down': 'slideDown 1s',
+                'slide-down-return': 'slideDownReturn 1s',
+                'slide-left': 'slideLeft 1s',
+                'slide-left-return': 'slideLeftReturn 1s',
+                'slide-right': 'slideRight 1s',
+                'slide-right-return': 'slideRightReturn 1s',
+                'slide-up': 'slideUp 1s',
+                'slide-up-return': 'slideUpReturn 1s',
+
+                /* ---------------------------------- Open ---------------------------------- */
+                'open-down-left': 'openDownLeft 1s',
+                'open-down-left-return': 'openDownLeftReturn 1s',
+                'open-down-right': 'openDownRight 1s',
+                'open-down-right-return': 'openDownRightReturn 1s',
+                'open-up-left': 'openUpLeft 1s',
+                'open-up-left-return': 'openUpLeftReturn 1s',
+                'open-up-right': 'openUpRight 1s',
+                'open-up-right-return': 'openUpRightReturn 1s',
+                'open-down-left-out': 'openDownLeftOut 1s',
+                'open-down-right-out': 'openDownRightOut 1s',
+                'open-up-left-out': 'openUpLeftOut 1s',
+                'open-up-right-out': 'openUpRightOut 1s',
+
+                /* ---------------------------------- Bling ---------------------------------- */
+                'puff-in': 'puffIn 1s',
+                'puff-out': 'puffOut 1s',
+                'vanish-in': 'vanishIn 1s',
+                'vanish-out': 'vanishOut 1s',
+
+                /* ---------------------------------- Boing ---------------------------------- */
+                'boing-in-up': 'boingInUp 1s',
+                'boing-out-down': 'boingOutDown 1s',
+
+                /* ---------------------------------- Bomb ---------------------------------- */
+                'bomb-left-out': 'bombLeftOut 1s',
+                'bomb-right-out': 'bombRightOut 1s',
+
+                /* ---------------------------------- Magic ---------------------------------- */
+                'magic': 'magic 1s',
+                'swap': 'swap 1s',
+                'twister-in-down': 'twisterInDown 1s',
+                'twister-in-up': 'twisterInUp 1s',
+
+                /* ---------------------------------- Math ---------------------------------- */
+                'foolish-in': 'foolishIn 1s',
+                'foolish-out': 'foolishOut 1s',
+                'hole-out': 'holeOut 1s',
+                'swash-in': 'swashIn 1s',
+                'swash-out': 'swashOut 1s',
+
+                
+
+
+
             },
             keyframes: {
+                /* ---------------------------------- Auth ---------------------------------- */
                 'auth-slide-top': {
                     '0%': { transform: 'translateY(160px)' },
                     '100%': { transform: 'translateY(-200px)' },
@@ -39,6 +122,275 @@ export default {
                     '0%, 10%, 100%': { width: '400px' },
                     '30%, 50%': { width: '500px' },
                 },
+
+                /* ---------------------------------- Space --------------------------------- */
+                spaceOutUp: {
+                    '0%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
+                },
+                spaceInRight: {
+                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
+                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                spaceOutDown: {
+                    '0%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
+                },
+                spaceOutLeft: {
+                    '0%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
+                },
+                spaceInUp: {
+                    '0%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                spaceOutRight: {
+                    '0%': { opacity: '1', transformOrigin: '100% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '100% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
+                },
+                spaceInDown: {
+                    '0%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                spaceInLeft: {
+                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
+                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+
+                /* ------------------------------- Perspective ------------------------------ */
+                perspectiveDown: {
+                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
+                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
+                },
+                perspectiveDownReturn: {
+                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
+                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
+                },
+                perspectiveLeft: {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
+                },
+                perspectiveLeftReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
+                },
+                perspectiveRight: {
+                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
+                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
+                },
+                perspectiveRightReturn: {
+                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
+                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
+                },
+                perspectiveUp: {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
+                },
+                perspectiveUpReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
+                },
+
+                /* ---------------------------------- Rotate --------------------------------- */
+                rotateDown: {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'perspective(800px) rotateX(-180deg) translateZ(300px)' },
+                },
+                rotateLeft: {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(-180deg) translateZ(300px)' },
+                },
+                rotateRight: {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(180deg) translateZ(150px)' },
+                },
+                rotateUp: {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateX(180deg) translateZ(100px)' },
+                },
+
+                /* ---------------------------------- Slide --------------------------------- */
+                slideDown: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
+                },
+                slideDownReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                },
+                slideLeft: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
+                },
+                slideLeftReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                },
+                slideRight: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
+                },
+                slideRightReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                },
+                slideUp: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
+                },
+                slideUpReturn: {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                },
+
+                /* ---------------------------------- Open ---------------------------------- */
+                openUpLeft: {
+                    '0%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openUpLeftReturn: {
+                    '0%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                openUpRight: {
+                    '0%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openUpRightReturn: {
+                    '0%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                openUpLeftOut: {
+                    '0%': { opacity: '1', transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openUpRightOut: {
+                    '0%': { opacity: '1', transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openDownLeftOut: {
+                    '0%': { opacity: '1', transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openDownRightOut: {
+                    '0%': { opacity: '1', transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openDownLeft: {
+                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openDownLeftReturn: {
+                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                openDownRight: {
+                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                openDownRightReturn: {
+                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+
+                /* ---------------------------------- Bling ---------------------------------- */
+                puffIn: {
+                    '0%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(2px)' },
+                    '100%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
+                },
+                puffOut: {
+                    '0%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
+                    '100%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(2px)' },
+                },
+                vanishIn: {
+                    '0%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(90px)' },
+                    '100%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
+                },
+                vanishOut: {
+                    '0%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
+                    '100%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(20px)' },
+                },
+
+                /* ---------------------------------- Boing ---------------------------------- */
+                boingInUp: {
+                    '0%': { opacity: '0', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(-90deg)' },
+                    '50%': { opacity: '1', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(50deg)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(0deg)' },
+                },
+                boingOutDown: {
+                    '0%': { opacity: '1', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
+                    '20%': { opacity: '1', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(10deg)' },
+                    '30%': { opacity: '1', transformOrigin: '0% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
+                    '40%': { opacity: '1', transformOrigin: '0% 100%', transform: 'perspective(800px) rotateX(10deg) rotateY(10deg)' },
+                    '100%': { opacity: '0', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(90deg) rotateY(0deg)' },
+                },
+
+                /* ---------------------------------- Bomb ---------------------------------- */
+                bombLeftOut: {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'rotate(0deg)', filter: 'blur(0px)' },
+                    '50%': { opacity: '1', transformOrigin: '-100% 50%', transform: 'rotate(-160deg)', filter: 'blur(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '-100% 50%', transform: 'rotate(-160deg)', filter: 'blur(20px)' },
+                },
+                bombRightOut: {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'rotate(0deg)', filter: 'blur(0px)' },
+                    '50%': { opacity: '1', transformOrigin: '200% 50%', transform: 'rotate(160deg)', filter: 'blur(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '200% 50%', transform: 'rotate(160deg)', filter: 'blur(20px)' },
+                },
+
+                /* ---------------------------------- Magic ---------------------------------- */
+                magic: {
+                    '0%': { opacity: '1', transformOrigin: '100% 200%', transform: 'scale(1, 1) rotate(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '200% 500%', transform: 'scale(0, 0) rotate(270deg)' },
+                },
+                swap: {
+                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) translate(-700px, 0px)' },
+                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) translate(0px, 0px)' },
+                },
+                twisterInDown: {
+                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
+                    '30%': { transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
+                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) rotate(0deg) translateY(0%)' },
+                },
+                twisterInUp: {
+                    '0%': { opacity: '0', transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
+                    '30%': { transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
+                    '100%': { opacity: '1', transformOrigin: '0 0', transform: 'scale(1, 1) rotate(0deg) translateY(0)' },
+                },
+
+                /* ---------------------------------- Math ---------------------------------- */
+                foolishIn: {
+                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(360deg)' },
+                    '20%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '40%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '80%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(0deg)' },
+                },
+                foolishOut: {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(360deg)' },
+                    '20%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '40%': { opacity: '1', transformOrigin: '100% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '80%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(0deg)' },
+                },
+                holeOut: {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotateY(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotateY(180deg)' },
+                },
+                swashIn: {
+                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
+                    '90%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
+                },
+                swashOut: {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
+                    '80%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
+                },
+
+
+
             },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
