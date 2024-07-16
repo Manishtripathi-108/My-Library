@@ -14,10 +14,8 @@ html {
     transition: background-color 0.3s, color 0.3s;
 }
 
-
-
 @layer components {
-/*-- -------------------------------- neu-badge -------------------------------- */
+    /*-- -------------------------------- neu-badge -------------------------------- */
     .neu-badge {
         @apply text-secondary text-center border-[0.8px] border-[#ead2b6];
 
@@ -108,17 +106,27 @@ html {
             linear-gradient(red 0 0) 30px 0/2px 100% #fff;
     }
 
-    .notebook-page-mask{
-            
-        -webkit-mask: radial-gradient(circle 0.75rem at 2px 50%, #0000 98%, #000) 0 0/100%
-            2.4rem;
-    
+    .notebook-page-mask {
+        -webkit-mask: radial-gradient(
+                circle 0.75rem at 2px 50%,
+                #0000 98%,
+                #000
+            )
+            0 0/100% 2.4rem;
+
         mask: radial-gradient(circle 0.75rem at 2px 50%, #0000 98%, #000) 0 0/100%
             2.4rem;
     }
 }
 
 @layer utilities {
+    /* -------------------------- Animate timeline view ------------------------- */
+    .on-scroll-animation {
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%;
+    }
+
+    /*-- -------------------------------- Scrollbar -------------------------------- */
     .scrollbar-thin {
         &::-webkit-scrollbar {
             width: 4px; /* Set the width of the scrollbar */
