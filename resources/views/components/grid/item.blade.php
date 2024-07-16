@@ -6,7 +6,7 @@
 	</h3>
 
 	{{-- Content --}}
-	<div class="flex-center *:animate-boing-in-up *:on-scroll-animation flex-col rounded-lg border border-gray-600 p-5">
+	<div class="flex-center *:animate-swash-in *:on-scroll-animation flex-col rounded-lg border border-gray-600 p-5">
 
 		{{ $slot }}
 
