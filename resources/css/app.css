@@ -126,6 +126,67 @@ html {
         animation-range: entry 0 cover 40%;
     }
 
+    /* ----------------------- Animation duration classes ----------------------- */
+    .animation-duration-100 {
+        animation-duration: 0.1s;
+    }
+
+    .animation-duration-200 {
+        animation-duration: 0.2s;
+    }
+
+    .animation-duration-300 {
+        animation-duration: 0.3s;
+    }
+
+    .animation-duration-400 {
+        animation-duration: 0.4s;
+    }
+
+    .animation-duration-500 {
+        animation-duration: 0.5s;
+    }
+
+    .animation-duration-700 {
+        animation-duration: 0.7s;
+    }
+
+    .animation-duration-1000 {
+        animation-duration: 1s;
+    }
+
+    .animation-duration-1200 {
+        animation-duration: 1.2s;
+    }
+
+    .animation-duration-1500 {
+        animation-duration: 1.5s;
+    }
+
+    .animation-duration-1800 {
+        animation-duration: 1.8s;
+    }
+
+    .animation-duration-2000 {
+        animation-duration: 2s;
+    }
+
+    .animation-duration-2200 {
+        animation-duration: 2.2s;
+    }
+
+    .animation-duration-2500 {
+        animation-duration: 2.5s;
+    }
+
+    .animation-duration-2800 {
+        animation-duration: 2.8s;
+    }
+
+    .animation-duration-3000 {
+        animation-duration: 3s;
+    }
+
     /*-- -------------------------------- Scrollbar -------------------------------- */
     .scrollbar-thin {
         &::-webkit-scrollbar {

@@ -26,7 +26,7 @@
 	</div>
 
 	<div class="flex-center mt-10 gap-5 p-10" x-data="{ animation: '' }">
-		<div class="size-40  bg-gray-700" :class="animation"></div>
+		<div class="size-40 animation-duration-1000 bg-gray-700" :class="animation"></div>
 
 		<div class="h-96 overflow-y-auto">
 			<ul class="*:cursor-pointer">
