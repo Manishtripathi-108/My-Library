@@ -28,7 +28,7 @@
 	<div class="flex-center mt-10 gap-5 p-10" x-data="{ animation: '' }">
 		<div class="size-40 animate-spaceInUp bg-gray-700" :class="animation"></div>
 
-		<div class=" h-96 overflow-y-auto">
+		<div class="h-96 overflow-y-auto">
 			<ul class="*:cursor-pointer">
 				<li @click="animation = 'animate-space-out-up'">space-out-up</li>
 				<li @click="animation = 'animate-space-out-right'">space-out-right</li>
@@ -105,6 +105,19 @@
 				<li @click="animation = 'animate-tin-right-out'">tin-right-out</li>
 				<li @click="animation = 'animate-tin-up-in'">tin-up-in</li>
 				<li @click="animation = 'animate-tin-up-out'">tin-up-out</li>
+
+				<li @click="animation = 'animate-circle-in-hesitate'">circle-in-hesitate</li>
+				<li @click="animation = 'animate-circle-in-center'">circle-in-center</li>
+				<li @click="animation = 'animate-circle-in-top-right'">circle-in-top-right</li>
+				<li @click="animation = 'animate-circle-in-top-left'">circle-in-top-left</li>
+				<li @click="animation = 'animate-circle-in-bottom-right'">circle-in-bottom-right</li>
+				<li @click="animation = 'animate-circle-in-bottom-left'">circle-in-bottom-left</li>
+				<li @click="animation = 'animate-circle-out-hesitate'">circle-out-hesitate</li>
+				<li @click="animation = 'animate-circle-out-center'">circle-out-center</li>
+				<li @click="animation = 'animate-circle-out-top-right'">circle-out-top-right</li>
+				<li @click="animation = 'animate-circle-out-top-left'">circle-out-top-left</li>
+				<li @click="animation = 'animate-circle-out-bottom-right'">circle-out-bottom-right</li>
+				<li @click="animation = 'animate-circle-out-bottom-left'">circle-out-bottom-left</li>
 
 			</ul>
 		</div>

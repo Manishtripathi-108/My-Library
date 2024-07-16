@@ -105,6 +105,21 @@ export default {
                 'tin-up-in': 'tinUpIn 1s',
                 'tin-up-out': 'tinUpOut 1s',
 
+                /* ---------------------------------- Circle ---------------------------------- */
+                'circle-in-hesitate': 'circle-in-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-center': 'circle-in-center 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-top-right': 'circle-in-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-top-left': 'circle-in-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-bottom-right': 'circle-in-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-bottom-left': 'circle-in-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-hesitate': 'circle-out-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-center': 'circle-out-center 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-top-right': 'circle-out-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-top-left': 'circle-out-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-bottom-right': 'circle-out-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-bottom-left': 'circle-out-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+
+
             },
             keyframes: {
                 /* ---------------------------------- Auth ---------------------------------- */
@@ -435,6 +450,60 @@ export default {
                     '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
                     '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
                     '100%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
+                },
+
+                /* ---------------------------------- Circle ---------------------------------- */
+                //in
+                'circle-in-hesitate': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '40%': { 'clip-path': 'circle(40%)' },
+                    '100%': { 'clip-path': 'circle(125%)' },
+                },
+                'circle-in-center': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '100%': { 'clip-path': 'circle(125%)' },
+                },
+                'circle-in-top-right': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '100%': { 'clip-path': 'circle(150% at top right)' },
+                },
+                'circle-in-top-left': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '100%': { 'clip-path': 'circle(150% at top left)' },
+                },
+                'circle-in-bottom-right': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '100%': { 'clip-path': 'circle(150% at bottom right)' },
+                },
+                'circle-in-bottom-left': {
+                    '0%': { 'clip-path': 'circle(0%)' },
+                    '100%': { 'clip-path': 'circle(150% at bottom left)' },
+                },
+                'circle-out-hesitate': {
+                    '0%': { 'clip-path': 'circle(125%)' },
+                    '40%': { 'clip-path': 'circle(40%)' },
+                    '100%': { 'clip-path': 'circle(0%)' },
+                },
+                // Out
+                'circle-out-center': {
+                    '0%': { 'clip-path': 'circle(125%)' },
+                    '100%': { 'clip-path': 'circle(0%)' },
+                },
+                'circle-out-top-right': {
+                    '0%': { 'clip-path': 'circle(125% at top right)' },
+                    '100%': { 'clip-path': 'circle(0% at top right)' },
+                },
+                'circle-out-top-left': {
+                    '0%': { 'clip-path': 'circle(125% at top left)' },
+                    '100%': { 'clip-path': 'circle(0% at top left)' },
+                },
+                'circle-out-bottom-right': {
+                    '0%': { 'clip-path': 'circle(125% at bottom right)' },
+                    '100%': { 'clip-path': 'circle(0% at bottom right)' },
+                },
+                'circle-out-bottom-left': {
+                    '0%': { 'clip-path': 'circle(125% at bottom left)' },
+                    '100%': { 'clip-path': 'circle(0% at bottom left)' },
                 },
 
 
