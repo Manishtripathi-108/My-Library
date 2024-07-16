@@ -118,7 +118,51 @@ export default {
                 'circle-out-top-left': 'circle-out-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
                 'circle-out-bottom-right': 'circle-out-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
                 'circle-out-bottom-left': 'circle-out-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'circle-in-swoop': 'in-circle-swoop var(--transition__duration, 5s) cubic-bezier(.25, 1, .30, 1) both',
+                'circle-out-swoop': 'out-circle-swoop var(--transition__duration, 1.25s) var(--transition__easing, cubic-bezier(.30, 1, .25, 1)) both',
 
+
+                /* ---------------------------------- Cube ---------------------------------- */
+                'square-in-center': 'square-in-center 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-in-hesitate': 'square-in-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-in-top-right': 'square-in-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-in-top-left': 'square-in-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-in-bottom-right': 'square-in-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-in-bottom-left': 'square-in-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-center': 'square-out-center 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-hesitate': 'square-out-hesitate 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-top-right': 'square-out-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-top-left': 'square-out-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-bottom-right': 'square-out-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'square-out-bottom-left': 'square-out-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+
+                /* ---------------------------------- Wipe ---------------------------------- */
+                'wipe-in-right': 'wipe-in-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-left': 'wipe-in-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-up': 'wipe-in-up 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-down': 'wipe-in-down 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-top-right': 'wipe-in-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-top-left': 'wipe-in-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-bottom-right': 'wipe-in-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-in-bottom-left': 'wipe-in-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-cinematic-in': 'wipe-cinematic-in 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-right': 'wipe-out-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-left': 'wipe-out-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-up': 'wipe-out-up 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-down': 'wipe-out-down 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-top-right': 'wipe-out-top-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-top-left': 'wipe-out-top-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-bottom-right': 'wipe-out-bottom-right 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-out-bottom-left': 'wipe-out-bottom-left 2.5s cubic-bezier(.25, 1, .30, 1) both',
+                'wipe-cinematic-out': 'wipe-cinematic-out 2.5s cubic-bezier(.25, 1, .30, 1) both',
+
+                /* ---------------------------------- Diamond ---------------------------------- */
+                'diamond-in-center': 'diamond-in-center 1.5s cubic-bezier(.25, 1, .30, 1) both',
+                'diamond-in-hesitate': 'diamond-in-hesitate 1.5s cubic-bezier(.25, 1, .30, 1) both',
+                'diamond-out-center': 'diamond-out-center 1.5s cubic-bezier(.25, 1, .30, 1) both',
+                'diamond-out-hesitate': 'diamond-out-hesitate 1.5s cubic-bezier(.25, 1, .30, 1) both',
+                'polygon-in-opposing-corners': 'polygon-in-opposing-corners 1.5s cubic-bezier(.25, 1, .30, 1) both',
+                'polygon-out-opposing-corners': 'polygon-out-opposing-corners 1.5s cubic-bezier(.25, 1, .30, 1) both',
 
             },
             keyframes: {
@@ -453,7 +497,6 @@ export default {
                 },
 
                 /* ---------------------------------- Circle ---------------------------------- */
-                //in
                 'circle-in-hesitate': {
                     '0%': { 'clip-path': 'circle(0%)' },
                     '40%': { 'clip-path': 'circle(40%)' },
@@ -484,7 +527,6 @@ export default {
                     '40%': { 'clip-path': 'circle(40%)' },
                     '100%': { 'clip-path': 'circle(0%)' },
                 },
-                // Out
                 'circle-out-center': {
                     '0%': { 'clip-path': 'circle(125%)' },
                     '100%': { 'clip-path': 'circle(0%)' },
@@ -505,6 +547,172 @@ export default {
                     '0%': { 'clip-path': 'circle(125% at bottom left)' },
                     '100%': { 'clip-path': 'circle(0% at bottom left)' },
                 },
+                'circle-in-swoop': {
+                    from: { 'clip-path': 'var(--circle-top-right-out)' },
+                    to: { 'clip-path': 'var(--circle-bottom-right-in)' },
+                },
+                'circle-out-swoop': {
+                    from: { 'clip-path': 'var(--circle-bottom-right-in)' },
+                    to: { 'clip-path': 'var(--circle-top-right-out)' },
+                },
+
+                /* ---------------------------------- Square ---------------------------------- */
+                'square-in-center': {
+                    from: { 'clip-path': 'inset(100% 100% 100% 100%)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-in-hesitate': {
+                    '0%': { 'clip-path': 'inset(100% 100% 100% 100%)' },
+                    '40%': { 'clip-path': 'inset(33% 33% 33% 33%)' },
+                    '100%': { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-in-top-right': {
+                    from: { 'clip-path': 'inset(100% 100% 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-in-top-left': {
+                    from: { 'clip-path': 'inset(100% 0 0 100%)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-in-bottom-right': {
+                    from: { 'clip-path': 'inset(0 100% 100% 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-in-bottom-left': {
+                    from: { 'clip-path': 'inset(0 0 100% 100%)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'square-out-center': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(100% 100% 100% 100%)' },
+                },
+                'square-out-hesitate': {
+                    '0%': { 'clip-path': 'inset(0 0 0 0)' },
+                    '40%': { 'clip-path': 'inset(33% 33% 33% 33%)' },
+                    '100%': { 'clip-path': 'inset(100% 100% 100% 100%)' },
+                },
+                'square-out-top-right': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 100% 100%)' },
+                },
+                'square-out-top-left': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 100% 100% 0)' },
+                },
+                'square-out-bottom-right': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(100% 0 0 100%)' },
+                },
+                'square-out-bottom-left': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(100% 100% 0 0)' },
+                },
+
+                /* ---------------------------------- Wipe ---------------------------------- */
+                'wipe-in-right': {
+                    from: { 'clip-path': 'inset(0 100% 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'wipe-in-left': {
+                    from: { 'clip-path': 'inset(0 0 0 100%)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'wipe-in-up': {
+                    from: { 'clip-path': 'inset(100% 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'wipe-in-down': {
+                    from: { 'clip-path': 'inset(0 0 100% 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'wipe-in-top-right': {
+                    from: { 'clip-path': 'polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%)' },
+                    to: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                },
+                'wipe-in-top-left': {
+                    from: { 'clip-path': 'polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%)' },
+                    to: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                },
+                'wipe-in-bottom-right': {
+                    from: { 'clip-path': 'polygon(0 0, 0 0, 0 0, 0 50%)' },
+                    to: { 'clip-path': 'polygon(-50% 0%, 200% 0, 0 200%, 0 -50%)' },
+                },
+                'wipe-in-bottom-left': {
+                    from: { 'clip-path': 'polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%)' },
+                    to: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                },
+                'wipe-cinematic-in': {
+                    '0%': { 'clip-path': 'inset(100% 0 100% 0)' },
+                    '30%, 70%': { 'clip-path': 'inset(10% 0 10% 0)' },
+                    '100%': { 'clip-path': 'inset(0 0 0 0)' },
+                },
+                'wipe-out-right': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 0 100%)' },
+                },
+                'wipe-out-left': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 100% 0 0)' },
+                },
+                'wipe-out-up': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(0 0 100% 0)' },
+                },
+                'wipe-out-down': {
+                    from: { 'clip-path': 'inset(0 0 0 0)' },
+                    to: { 'clip-path': 'inset(100% 0 0 0)' },
+                },
+                'wipe-out-top-right': {
+                    from: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                    to: { 'clip-path': 'polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%)' },
+                },
+                'wipe-out-top-left': {
+                    from: { 'clip-path': 'polygon(-50% 0%, 200% 0, 0 200%, 0 -50%)' },
+                    to: { 'clip-path': 'polygon(0 0, 0 0, 0 0, 0 50%)' },
+                },
+                'wipe-out-bottom-right': {
+                    from: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                    to: { 'clip-path': 'polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%)' },
+                },
+                'wipe-out-bottom-left': {
+                    from: { 'clip-path': 'polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%)' },
+                    to: { 'clip-path': 'polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%)' },
+                },
+                'wipe-cinematic-out': {
+                    '0%': { 'clip-path': 'inset(0 0 0 0)' },
+                    '30%, 70%': { 'clip-path': 'inset(10% 0 10% 0)' },
+                    '100%': { 'clip-path': 'inset(100% 0 100% 0)' },
+                },
+
+                /* ---------------------------------- Diamond ---------------------------------- */
+                'diamond-in-center': {
+                    from: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                    to: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                },
+                'diamond-in-hesitate': {
+                    '0%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
+                    '100%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                },
+                'diamond-out-center': {
+                    from: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                    to: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                },
+                'diamond-out-hesitate': {
+                    '0%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
+                    '100%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                },
+                'polygon-in-opposing-corners': {
+                    from: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
+                    to: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
+                },
+                'polygon-out-opposing-corners': {
+                    from: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
+                    to: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
+                },
+
+
 
 
 

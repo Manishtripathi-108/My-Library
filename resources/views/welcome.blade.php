@@ -118,6 +118,47 @@
 				<li @click="animation = 'animate-circle-out-top-left'">circle-out-top-left</li>
 				<li @click="animation = 'animate-circle-out-bottom-right'">circle-out-bottom-right</li>
 				<li @click="animation = 'animate-circle-out-bottom-left'">circle-out-bottom-left</li>
+				<li @click="animation = 'animate-circle-in-swoop'">circle-in-swoop</li>
+				<li @click="animation = 'animate-circle-out-swoop'">circle-out-swoop</li>
+
+				<li @click="animation = 'animate-square-in-center'">square-in-center</li>
+				<li @click="animation = 'animate-square-in-hesitate'">square-in-hesitate</li>
+				<li @click="animation = 'animate-square-in-top-right'">square-in-top-right</li>
+				<li @click="animation = 'animate-square-in-top-left'">square-in-top-left</li>
+				<li @click="animation = 'animate-square-in-bottom-right'">square-in-bottom-right</li>
+				<li @click="animation = 'animate-square-in-bottom-left'">square-in-bottom-left</li>
+				<li @click="animation = 'animate-square-out-center'">square-out-center</li>
+				<li @click="animation = 'animate-square-out-hesitate'">square-out-hesitate</li>
+				<li @click="animation = 'animate-square-out-top-right'">square-out-top-right</li>
+				<li @click="animation = 'animate-square-out-top-left'">square-out-top-left</li>
+				<li @click="animation = 'animate-square-out-bottom-right'">square-out-bottom-right</li>
+				<li @click="animation = 'animate-square-out-bottom-left'">square-out-bottom-left</li>
+
+				<li @click="animation = 'animate-wipe-in-right'">wipe-in-right</li>
+				<li @click="animation = 'animate-wipe-in-left'">wipe-in-left</li>
+				<li @click="animation = 'animate-wipe-in-up'">wipe-in-up</li>
+				<li @click="animation = 'animate-wipe-in-down'">wipe-in-down</li>
+				<li @click="animation = 'animate-wipe-in-top-right'">wipe-in-top-right</li>
+				<li @click="animation = 'animate-wipe-in-top-left'">wipe-in-top-left</li>
+				<li @click="animation = 'animate-wipe-in-bottom-right'">wipe-in-bottom-right</li>
+				<li @click="animation = 'animate-wipe-in-bottom-left'">wipe-in-bottom-left</li>
+				<li @click="animation = 'animate-wipe-cinematic-in'">wipe-cinematic-in</li>
+				<li @click="animation = 'animate-wipe-out-right'">wipe-out-right</li>
+				<li @click="animation = 'animate-wipe-out-left'">wipe-out-left</li>
+				<li @click="animation = 'animate-wipe-out-up'">wipe-out-up</li>
+				<li @click="animation = 'animate-wipe-out-down'">wipe-out-down</li>
+				<li @click="animation = 'animate-wipe-out-top-right'">wipe-out-top-right</li>
+				<li @click="animation = 'animate-wipe-out-top-left'">wipe-out-top-left</li>
+				<li @click="animation = 'animate-wipe-out-bottom-right'">wipe-out-bottom-right</li>
+				<li @click="animation = 'animate-wipe-out-bottom-left'">wipe-out-bottom-left</li>
+				<li @click="animation = 'animate-wipe-cinematic-out'">wipe-cinematic-out</li>
+
+				<li @click="animation = 'animate-diamond-in-center'">diamond-in-center</li>
+				<li @click="animation = 'animate-diamond-in-hesitate'">diamond-in-hesitate</li>
+				<li @click="animation = 'animate-diamond-out-center'">diamond-out-center</li>
+				<li @click="animation = 'animate-diamond-out-hesitate'">diamond-out-hesitate</li>
+				<li @click="animation = 'animate-polygon-in-opposing-corners'">polygon-in-opposing-corners</li>
+				<li @click="animation = 'animate-polygon-out-opposing-corners'">polygon-out-opposing-corners</li>
 
 			</ul>
 		</div>
