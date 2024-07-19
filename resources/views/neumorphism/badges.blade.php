@@ -12,7 +12,7 @@
 				<div class="neu-badge neu-badge-highlight">Hello</div>
 				<div class="neu-badge neu-badge-accent">Hello</div>
 			</div>
-            
+
 			<x-slot name="cssCode">
 				<style>
 					.neu-badge {
@@ -71,13 +71,20 @@
 			</x-slot>
 		</x-grid.item>
 
+		<x-grid.item title="Notification Badges">
+			<button class="neu-btn" type="button">
+				Notifications
+				<span class="neu-badge ml-2">5</span>
+				<span class="sr-only">unread messages</span>
+			</button>
+		</x-grid.item>
 	</x-grid>
 
+	{{-- Side Navigation --}}
 	<x-slot name="rightSidenav">
-
 		<x-sidenav-list>Badge</x-sidenav-list>
 		<x-sidenav-list>Sizing With Badges</x-sidenav-list>
-
+		<x-sidenav-link>Notification Badges</x-sidenav-link>
 	</x-slot>
 
 </x-app-layout>
