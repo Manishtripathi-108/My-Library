@@ -17,10 +17,38 @@ html {
 @layer components {
     /*-- -------------------------------- neu-badge -------------------------------- */
     .neu-badge {
-        @apply text-secondary text-center border-[0.8px] border-[#ead2b6];
+        @apply text-secondary text-sm font-karla text-center border border-light-secondary rounded-full shadow-neu-inset-sm py-1 px-2;
 
         /* dark mode */
-        @apply dark:border-[#353535] rounded-full dark:shadow-neu-dark-inset-xs;
+        @apply dark:border-dark-secondary  dark:shadow-neu-dark-inset-xs;
+    }
+
+    .neu-badge-primary {
+        @apply text-primary;
+    }
+
+    .neu-badge-secondary {
+        @apply text-secondary;
+    }
+
+    .neu-badge-accent {
+        @apply text-accent;
+    }
+
+    .neu-badge-highlight {
+        @apply text-highlight;
+    }
+
+    .neu-badge-md {
+        @apply py-2 px-3;
+    }
+
+    .neu-badge-lg {
+        @apply py-3 px-4 text-base;
+    }
+
+    .neu-badge-xl {
+        @apply py-4 px-5 text-lg;
     }
 
     /*-- -------------------------------- neu-btn -------------------------------- */

@@ -1,6 +1,10 @@
 <x-app-layout>
 	<x-grid class="pt-4" title="Accordions">
 
+		<x-slot name="description">
+			Accordions are a great way to display content in a collapsible manner. They are useful for FAQs, product descriptions, and more.
+		</x-slot>
+
 		{{-- Accordion --}}
 		<x-grid.item title="Accordion">
 			<div class="w-[800px] overflow-hidden rounded-xl border-light-secondary shadow-neu-md-soft dark:border-dark-secondary dark:shadow-neu-dark-md" x-data="{ activeTab: null }">
