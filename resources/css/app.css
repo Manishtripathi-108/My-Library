@@ -215,6 +215,42 @@ html {
         animation-duration: 3s;
     }
 
+    .animation-direction-normal {
+        animation-direction: normal;
+    }
+
+    .animation-direction-reverse {
+        animation-direction: reverse;
+    }
+
+    .animation-direction-alternate {
+        animation-direction: alternate;
+    }
+
+    .animation-direction-alternate-reverse {
+        animation-direction: alternate-reverse;
+    }
+
+    .animation-fill-forwards {
+        animation-fill-mode: forwards;
+    }
+
+    .animation-fill-backwards {
+        animation-fill-mode: backwards;
+    }
+
+    .animation-fill-both {
+        animation-fill-mode: both;
+    }
+
+    .animation-fill-none {
+        animation-fill-mode: none;
+    }
+
+    .animation-iteration-infinite {
+        animation-iteration-count: infinite;
+    }
+
     /*-- -------------------------------- Scrollbar -------------------------------- */
     .scrollbar-thin {
         &::-webkit-scrollbar {

@@ -9,7 +9,7 @@
 	<meta name="Developer" content="Manish Tripathi">
 	<meta name="Owner" content="Manish Tripathi">
 
-	<title>{{ $title ? $title . ' | ' . config('app.name', 'Component Library') : config('app.name', 'Component Library') }}</title>
+	<title>{{ $title ? $title . ' | ' . config('app.name', 'UI Library') : config('app.name', 'UI Library') }}</title>
 
 	<!-- Favicon and Apple Touch Icons -->
 	<link href="{{ asset('apple-touch-icon.png') }}" rel="apple-touch-icon" sizes="180x180">

@@ -92,9 +92,9 @@ Route::prefix('neumorphism')->group(function () {
         return view('neumorphism.cards');
     })->name('neumorphism.cards');
 
-    Route::get('/bootstrap-carousels', function () {
-        return view('neumorphism.bootstrap-carousels');
-    })->name('neumorphism.bootstrap-carousels');
+    Route::get('/carousels', function () {
+        return view('neumorphism.carousels');
+    })->name('neumorphism.carousels');
 
     Route::get('/breadcrumbs', function () {
         return view('neumorphism.breadcrumbs');

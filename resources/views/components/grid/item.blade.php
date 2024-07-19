@@ -1,4 +1,4 @@
-@props(['title' => '', 'isNeumorphism' => false, 'htmlCode' => $slot, 'cssCode' => '', 'id' => $attributes->get('id') ?? Str::slug($title)])
+@props(['title' => '', 'isNeumorphism' => false, 'htmlCode' => $slot, 'cssCode' => '', 'jsCode' => '', 'id' => $attributes->get('id') ?? Str::slug($title)])
 
 <div id="{{ $id }}" x-data="{ code_open: false }" {{ $attributes->class(['col-span-1 grid-items w-full mt-10 border-b border-gray-600 pb-10']) }}>
 	<h3 class="text-secondary mb-8 font-alegreya text-2xl font-bold tracking-wider">
@@ -33,6 +33,11 @@
 						CSS
 					</button>
 				@endif
+				@if ($jsCode != '')
+					<button class="neu-btn text-xs" :class="{ 'active': code_tab === 'script-code' }" @click="code_tab = 'script-code'">
+						Script
+					</button>
+				@endif
 			</div>
 
 			<div class="scrollbar-thin overflow-x-auto p-5">
@@ -42,6 +47,11 @@
 				{{-- CSS Code --}}
 				@if ($cssCode != '')
 					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'css-code'">{{ e($cssCode) }}</pre>
+				@endif
+
+				{{-- Script Code --}}
+				@if ($jsCode != '')
+					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'script-code'">{{ e($jsCode) }}</pre>
 				@endif
 			</div>
 		</div>
