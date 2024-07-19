@@ -28,10 +28,6 @@
 				{{ __('Badges') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.bootstrap-carousels')" :active="request()->routeIs('neumorphism.bootstrap-carousels')" wire:navigate>
-				{{ __('Bootstrap Carousels') }}
-			</x-sidenav-link>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.breadcrumbs')" :active="request()->routeIs('neumorphism.breadcrumbs')" wire:navigate>
 				{{ __('Breadcrumbs') }}
 			</x-sidenav-link>
@@ -42,6 +38,10 @@
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.cards')" :active="request()->routeIs('neumorphism.cards')" wire:navigate>
 				{{ __('Cards') }}
+			</x-sidenav-link>
+
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.carousels')" :active="request()->routeIs('neumorphism.carousels')" wire:navigate>
+				{{ __('Carousels') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.clock')" :active="request()->routeIs('neumorphism.clock')" wire:navigate>
