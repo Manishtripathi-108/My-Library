@@ -7,12 +7,12 @@
 
 		<x-grid.item title="Badge">
 			<div class="flex-center gap-5">
-				<span class="neu-badge neu-badge-primary">Hello</span>
-				<span class="neu-badge neu-badge-secondary">Hello</span>
-				<span class="neu-badge neu-badge-highlight">Hello</span>
-				<span class="neu-badge neu-badge-accent">Hello</span>
+				<div class="neu-badge neu-badge-primary">Hello</div>
+				<div class="neu-badge neu-badge-secondary">Hello</div>
+				<div class="neu-badge neu-badge-highlight">Hello</div>
+				<div class="neu-badge neu-badge-accent">Hello</div>
 			</div>
-
+            
 			<x-slot name="cssCode">
 				<style>
 					.neu-badge {
@@ -37,14 +37,15 @@
 						@apply text-highlight;
 					}
 				</style>
+			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Sizing With Badges">
 			<div class="flex-center gap-5">
-				<span class="neu-badge">Hello</span>
-				<span class="neu-badge neu-badge-md">Hello</span>
-				<span class="neu-badge neu-badge-lg">Hello</span>
-				<span class="neu-badge neu-badge-xl">Hello</span>
+				<div class="neu-badge">Hello</div>
+				<div class="neu-badge neu-badge-md">Hello</div>
+				<div class="neu-badge neu-badge-lg">Hello</div>
+				<div class="neu-badge neu-badge-xl">Hello</div>
 			</div>
 
 			<x-slot name="cssCode">
