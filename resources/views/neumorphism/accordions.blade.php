@@ -1,5 +1,5 @@
 <x-app-layout>
-	<x-grid class="pt-4" title="Accordions">
+	<x-grid title="Accordions">
 
 		<x-slot name="description">
 			Accordions are a great way to display content in a collapsible manner. They are useful for FAQs, product descriptions, and more.

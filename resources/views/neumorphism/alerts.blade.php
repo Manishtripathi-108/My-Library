@@ -2,6 +2,10 @@
 
 	<x-grid title="Alerts">
 
+		<x-slot name="description">
+			Alerts are a great way to display important information to your users. They can be used to notify users of a successful action, an error, or a warning.
+		</x-slot>
+
 		<x-grid.item title="Basic Alert">
 			<div class="flex-center flex-col">
 				<div class="text-primary mb-5 line-clamp-1 w-full rounded-xl border border-light-secondary px-6 py-4 font-karla tracking-wide shadow-neu-md-soft dark:border-dark-secondary dark:shadow-neu-dark-md">

@@ -1,9 +1,13 @@
 <x-app-layout>
 
 	{{-- Content --}}
-	<div class="flex flex-col items-center justify-center gap-y-5 p-5 md:px-2">
+	<div class="flex flex-col items-center justify-center gap-y-5 px-5 md:px-2">
 		{{-- ------------------------------ Login & Signup ----------------------------- --}}
 		<x-grid title="Login & Signup">
+
+			<x-slot name="description">
+				Neumorphism Login & Signup Forms are a great way to display login and signup forms in a modern and sleek way.
+			</x-slot>
 
 			<x-grid.item title="Signup Form">
 				@include('neumorphism.login-signup-form', ['type' => 'signup'])
@@ -17,6 +21,10 @@
 
 		{{-- ------------------------------ Product Cards ----------------------------- --}}
 		<x-grid title="Product Cards">
+
+			<x-slot name="description">
+				Product Cards are a great way to display products in a modern and sleek way. They are useful for e-commerce websites.
+			</x-slot>
 
 			<x-grid.item title="Simple Card">
 				@include('neumorphism.product-card')
@@ -50,6 +58,11 @@
 
 		{{-- ------------------------------ Cards ----------------------------- --}}
 		<x-grid title="Cards">
+
+			<x-slot name="description">
+				Cards are a great way to display information in a modern and sleek way. They are useful for displaying information in a structured manner.
+			</x-slot>
+
 			<x-grid.item title="Profile Card">
 				@include('neumorphism.cards')
 			</x-grid.item>
@@ -58,6 +71,10 @@
 
 		{{-- ------------------------------ Buttons & Icons ----------------------------- --}}
 		<x-grid title="Buttons & Icons">
+
+			<x-slot name="description">
+				Buttons are a great way to interact with your users. They can be used to perform actions, navigate to different pages, and more. Icons are a great way to display information in a visual manner.
+			</x-slot>
 
 			<x-grid.item title="Color Change Icons">
 				@include('neumorphism.icons')
@@ -73,6 +90,10 @@
 		{{-- ------------------------------ Switches ----------------------------- --}}
 		<x-grid title="Switches">
 
+			<x-slot name="description">
+				Switches are a great way to toggle between two states. They are useful for settings, preferences, and more.
+			</x-slot>
+
 			<x-grid.item title="Switch">
 				@include('neumorphism.switch')
 			</x-grid.item>
@@ -81,6 +102,10 @@
 
 		{{-- ------------------------------ Radio Buttons ----------------------------- --}}
 		<x-grid title="Radio Buttons">
+
+			<x-slot name="description">
+				Radio Buttons are a great way to select one option from a list of options. They are useful for forms, settings, and more.
+			</x-slot>
 
 			<x-grid.item title="Radio Button">
 				@include('neumorphism.radio-btn')
@@ -91,6 +116,10 @@
 		{{-- ------------------------------ Tab ----------------------------- --}}
 		<x-grid title="Tab">
 
+			<x-slot name="description">
+				Tabs are a great way to display content in a structured manner. They are useful for displaying different sections of a page, such as settings, preferences, and more.
+			</x-slot>
+
 			<x-grid.item title="Tab">
 				@include('neumorphism.tab')
 			</x-grid.item>
@@ -99,6 +128,10 @@
 
 		{{-- ------------------------------ It is What it is ----------------------------- --}}
 		<x-grid title="It is What it is">
+
+			<x-slot name="description">
+				Neumorphism is a design trend that combines the principles of skeuomorphism and flat design. It is characterized by soft shadows, rounded corners, and subtle gradients. Neumorphism is a great way to create a modern and sleek user interface.
+			</x-slot>
 
 			<x-grid.item title="Some Bars">
 

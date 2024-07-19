@@ -1,6 +1,6 @@
 @props(['title' => '', 'description' => ''])
 
-<section {{ $attributes->merge(['class' => 'w-full']) }}>
+<section {{ $attributes->merge(['class' => 'w-full pt-4']) }}>
 	<h2 class="text-primary mb-3 font-playfair text-2xl font-bold tracking-wider">
 		{{ ucwords($title) }}
 	</h2>
