@@ -16,7 +16,6 @@
 		</a>
 
 		<div class="ml-2" x-show="open" x-transition>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.accordions')" :active="request()->routeIs('neumorphism.accordions')" wire:navigate>
 				{{ __('Accordions') }}
 			</x-sidenav-link>
@@ -29,10 +28,6 @@
 				{{ __('Badges') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.cards')" :active="request()->routeIs('neumorphism.cards')" wire:navigate>
-				{{ __('Cards') }}
-			</x-sidenav-link>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.bootstrap-carousels')" :active="request()->routeIs('neumorphism.bootstrap-carousels')" wire:navigate>
 				{{ __('Bootstrap Carousels') }}
 			</x-sidenav-link>
@@ -43,6 +38,10 @@
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.buttons')" :active="request()->routeIs('neumorphism.buttons')" wire:navigate>
 				{{ __('Buttons') }}
+			</x-sidenav-link>
+
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.cards')" :active="request()->routeIs('neumorphism.cards')" wire:navigate>
+				{{ __('Cards') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.clock')" :active="request()->routeIs('neumorphism.clock')" wire:navigate>
@@ -65,12 +64,12 @@
 				{{ __('Modals') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.navs')" :active="request()->routeIs('neumorphism.navs')" wire:navigate>
-				{{ __('Navs') }}
-			</x-sidenav-link>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.navbars')" :active="request()->routeIs('neumorphism.navbars')" wire:navigate>
 				{{ __('Navbars') }}
+			</x-sidenav-link>
+
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.navs')" :active="request()->routeIs('neumorphism.navs')" wire:navigate>
+				{{ __('Navs') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.pagination')" :active="request()->routeIs('neumorphism.pagination')" wire:navigate>
@@ -93,12 +92,12 @@
 				{{ __('Tabs') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.toasts')" :active="request()->routeIs('neumorphism.toasts')" wire:navigate>
-				{{ __('Toasts') }}
-			</x-sidenav-link>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.timelines')" :active="request()->routeIs('neumorphism.timelines')" wire:navigate>
 				{{ __('Timelines') }}
+			</x-sidenav-link>
+
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.toasts')" :active="request()->routeIs('neumorphism.toasts')" wire:navigate>
+				{{ __('Toasts') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.tooltips')" :active="request()->routeIs('neumorphism.tooltips')" wire:navigate>
