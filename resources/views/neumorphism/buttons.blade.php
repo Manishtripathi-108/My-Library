@@ -14,6 +14,28 @@
 				<button class="neu-btn mr-3 text-red-700" type="button">Danger</button>
 				<button class="neu-btn text-primary active mr-3" type="button">Active</button>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-btn {
+						@apply text-secondary text-center tracking-wider border border-light-secondary py-2 px-4 rounded-lg transition-all duration-300 shadow-neu-xs;
+						/* dark mode */
+						@apply dark:border-dark-secondary dark:shadow-neu-dark-xs;
+					}
+
+					.neu-btn.active,
+					.neu-btn:active {
+						@apply text-primary shadow-neu-inset-sm;
+						color: #767676;
+						/* dark mode*/
+						@apply dark:shadow-neu-dark-inset-xs;
+					}
+
+					.neu-btn:hover:not(.active),
+					.neu-btn:focus:not(.active) {
+						@apply text-primary transform scale-105;
+					}
+				</style>
 		</x-grid.item>
 
 		<x-grid.item title="Button Pill">
@@ -24,6 +46,32 @@
 				<button class="neu-btn neu-btn-pill mr-3 text-red-700" type="button">Danger</button>
 				<button class="neu-btn neu-btn-pill text-primary active mr-3" type="button">Active</button>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-btn {
+						@apply text-secondary text-center tracking-wider border border-light-secondary py-2 px-4 rounded-lg transition-all duration-300 shadow-neu-xs;
+						/* dark mode */
+						@apply dark:border-dark-secondary dark:shadow-neu-dark-xs;
+					}
+
+					.neu-btn.active,
+					.neu-btn:active {
+						@apply text-primary shadow-neu-inset-sm;
+						color: #767676;
+						/* dark mode*/
+						@apply dark:shadow-neu-dark-inset-xs;
+					}
+
+					.neu-btn:hover:not(.active),
+					.neu-btn:focus:not(.active) {
+						@apply text-primary transform scale-105;
+					}
+
+					.neu-btn-pill {
+						@apply rounded-l-full rounded-r-full;
+					}
+				</style>
 		</x-grid.item>
 
 		<x-grid.item title="Only Icon Buttons">
@@ -33,6 +81,22 @@
 				<button class="neu-icon-only-square-btn neu-btn mr-3" type="button"><x-svg.moon class="size-7" /> </button>
 				<button class="neu-icon-only-square-btn neu-btn active mr-3" type="button"><x-svg.mail class="size-7" /></button>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-icon-only-btn {
+						@apply rounded-full bg-btn-gradient p-2 shadow-neu-md-soft;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-md dark:bg-none;
+					}
+
+					.neu-icon-only-square-btn {
+						@apply rounded-lg bg-btn-gradient p-2 shadow-neu-md-soft;
+						/* dark mode    */
+						@apply dark:shadow-neu-dark-md dark:bg-none;
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Icon Buttons">
@@ -43,6 +107,14 @@
 				<button class="neu-icon-btn neu-btn mr-3 text-red-700" type="button"><x-svg.heart class="size-7" /> Danger</button>
 				<button class="neu-icon-btn neu-btn text-primary active mr-3" type="button"><x-svg.truck class="size-7" /> Active</button>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-icon-btn {
+						@apply flex justify-center items-center gap-2 text-sm;
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Loading Buttons">
@@ -58,6 +130,22 @@
 				<button class="neu-btn text-primary mr-3" type="button">Default</button>
 				<button class="neu-btn neu-btn-lg text-primary mr-3" type="button">Large</button>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-btn-sm {
+						@apply py-1 px-2 text-xs;
+					}
+
+					.neu-btn-lg {
+						@apply py-3 px-4 text-base;
+					}
+
+					.neu-btn-xl {
+						@apply py-4 px-5 text-lg;
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 	</x-grid>
 
