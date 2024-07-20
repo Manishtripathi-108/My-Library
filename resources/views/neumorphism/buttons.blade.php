@@ -47,11 +47,27 @@
 
 		<x-grid.item title="Loading Buttons">
 			<div class="flex-center">
-				<button class="neu-btn neu-icon-only-btn text-primary mr-3" type="button"><x-svg.loading class="size-6"/></button>
-				<button class="neu-btn neu-icon-btn text-secondary mr-3" type="button"><x-svg.loading class="size-6"/>Loading...</button>
+				<button class="neu-btn neu-icon-only-btn text-primary mr-3" type="button"><x-svg.loading class="size-6" /></button>
+				<button class="neu-btn neu-icon-btn text-secondary mr-3" type="button"><x-svg.loading class="size-6" />Loading...</button>
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Button Sizes">
+			<div class="flex-center">
+				<button class="neu-btn neu-btn-sm text-primary mr-3" type="button">Small</button>
+				<button class="neu-btn text-primary mr-3" type="button">Default</button>
+				<button class="neu-btn neu-btn-lg text-primary mr-3" type="button">Large</button>
+			</div>
+		</x-grid.item>
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Buttons</x-sidenav-list>
+		<x-sidenav-list>Button Pill</x-sidenav-list>
+		<x-sidenav-list>Only Icon Buttons</x-sidenav-list>
+		<x-sidenav-list>Icon Buttons</x-sidenav-list>
+		<x-sidenav-list>Loading Buttons</x-sidenav-list>
+		<x-sidenav-list>Button Sizes</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
