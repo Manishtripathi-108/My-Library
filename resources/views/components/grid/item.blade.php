@@ -35,7 +35,7 @@
 				@endif
 				@if ($jsCode != '')
 					<button class="neu-btn text-xs" :class="{ 'active': code_tab === 'script-code' }" @click="code_tab = 'script-code'">
-						Script
+						JS
 					</button>
 				@endif
 			</div>
