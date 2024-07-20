@@ -72,6 +72,11 @@ html {
         @apply text-primary transform scale-105;
     }
 
+    /*-- -------------------------------- neu-btn-pill -------------------------------- */
+    .neu-btn-pill {
+        @apply rounded-s-full rounded-e-full;
+    }
+
     /*-- -------------------------------- neu-icon-btn -------------------------------- */
     .neu-icon-btn {
         @apply flex justify-center items-center gap-2 text-sm;

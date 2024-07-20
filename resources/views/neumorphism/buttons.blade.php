@@ -16,6 +16,16 @@
 			</div>
 		</x-grid.item>
 
+        <x-grid.item title="Button Pill">
+            <div class="flex-center">
+                <button class="neu-btn neu-btn-pill text-primary mr-2" type="button">Primary</button>
+                <button class="neu-btn neu-btn-pill text-secondary mr-2" type="button">Secondary</button>
+                <button class="neu-btn neu-btn-pill mr-2 text-green-700" type="button">Success</button>
+                <button class="neu-btn neu-btn-pill mr-2 text-red-700" type="button">Danger</button>
+                <button class="neu-btn neu-btn-pill text-primary active mr-2" type="button" disabled>Active</button>
+            </div>
+        </x-grid.item>
+
 	</x-grid>
 
 </x-app-layout>
