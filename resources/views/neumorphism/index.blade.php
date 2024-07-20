@@ -64,7 +64,7 @@
 			</x-slot>
 
 			<x-grid.item title="Profile Card">
-				@include('neumorphism.cards')
+				@include('neumorphism.neu-cards')
 			</x-grid.item>
 
 		</x-grid>

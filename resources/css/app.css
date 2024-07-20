@@ -87,7 +87,7 @@ html {
 
     /*-- -------------------------------- neu-btn-pill -------------------------------- */
     .neu-btn-pill {
-        @apply rounded-s-full rounded-e-full;
+        @apply rounded-l-full rounded-r-full;
     }
 
     /*-- -------------------------------- neu-icon-btn -------------------------------- */
