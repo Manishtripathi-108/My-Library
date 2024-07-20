@@ -87,7 +87,14 @@ html {
         @apply rounded-full bg-btn-gradient p-2 shadow-neu-md-soft;
 
         /* dark mode */
-        @apply dark:shadow-neu-dark-md;
+        @apply dark:shadow-neu-dark-md dark:bg-none;
+    }
+
+    .neu-icon-only-square-btn {
+        @apply rounded-lg bg-btn-gradient p-2 shadow-neu-md-soft;
+
+        /* dark mode    */
+        @apply dark:shadow-neu-dark-md dark:bg-none;
     }
 
     /*-- -------------------------------- neu-inset-input -------------------------------- */
