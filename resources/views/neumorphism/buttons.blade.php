@@ -36,6 +36,7 @@
 						@apply text-primary transform scale-105;
 					}
 				</style>
+			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Button Pill">
@@ -72,6 +73,7 @@
 						@apply rounded-l-full rounded-r-full;
 					}
 				</style>
+			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Only Icon Buttons">

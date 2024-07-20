@@ -1,7 +1,4 @@
-<svg fill="currentColor" {{ $attributes->merge(['class' => ' ']) }} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-	<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-	<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-	<g id="SVGRepo_iconCarrier">
-		<path d="M5.755,20.283,4,8H20L18.245,20.283A2,2,0,0,1,16.265,22H7.735A2,2,0,0,1,5.755,20.283ZM21,4H16V3a1,1,0,0,0-1-1H9A1,1,0,0,0,8,3V4H3A1,1,0,0,0,3,6H21a1,1,0,0,0,0-2Z"></path>
-	</g>
+<svg {{ $attributes->merge(['class' => ' ']) }} fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	<path d="M9.25 3a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 .75.75v.75H19a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1 0-1.5h4.25V3Z"></path>
+	<path fill-rule="evenodd" d="M6.24 7.945a.5.5 0 0 1 .497-.445h10.526a.5.5 0 0 1 .497.445l.2 1.801a44.213 44.213 0 0 1 0 9.771l-.02.177a2.603 2.603 0 0 1-2.226 2.29 26.788 26.788 0 0 1-7.428 0 2.603 2.603 0 0 1-2.227-2.29l-.02-.177a44.239 44.239 0 0 1 0-9.77l.2-1.802Zm4.51 3.455a.75.75 0 0 0-1.5 0v7a.75.75 0 0 0 1.5 0v-7Zm4 0a.75.75 0 0 0-1.5 0v7a.75.75 0 0 0 1.5 0v-7Z" clip-rule="evenodd"></path>
 </svg>
