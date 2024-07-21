@@ -84,7 +84,7 @@
 	<x-slot name="rightSidenav">
 		<x-sidenav-list>Badge</x-sidenav-list>
 		<x-sidenav-list>Sizing With Badges</x-sidenav-list>
-		<x-sidenav-link>Notification Badges</x-sidenav-link>
+		<x-sidenav-list>Notification Badges</x-sidenav-list>
 	</x-slot>
 
 </x-app-layout>

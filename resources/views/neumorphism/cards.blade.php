@@ -156,6 +156,31 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Profile Card 2">
+
+		</x-grid.item>
+
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+
+		<div class="text-secondary mt-2 list-none text-xs">
+			Blog Cards
+			<div class="pl-2">
+				<x-sidenav-list>Blog Card 1</x-sidenav-list>
+				<x-sidenav-list>Blog Card 2</x-sidenav-list>
+				<x-sidenav-list>Blog Card 3</x-sidenav-list>
+			</div>
+		</div>
+
+		<div class="text-secondary mt-3 list-none text-xs">
+			Profile Cards
+			<div class="pl-2">
+				<x-sidenav-list>Profile Card 1</x-sidenav-list>
+				<x-sidenav-list>Profile Card 2</x-sidenav-list>
+			</div>
+		</div>
+
+	</x-slot>
 
 </x-app-layout>
