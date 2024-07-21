@@ -156,8 +156,109 @@
 			</div>
 		</x-grid.item>
 
-		<x-grid.item title="Profile Card 2">
+		<x-grid.item title="Profile Card 2" contentClass="pt-20">
+			<div class="flex w-full flex-wrap justify-center">
+				<!-- Profile Card 1 -->
+				<div class="mt-5 w-full px-3 md:w-1/2">
+					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+						<div class="p-6 pb-10">
+							<div class="bg-primary size-40 relative mx-auto -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+								<img class="size-full rounded-lg object-cover" src="{{ asset('images/fox.png') }}" alt="Fox">
+							</div>
+							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
+							<span class="text-secondary font-karla text-sm">Boss</span>
+							<div class="mb-5 mt-3 flex justify-center space-x-3">
+								<div>
+									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+										<x-svg.facebook class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+										<x-svg.twitter class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</div>
+							</div>
+							<div class="flex-center gap-3">
+								<a class="neu-btn neu-icon-btn" href="#">
+									<x-svg.person-plus class="size-6" /> Follow
+								</a>
+								<a class="neu-btn" href="#">
+									Message
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<!-- Profile Card 2 -->
+				<div class="mt-5 w-full px-3 md:w-1/2">
+					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+						<div class="bg-primary size-44 relative mx-auto -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/fox.png') }}" alt="Fox">
+						</div>
+						<div class="p-6">
+							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
+							<span class="text-secondary font-karla text-sm">Cutie pie</span>
+							<div class="my-3 flex justify-center space-x-3">
+								<div>
+									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+										<x-svg.facebook class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+										<x-svg.twitter class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</div>
+							</div>
+							<div class="mt-6 flex justify-evenly">
+								<div class="text-center">
+									<div class="neu-btn neu-icon-only-btn mx-auto mb-2 w-fit">
+										<x-svg.facebook class="size-5" />
+									</div>
+									<h2 class="text-primary text-xl font-medium">25K</h2>
+									<span class="text-secondary text-sm">Followers</span>
+								</div>
+								<div class="text-center">
+									<div class="neu-btn neu-icon-only-btn mx-auto mb-2 w-fit">
+										<x-svg.ex class="size-5" />
+									</div>
+									<h2 class="text-primary text-xl font-medium">5K</h2>
+									<span class="text-secondary text-sm">Followers</span>
+								</div>
+								<div class="text-center">
+									<div class="neu-btn neu-icon-only-btn mx-auto mb-2 w-fit">
+										<x-svg.ex class="size-5" />
+									</div>
+									<h2 class="text-primary text-xl font-medium">62K</h2>
+									<span class="text-secondary text-sm">Followers</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</x-grid.item>
 
 	</x-grid>

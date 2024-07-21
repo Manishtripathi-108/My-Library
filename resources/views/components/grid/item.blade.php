@@ -1,4 +1,4 @@
-@props(['title' => '', 'isNeumorphism' => false, 'htmlCode' => $slot, 'cssCode' => '', 'jsCode' => '', 'id' => $attributes->get('id') ?? Str::slug($title)])
+@props(['title' => '', 'contentClass' => '', 'htmlCode' => $slot, 'cssCode' => '', 'jsCode' => '', 'id' => $attributes->get('id') ?? Str::slug($title)])
 
 <div id="{{ $id }}" x-data="{ code_open: false }" {{ $attributes->class(['col-span-1 grid-items w-full mt-10 border-b border-gray-600 pb-10']) }}>
 	<h3 class="text-secondary mb-8 font-alegreya text-2xl font-bold tracking-wider">
@@ -6,7 +6,7 @@
 	</h3>
 
 	{{-- Content --}}
-	<div class="flex-center *:animate-swash-in *:on-scroll-animation flex-col rounded-lg border border-gray-600 p-5">
+	<div class="flex-center *:animate-swash-in *:on-scroll-animation {{ $contentClass }} flex-col rounded-lg border border-gray-600 p-5">
 
 		{{ $slot }}
 
