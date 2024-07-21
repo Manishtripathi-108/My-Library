@@ -169,22 +169,22 @@
 							<span class="text-secondary font-karla text-sm">Boss</span>
 							<div class="mb-5 mt-3 flex justify-center space-x-3">
 								<div>
-									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+									<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
 										<x-svg.facebook class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+									<a class="text-blue-400 hover:text-blue-600" href="#" target="_blank">
 										<x-svg.twitter class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+									<a class="text-blue-300 hover:text-blue-500" href="#" target="_blank">
 										<x-svg.ex class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+									<a class="text-pink-400 hover:text-pink-600" href="#" target="_blank">
 										<x-svg.ex class="size-5" />
 									</a>
 								</div>
@@ -212,22 +212,22 @@
 							<span class="text-secondary font-karla text-sm">Cutie pie</span>
 							<div class="my-3 flex justify-center space-x-3">
 								<div>
-									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+									<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
 										<x-svg.facebook class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+									<a class="text-blue-400 hover:text-blue-600" href="#" target="_blank">
 										<x-svg.twitter class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+									<a class="text-blue-300 hover:text-blue-500" href="#" target="_blank">
 										<x-svg.ex class="size-5" />
 									</a>
 								</div>
 								<div>
-									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+									<a class="text-pink-400 hover:text-pink-600" href="#" target="_blank">
 										<x-svg.ex class="size-5" />
 									</a>
 								</div>
@@ -261,6 +261,83 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Profile Card 3" contentClass="pt-20">
+			<div class="flex w-full flex-wrap justify-center">
+				<!-- Profile Card 1 -->
+				<div class="mt-5 w-full px-3 md:w-1/2">
+					<div class="bg-primary rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+						<div class="p-6">
+							<div class="bg-primary size-40 relative -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+								<img class="size-full rounded-lg object-cover" src="{{ asset('images/fox.png') }}" alt="Bonnie Avatar">
+							</div>
+							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
+							<span class="text-secondary font-karla text-sm">Web Designer</span>
+							<ul class="my-3 flex space-x-3">
+								<li>
+									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+										<x-svg.facebook class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+										<x-svg.twitter class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</li>
+							</ul>
+							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Profile Card 2 -->
+				<div class="mt-5 w-full px-3 md:w-1/2">
+					<div class="bg-primary p-6 rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+						<div class="bg-primary size-44 relative -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/fox.png') }}" alt="Christopher Avatar">
+						</div>
+						<div class="py-6">
+							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
+							<span class="text-secondary font-karla text-sm">Marketing</span>
+							<ul class="my-3 flex space-x-3">
+								<li>
+									<a class="text-blue-600 hover:text-blue-800" href="#" aria-label="facebook social link" target="_blank">
+										<x-svg.facebook class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-blue-400 hover:text-blue-600" href="#" aria-label="twitter social link" target="_blank">
+										<x-svg.twitter class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-blue-300 hover:text-blue-500" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</li>
+								<li>
+									<a class="text-pink-400 hover:text-pink-600" href="#" aria-label="ex social link" target="_blank">
+										<x-svg.ex class="size-5" />
+									</a>
+								</li>
+							</ul>
+							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</x-grid.item>
+
 	</x-grid>
 
 	<x-slot name="rightSidenav">
@@ -279,6 +356,7 @@
 			<div class="pl-2">
 				<x-sidenav-list>Profile Card 1</x-sidenav-list>
 				<x-sidenav-list>Profile Card 2</x-sidenav-list>
+				<x-sidenav-list>Profile Card 3</x-sidenav-list>
 			</div>
 		</div>
 
