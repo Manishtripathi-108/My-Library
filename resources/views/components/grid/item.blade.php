@@ -42,16 +42,16 @@
 
 			<div class="scrollbar-thin overflow-x-auto p-5">
 				{{-- HTML Code --}}
-				<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'html-code'">{{ e($htmlCode) }}</pre>
+				<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'html-code'"><code class="language-html">{{ e($htmlCode) }}</code></pre>
 
 				{{-- CSS Code --}}
 				@if ($cssCode != '')
-					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'css-code'">{{ e($cssCode) }}</pre>
+					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'css-code'"><code class="language-css">{{ e($cssCode) }}</code></pre>
 				@endif
 
 				{{-- Script Code --}}
 				@if ($jsCode != '')
-					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'script-code'">{{ e($jsCode) }}</pre>
+					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'script-code'"><code class="language-javascript">{{ e($jsCode) }}</code></pre>
 				@endif
 			</div>
 		</div>

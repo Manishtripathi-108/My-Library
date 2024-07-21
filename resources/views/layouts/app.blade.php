@@ -30,6 +30,7 @@
 
 	<!-- Scripts & Styles -->
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
+	<link href="{{ asset('css/prism.css') }}" rel="stylesheet">
 	@stack('styles')
 </head>
 
@@ -112,6 +113,9 @@
 			}));
 		});
 	</script>
+
+	{{-- -----------------------------PrismJS----------------------------- --}}
+	<script src="{{ asset('js/prism.js') }}"></script>
 
 	@stack('scripts')
 
