@@ -40,18 +40,18 @@
 				@endif
 			</div>
 
-			<div class="scrollbar-thin overflow-x-auto p-5">
+			<div class="p-5">
 				{{-- HTML Code --}}
-				<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'html-code'"><code class="language-html">{{ e($htmlCode) }}</code></pre>
+				<pre class="scrollbar-thin" x-show="code_tab === 'html-code'"><code class="language-html">{{ e($htmlCode) }}</code></pre>
 
 				{{-- CSS Code --}}
 				@if ($cssCode != '')
-					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'css-code'"><code class="language-css">{{ e($cssCode) }}</code></pre>
+					<pre class="scrollbar-thin" x-show="code_tab === 'css-code'"><code class="language-css">{{ e($cssCode) }}</code></pre>
 				@endif
 
 				{{-- Script Code --}}
 				@if ($jsCode != '')
-					<pre class="text-secondary text-sm leading-normal" x-show="code_tab === 'script-code'"><code class="language-javascript">{{ e($jsCode) }}</code></pre>
+					<pre class="scrollbar-thin" x-show="code_tab === 'script-code'"><code class="language-javascript">{{ e($jsCode) }}</code></pre>
 				@endif
 			</div>
 		</div>
