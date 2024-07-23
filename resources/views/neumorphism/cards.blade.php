@@ -443,6 +443,45 @@
 			</x-slot>
 
 		</x-grid.item>
+	</x-grid>
+
+	<x-grid title="Pricing Cards">
+		<x-slot name="description">
+			Pricing cards are used to display pricing plans in a visually appealing way. They can be used to display the name of the plan, price, features, and other details.
+		</x-slot>
+
+		<x-grid.item title="Pricing Card 1">
+			<div class="w-full md:w-1/2">
+				<div class="bg-primary rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+
+					<div class="mb-3 rounded border border-light-secondary p-3 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+						<div class="text-secondary pl-3">
+							<span class="font-alegreya text-6xl font-bold">
+								199<span class="align-baseline text-3xl">₹</span>
+							</span>
+							<span class="text-sm">/ month</span>
+						</div>
+					</div>
+
+					<div class="mb-3 rounded border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+						<div class="space-y-2 p-3">
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Extensive component library</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Customizable themes</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Responsive design</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Cross-browser compatibility</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Detailed documentation</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Regular updates</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Community support</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Accessibility features</div>
+						</div>
+					</div>
+
+					<button class="neu-btn w-full" type="button">
+						Add to Cart
+					</button>
+				</div>
+			</div>
+		</x-grid.item>
 
 	</x-grid>
 
