@@ -382,10 +382,10 @@
 
 		<x-grid.item title="Profile Card 5">
 			<div class="group w-full md:w-1/2">
-				<div class="bg-primary preserve-3d group-hover:trans-rotate-y-180 relative rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs transition-all duration-700 ease-Out-back dark:shadow-neu-dark-xs">
+				<div class="bg-primary preserve-3d group-hover:trans-rotate-y-180 relative rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs transition-all duration-700 ease-Out-back dark:border-dark-secondary dark:shadow-neu-dark-xs">
 					<div class="flex-center backface-hidden size-full relative z-10 flex-col">
-						<div class="bg-primary size-1/2 mt-4 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
-							<img class="h-auto w-full rounded-full border border-light-secondary p-2 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+						<div class="bg-primary size-1/2 mt-4 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+							<img class="h-auto w-full rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
 						</div>
 						<div class="mt-5">
 							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
@@ -441,7 +441,6 @@
 					}
 				</style>
 			</x-slot>
-
 		</x-grid.item>
 	</x-grid>
 
