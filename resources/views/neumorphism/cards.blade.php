@@ -380,6 +380,65 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Profile Card 5">
+			<div class="group w-full md:w-1/2">
+				<div class="bg-primary preserve-3d group-hover:trans-rotate-y-180 relative rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs transition-all duration-700 ease-Out-back dark:shadow-neu-dark-xs">
+					<div class="flex-center backface-hidden size-full relative z-10 flex-col">
+						<div class="bg-primary size-1/2 mt-4 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+							<img class="h-auto w-full rounded-full border border-light-secondary p-2 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+						</div>
+						<div class="mt-5">
+							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
+							<span class="text-secondary text-sm">Fox Specialist</span>
+						</div>
+					</div>
+					<div class="trans-rotate-y-180 backface-hidden flex-center size-full absolute left-0 top-0 z-20 flex-col">
+						<div class="p-5">
+							<div class="mb-4 flex justify-center space-x-3">
+								<div>
+									<a class="text-blue-600 hover:text-blue-800" href="#">
+										<x-svg.ex class="h-5 w-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-400 hover:text-blue-600" href="#">
+										<x-svg.ex class="h-5 w-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-blue-300 hover:text-blue-500" href="#">
+										<x-svg.ex class="h-5 w-5" />
+									</a>
+								</div>
+								<div>
+									<a class="text-pink-400 hover:text-pink-600" href="#">
+										<x-svg.ex class="h-5 w-5" />
+									</a>
+								</div>
+							</div>
+							<p class="text-secondary mt-3"><x-joke /></p>
+							<a class="neu-btn neu-icon-btn mt-4 inline-block text-sm" href="#">
+								<x-svg.person-plus class="size-5" /> Follow
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.rotate-y-180 {
+						transform: rotateY(180deg);
+					}
+
+					.preserve-3d {
+						transform-style: preserve-3d;
+					}
+				</style>
+			</x-slot>
+
+		</x-grid.item>
+
 	</x-grid>
 
 	<x-slot name="rightSidenav">
@@ -400,6 +459,7 @@
 				<x-sidenav-list>Profile Card 2</x-sidenav-list>
 				<x-sidenav-list>Profile Card 3</x-sidenav-list>
 				<x-sidenav-list>Profile Card 4</x-sidenav-list>
+				<x-sidenav-list>Profile Card 5</x-sidenav-list>
 			</div>
 		</div>
 

@@ -173,6 +173,18 @@ html {
 }
 
 @layer utilities {
+    .trans-rotate-y-180 {
+        transform: rotateY(180deg);
+    }
+
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+
+    .backface-hidden {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
     /* -------------------------- Animate timeline view ------------------------- */
     .on-scroll-animation {
         animation-timeline: view();
@@ -598,6 +610,4 @@ html {
         @apply pattern-zigzag;
         @apply dark:pattern-dark-zigzag;
     }
-
-    /*-- -------------------------------- shadow -------------------------------- */
 }
