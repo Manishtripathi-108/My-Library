@@ -417,7 +417,7 @@
 								</div>
 							</div>
 							<p class="text-secondary mt-3"><x-joke /></p>
-							<a class="neu-btn neu-icon-btn mt-4 inline-block text-sm" href="#">
+							<a class="neu-btn neu-icon-btn mt-4 inline-flex text-sm" href="#">
 								<x-svg.person-plus class="size-5" /> Follow
 							</a>
 						</div>
@@ -427,12 +427,17 @@
 
 			<x-slot name="cssCode">
 				<style>
-					.rotate-y-180 {
+					.trans-rotate-y-180 {
 						transform: rotateY(180deg);
 					}
 
 					.preserve-3d {
 						transform-style: preserve-3d;
+					}
+
+					.backface-hidden {
+						-webkit-backface-visibility: hidden;
+						backface-visibility: hidden;
 					}
 				</style>
 			</x-slot>
