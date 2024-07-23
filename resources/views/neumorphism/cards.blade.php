@@ -507,6 +507,13 @@
 			</div>
 		</div>
 
+		<div class="text-secondary mt-3 list-none text-xs">
+			Pricing Cards
+			<div class="pl-2">
+				<x-sidenav-list>Pricing Card 1</x-sidenav-list>
+			</div>
+		</div>
+
 	</x-slot>
 
 </x-app-layout>
