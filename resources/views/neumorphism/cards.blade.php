@@ -475,9 +475,34 @@
 						</div>
 					</div>
 
-					<button class="neu-btn w-full" type="button">
-						Add to Cart
-					</button>
+					<button class="neu-btn w-full" type="button">Buy Now</button>
+				</div>
+			</div>
+		</x-grid.item>
+
+		<x-grid.item title="Pricing Card 2">
+			<div class="mb-5 w-full px-3 lg:w-5/6">
+				<div class="bg-primary flex flex-wrap items-center rounded-lg border border-light-secondary p-3 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+
+					<div class="w-full p-3 sm:w-2/5">
+						<div class="text-secondary p-3 text-center">
+							<h3 class="mb-0">Basic</h3>
+							<div class="my-4">
+								<span class="text-4xl font-bold"><span class="align-baseline text-sm font-medium">₹</span>19</span>
+							</div>
+							<button class="neu-btn w-full" type="button" href="#">Buy Now</button>
+						</div>
+					</div>
+
+					<div class="w-full p-3 sm:w-3/5">
+						<div class="space-y-2 p-3">
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Extensive component library</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Customizable themes</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Responsive design</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Community support</div>
+							<div class="text-secondary flex items-center"><x-svg.ex class="size-5 mr-2" />Accessibility features</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</x-grid.item>
@@ -510,6 +535,7 @@
 			Pricing Cards
 			<div class="pl-2">
 				<x-sidenav-list>Pricing Card 1</x-sidenav-list>
+				<x-sidenav-list>Pricing Card 2</x-sidenav-list>
 			</div>
 		</div>
 
