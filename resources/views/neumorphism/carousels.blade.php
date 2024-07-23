@@ -11,15 +11,15 @@
 				<div class="flex-center size-full relative overflow-hidden rounded-md">
 					<!-- Slide 1 -->
 					<div class="absolute opacity-0 transition-opacity duration-700" :class="{ 'opacity-100': activeIndex === 0 }">
-						<img class="size-full object-cover" src="{{ asset('images/fantasy-plane.png') }}" alt="Slide 1">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-plane.png') }}" alt="Slide 1">
 					</div>
 					<!-- Slide 2 -->
 					<div class="absolute opacity-0 transition-opacity duration-700" :class="{ 'opacity-100': activeIndex === 1 }">
-						<img class="size-full object-cover" src="{{ asset('images/lady-rabbit.png') }}" alt="Slide 2">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-lake.jpg') }}" alt="Slide 2">
 					</div>
 					<!-- Slide 3 -->
 					<div class="absolute opacity-0 transition-opacity duration-700" :class="{ 'opacity-100': activeIndex === 2 }">
-						<img class="size-full object-cover" src="{{ asset('images/cards/flower.png') }}" alt="Slide 3">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/sleeping-beauty.jpg') }}" alt="Slide 3">
 					</div>
 					<!-- Controls -->
 					<button class="text-secondary hover:text-primary focus:text-primary flex-center absolute inset-y-0 left-0 focus:outline-none" @click="prev">
@@ -57,15 +57,15 @@
 				<div class="flex-center size-full relative overflow-hidden rounded-md">
 					<!-- Slide 1 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 0, 'animate-slide-right-return': direction === 'next' && activeIndex === 0, 'animate-slide-left-return': direction === 'prev' && activeIndex === 0, 'animate-slide-left': direction === 'next' && previousIndex === 0, 'animate-slide-right': direction === 'prev' && previousIndex === 0 }">
-						<img class="size-full object-cover" src="{{ asset('images/fantasy-plane.png') }}" alt="Slide 1">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-plane.png') }}" alt="Slide 1">
 					</div>
 					<!-- Slide 2 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 1, 'animate-slide-right-return': direction === 'next' && activeIndex === 1, 'animate-slide-left-return': direction === 'prev' && activeIndex === 1, 'animate-slide-left': direction === 'next' && previousIndex === 1, 'animate-slide-right': direction === 'prev' && previousIndex === 1 }">
-						<img class="size-full object-cover" src="{{ asset('images/lady-rabbit.png') }}" alt="Slide 2">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-lake.jpg') }}" alt="Slide 2">
 					</div>
 					<!-- Slide 3 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 2, 'animate-slide-right-return': direction === 'next' && activeIndex === 2, 'animate-slide-left-return': direction === 'prev' && activeIndex === 2, 'animate-slide-left': direction === 'next' && previousIndex === 2, 'animate-slide-right': direction === 'prev' && previousIndex === 2 }">
-						<img class="size-full object-cover" src="{{ asset('images/cards/flower.png') }}" alt="Slide 3">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/sleeping-beauty.jpg') }}" alt="Slide 3">
 					</div>
 					<!-- Controls -->
 					<button class="text-secondary hover:text-primary focus:text-primary flex-center absolute inset-y-0 left-0 focus:outline-none" @click="prev">
@@ -110,15 +110,15 @@
 				<div class="flex-center size-full relative overflow-hidden rounded-md">
 					<!-- Slide 1 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 0, 'animate-slide-right-return': direction === 'next' && activeIndex === 0, 'animate-slide-left-return': direction === 'prev' && activeIndex === 0, 'animate-slide-left': direction === 'next' && previousIndex === 0, 'animate-slide-right': direction === 'prev' && previousIndex === 0 }">
-						<img class="size-full object-cover" src="{{ asset('images/fantasy-plane.png') }}" alt="Slide 1">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-plane.png') }}" alt="Slide 1">
 					</div>
 					<!-- Slide 2 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 1, 'animate-slide-right-return': direction === 'next' && activeIndex === 1, 'animate-slide-left-return': direction === 'prev' && activeIndex === 1, 'animate-slide-left': direction === 'next' && previousIndex === 1, 'animate-slide-right': direction === 'prev' && previousIndex === 1 }">
-						<img class="size-full object-cover" src="{{ asset('images/lady-rabbit.png') }}" alt="Slide 2">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-lake.jpg') }}" alt="Slide 2">
 					</div>
 					<!-- Slide 3 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 2, 'animate-slide-right-return': direction === 'next' && activeIndex === 2, 'animate-slide-left-return': direction === 'prev' && activeIndex === 2, 'animate-slide-left': direction === 'next' && previousIndex === 2, 'animate-slide-right': direction === 'prev' && previousIndex === 2 }">
-						<img class="size-full object-cover" src="{{ asset('images/cards/flower.png') }}" alt="Slide 3">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/sleeping-beauty.jpg') }}" alt="Slide 3">
 					</div>
 					<!-- Controls -->
 					<button class="text-secondary hover:text-primary focus:text-primary flex-center absolute inset-y-0 left-0 focus:outline-none" @click="prev">
@@ -181,15 +181,15 @@
 				<div class="flex-center size-full relative overflow-hidden rounded-md">
 					<!-- Slide 1 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 0, 'animate-slide-right-return': direction === 'next' && activeIndex === 0, 'animate-slide-left-return': direction === 'prev' && activeIndex === 0, 'animate-slide-left': direction === 'next' && previousIndex === 0, 'animate-slide-right': direction === 'prev' && previousIndex === 0 }">
-						<img class="size-full object-cover" src="{{ asset('images/fantasy-plane.png') }}" alt="Slide 1">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-plane.png') }}" alt="Slide 1">
 					</div>
 					<!-- Slide 2 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 1, 'animate-slide-right-return': direction === 'next' && activeIndex === 1, 'animate-slide-left-return': direction === 'prev' && activeIndex === 1, 'animate-slide-left': direction === 'next' && previousIndex === 1, 'animate-slide-right': direction === 'prev' && previousIndex === 1 }">
-						<img class="size-full object-cover" src="{{ asset('images/lady-rabbit.png') }}" alt="Slide 2">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-lake.jpg') }}" alt="Slide 2">
 					</div>
 					<!-- Slide 3 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 2, 'animate-slide-right-return': direction === 'next' && activeIndex === 2, 'animate-slide-left-return': direction === 'prev' && activeIndex === 2, 'animate-slide-left': direction === 'next' && previousIndex === 2, 'animate-slide-right': direction === 'prev' && previousIndex === 2 }">
-						<img class="size-full object-cover" src="{{ asset('images/cards/flower.png') }}" alt="Slide 3">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/sleeping-beauty.jpg') }}" alt="Slide 3">
 					</div>
 					<!-- Controls -->
 					<button class="text-secondary hover:text-primary focus:text-primary flex-center absolute inset-y-0 left-0 focus:outline-none" @click="prev">
@@ -271,21 +271,21 @@
 				<div class="flex-center size-full relative overflow-hidden rounded-md">
 					<!-- Slide 1 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 0, 'animate-slide-right-return': direction === 'next' && activeIndex === 0, 'animate-slide-left-return': direction === 'prev' && activeIndex === 0, 'animate-slide-left': direction === 'next' && previousIndex === 0, 'animate-slide-right': direction === 'prev' && previousIndex === 0 }">
-						<img class="size-full object-cover" src="{{ asset('images/fantasy-plane.png') }}" alt="Slide 1">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-plane.png') }}" alt="Slide 1">
 						<div class="flex-center absolute inset-0 bg-black bg-opacity-50">
 							<h2 class="text-2xl text-white">Fantasy Plane</h2>
 						</div>
 					</div>
 					<!-- Slide 2 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 1, 'animate-slide-right-return': direction === 'next' && activeIndex === 1, 'animate-slide-left-return': direction === 'prev' && activeIndex === 1, 'animate-slide-left': direction === 'next' && previousIndex === 1, 'animate-slide-right': direction === 'prev' && previousIndex === 1 }">
-						<img class="size-full object-cover" src="{{ asset('images/lady-rabbit.png') }}" alt="Slide 2">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/fantasy-lake.jpg') }}" alt="Slide 2">
 						<div class="flex-center absolute inset-0 bg-black bg-opacity-50">
 							<h2 class="text-2xl text-white">Lady with Rabbit</h2>
 						</div>
 					</div>
 					<!-- Slide 3 -->
 					<div class="animation-duration-700 absolute opacity-0 transition-opacity duration-1000" :class="{ 'opacity-100': activeIndex === 2, 'animate-slide-right-return': direction === 'next' && activeIndex === 2, 'animate-slide-left-return': direction === 'prev' && activeIndex === 2, 'animate-slide-left': direction === 'next' && previousIndex === 2, 'animate-slide-right': direction === 'prev' && previousIndex === 2 }">
-						<img class="size-full object-cover" src="{{ asset('images/cards/flower.png') }}" alt="Slide 3">
+						<img class="size-full object-cover" src="{{ asset('images/landscape/sleeping-beauty.jpg') }}" alt="Slide 3">
 						<div class="flex-center absolute inset-0 bg-black bg-opacity-50">
 							<h2 class="text-2xl text-white">Flower</h2>
 						</div>
