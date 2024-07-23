@@ -506,11 +506,41 @@
 				</div>
 			</div>
 		</x-grid.item>
+	</x-grid>
+
+	<x-grid title="Call To Actions Cards (CTA)">
+		<x-slot name="description">
+			Call to action cards are used to encourage users to take a specific action. They can be used to display a title, description, and a button to take action.
+		</x-slot>
+
+		<x-grid.item title="CTA 1">
+			<div class="w-full px-3">
+				<div class="bg-primary rounded-lg border border-light-secondary p-6 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+					<div class="px-6 text-center md:text-left">
+						<div class="flex flex-wrap items-center">
+							<div class="w-full md:w-1/2">
+								<h2 class="text-primary mb-4 font-alegreya text-3xl">Welcome to the <span class="hidden font-alegreya text-inherit dark:block">Moon</span><span class="font-alegreya text-inherit dark:hidden">Sun</span></h2>
+								<p class="text-secondary mb-6"><x-joke /></p>
+								<a class="neu-btn neu-icon-btn neu-btn-lg inline-flex" href="#">
+									<span class="hidden dark:block"><x-svg.moon class="size-5" /></span><span class="dark:hidden"><x-svg.sun class="size-5" /></span>
+									Go to
+									<span class="hidden dark:block">Moon</span><span class="dark:hidden">Sun</span>
+								</a>
+							</div>
+							<div class="mt-6 w-full md:mt-0 md:w-1/2">
+								<span class="dark:hidden"><x-svg.man-spaceship dark="true"/></span>
+								<span class="hidden dark:block"><x-svg.man-spaceship /></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</x-grid.item>
 
 	</x-grid>
 
 	<x-slot name="rightSidenav">
-
 		<div class="text-secondary mt-2 list-none text-xs">
 			Blog Cards
 			<div class="pl-2">
@@ -536,6 +566,13 @@
 			<div class="pl-2">
 				<x-sidenav-list>Pricing Card 1</x-sidenav-list>
 				<x-sidenav-list>Pricing Card 2</x-sidenav-list>
+			</div>
+		</div>
+
+		<div class="text-secondary mt-3 list-none text-xs">
+			Call To Actions Cards
+			<div class="pl-2">
+				<x-sidenav-list>CTA 1</x-sidenav-list>
 			</div>
 		</div>
 
