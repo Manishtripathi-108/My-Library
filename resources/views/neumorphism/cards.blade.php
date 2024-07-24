@@ -100,8 +100,8 @@
 						</div>
 						<div class="flex items-center">
 							<a class="flex-center text-secondary gap-1 rounded-md text-xs transition-shadow hover:shadow-neu-inset-sm dark:hover:shadow-neu-dark-inset-sm md:text-sm" href="#"><x-svg.comments class="md:size-5 size-3" />143M</a>
-							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn mx-2 text-xs md:text-sm"><x-svg.share class="md:size-5 size-3" /> Share</button>
-							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn text-xs md:text-sm"><x-svg.save class="md:size-5 size-3" /> Save</button>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn mx-2 text-xs md:text-sm"><x-svg.share class="md:size-5 size-3" /> <span class="hidden sm:block">Share</span></button>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn text-xs md:text-sm"><x-svg.save class="md:size-5 size-3" /> <span class="hidden sm:block">Save</span></button>
 						</div>
 					</div>
 				</div>
@@ -149,7 +149,7 @@
 		<x-grid.item title="Profile Card 2">
 			<div class="flex w-full flex-wrap justify-center">
 				<!-- Profile Card 1 -->
-				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 						<div class="p-6 pb-10">
 							<div class="bg-primary size-40 relative mx-auto -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
@@ -192,7 +192,7 @@
 				</div>
 
 				<!-- Profile Card 2 -->
-				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative mx-auto -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
@@ -254,7 +254,7 @@
 		<x-grid.item title="Profile Card 3">
 			<div class="flex w-full flex-wrap justify-center">
 				{{-- Profile Card 1 --}}
-				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="p-6">
 							<div class="bg-primary size-40 relative -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
@@ -290,7 +290,7 @@
 				</div>
 
 				{{-- Profile Card 2 --}}
-				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary p-6 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
