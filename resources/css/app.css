@@ -15,6 +15,70 @@ html {
 }
 
 @layer components {
+    .neu-form-group {
+        @apply flex flex-col gap-2;
+    }
+
+    .neu-form-label {
+        @apply text-secondary font-karla text-sm leading-3;
+    }
+
+    .neu-form-text {
+        @apply text-secondary font-karla text-xs leading-3;
+    }
+
+    .neu-form-input {
+        @apply bg-primary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+    }
+
+    .neu-form-textarea {
+        @apply neu-form-input;
+    }
+
+    .neu-form-select {
+        @apply neu-form-input;
+    }
+
+    .neu-form-check {
+        @apply flex items-center gap-2;
+    }
+
+    .neu-form-checkbox {
+        @apply bg-primary flex-center size-4 appearance-none rounded border border-light-secondary shadow-neu-inset-xs outline-none transition duration-300 ease-in-out placeholder:tracking-wide;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-inset-xs dark:border-dark-secondary;
+    }
+
+    .neu-form-checkbox:checked {
+        @apply bg-primary text-primary flex-center;
+    }
+
+    .neu-form-checkbox:checked:after {
+        content: "\2713";
+        @apply text-primary size-full flex-center font-bold transition-all;
+    }
+
+    .neu-form-checkbox:checked:after {
+        transform: scale(0.8);
+    }
+
+    .neu-form-radio {
+        @apply neu-inset-checkbox;
+    }
+
+    .neu-form-radio:checked {
+        @apply bg-accent;
+    }
+
+    .neu-form-radio:checked:after {
+        content: "";
+        @apply bg-accent;
+    }
+
     /*-- -------------------------------- neu-badge -------------------------------- */
     .neu-badge {
         @apply text-secondary text-sm font-karla text-center border border-light-secondary rounded-full shadow-neu-inset-sm py-1 px-2;
