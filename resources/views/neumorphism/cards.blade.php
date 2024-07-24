@@ -7,7 +7,7 @@
 		</x-slot>
 
 		<x-grid.item title="Blog Card 1">
-			<div class="flex-center flex-wrap">
+			<div class="flex-center w-full flex-wrap gap-5">
 				<div class="w-full px-3 md:w-2/5">
 					<div class="bg-primary overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<img class="h-auto w-full rounded-t-lg" src="{{ asset('images/square/om.png') }}" alt="">
@@ -65,31 +65,23 @@
 		</x-grid.item>
 
 		<x-grid.item title="Blog Card 3">
-			<div class="bg-primary flex-center w-3/4 flex-col overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+			<div class="bg-primary flex-center w-full flex-col overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs md:w-3/4">
 				<div class="w-full px-5 py-4">
 					<div class="mb-4">
 						<div class="flex items-center justify-between">
-							<div class="flex items-center">
-								<a class="flex items-center" href="#">
-									<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
-									its me the fox hero
-								</a>
-							</div>
-							<div class="flex items-center">
-								<div class="relative inline-block text-left">
-									<button class="inline-flex w-full justify-center px-2 py-1 text-gray-700">
-										<x-svg.3dots class="size-7" />
-									</button>
-									<div class="absolute right-0 mt-2 hidden w-56 origin-top-right rounded-md">
-										<div class="py-1">
-											<a class="block px-4 py-2 text-sm text-gray-700" href="#">
-												<span class="fas fa-edit mr-2"></span> Edit post
-											</a>
-											<a class="block px-4 py-2 text-sm text-red-700" href="#">
-												<span class="fa fa-trash mr-2"></span> Delete post
-											</a>
-										</div>
-									</div>
+							<a class="text-primary flex items-center" href="#">
+								<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+								its me the fox hero
+							</a>
+							<div class="relative inline-block text-left" x-data="{ open: false }">
+								<button class="inline-flex w-full justify-center px-2 py-1 text-gray-700" @click="open=!open"><x-svg.3dots class="size-7" /></button>
+								<div class="bg-secondary absolute right-0 w-56 origin-top-right rounded-md py-1" x-show="open">
+									<a class="text-secondary flex items-center px-5 py-3 text-sm" href="#">
+										<x-svg.edit class="size-7 mr-2" /> Edit post
+									</a>
+									<a class="flex items-center px-5 py-3 text-sm text-red-700" href="#">
+										<x-svg.trash class="size-7 mr-2" /> Delete post
+									</a>
 								</div>
 							</div>
 						</div>
@@ -103,15 +95,15 @@
 					<p class="text-secondary mb-4"><x-joke /><x-joke /><x-joke /></p>
 				</div>
 				<div class="w-full px-5 py-4">
-					<div class="flex items-center justify-between">
+					<div class="flex items-center justify-between gap-2">
 						<div class="flex-center">
-							<button class="neu-btn neu-icon-btn text-primary mr-2 gap-1 p-2"><x-svg.up class="size-5" />1000</button>
-							<button class="neu-btn neu-icon-btn gap-1 p-2 text-red-800"><x-svg.down class="size-5" />0</button>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn mr-2 gap-1 text-xs md:text-sm"><x-svg.up class="md:size-5 size-3" />100</button>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn gap-1 text-xs text-red-800 md:text-sm"><x-svg.down class="md:size-5 size-3" />0</button>
 						</div>
 						<div class="flex items-center">
-							<a class="text-primary flex-center mr-3 gap-1 rounded-md p-2 transition-shadow hover:shadow-neu-inset-sm dark:hover:shadow-neu-dark-inset-sm" href="#"> <x-svg.comments class="size-5" />143M</a>
-							<button class="neu-btn neu-icon-btn text-primary mr-3"><x-svg.share class="size-5" /> Share</button>
-							<button class="neu-btn neu-icon-btn text-primary"><x-svg.save class="size-5" /> Save</button>
+							<a class="flex-center text-secondary gap-1 rounded-md text-xs transition-shadow hover:shadow-neu-inset-sm dark:hover:shadow-neu-dark-inset-sm md:text-sm" href="#"><x-svg.comments class="md:size-5 size-3" />143M</a>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn mx-2 text-xs md:text-sm"><x-svg.share class="md:size-5 size-3" /> Share</button>
+							<button class="neu-btn-sm md:neu-btn-default neu-btn neu-icon-btn text-xs md:text-sm"><x-svg.save class="md:size-5 size-3" /> Save</button>
 						</div>
 					</div>
 				</div>
