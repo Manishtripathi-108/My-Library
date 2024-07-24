@@ -90,8 +90,7 @@ html {
     }
 
     /*-- --------------- neu-form-select --------------- */
-    .neu-form-select,
-    .neu-form-multi-select {
+    .neu-form-select {
         @apply appearance-none bg-primary text-secondary rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none transition duration-300 bg-no-repeat pr-10;
         /* dark mode */
         @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;

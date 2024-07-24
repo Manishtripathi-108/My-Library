@@ -132,6 +132,18 @@
 					<option value="3">Option 3</option>
 				</select>
 			</div>
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-select {
+						@apply appearance-none bg-primary text-secondary rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none transition duration-300 bg-no-repeat pr-10;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+						background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%23767676" d="M8.037 11.166L14.5 22.36c.825 1.43 2.175 1.43 3 0l6.463-11.195c.826-1.43.15-2.598-1.5-2.598H9.537c-1.65 0-2.326 1.17-1.5 2.6z"/></svg>');
+						background-position: right 0.5rem center;
+						background-size: 1.5rem 1.5rem;
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 
 	</x-grid>
