@@ -24,17 +24,17 @@
 
 			<form action="#">
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="text" placeholder="Username" required>
+					<input class="neu-inset-outset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="text" placeholder="Username" required>
 					<x-svg.user class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="email" placeholder="Email" required>
+					<input class="neu-inset-outset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="email" placeholder="Email" required>
 					<x-svg.mail class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 
 				<div class="group relative mb-4 flex items-center">
-					<input class="neu-inset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="password" placeholder="Password" required>
+					<input class="neu-inset-outset-input text-primary group-hover:placeholder:text-primary peer w-full py-4 pl-11 pr-5" type="password" placeholder="Password" required>
 					<x-svg.lock class="text-secondary peer-focus:text-primary absolute left-3 h-6 w-6" />
 				</div>
 

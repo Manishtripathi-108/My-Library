@@ -15,6 +15,9 @@ html {
 }
 
 @layer components {
+    /* -------------------------------------------------------------------------- */
+    /*                                  neu-form                                  */
+    /* -------------------------------------------------------------------------- */
     .neu-form-group {
         @apply flex flex-col gap-2;
     }
@@ -27,13 +30,61 @@ html {
         @apply text-secondary font-karla text-xs leading-3;
     }
 
+    /*-- ------------------------- neu-form-input ------------------------- */
     .neu-form-input {
-        @apply bg-primary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide;
+        @apply bg-primary w-full active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide transition duration-300;
 
         /* dark mode */
         @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
     }
 
+    /*-- ------ neu-input-group & Icon ------ */
+    .neu-input-group {
+        @apply flex w-full items-center rounded-lg border border-light-secondary dark:border-dark-secondary;
+    }
+
+    .neu-input-icon {
+        @apply size-10 text-secondary border-r border-light-secondary px-2 py-1 dark:border-dark-secondary;
+    }
+
+    .neu-input-group-prepend .neu-form-input {
+        @apply rounded-r-lg rounded-l-none;
+    }
+
+    .neu-input-group-append .neu-form-input {
+        @apply rounded-l-lg rounded-r-none;
+    }
+
+    .neu-input-group .neu-form-input {
+        @apply border-none;
+    }
+
+    .neu-input-group:hover .neu-form-input,
+    .neu-input-group:focus .neu-form-input,
+    .neu-input-group:hover .neu-input-icon,
+    .neu-input-group:focus .neu-input-icon {
+        @apply placeholder:text-primary text-primary;
+    }
+
+    /*-- --------------- neu-inset-outset-input --------------- */
+    .neu-inset-outset-input {
+        @apply bg-primary appearance-none rounded-xl border-none shadow-neu-inset-sm outline-none 
+            placeholder:tracking-wide;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-inset-sm;
+    }
+
+    .neu-inset-outset-input:focus,
+    .neu-inset-outset-input:hover,
+    .neu-inset-outset-input:active {
+        @apply shadow-neu-md-soft placeholder:text-primary;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-md;
+    }
+
+    /*-- --------------- neu-form-textarea --------------- */
     .neu-form-textarea {
         @apply neu-form-input;
     }
@@ -42,6 +93,7 @@ html {
         @apply neu-form-input;
     }
 
+    /*-- ---------------- neu-form-checkbox ---------------- */
     .neu-form-check {
         @apply flex items-center gap-2;
     }
@@ -66,6 +118,7 @@ html {
         transform: scale(0.8);
     }
 
+    /*-- ---------------- neu-form-radio ---------------- */
     .neu-form-radio {
         @apply neu-inset-checkbox;
     }
@@ -79,7 +132,9 @@ html {
         @apply bg-accent;
     }
 
-    /*-- -------------------------------- neu-badge -------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /*                                  neu-badge                                 */
+    /* -------------------------------------------------------------------------- */
     .neu-badge {
         @apply text-secondary text-sm font-karla text-center border border-light-secondary rounded-full shadow-neu-inset-sm py-1 px-2;
 
@@ -115,7 +170,10 @@ html {
         @apply py-4 px-5 text-lg;
     }
 
-    /*-- -------------------------------- neu-btn -------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /*                                   neu-btn                                  */
+    /* -------------------------------------------------------------------------- */
+
     .neu-btn {
         @apply text-secondary bg-primary text-center tracking-wider border  border-light-secondary py-2 px-4 rounded-lg transition-all duration-300 shadow-neu-xs;
 
@@ -174,46 +232,9 @@ html {
         @apply dark:shadow-neu-dark-md dark:bg-none;
     }
 
-    /*-- -------------------------------- neu-inset-input -------------------------------- */
-    .neu-inset-input {
-        @apply bg-primary appearance-none rounded-xl border-none shadow-neu-inset-sm outline-none 
-        placeholder:tracking-wide;
-
-        /* dark mode */
-        @apply dark:shadow-neu-dark-inset-sm;
-    }
-
-    .neu-inset-input:focus,
-    .neu-inset-input:hover,
-    .neu-inset-input:active {
-        @apply shadow-neu-md-soft placeholder:text-primary;
-
-        /* dark mode */
-        @apply dark:shadow-neu-dark-md;
-    }
-
-    /*-- -------------------------------- neu-inset-checkbox -------------------------------- */
-    .neu-inset-checkbox {
-        @apply appearance-none rounded-full  border-8 border-light-secondary bg-primary outline-none flex items-center justify-center cursor-pointer size-52 shadow-neu-xl-soft checked:shadow-neu-inset-lg;
-
-        /* dark mode */
-        @apply dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-lg;
-    }
-
-    /*-- -------------------------------- neu-inset-input-with-icon -------------------------------- */
-    .neu-inset-icon-input-container {
-        @apply flex w-full items-center rounded-lg border border-light-secondary dark:border-dark-secondary;
-    }
-
-    .neu-inset-icon-input-icon {
-        @apply size-10 text-secondary border-r border-light-secondary px-2 py-1 dark:border-dark-secondary;
-    }
-
-    .neu-inset-icon-input {
-        @apply bg-primary active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-primary active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary w-full appearance-none rounded-r-lg border-none px-4 py-2 font-karla shadow-neu-inset-md placeholder:tracking-wide dark:shadow-neu-dark-inset-md;
-    }
-
-    /*-- -------------------------------- notebook -------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /*                                  notebook                                  */
+    /* -------------------------------------------------------------------------- */
     .notebook-page {
         background: repeating-linear-gradient(
                     #0000 0 calc(1.25rem - 1px),

@@ -6,7 +6,7 @@
 		</x-slot>
 
 		<x-grid.item title="Form Input">
-			<form class="w-2/3" action="#">
+			<form class="w-full md:w-2/3" action="#">
 				<div class="neu-form-group mb-4">
 					<label class="neu-form-label" for="email">Email address</label>
 					<input class="neu-form-input" id="email" type="email">
@@ -68,6 +68,58 @@
 					}
 				</style>
 			</x-slot>
+		</x-grid.item>
+
+		<x-grid.item title="Form with Icons">
+			<div class="w-full md:w-2/3">
+				<div class="neu-input-group neu-input-group-prepend">
+					<x-svg.ex class="neu-input-icon" />
+					<input class="neu-form-input" type="text" placeholder="Icon Left" />
+				</div>
+
+				<div class="neu-input-group neu-input-group-append mt-4">
+					<input class="neu-form-input" type="text" placeholder="Icon Right" />
+					<x-svg.ex class="neu-input-icon" />
+				</div>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-input {
+						@apply bg-primary w-full active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide transition duration-300;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+					}
+
+					/*-- ------ neu-input-group & Icon ------ */
+					.neu-input-group {
+						@apply flex w-full items-center rounded-lg border border-light-secondary dark:border-dark-secondary;
+					}
+
+					.neu-input-icon {
+						@apply size-10 text-secondary border-r border-light-secondary px-2 py-1 dark:border-dark-secondary;
+					}
+
+					.neu-input-group-prepend .neu-form-input {
+						@apply rounded-r-lg rounded-l-none;
+					}
+
+					.neu-input-group-append .neu-form-input {
+						@apply rounded-l-lg rounded-r-none;
+					}
+
+					.neu-input-group .neu-form-input {
+						@apply border-none;
+					}
+
+					.neu-input-group:hover .neu-form-input,
+					.neu-input-group:focus .neu-form-input,
+					.neu-input-group:hover .neu-input-icon,
+					.neu-input-group:focus .neu-input-icon {
+						@apply placeholder:text-primary text-primary;
+					}
+				</style>
+
 		</x-grid.item>
 
 	</x-grid>
