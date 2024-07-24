@@ -45,11 +45,9 @@
 		</x-grid.item>
 
 		<x-grid.item title="Blog Card 2">
-			<div class="bg-primary grid w-3/4 grid-cols-3 place-items-center overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
-				<div class="flex-center col-span-1 aspect-square w-full overflow-hidden">
-					<img class="h-full w-full object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
-				</div>
-				<div class="col-span-2">
+			<div class="bg-primary flex-center w-full flex-col place-items-center overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs sm:w-3/4 sm:flex-row">
+				<img class="h-auto w-full object-cover sm:w-1/3" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+				<div class="w-full">
 					<div class="p-6">
 						<a href="#">
 							<h3 class="text-primary mb-5 font-karla text-2xl">Red Fox</h3>
