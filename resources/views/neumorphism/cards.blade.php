@@ -146,10 +146,10 @@
 			</div>
 		</x-grid.item>
 
-		<x-grid.item title="Profile Card 2" contentClass="pt-20">
+		<x-grid.item title="Profile Card 2">
 			<div class="flex w-full flex-wrap justify-center">
 				<!-- Profile Card 1 -->
-				<div class="mt-5 w-full px-3 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 						<div class="p-6 pb-10">
 							<div class="bg-primary size-40 relative mx-auto -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
@@ -192,7 +192,7 @@
 				</div>
 
 				<!-- Profile Card 2 -->
-				<div class="mt-5 w-full px-3 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative mx-auto -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
@@ -251,10 +251,10 @@
 			</div>
 		</x-grid.item>
 
-		<x-grid.item title="Profile Card 3" contentClass="pt-20">
+		<x-grid.item title="Profile Card 3">
 			<div class="flex w-full flex-wrap justify-center">
 				{{-- Profile Card 1 --}}
-				<div class="mt-5 w-full px-3 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
 					<div class="bg-primary rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="p-6">
 							<div class="bg-primary size-40 relative -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
@@ -290,7 +290,7 @@
 				</div>
 
 				{{-- Profile Card 2 --}}
-				<div class="mt-5 w-full px-3 md:w-1/2">
+				<div class="mt-4 w-full px-3 pt-24 md:pt-20 md:w-1/2">
 					<div class="bg-primary rounded-lg border border-light-secondary p-6 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
