@@ -523,19 +523,46 @@
 								<p class="text-secondary mb-6"><x-joke /></p>
 								<a class="neu-btn neu-icon-btn neu-btn-lg inline-flex" href="#">
 									<span class="hidden dark:block"><x-svg.moon class="size-5" /></span><span class="dark:hidden"><x-svg.sun class="size-5" /></span>
-									Go to
-									<span class="hidden dark:block">Moon</span><span class="dark:hidden">Sun</span>
+									Go to<span class="m-0 hidden p-0 dark:block">Moon</span><span class="m-0 p-0 dark:hidden">Sun</span>
 								</a>
 							</div>
 							<div class="mt-6 w-full md:mt-0 md:w-1/2">
-								<span class="dark:hidden"><x-svg.man-spaceship dark="true"/></span>
+								<span class="dark:hidden"><x-svg.man-spaceship dark="true" /></span>
 								<span class="hidden dark:block"><x-svg.man-spaceship /></span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</x-grid.item>
 
+		<x-grid.item title="CTA 2">
+			<div class="w-full px-3">
+				<div class="bg-primary rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+					<div class="p-5">
+						<h2 class="text-secondary text-4xl">Ready to go to Space?</h2>
+					</div>
+					<div class="lg:px-5">
+						<p class="text-secondary mb-10 text-lg"><x-joke /> </p>
+						<div class="flex-center flex-col space-y-3 md:flex-row md:space-x-3 md:space-y-0">
+							<a class="neu-btn-lg neu-btn neu-icon-btn w-full md:w-auto" href="#">
+								<x-svg.apple-appstore class="size-8" />
+								<div class="text-left">
+									<small class="text-secondary block">Download on the</small>
+									<div class="text-secondary text-xl">App Store</div>
+								</div>
+							</a>
+							<a class="neu-btn-lg neu-btn neu-icon-btn w-full md:w-auto" href="#">
+								<x-svg.google-play class="size-8" />
+								<div class="text-left">
+									<small class="text-secondary block">Download on the</small>
+									<div class="text-secondary text-xl">Google Play</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</x-grid.item>
 
 	</x-grid>
@@ -573,6 +600,7 @@
 			Call To Actions Cards
 			<div class="pl-2">
 				<x-sidenav-list>CTA 1</x-sidenav-list>
+				<x-sidenav-list>CTA 2</x-sidenav-list>
 			</div>
 		</div>
 
