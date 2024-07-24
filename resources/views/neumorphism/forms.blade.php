@@ -119,7 +119,19 @@
 						@apply placeholder:text-primary text-primary;
 					}
 				</style>
+			</x-slot>
+		</x-grid.item>
 
+		<x-grid.item title="Select Input">
+			<div class="neu-form-group w-full">
+				<label class="neu-form-label" for="neu_select">Select</label>
+				<select class="neu-form-select" id="neu_select">
+					<option value="" disabled selected>Select an option</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+				</select>
+			</div>
 		</x-grid.item>
 
 	</x-grid>
