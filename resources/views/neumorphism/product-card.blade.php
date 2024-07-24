@@ -5,7 +5,7 @@
 	@case(1)
 		<div class="max-w-[350px]">
 			<div class="overflow-hidden rounded-lg">
-				<img class="h-auto w-full rounded-lg border border-gray-300 dark:border-gray-700" src="{{ asset('images/products/watch.jpeg') }}" alt="" />
+				<img class="h-auto w-full rounded-lg border border-gray-300 dark:border-gray-700" src="{{ asset('images/square/watch.jpeg') }}" alt="" />
 
 				<h3 class="mt-3 font-semibold">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wide transition-colors duration-300" href="">
@@ -32,7 +32,7 @@
 	@case(2)
 		<div class="max-w-[350px]">
 			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
-				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+				<img class="w-full rounded-t-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 				<div class="border-t border-gray-300 p-4 dark:border-gray-700">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold" href="#">
 						Future Watch 2
@@ -68,7 +68,7 @@
 			<div class="flex flex-col break-words rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 				<div class="flex flex-col items-center md:flex-row">
 					<a class="w-full md:w-1/4" href="#">
-						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+						<img class="w-full rounded-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 					</a>
 
 					<div class="mt-4 w-full md:mt-0 md:w-1/2 md:px-4">
@@ -124,7 +124,7 @@
 			<div class="flex items-center gap-4 rounded-lg border border-gray-300 p-6 shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
 
 				<a class="w-2/3 md:w-1/3" href="#">
-					<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+					<img class="w-full rounded-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 				</a>
 
 				<div class="flex w-full flex-col gap-3">
@@ -194,7 +194,7 @@
 				{{-- item --}}
 				<div class="mb-4 flex flex-wrap">
 					<a class="w-2/3 md:w-1/3" href="#">
-						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+						<img class="w-full rounded-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 					</a>
 
 					{{-- item details --}}
@@ -213,7 +213,7 @@
 				{{-- item --}}
 				<div class="mb-4 flex flex-wrap">
 					<a class="w-2/3 md:w-1/3" href="#">
-						<img class="w-full rounded-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+						<img class="w-full rounded-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 					</a>
 
 					{{-- item details --}}
@@ -260,7 +260,7 @@
 	@default
 		<div class="max-w-[350px] lg:w-full">
 			<div class="flex min-w-0 flex-col break-words rounded-lg border border-gray-300 bg-clip-border shadow-neu-lg dark:border-gray-700 dark:shadow-neu-dark-md">
-				<img class="w-full rounded-t-lg" src="{{ asset('images/products/watch.jpeg') }}" alt="">
+				<img class="w-full rounded-t-lg" src="{{ asset('images/square/watch.jpeg') }}" alt="">
 				<div class="border-t border-gray-300 p-4 dark:border-gray-700">
 					<a class="text-primary hover:text-accent font-karla text-xl font-bold tracking-wider" href="#">Future Watch</a>
 					<div class="text-md mt-2 font-karla text-gray-600">₹7999.00</div>
