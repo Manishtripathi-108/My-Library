@@ -19,7 +19,7 @@ html {
     /*                                  neu-form                                  */
     /* -------------------------------------------------------------------------- */
     .neu-form-group {
-        @apply flex flex-col gap-2;
+        @apply flex flex-col gap-2 w-full;
     }
 
     .neu-form-label {
@@ -31,6 +31,7 @@ html {
     }
 
     /*-- ------------------------- neu-form-input ------------------------- */
+    .neu-form-textarea,
     .neu-form-input {
         @apply bg-primary w-full active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide transition duration-300;
 
@@ -44,15 +45,23 @@ html {
     }
 
     .neu-input-icon {
-        @apply size-10 text-secondary border-r border-light-secondary px-2 py-1 dark:border-dark-secondary;
+        @apply size-10 text-secondary border-light-secondary px-2 py-1 dark:border-dark-secondary;
     }
 
     .neu-input-group-prepend .neu-form-input {
         @apply rounded-r-lg rounded-l-none;
     }
 
+    .neu-input-group-prepend .neu-input-icon {
+        @apply rounded-l-lg rounded-r-none border-r;
+    }
+
     .neu-input-group-append .neu-form-input {
         @apply rounded-l-lg rounded-r-none;
+    }
+
+    .neu-input-group-append .neu-input-icon {
+        @apply rounded-r-lg rounded-l-none border-l;
     }
 
     .neu-input-group .neu-form-input {
@@ -86,7 +95,7 @@ html {
 
     /*-- --------------- neu-form-textarea --------------- */
     .neu-form-textarea {
-        @apply neu-form-input;
+        @apply transition-all duration-500 ease-Out-expo;
     }
 
     /*-- --------------- neu-form-select --------------- */

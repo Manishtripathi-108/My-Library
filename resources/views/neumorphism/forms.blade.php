@@ -146,6 +146,23 @@
 			</x-slot>
 		</x-grid.item>
 
+		<x-grid.item title="Textarea">
+			<div class="neu-form-group">
+				<label for="textarea">Textarea</label>
+				<textarea class="neu-form-textarea" id="textarea"></textarea>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-textarea {
+						@apply bg-primary w-full transition-all duration-500 ease-Out-expo active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
+
 	</x-grid>
 
 </x-app-layout>
