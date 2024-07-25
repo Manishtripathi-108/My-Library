@@ -148,8 +148,8 @@
 
 		<x-grid.item title="Textarea">
 			<div class="neu-form-group">
-				<label for="textarea">Textarea</label>
-				<textarea class="neu-form-textarea" id="textarea"></textarea>
+				<label class="neu-form-label" for="textarea">Textarea</label>
+				<textarea class="neu-form-textarea scrollbar-thin" id="textarea" rows="2"></textarea>
 			</div>
 
 			<x-slot name="cssCode">
@@ -158,6 +158,57 @@
 						@apply bg-primary w-full transition-all duration-500 ease-Out-expo active:placeholder:text-primary focus:placeholder:text-primary placeholder:text-secondary text-secondary appearance-none rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none placeholder:tracking-wide;
 						/* dark mode */
 						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+					}
+
+					.scrollbar-thin {
+						&::-webkit-scrollbar {
+							width: 4px;
+							/* Set the width of the scrollbar */
+							height: 4px;
+							/* Set the height of the scrollbar for vertical scrollbar */
+						}
+
+						&::-webkit-scrollbar-thumb {
+							background: #888;
+							/* Set the color of the scrollbar thumb */
+							border-radius: 10px;
+							/* Set the border radius of the scrollbar thumb */
+						}
+
+						&::-webkit-scrollbar-thumb:hover {
+							background: #555;
+							/* Set the color of the scrollbar thumb on hover */
+						}
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
+
+		<x-grid.item title="File Upload">
+			<div class="neu-form-file-group">
+				<label for="file">File Upload</label>
+				<input class="neu-form-file" id="file" type="file">
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-file-group {
+						@apply flex flex-col gap-2 w-full;
+					}
+
+					.neu-form-file {
+						@apply hidden;
+					}
+
+					.neu-form-file-group label {
+						@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+					}
+
+					.neu-form-file-group label:after {
+						content: "Browse";
+						@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
 					}
 				</style>
 			</x-slot>

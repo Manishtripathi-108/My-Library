@@ -18,7 +18,8 @@ html {
     /* -------------------------------------------------------------------------- */
     /*                                  neu-form                                  */
     /* -------------------------------------------------------------------------- */
-    .neu-form-group {
+    .neu-form-group,
+    .neu-form-file-group {
         @apply flex flex-col gap-2 w-full;
     }
 
@@ -107,6 +108,28 @@ html {
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="%23767676" d="M8.037 11.166L14.5 22.36c.825 1.43 2.175 1.43 3 0l6.463-11.195c.826-1.43.15-2.598-1.5-2.598H9.537c-1.65 0-2.326 1.17-1.5 2.6z"/></svg>');
         background-position: right 0.5rem center;
         background-size: 1.5rem 1.5rem;
+    }
+
+    .neu-form-select:focus,
+    .neu-form-select:hover,
+    .neu-form-select:active {
+        @apply shadow-neu-md-soft;
+    }
+
+    /*-- ---------------- neu-form-file ---------------- */
+    .neu-form-file {
+        @apply hidden;
+    }
+
+    .neu-form-file-group label {
+        @apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
+        /* dark mode */
+        @apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+    }
+
+    .neu-form-file-group label:after {
+        content: "Browse";
+        @apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
     }
 
     /*-- ---------------- neu-form-checkbox ---------------- */
