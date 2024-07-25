@@ -132,6 +132,12 @@ html {
         @apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
     }
 
+    .neu-form-file-preview {
+        @apply bg-primary size-fit mx-auto rounded-lg border border-light-secondary shadow-neu-inset-sm p-3;
+        /* dark mode */
+        @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+    }
+
     /*-- ---------------- neu-form-checkbox ---------------- */
     .neu-form-check {
         @apply flex items-center gap-2;
