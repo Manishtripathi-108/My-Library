@@ -184,99 +184,126 @@
 			</x-slot>
 		</x-grid.item>
 
-		<x-grid.item title="File Upload">
-			<div class="neu-form-file-group">
-				<label for="file">File Upload</label>
-				<input class="neu-form-file" id="file" type="file">
-			</div>
-
-			<x-slot name="cssCode">
-				<style>
-					.neu-form-file-group {
-						@apply flex flex-col gap-2 w-full;
-					}
-
-					.neu-form-file {
-						@apply hidden;
-					}
-
-					.neu-form-file-group label {
-						@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
-						/* dark mode */
-						@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
-					}
-
-					.neu-form-file-group label:after {
-						content: "Browse";
-						@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
-					}
-				</style>
+		<x-grid title="File Uploads">
+			<x-slot name="description">
+				You can use the file input to allow users to select one or more files from their device storage to be uploaded to a server or manipulated by JavaScript.
 			</x-slot>
-		</x-grid.item>
 
-		<x-grid.item title="File Upload with Preview">
-			<div class="neu-form-file-group" x-data="fileUploadPreview()">
-				<div class="neu-form-file-preview">
-					<template x-if="fileUrl">
-						<img class="h-auto max-h-96 max-w-full rounded-md border-light-secondary object-cover" alt="File Preview" :src="fileUrl">
-					</template>
-					<template x-if="!fileUrl">
-						<div class="flex-center text-secondary flex-col gap-2 p-10">
-							<x-svg.upload class="size-12" />
-							<p>Browse File to upload!</p>
-						</div>
-					</template>
+			<x-grid.item title="Basic File Upload">
+				<div class="neu-form-file-group">
+					<label for="file">File Upload</label>
+					<input class="neu-form-file" id="file" type="file">
 				</div>
-				<label for="file-preview">File Upload</label>
-				<input class="neu-form-file" id="file-preview" type="file" @change="previewFile">
-			</div>
 
-			<script>
-				function fileUploadPreview() {
-					return {
-						fileUrl: '',
-						previewFile(event) {
-							const file = event.target.files[0];
-							if (file) {
-								this.fileUrl = URL.createObjectURL(file);
-							} else {
-								this.fileUrl = '';
+				<x-slot name="cssCode">
+					<style>
+						.neu-form-file-group {
+							@apply flex flex-col gap-2 w-full;
+						}
+
+						.neu-form-file {
+							@apply hidden;
+						}
+
+						.neu-form-file-group label {
+							@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
+							/* dark mode */
+							@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+						}
+
+						.neu-form-file-group label:after {
+							content: "Browse";
+							@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
+						}
+					</style>
+				</x-slot>
+			</x-grid.item>
+
+			<x-grid.item title="File Upload with Preview">
+				<div class="neu-form-file-group" x-data="fileUploadPreview()">
+					<div class="neu-form-file-preview">
+						<template x-if="fileUrl">
+							<img class="h-auto max-h-96 max-w-full rounded-md border-light-secondary object-cover" alt="File Preview" :src="fileUrl">
+						</template>
+						<template x-if="!fileUrl">
+							<div class="flex-center text-secondary flex-col gap-2 p-10">
+								<x-svg.upload class="size-12" />
+								<p>Browse File to upload!</p>
+							</div>
+						</template>
+					</div>
+					<label for="file-preview">File Upload</label>
+					<input class="neu-form-file" id="file-preview" type="file" @change="previewFile">
+				</div>
+
+				<x-slot name="cssCode">
+					<style>
+						.neu-form-file-group {
+							@apply flex flex-col gap-2 w-full;
+						}
+
+						.neu-form-file {
+							@apply hidden;
+						}
+
+						.neu-form-file-group label {
+							@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
+							/* dark mode */
+							@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+						}
+
+						.neu-form-file-group label:after {
+							content: "Browse";
+							@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
+						}
+
+						.neu-form-file-preview {
+							@apply bg-primary size-fit rounded-lg border border-light-secondary shadow-neu-inset-sm p-3;
+							/* dark mode */
+							@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+						}
+					</style>
+				</x-slot>
+
+				<x-slot name="jsCode">
+					<script>
+						function fileUploadPreview() {
+							return {
+								fileUrl: '',
+								previewFile(event) {
+									const file = event.target.files[0];
+									if (file) {
+										this.fileUrl = URL.createObjectURL(file);
+									} else {
+										this.fileUrl = '';
+									}
+								}
 							}
+						}
+					</script>
+				</x-slot>
+			</x-grid.item>
+
+		</x-grid>
+
+	</x-grid>
+
+	@pushOnce('scripts')
+		<script>
+			function fileUploadPreview() {
+				return {
+					fileUrl: '',
+					previewFile(event) {
+						const file = event.target.files[0];
+						if (file) {
+							this.fileUrl = URL.createObjectURL(file);
+						} else {
+							this.fileUrl = '';
 						}
 					}
 				}
-			</script>
-
-			<x-slot name="cssCode">
-				<style>
-					.neu-form-file-group {
-						@apply flex flex-col gap-2 w-full;
-					}
-
-					.neu-form-file {
-						@apply hidden;
-					}
-
-					.neu-form-file-group label {
-						@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
-						/* dark mode */
-						@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
-					}
-
-					.neu-form-file-group label:after {
-						content: "Browse";
-						@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
-					}
-
-					.neu-form-file-preview {
-						@apply bg-primary size-fit rounded-lg border border-light-secondary shadow-neu-inset-sm p-3;
-						/* dark mode */
-						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
-					}
-				</style>
-			</x-slot>
-		</x-grid.item>
-
-	</x-grid>
+			}
+		</script>
+	@endPushOnce
 
 </x-app-layout>
