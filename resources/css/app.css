@@ -331,6 +331,9 @@ html {
     .trans-rotate-y-180 {
         transform: rotateY(180deg);
     }
+    .trans-rotate-x-30 {
+        transform: rotateX(30deg);
+    }
 
     .preserve-3d {
         transform-style: preserve-3d;
