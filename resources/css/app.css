@@ -23,12 +23,10 @@ html {
         @apply flex flex-col gap-2 w-full;
     }
 
-    .neu-form-label {
-        @apply text-secondary font-karla text-sm leading-3;
-    }
-
+    .neu-form-label,
+    .neu-form-checkbox-label,
     .neu-form-text {
-        @apply text-secondary font-karla text-xs leading-3;
+        @apply text-secondary font-karla text-sm leading-3;
     }
 
     /*-- ------------------------- neu-form-input ------------------------- */
@@ -40,7 +38,7 @@ html {
         @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
     }
 
-    /*-- ------ neu-input-group & Icon ------ */
+    /* ------------------------- neu-input-group & Icon ------------------------- */
     .neu-input-group {
         @apply flex w-full items-center rounded-lg border border-light-secondary dark:border-dark-secondary;
     }
@@ -76,7 +74,7 @@ html {
         @apply placeholder:text-primary text-primary;
     }
 
-    /*-- --------------- neu-inset-outset-input --------------- */
+    /* ------------------------- neu-inset-outset-input ------------------------- */
     .neu-inset-outset-input {
         @apply bg-primary appearance-none rounded-xl border-none shadow-neu-inset-sm outline-none 
             placeholder:tracking-wide;
@@ -94,12 +92,12 @@ html {
         @apply dark:shadow-neu-dark-md;
     }
 
-    /*-- --------------- neu-form-textarea --------------- */
+    /* ---------------------------- neu-form-textarea --------------------------- */
     .neu-form-textarea {
         @apply transition-all duration-500 ease-Out-expo;
     }
 
-    /*-- --------------- neu-form-select --------------- */
+    /* ----------------------------- neu-form-select ---------------------------- */
     .neu-form-select {
         @apply appearance-none bg-primary text-secondary rounded-lg border border-light-secondary px-3 py-2 font-karla shadow-neu-inset-sm outline-none transition duration-300 bg-no-repeat pr-10;
         /* dark mode */
@@ -116,7 +114,7 @@ html {
         @apply shadow-neu-md-soft;
     }
 
-    /*-- ---------------- neu-form-file ---------------- */
+    /* ------------------------------- neu-form-file ---------------------------- */
     .neu-form-file {
         @apply hidden;
     }
@@ -138,13 +136,13 @@ html {
         @apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
     }
 
-    /*-- ---------------- neu-form-checkbox ---------------- */
-    .neu-form-check {
-        @apply flex items-center gap-2;
+    /* ----------------------------- neu-form-checkbox -------------------------- */
+    .neu-form-checkbox-label {
+        @apply hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5;
     }
 
     .neu-form-checkbox {
-        @apply bg-primary flex-center size-4 appearance-none rounded border border-light-secondary shadow-neu-inset-xs outline-none transition duration-300 ease-in-out placeholder:tracking-wide;
+        @apply bg-primary flex-center size-4 appearance-none rounded border border-light-secondary shadow-neu-inset-xs outline-none transition-all duration-300 ease-in-out placeholder:tracking-wide disabled:text-secondary;
 
         /* dark mode */
         @apply dark:shadow-neu-dark-inset-xs dark:border-dark-secondary;
@@ -163,7 +161,7 @@ html {
         transform: scale(0.8);
     }
 
-    /*-- ---------------- neu-form-radio ---------------- */
+    /* ------------------------------- neu-form-radio --------------------------- */
     .neu-form-radio {
         @apply neu-inset-checkbox;
     }

@@ -16,8 +16,8 @@
 					<label class="neu-form-label" for="password">Password</label>
 					<input class="neu-form-input" id="password" type="password">
 				</div>
-				<div class="mb-4">
-					<label class="neu-form-label" for="remember">
+				<div class="neu-form-group mb-4">
+					<label class="neu-form-checkbox-label" for="remember">
 						<input class="neu-form-checkbox" id="remember" type="checkbox" value="">Remember me
 					</label>
 				</div>
@@ -30,12 +30,10 @@
 						@apply flex flex-col gap-2;
 					}
 
-					.neu-form-label {
-						@apply text-secondary font-karla text-sm leading-3;
-					}
-
+					.neu-form-label,
+					.neu-form-checkbox-label,
 					.neu-form-text {
-						@apply text-secondary font-karla text-xs leading-3;
+						@apply text-secondary font-karla text-sm leading-3;
 					}
 
 					.neu-form-input {
@@ -44,7 +42,7 @@
 						@apply dark:shadow-neu-dark-inset-sm dark:border-dark-secondary;
 					}
 
-					.neu-form-check {
+					.neu-form-checkbox-label {
 						@apply flex items-center gap-2;
 					}
 
@@ -332,8 +330,51 @@
 					</script>
 				</x-slot>
 			</x-grid.item>
-
 		</x-grid>
+
+		<x-grid.item title="CheckBoxes">
+			<div class="neu-form-group">
+				<label class="neu-form-checkbox-label" for="check0">
+					<input class="neu-form-checkbox" id="check0" type="checkbox" value="" checked>Active CheckBox
+				</label>
+				<label class="neu-form-checkbox-label" for="check1">
+					<input class="neu-form-checkbox" id="check1" type="checkbox" value="">CheckBox 1
+				</label>
+				<label class="neu-form-checkbox-label" for="check2">
+					<input class="neu-form-checkbox" id="check2" type="checkbox" value="">CheckBox 2
+				</label>
+				<label class="neu-form-checkbox-label" for="check3">
+					<input class="neu-form-checkbox" id="check3" type="checkbox" disabled>Disabled CheckBox
+				</label>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-checkbox-label {
+						@apply text-secondary font-karla text-sm leading-3 hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5;
+					}
+
+					.neu-form-checkbox {
+						@apply bg-primary flex-center size-4 appearance-none rounded border border-light-secondary shadow-neu-inset-xs outline-none transition-all duration-300 ease-in-out placeholder:tracking-wide disabled:text-secondary;
+						/* dark mode */
+						@apply dark:shadow-neu-dark-inset-xs dark:border-dark-secondary;
+					}
+
+					.neu-form-checkbox:checked {
+						@apply bg-primary text-primary flex-center;
+					}
+
+					.neu-form-checkbox:checked:after {
+						content: "\2713";
+						@apply text-primary size-full flex-center font-bold transition-all;
+					}
+
+					.neu-form-checkbox:checked:after {
+						transform: scale(0.8);
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
 
 	</x-grid>
 
