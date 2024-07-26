@@ -32,3 +32,11 @@
 	</span>
 	<p class="text-secondary text-sm font-semibold tracking-wide">Documents</p>
 </button>
+
+<x-slot name="cssCode">
+	<style>
+		.trans-rotate-x-30 {
+			transform: rotateX(30deg);
+		}
+	</style>
+</x-slot>

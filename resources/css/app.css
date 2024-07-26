@@ -182,7 +182,7 @@ html {
     }
 
     .neu-form-radio {
-        @apply appearance-none;
+        @apply sr-only;
     }
 
     .neu-form-radio-indicator {
@@ -200,6 +200,34 @@ html {
 
     .neu-form-radio:checked ~ .neu-form-radio-indicator:before {
         @apply shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+    }
+
+    /* ------------------------------- neu-switch ------------------------------- */
+
+    .neu-form-switch-label {
+        @apply relative inline-flex cursor-pointer items-center;
+    }
+
+    .neu-form-switch {
+        @apply sr-only;
+    }
+
+    .neu-form-switch-indicator {
+        @apply bg-primary h-12 w-24 rounded-full shadow-neu-inset-sm outline-none ring-0;
+        @apply dark:shadow-neu-dark-inset-sm;
+    }
+
+    .neu-form-switch-indicator:after {
+        @apply bg-primary absolute left-1 top-1 flex -rotate-180 items-center justify-center size-10 rounded-full shadow-neu-xs outline-none duration-300 content-['✖️'] ease-Out-back;
+        @apply dark:shadow-neu-dark-xs;
+    }
+
+    .neu-form-switch:hover ~ .neu-form-switch-indicator:after {
+        @apply scale-95;
+    }
+
+    .neu-form-switch:checked ~ .neu-form-switch-indicator:after {
+        @apply translate-x-12 rotate-0 content-['✔️'];
     }
 
     /* -------------------------------------------------------------------------- */

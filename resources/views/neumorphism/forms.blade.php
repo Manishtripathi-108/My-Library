@@ -451,6 +451,43 @@
 			</x-slot>
 		</x-grid.item>
 
+		<x-grid.item title="Switch">
+			<label class="neu-form-switch-label">
+				<input class="neu-form-switch" type="checkbox" value="">
+				<div class="neu-form-switch-indicator"></div>
+			</label>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-switch-label {
+						@apply relative inline-flex cursor-pointer items-center;
+					}
+
+					.neu-form-switch {
+						@apply sr-only;
+					}
+
+					.neu-form-switch-indicator {
+						@apply bg-primary h-12 w-24 rounded-full shadow-neu-inset-sm outline-none ring-0;
+						@apply dark:shadow-neu-dark-inset-sm;
+					}
+
+					.neu-form-switch-indicator:after {
+						@apply bg-primary absolute left-1 top-1 flex -rotate-180 items-center justify-center size-10 rounded-full shadow-neu-xs outline-none duration-300 content-['✖️'] ease-Out-back;
+						@apply dark:shadow-neu-dark-xs;
+					}
+
+					.neu-form-switch:hover~.neu-form-switch-indicator:after {
+						@apply scale-95;
+					}
+
+					.neu-form-switch:checked~.neu-form-switch-indicator:after {
+						@apply translate-x-12 rotate-0 content-['✔️'];
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
+
 	</x-grid>
 
 	@pushOnce('scripts')
