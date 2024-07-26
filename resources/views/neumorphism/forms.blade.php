@@ -191,7 +191,7 @@
 
 			<x-grid.item title="Basic File Upload">
 				<div class="neu-form-file-group">
-					<label for="file">File Upload</label>
+					<label for="file">Upload File</label>
 					<input class="neu-form-file" id="file" type="file">
 				</div>
 
@@ -219,7 +219,56 @@
 				</x-slot>
 			</x-grid.item>
 
-			<x-grid.item title="File Upload with Preview">
+			<x-grid.item title="Upload File Name Preview">
+				<div class="neu-form-file-group" x-data="fileUploadName()">
+					<label for="file-preview-name" x-text="fileName">Upload File</label>
+					<input class="neu-form-file" id="file-preview-name" type="file" @change="previewFileName">
+				</div>
+
+				<x-slot name="cssCode">
+					<style>
+						.neu-form-file-group {
+							@apply flex flex-col gap-2 w-full;
+						}
+
+						.neu-form-file {
+							@apply hidden;
+						}
+
+						.neu-form-file-group label {
+							@apply bg-primary shadow-neu-xs px-4 py-2 rounded-lg text-secondary active:shadow-neu-inset-sm hover:text-primary font-karla cursor-pointer transition duration-300 ease-in-out relative overflow-hidden border border-light-secondary;
+							/* dark mode */
+							@apply dark:shadow-neu-dark-xs dark:active:shadow-neu-dark-inset-sm dark:border-dark-secondary;
+						}
+
+						.neu-form-file-group label:after {
+							content: "Browse";
+							@apply text-secondary bg-secondary px-4 py-2 font-karla absolute top-0 right-0;
+						}
+					</style>
+				</x-slot>
+
+				<x-slot name="jsCode">
+					<script>
+						function fileUploadName() {
+							return {
+								fileName: 'Upload File',
+								previewFileName(event) {
+									const file = event.target.files[0];
+									if (file) {
+										this.fileName = file.name;
+									} else {
+										this.fileName = 'Upload File';
+									}
+								}
+							}
+						}
+					</script>
+				</x-slot>
+
+			</x-grid.item>
+
+			<x-grid.item title="Upload Image with Preview">
 				<div class="neu-form-file-group" x-data="fileUploadPreview()">
 					<div class="neu-form-file-preview">
 						<template x-if="fileUrl">
@@ -228,11 +277,11 @@
 						<template x-if="!fileUrl">
 							<div class="flex-center text-secondary flex-col gap-2 p-10">
 								<x-svg.upload class="size-12" />
-								<p>Browse File to upload!</p>
+								<p>Browse Image to upload!</p>
 							</div>
 						</template>
 					</div>
-					<label for="file-preview">File Upload</label>
+					<label for="file-preview">Upload Image</label>
 					<input class="neu-form-file" id="file-preview" type="file" @change="previewFile">
 				</div>
 
@@ -299,6 +348,20 @@
 							this.fileUrl = URL.createObjectURL(file);
 						} else {
 							this.fileUrl = '';
+						}
+					}
+				}
+			}
+
+			function fileUploadName() {
+				return {
+					fileName: 'Upload File',
+					previewFileName(event) {
+						const file = event.target.files[0];
+						if (file) {
+							this.fileName = file.name;
+						} else {
+							this.fileName = 'Upload File';
 						}
 					}
 				}
