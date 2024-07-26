@@ -24,7 +24,6 @@ html {
     }
 
     .neu-form-label,
-    .neu-form-checkbox-label,
     .neu-form-text {
         @apply text-secondary font-karla text-sm leading-3;
     }
@@ -137,8 +136,12 @@ html {
     }
 
     /* ----------------------------- neu-form-checkbox -------------------------- */
+    .neu-form-group-checkbox {
+        @apply flex items-start gap-2 flex-col bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+    }
+
     .neu-form-checkbox-label {
-        @apply hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5 cursor-pointer;
+        @apply inline-flex items-center cursor-pointer;
     }
 
     .neu-form-checkbox {
@@ -161,36 +164,42 @@ html {
         transform: scale(0.8);
     }
 
+    .neu-form-checkbox-text {
+        @apply ml-2 text-secondary text-sm font-karla transition-all duration-500;
+    }
+
+    .neu-form-checkbox-label:hover .neu-form-checkbox-text,
+    .neu-form-checkbox:checked ~ .neu-form-checkbox-text {
+        @apply translate-x-2 text-primary;
+    }
+
     /* ------------------------------- neu-form-radio --------------------------- */
     .neu-form-group-radio {
         @apply flex items-start gap-2 flex-col bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
     }
-    .neu-radio-label {
-        @apply text-secondary relative inline-flex cursor-pointer items-center;
+    .neu-form-radio-label {
+        @apply relative inline-flex cursor-pointer items-center;
     }
 
     .neu-form-radio {
         @apply appearance-none;
     }
 
-    .neu-radio-indicator {
+    .neu-form-radio-indicator {
         @apply size-5 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft dark:shadow-neu-dark-xs dark:before:shadow-neu-dark-md;
     }
 
-    .neu-radio-text {
-        @apply ml-2 font-karla opacity-60 transition-all;
+    .neu-form-radio-text {
+        @apply ml-2 font-karla text-secondary transition-all duration-500;
     }
 
-    .neu-radio-label:hover .neu-radio-text {
-        @apply translate-x-2 opacity-100;
+    .neu-form-radio-label:hover .neu-form-radio-text,
+    .neu-form-radio:checked ~ .neu-form-radio-text {
+        @apply translate-x-2 text-primary;
     }
 
-    .neu-form-radio:checked ~ .neu-radio-indicator:before {
+    .neu-form-radio:checked ~ .neu-form-radio-indicator:before {
         @apply shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
-    }
-
-    .neu-form-radio:checked ~ .neu-radio-text {
-        @apply translate-x-2 opacity-100;
     }
 
     /* -------------------------------------------------------------------------- */

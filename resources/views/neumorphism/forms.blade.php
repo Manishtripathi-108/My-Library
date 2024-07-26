@@ -333,25 +333,33 @@
 		</x-grid>
 
 		<x-grid.item title="CheckBoxes">
-			<div class="neu-form-group">
+			<div class="neu-form-group-checkbox">
 				<label class="neu-form-checkbox-label" for="check0">
-					<input class="neu-form-checkbox" id="check0" type="checkbox" value="" checked>Active CheckBox
+					<input class="neu-form-checkbox" id="check0" type="checkbox" value="" checked>
+					<span class="neu-form-checkbox-text">Checked CheckBox</span>
 				</label>
 				<label class="neu-form-checkbox-label" for="check1">
-					<input class="neu-form-checkbox" id="check1" type="checkbox" value="">CheckBox 1
+					<input class="neu-form-checkbox" id="check1" type="checkbox" value="">
+					<span class="neu-form-checkbox-text">CheckBox 1</span>
 				</label>
 				<label class="neu-form-checkbox-label" for="check2">
-					<input class="neu-form-checkbox" id="check2" type="checkbox" value="">CheckBox 2
+					<input class="neu-form-checkbox" id="check2" type="checkbox" value="">
+					<span class="neu-form-checkbox-text">CheckBox 2</span>
 				</label>
 				<label class="neu-form-checkbox-label" for="check3">
-					<input class="neu-form-checkbox" id="check3" type="checkbox" disabled>Disabled CheckBox
+					<input class="neu-form-checkbox" id="check3" type="checkbox" disabled>
+					<span class="neu-form-checkbox-text">Disabled CheckBox</span>
 				</label>
 			</div>
 
 			<x-slot name="cssCode">
 				<style>
+					.neu-form-group-checkbox {
+						@apply flex items-start gap-2 flex-col bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+					}
+
 					.neu-form-checkbox-label {
-						@apply text-secondary font-karla text-sm leading-3 hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5 cursor-pointer;
+						@apply inline-flex items-center cursor-pointer;
 					}
 
 					.neu-form-checkbox {
@@ -372,33 +380,75 @@
 					.neu-form-checkbox:checked:after {
 						transform: scale(0.8);
 					}
+
+					.neu-form-checkbox-text {
+						@apply ml-2 text-secondary text-sm font-karla transition-all duration-500;
+					}
+
+					.neu-form-checkbox-label:hover .neu-form-checkbox-text,
+					.neu-form-checkbox:checked~.neu-form-checkbox-text {
+						@apply translate-x-2 text-primary;
+					}
 				</style>
 			</x-slot>
 		</x-grid.item>
 
 		<x-grid.item title="Radio">
 			<div class="neu-form-group-radio">
-				<label class="neu-radio-label" for="radio1">
-					<input class="neu-form-radio" id="radio1" name="radio1" type="radio" value="Radio 1">
-					<div class="neu-radio-indicator"></div>
-					<span class="neu-radio-text">close</span>
+				<label class="neu-form-radio-label" for="radio1">
+					<input class="neu-form-radio" id="radio1" name="radio1" type="radio" value="Radio 1" checked>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Checked Radio</span>
 				</label>
-				<label class="neu-radio-label" for="radio2">
+				<label class="neu-form-radio-label" for="radio2">
 					<input class="neu-form-radio" id="radio2" name="radio1" type="radio" value="Radio 2">
-					<div class="neu-radio-indicator"></div>
-					<span class="neu-radio-text">remove</span>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Radio 1</span>
 				</label>
-				<label class="neu-radio-label" for="radio3">
+				<label class="neu-form-radio-label" for="radio3">
 					<input class="neu-form-radio" id="radio3" name="radio1" type="radio" value="Radio 3">
-					<div class="neu-radio-indicator"></div>
-					<span class="neu-radio-text">delete</span>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Radio 2</span>
 				</label>
-				<label class="neu-radio-label" for="radio4">
-					<input class="neu-form-radio" id="radio4" name="radio1" type="radio" value="Radio 4">
-					<div class="neu-radio-indicator"></div>
-					<span class="neu-radio-text">all of the above</span>
+				<label class="neu-form-radio-label" for="radio4">
+					<input class="neu-form-radio" id="radio4" name="radio1" type="radio" value="Radio 4" disabled>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Disabled Radio</span>
 				</label>
 			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-group-radio {
+						@apply flex items-start gap-2 flex-col bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+					}
+
+					.neu-form-radio-label {
+						@apply relative inline-flex cursor-pointer items-center;
+					}
+
+					.neu-form-radio {
+						@apply appearance-none;
+					}
+
+					.neu-form-radio-indicator {
+						@apply size-5 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft dark:shadow-neu-dark-xs dark:before:shadow-neu-dark-md;
+					}
+
+					.neu-form-radio-text {
+						@apply ml-2 font-karla text-secondary transition-all duration-500;
+					}
+
+					.neu-form-radio-label:hover .neu-form-radio-text,
+					.neu-form-radio:checked~.neu-form-radio-text {
+						@apply translate-x-2 text-primary;
+					}
+
+					.neu-form-radio:checked~.neu-form-radio-indicator:before {
+						@apply shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 
 	</x-grid>
