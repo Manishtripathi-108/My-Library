@@ -351,7 +351,7 @@
 			<x-slot name="cssCode">
 				<style>
 					.neu-form-checkbox-label {
-						@apply text-secondary font-karla text-sm leading-3 hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5;
+						@apply text-secondary font-karla text-sm leading-3 hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5 cursor-pointer;
 					}
 
 					.neu-form-checkbox {
@@ -374,6 +374,31 @@
 					}
 				</style>
 			</x-slot>
+		</x-grid.item>
+
+		<x-grid.item title="Radio">
+			<div class="neu-form-group-radio">
+				<label class="neu-radio-label" for="radio1">
+					<input class="neu-form-radio" id="radio1" name="radio1" type="radio" value="Radio 1">
+					<div class="neu-radio-indicator"></div>
+					<span class="neu-radio-text">close</span>
+				</label>
+				<label class="neu-radio-label" for="radio2">
+					<input class="neu-form-radio" id="radio2" name="radio1" type="radio" value="Radio 2">
+					<div class="neu-radio-indicator"></div>
+					<span class="neu-radio-text">remove</span>
+				</label>
+				<label class="neu-radio-label" for="radio3">
+					<input class="neu-form-radio" id="radio3" name="radio1" type="radio" value="Radio 3">
+					<div class="neu-radio-indicator"></div>
+					<span class="neu-radio-text">delete</span>
+				</label>
+				<label class="neu-radio-label" for="radio4">
+					<input class="neu-form-radio" id="radio4" name="radio1" type="radio" value="Radio 4">
+					<div class="neu-radio-indicator"></div>
+					<span class="neu-radio-text">all of the above</span>
+				</label>
+			</div>
 		</x-grid.item>
 
 	</x-grid>

@@ -138,7 +138,7 @@ html {
 
     /* ----------------------------- neu-form-checkbox -------------------------- */
     .neu-form-checkbox-label {
-        @apply hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5;
+        @apply hover:text-primary flex items-center gap-2 transition-all duration-500 hover:gap-5 cursor-pointer;
     }
 
     .neu-form-checkbox {
@@ -162,17 +162,35 @@ html {
     }
 
     /* ------------------------------- neu-form-radio --------------------------- */
+    .neu-form-group-radio {
+        @apply flex items-start gap-2 flex-col bg-primary rounded-2xl px-16 py-12 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+    }
+    .neu-radio-label {
+        @apply text-secondary relative inline-flex cursor-pointer items-center;
+    }
+
     .neu-form-radio {
-        @apply neu-inset-checkbox;
+        @apply appearance-none;
     }
 
-    .neu-form-radio:checked {
-        @apply bg-accent;
+    .neu-radio-indicator {
+        @apply size-5 before:size-4/5 relative overflow-hidden rounded-full shadow-neu-xs before:absolute before:left-[10%] before:top-[10%] before:rounded-full before:shadow-neu-md-soft dark:shadow-neu-dark-xs dark:before:shadow-neu-dark-md;
     }
 
-    .neu-form-radio:checked:after {
-        content: "";
-        @apply bg-accent;
+    .neu-radio-text {
+        @apply ml-2 font-karla opacity-60 transition-all;
+    }
+
+    .neu-radio-label:hover .neu-radio-text {
+        @apply translate-x-2 opacity-100;
+    }
+
+    .neu-form-radio:checked ~ .neu-radio-indicator:before {
+        @apply shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+    }
+
+    .neu-form-radio:checked ~ .neu-radio-text {
+        @apply translate-x-2 opacity-100;
     }
 
     /* -------------------------------------------------------------------------- */
