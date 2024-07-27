@@ -53,7 +53,7 @@
 
 		{{-- Right Sidenav --}}
 		@if (isset($rightSidenav))
-			<nav class="scrollbar-thin sticky top-0 mr-1 hidden h-screen min-w-[16%] overflow-y-auto px-2 py-5 sm:block lg:mr-5" id="right-sidenav" x-data="sidebarNavigation" @scroll.window="updateActiveId">
+			<nav class="scrollbar-thin sticky top-0 mr-1 hidden h-screen min-w-[16%] overflow-y-auto px-2 py-5 sm:block lg:ml-4 lg:mr-5" id="right-sidenav" x-data="sidebarNavigation" @scroll.window="updateActiveId">
 				{{ $rightSidenav }}
 			</nav>
 		@endif

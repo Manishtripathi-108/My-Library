@@ -219,25 +219,23 @@
 
 	{{-- Right Sidenav --}}
 	<x-slot name="rightSidenav">
-		<ul class="lg:ml-4">
-			<div class="text-secondary mt-2 list-none text-xs">
-				Product Cards
-				<div class="pl-2">
-					<x-sidenav-list>Simple Card</x-sidenav-list>
-					<x-sidenav-list>Product Without Shadow</x-sidenav-list>
-					<x-sidenav-list>Product With Rating</x-sidenav-list>
-					<x-sidenav-list>Featured Product Item</x-sidenav-list>
-				</div>
+		<div class="text-secondary mt-2 list-none text-xs">
+			Product Cards
+			<div class="pl-2">
+				<x-sidenav-list>Simple Card</x-sidenav-list>
+				<x-sidenav-list>Product Without Shadow</x-sidenav-list>
+				<x-sidenav-list>Product With Rating</x-sidenav-list>
+				<x-sidenav-list>Featured Product Item</x-sidenav-list>
 			</div>
-			<div class="text-secondary mt-2 list-none text-xs">
-				Checkout
-				<div class="pl-2">
-					<x-sidenav-list>Checkout Card</x-sidenav-list>
-					<x-sidenav-list>Checkout Summary</x-sidenav-list>
-					<x-sidenav-list>Checkout Summary 2</x-sidenav-list>
-				</div>
+		</div>
+		<div class="text-secondary mt-2 list-none text-xs">
+			Checkout
+			<div class="pl-2">
+				<x-sidenav-list>Checkout Card</x-sidenav-list>
+				<x-sidenav-list>Checkout Summary</x-sidenav-list>
+				<x-sidenav-list>Checkout Summary 2</x-sidenav-list>
 			</div>
-			<x-sidenav-list>Tab</x-sidenav-list>
-		</ul>
+		</div>
+		<x-sidenav-list>Tab</x-sidenav-list>
 	</x-slot>
 </x-app-layout>
