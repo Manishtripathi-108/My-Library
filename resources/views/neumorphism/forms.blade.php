@@ -519,8 +519,244 @@
 			</x-slot>
 		</x-grid.item>
 
-		<x-grid.item title="Double Range Slider">
+		<x-grid.item title="Date Picker">
+			<div class="neu-calendar-container" x-data="datePicker()" @click.away="showCalendar=false" x-init="init()">
+				<div class="neu-input-group-prepend neu-input-group" @click="showCalendar = true, showCalendarItem = 'day'" @keydown.escape="showCalendar = false">
+					<x-svg.calendar class="neu-input-icon" />
+					<input class="neu-form-input" type="text" x-model="date" placeholder="Select date" @input="updateDate()">
+				</div>
 
+				<!-- Calendar -->
+				<div class="neu-calendar" x-cloak x-show="showCalendar">
+					<!-- Days -->
+					<div x-show="showCalendarItem === 'day'">
+						<!-- Header -->
+						<div class="neu-calendar-header">
+							<button class="neu-calendar-header-btn" @click="prevMonth"><x-svg.left class="size-5" /></button>
+							<div class="neu-calendar-header-title" x-text="monthNames[month] +' '+ year" @click="showCalendarItem = 'year'"></div>
+							<button class="neu-calendar-header-btn" @click="nextMonth"><x-svg.right class="size-5" /></button>
+						</div>
+						<!-- List of days -->
+						<div class="neu-calendar-body-days">
+							<template x-for="(day, index) in prevDays" :key="index">
+								<div class="neu-calendar-item text-secondary" @click="selectDate(day,'previousMonth')" x-text="day"></div>
+							</template>
+							<template x-for="(day, index) in daysInMonth" :key="index">
+								<div class="neu-calendar-item" @click="selectDate(day,'currentMonth')" :class="{ 'active': isSelected(day) }" x-text="day"></div>
+							</template>
+							<template x-for="(day, index) in nextDays" :key="index">
+								<div class="neu-calendar-item text-secondary" @click="selectDate(day,'nextMonth')" x-text="day"></div>
+							</template>
+						</div>
+					</div>
+
+					<!-- Month -->
+					<div x-show="showCalendarItem === 'month'">
+						<!-- Header -->
+						<div class="neu-calendar-header">
+							<button class="neu-calendar-header-btn" @click="showCalendarItem = 'year'"><x-svg.left class="size-5" /></button>
+							<div class="neu-calendar-header-title" x-text="year" @click="showCalendarItem = 'year'"></div>
+							<button class="neu-calendar-header-btn" @click="showCalendarItem = 'year'"><x-svg.right class="size-5" /></button>
+						</div>
+						<!-- List of Months -->
+						<div class="neu-calendar-body-months">
+							<template x-for="(value, index) in monthNames" :key="index">
+								<div class="neu-calendar-item" :class="{ 'active': index === month }" x-text="value" @click="selectMonth(index)"></div>
+							</template>
+						</div>
+					</div>
+
+					<!-- Year -->
+					<div x-show="showCalendarItem === 'year'">
+						<!-- Header -->
+						<div class="neu-calendar-header">
+							<button class="neu-calendar-header-btn" @click="prevYear"><x-svg.left class="size-5" /></button>
+							<div class="neu-calendar-header-title" x-text="yearList[1] + ' - ' + yearList[10]" @click="showCalendarItem = 'day'"></div>
+							<button class="neu-calendar-header-btn" @click="nextYear"><x-svg.right class="size-5" /></button>
+						</div>
+						<!-- List of Years -->
+						<div class="neu-calendar-body-years">
+							<template x-for="(value,index) in yearList" :key="index">
+								<div class="neu-calendar-item" :class="{ 'text-secondary': index === 0 || index === 11, 'active': year === value }" x-text="value" @click="selectYear(value)"></div>
+							</template>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					/* -------------------------------------------------------------------------- */
+					/*                                neu-calendar                                */
+					/* -------------------------------------------------------------------------- */
+					.neu-calendar-container {
+						@apply relative w-72;
+					}
+
+					.neu-calendar {
+						@apply bg-primary absolute left-0 top-12 z-50 mt-2 w-full overflow-hidden rounded-lg shadow-neu-xs dark:shadow-neu-dark-xs;
+					}
+
+					.neu-calendar-header {
+						@apply flex items-center justify-between px-4 py-2 shadow-neu-xs dark:shadow-neu-dark-sm;
+					}
+
+					.neu-calendar-header-btn {
+						@apply neu-btn p-1.5;
+					}
+
+					.neu-calendar-header-title {
+						@apply neu-btn text-nowrap mx-3 w-full px-4 py-1.5 text-sm;
+					}
+
+					.neu-calendar-body,
+					.neu-calendar-body-days,
+					.neu-calendar-body-months,
+					.neu-calendar-body-years {
+						@apply m-1 grid gap-1 p-4 text-sm shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+					}
+
+					.neu-calendar-body-days {
+						@apply grid-cols-7;
+					}
+
+					.neu-calendar-body-months {
+						@apply grid-cols-3;
+					}
+
+					.neu-calendar-body-years {
+						@apply grid-cols-4;
+					}
+
+					.neu-calendar-item {
+						@apply text-primary hover:bg-secondary flex cursor-pointer items-center justify-center rounded-lg p-2 transition hover:text-white hover:shadow-neu-xs dark:hover:shadow-neu-dark-xs;
+					}
+
+					.neu-calendar-item.active {
+						@apply text-white bg-secondary shadow-neu-xs dark:shadow-neu-dark-xs;
+					}
+				</style>
+			</x-slot>
+
+			<x-slot name="jsCode">
+				<script>
+					function datePicker() {
+						return {
+							showCalendar: false,
+							showCalendarItem: 'day',
+							date: '',
+							month: new Date().getMonth(),
+							year: new Date().getFullYear(),
+							today: new Date().getDate(),
+							daysInMonth: [],
+							yearList: [],
+							monthNames: [
+								'January', 'February', 'March', 'April', 'May', 'June',
+								'July', 'August', 'September', 'October', 'November', 'December'
+							],
+							init() {
+								this.date = `${this.today}/${this.month + 1}/${this.year}`;
+								this.updateDaysInMonth();
+								this.updateYearsList();
+							},
+							updateDaysInMonth() {
+								const daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+								const dayOfWeek = new Date(this.year, this.month, 1).getDay();
+								const prevDaysInMonth = new Date(this.year, this.month, 0).getDate();
+
+								this.prevDays = Array.from({
+									length: dayOfWeek
+								}, (_, i) => prevDaysInMonth - dayOfWeek + 1 + i);
+								this.daysInMonth = Array.from({
+									length: daysInMonth
+								}, (_, i) => i + 1);
+
+								const remainingDays = (dayOfWeek + daysInMonth) % 7;
+								this.nextDays = remainingDays ? Array.from({
+									length: 7 - remainingDays
+								}, (_, i) => i + 1) : [];
+							},
+
+							// Update date when input is changed
+							updateDate() {
+								const [day, month, year] = this.date.split('/').map(Number);
+								const currentDate = new Date();
+
+								this.month = month > 0 && month < 13 ? month - 1 : currentDate.getMonth();
+								this.year = year > 0 ? year : currentDate.getFullYear();
+
+								this.updateDaysInMonth();
+							},
+
+							// Select date
+							selectDate(day, type) {
+								if (type === 'previousMonth') {
+									this.prevMonth();
+								} else if (type === 'nextMonth') {
+									this.nextMonth();
+								}
+								this.date = `${day}/${this.month + 1}/${this.year}`;
+								this.showCalendar = false;
+							},
+							isSelected(day) {
+								return this.date === `${day}/${this.month + 1}/${this.year}`;
+							},
+
+							// Navigation for month
+							prevMonth() {
+								if (this.month === 0) {
+									this.month = 11;
+									this.year--;
+								} else {
+									this.month--;
+								}
+								this.updateDaysInMonth();
+							},
+							nextMonth() {
+								if (this.month === 11) {
+									this.month = 0;
+									this.year++;
+								} else {
+									this.month++;
+								}
+								this.updateDaysInMonth();
+							},
+							selectMonth(month) {
+								this.month = month;
+								this.updateDaysInMonth();
+								this.showCalendarItem = 'day';
+							},
+
+							// Navigation for year
+							prevYear() {
+								this.year -= 10;
+								this.updateYearsList();
+							},
+							nextYear() {
+								this.year += 10;
+								this.updateYearsList();
+							},
+							selectYear(year) {
+								this.year = year;
+								this.updateDaysInMonth();
+								this.updateYearsList();
+								this.showCalendarItem = 'month';
+							},
+
+							// Update year list
+							updateYearsList() {
+								this.yearList = Array.from({
+									length: 12
+								}, (_, i) => this.year - (this.year % 10) + i);
+							}
+						};
+					}
+				</script>
+			</x-slot>
+		</x-grid.item>
+
+		<x-grid.item title="title">
+			<img src="asset('image/portrait/angry-lion.png')" alt="">
 		</x-grid.item>
 
 	</x-grid>
@@ -553,6 +789,118 @@
 						}
 					}
 				}
+			}
+
+			function datePicker() {
+				return {
+					showCalendar: false,
+					showCalendarItem: 'day',
+					date: '',
+					month: new Date().getMonth(),
+					year: new Date().getFullYear(),
+					today: new Date().getDate(),
+					daysInMonth: [],
+					yearList: [],
+					monthNames: [
+						'January', 'February', 'March', 'April', 'May', 'June',
+						'July', 'August', 'September', 'October', 'November', 'December'
+					],
+					init() {
+						this.date = `${this.today}/${this.month + 1}/${this.year}`;
+						this.updateDaysInMonth();
+						this.updateYearsList();
+					},
+					updateDaysInMonth() {
+						const daysInMonth = new Date(this.year, this.month + 1, 0).getDate();
+						const dayOfWeek = new Date(this.year, this.month, 1).getDay();
+						const prevDaysInMonth = new Date(this.year, this.month, 0).getDate();
+
+						this.prevDays = Array.from({
+							length: dayOfWeek
+						}, (_, i) => prevDaysInMonth - dayOfWeek + 1 + i);
+						this.daysInMonth = Array.from({
+							length: daysInMonth
+						}, (_, i) => i + 1);
+
+						const remainingDays = (dayOfWeek + daysInMonth) % 7;
+						this.nextDays = remainingDays ? Array.from({
+							length: 7 - remainingDays
+						}, (_, i) => i + 1) : [];
+					},
+
+					// Update date when input is changed
+					updateDate() {
+						const [day, month, year] = this.date.split('/').map(Number);
+						const currentDate = new Date();
+
+						this.month = month > 0 && month < 13 ? month - 1 : currentDate.getMonth();
+						this.year = year > 0 ? year : currentDate.getFullYear();
+
+						this.updateDaysInMonth();
+					},
+
+					// Select date
+					selectDate(day, type) {
+						if (type === 'previousMonth') {
+							this.prevMonth();
+						} else if (type === 'nextMonth') {
+							this.nextMonth();
+						}
+						this.date = `${day}/${this.month + 1}/${this.year}`;
+						this.showCalendar = false;
+					},
+					isSelected(day) {
+						return this.date === `${day}/${this.month + 1}/${this.year}`;
+					},
+
+					// Navigation for month
+					prevMonth() {
+						if (this.month === 0) {
+							this.month = 11;
+							this.year--;
+						} else {
+							this.month--;
+						}
+						this.updateDaysInMonth();
+					},
+					nextMonth() {
+						if (this.month === 11) {
+							this.month = 0;
+							this.year++;
+						} else {
+							this.month++;
+						}
+						this.updateDaysInMonth();
+					},
+					selectMonth(month) {
+						this.month = month;
+						this.updateDaysInMonth();
+						this.showCalendarItem = 'day';
+					},
+
+					// Navigation for year
+					prevYear() {
+						this.year -= 10;
+						this.updateYearsList();
+					},
+					nextYear() {
+						this.year += 10;
+						this.updateYearsList();
+					},
+					selectYear(year) {
+						this.year = year;
+						this.updateDaysInMonth();
+						this.updateYearsList();
+						this.showCalendarItem = 'month';
+					},
+
+					// Update year list
+					updateYearsList() {
+						this.yearList = Array.from({
+							length: 12
+						}, (_, i) => this.year - (this.year % 10) + i);
+					}
+				};
 			}
 		</script>
 	@endPushOnce

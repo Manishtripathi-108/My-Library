@@ -251,8 +251,12 @@ html {
     /* -------------------------------------------------------------------------- */
     /*                                neu-calendar                                */
     /* -------------------------------------------------------------------------- */
+    .neu-calendar-container {
+        @apply relative w-72;
+    }
+
     .neu-calendar {
-        @apply bg-primary rounded-lg shadow-neu-xs dark:shadow-neu-dark-xs;
+        @apply bg-primary absolute left-0 top-12 z-50 mt-2 w-full overflow-hidden rounded-lg shadow-neu-xs dark:shadow-neu-dark-xs;
     }
 
     .neu-calendar-header {
