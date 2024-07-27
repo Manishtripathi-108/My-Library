@@ -519,6 +519,10 @@
 			</x-slot>
 		</x-grid.item>
 
+		<x-grid.item title="Double Range Slider">
+
+		</x-grid.item>
+
 	</x-grid>
 
 	@pushOnce('scripts')

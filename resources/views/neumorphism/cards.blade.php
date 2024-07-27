@@ -33,7 +33,7 @@
 										Jo J. Moore
 									</a>
 								</div>
-								<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calender class="size-3" />20 June 2024</div>
+								<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calendar class="size-3" />20 June 2024</div>
 							</div>
 							<h3 class="text-primary mt-4 font-karla text-lg">&#2384; the most powerful symbol in Hinduism</h3>
 							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
@@ -54,7 +54,7 @@
 						</a>
 						<p class="text-secondary mb-6 font-karla tracking-wide"><x-joke /></p>
 						<div class="flex-center">
-							<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calender class="size-3" />20 June 2024</div>
+							<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calendar class="size-3" />20 June 2024</div>
 							<a class="text-secondary flex-center ml-auto gap-2 text-sm" href="#"><x-svg.comments class="size-4" /></span>21</a>
 						</div>
 					</div>

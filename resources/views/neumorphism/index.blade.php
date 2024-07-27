@@ -206,7 +206,7 @@
 											<div class="mb-6">
 												<label class="text-secondary mb-1 block text-sm" for="card_expiry">Card Expiry <span class="text-red-600">*</span></label>
 												<div class="neu-input-group neu-input-group-prepend group">
-													<x-svg.calender class="neu-input-icon" />
+													<x-svg.calendar class="neu-input-icon" />
 													<input class="neu-form-input" id="card_expiry" type="number" placeholder="MM / YY" required>
 												</div>
 											</div>

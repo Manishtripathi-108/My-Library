@@ -244,6 +244,56 @@ html {
         @apply appearance-none w-6 h-6 bg-accent relative rounded-full shadow-neu-xs cursor-pointer transition duration-300 ease-in-out;
     }
 
+    .neu-form-double-range-group {
+        @apply w-full flex flex-col gap-4;
+    }
+
+    /* -------------------------------------------------------------------------- */
+    /*                                neu-calendar                                */
+    /* -------------------------------------------------------------------------- */
+    .neu-calendar {
+        @apply bg-primary rounded-lg shadow-neu-xs dark:shadow-neu-dark-xs;
+    }
+
+    .neu-calendar-header {
+        @apply flex items-center justify-between px-4 py-2 shadow-neu-xs dark:shadow-neu-dark-sm;
+    }
+
+    .neu-calendar-header-btn {
+        @apply neu-btn p-1.5;
+    }
+
+    .neu-calendar-header-title {
+        @apply neu-btn text-nowrap mx-3 w-full px-4 py-1.5 text-sm;
+    }
+
+    .neu-calendar-body,
+    .neu-calendar-body-days,
+    .neu-calendar-body-months,
+    .neu-calendar-body-years {
+        @apply m-1 grid gap-1 p-4 text-sm shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs;
+    }
+
+    .neu-calendar-body-days {
+        @apply grid-cols-7;
+    }
+
+    .neu-calendar-body-months {
+        @apply grid-cols-3;
+    }
+
+    .neu-calendar-body-years {
+        @apply grid-cols-4;
+    }
+
+    .neu-calendar-item {
+        @apply text-primary hover:bg-secondary flex cursor-pointer items-center justify-center rounded-lg p-2 transition hover:text-white hover:shadow-neu-xs dark:hover:shadow-neu-dark-xs;
+    }
+
+    .neu-calendar-item.active {
+        @apply text-white bg-secondary shadow-neu-xs dark:shadow-neu-dark-xs;
+    }
+
     /* -------------------------------------------------------------------------- */
     /*                                  neu-badge                                 */
     /* -------------------------------------------------------------------------- */
