@@ -15,7 +15,7 @@
 			{{ __('Neumorphism') }}
 		</a>
 
-		<div class="ml-2" x-show="open" x-transition>
+		<div class="ml-2" x-cloak x-show="open" x-transition>
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.accordions')" :active="request()->routeIs('neumorphism.accordions')" wire:navigate>
 				{{ __('Accordions') }}
 			</x-sidenav-link>
@@ -112,7 +112,7 @@
 			{{ __('Components') }}
 		</span>
 
-		<div class="ml-2" x-show="open" x-transition>
+		<div class="ml-2" x-cloak x-show="open" x-transition>
 			<x-sidenav-link class="text-xs" :href="route('cards')" :active="request()->routeIs('cards')" wire:navigate>
 				{{ __('Cards') }}
 			</x-sidenav-link>
@@ -129,7 +129,7 @@
 			{{ __('Background Pages') }}
 		</span>
 
-		<div class="ml-2" x-show="open" x-transition>
+		<div class="ml-2" x-cloak x-show="open" x-transition>
 			<x-sidenav-link class="text-xs" :href="route('book-page')" :active="request()->routeIs('book-page')" wire:navigate>
 				{{ __('Book') }}
 			</x-sidenav-link>

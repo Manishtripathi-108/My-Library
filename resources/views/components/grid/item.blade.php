@@ -23,7 +23,7 @@
 
 	{{-- Code Tabs --}}
 	@if ($htmlCode != '' || $cssCode != '')
-		<div class="mx-auto mt-5 w-[85vw] rounded-lg border border-gray-600 pb-5 sm:w-[70vw] md:w-[55vw]" x-data="{ code_tab: 'html-code' }" x-show="code_open" x-transition.duration.300ms>
+		<div class="mx-auto mt-5 w-[85vw] rounded-lg border border-gray-600 pb-5 sm:w-[70vw] md:w-[55vw]" x-data="{ code_tab: 'html-code' }" x-cloak x-show="code_open" x-transition.duration.300ms>
 			<div class="mb-5 flex w-full items-center gap-4 border-b border-gray-600 p-5">
 				<button class="neu-btn text-xs" :class="{ 'active': code_tab === 'html-code' }" @click="code_tab = 'html-code'">
 					HTML

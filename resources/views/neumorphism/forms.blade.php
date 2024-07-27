@@ -586,9 +586,6 @@
 
 			<x-slot name="cssCode">
 				<style>
-					/* -------------------------------------------------------------------------- */
-					/*                                neu-calendar                                */
-					/* -------------------------------------------------------------------------- */
 					.neu-calendar-container {
 						@apply relative w-72;
 					}
@@ -753,10 +750,6 @@
 					}
 				</script>
 			</x-slot>
-		</x-grid.item>
-
-		<x-grid.item title="title">
-			<img src="asset('image/portrait/angry-lion.png')" alt="">
 		</x-grid.item>
 
 	</x-grid>
