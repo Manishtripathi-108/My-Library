@@ -18,7 +18,8 @@
 				</div>
 				<div class="neu-form-group mb-4">
 					<label class="neu-form-checkbox-label" for="remember">
-						<input class="neu-form-checkbox" id="remember" type="checkbox" value="">Remember me
+						<input class="neu-form-checkbox" id="remember" type="checkbox" value="" checked>
+						<span class="neu-form-checkbox-text">Remember me</span>
 					</label>
 				</div>
 				<button class="neu-btn" type="submit">Submit</button>
@@ -483,6 +484,36 @@
 
 					.neu-form-switch:checked~.neu-form-switch-indicator:after {
 						@apply translate-x-12 rotate-0 content-['✔️'];
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
+
+		<x-grid.item title="slider">
+			<div class="neu-form-range-group" x-data="{ value: 50 }">
+				<label class="neu-form-label" for="range-slider">Range Slider</label>
+				<input class="neu-form-range" id="range-slider" type="range" min="0" max="1000" step="10" x-model="value" :style="`background: linear-gradient(to right, #44CCFF ${value / 10}%, #00000000 ${value / 10}%);`">
+				<div class="neu-badge mt-2 w-fit font-playfair">
+					<span x-text="value"></span>
+				</div>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.neu-form-range-group {
+						@apply w-full;
+					}
+
+					.neu-form-range {
+						@apply appearance-none relative w-full bg-primary h-2 rounded-full outline-none shadow-neu-xs dark:shadow-neu-dark-xs;
+					}
+
+					.neu-form-range::-webkit-slider-thumb {
+						@apply appearance-none w-6 h-6 bg-accent rounded-full shadow-neu-xs dark:shadow-neu-dark-xs cursor-pointer transition duration-300 ease-in-out;
+					}
+
+					.neu-form-range::-moz-range-thumb {
+						@apply appearance-none w-6 h-6 bg-accent relative rounded-full shadow-neu-xs cursor-pointer transition duration-300 ease-in-out;
 					}
 				</style>
 			</x-slot>
