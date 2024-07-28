@@ -108,9 +108,9 @@
 
 	{{-- Components --}}
 	<div x-data="{ open: {{ request()->is('components/*') ? 'true' : 'false' }} }">
-		<span class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+		<button type="button" title="Components" class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
 			{{ __('Components') }}
-		</span>
+		</button>
 
 		<div class="ml-2" x-cloak x-show="open" x-transition>
 			<x-sidenav-link class="text-xs" :href="route('cards')" :active="request()->routeIs('cards')" wire:navigate>
@@ -125,9 +125,9 @@
 
 	{{-- BG-Pages --}}
 	<div x-data="{ open: {{ request()->is('pages/*') ? 'true' : 'false' }} }">
-		<span class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+		<button type="button" title="Background Pages" class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
 			{{ __('Background Pages') }}
-		</span>
+		</button>
 
 		<div class="ml-2" x-cloak x-show="open" x-transition>
 			<x-sidenav-link class="text-xs" :href="route('book-page')" :active="request()->routeIs('book-page')" wire:navigate>
