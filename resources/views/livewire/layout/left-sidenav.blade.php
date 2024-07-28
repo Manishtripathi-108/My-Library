@@ -56,8 +56,8 @@
 				{{ __('Forms') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.icon-boxes')" :active="request()->routeIs('neumorphism.icon-boxes')" wire:navigate>
-				{{ __('Icon Boxes') }}
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.icons')" :active="request()->routeIs('neumorphism.icons')" wire:navigate>
+				{{ __('Icons') }}
 			</x-sidenav-link>
 
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.modals')" :active="request()->routeIs('neumorphism.modals')" wire:navigate>

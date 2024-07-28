@@ -116,9 +116,9 @@ Route::prefix('neumorphism')->group(function () {
         return view('neumorphism.forms');
     })->name('neumorphism.forms');
 
-    Route::get('/icon-boxes', function () {
-        return view('neumorphism.icon-boxes');
-    })->name('neumorphism.icon-boxes');
+    Route::get('/icons', function () {
+        return view('neumorphism.icons');
+    })->name('neumorphism.icons');
 
     Route::get('/modals', function () {
         return view('neumorphism.modals');
