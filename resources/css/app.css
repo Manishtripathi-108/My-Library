@@ -355,6 +355,10 @@ html {
         @apply dark:shadow-neu-dark-inset-xs;
     }
 
+    .neu-btn:focus{
+        @apply border-white;
+    }
+
     .neu-btn:hover:not(.active),
     .neu-btn:focus:not(.active) {
         @apply text-primary transform scale-105;
