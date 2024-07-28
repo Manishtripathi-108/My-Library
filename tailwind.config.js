@@ -18,6 +18,9 @@ export default {
                 'auth-scale-down-center': 'auth-scale-down-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-slider': 'auth-slider 1.25s',
 
+                /* ---------------------------------- Blob ---------------------------------- */
+                'blob': 'blob 10s infinite',
+
                 /* ---------------------------------- Space --------------------------------- */
                 'space-out-up': 'spaceOutUp 2s',
                 'space-out-right': 'spaceOutRight 2s',
@@ -186,6 +189,12 @@ export default {
                 'auth-slider': {
                     '0%, 10%, 100%': { width: '400px' },
                     '30%, 50%': { width: '500px' },
+                },
+
+                /* ---------------------------------- Blob ---------------------------------- */
+                blob: {
+                    '0%, 100%': { borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' },
+                    '50%': { borderRadius: '76% 24% 37% 63% / 68% 67% 33% 32%' },
                 },
 
                 /* ---------------------------------- Space --------------------------------- */
@@ -720,6 +729,13 @@ export default {
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
                 'btn-gradient-dark': 'linear-gradient(145deg, #1f1f1f, #2e2e2e)',
+            },
+            borderRadius: {
+                shield: '50% 50% 50% 50% / 33% 33% 67% 67%',
+                organic: '63% 37% 30% 70% / 50% 45% 55% 50%',
+                'reverse-shield': '50% 50% 50% 50% / 60% 60% 40% 40%',
+                'blob-1': '44% 56% 42% 58% / 64% 29% 71% 36%',
+                'blob-2': '30% 70% 70% 30% / 30% 30% 70% 70%',
             },
             boxShadow: {
                 'neu-sun': '6px 6px 13px #cca48e, -6px -6px 13px #fff6d6',
