@@ -115,6 +115,39 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Animated Icon">
+			<div class="flex-center gap-3 md:gap-5">
+				<div class="flex-center text-secondary hover:text-primary animate-blob border-2 border-light-secondary p-8 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+					<x-svg.ex class="size-7" />
+				</div>
+				<div class="flex-center text-secondary hover:text-primary animate-blob border-2 border-light-secondary p-8 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+					<x-svg.ex class="size-7" />
+				</div>
+				<div class="flex-center text-secondary hover:text-primary animate-blob border-2 border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
+					<div class="animate-blob border-2 border-light-secondary p-5 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs"><x-svg.ex class="size-7" /></div>
+				</div>
+			</div>
+
+			<x-slot name="cssCode">
+				<style>
+					.animate-blob {
+						animation: blob 10s infinite;
+					}
+
+					@keyframes blob {
+
+						0%,
+						100% {
+							border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+						}
+
+						50% {
+							border-radius: 76% 24% 37% 63% / 68% 67% 33% 32%;
+						}
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
 	</x-grid>
 
 </x-app-layout>
