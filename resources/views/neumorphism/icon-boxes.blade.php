@@ -73,6 +73,20 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Icon Box">
+			<div class="bg-primary flex-center gap-3 md:gap-5">
+				<div class="bg-primary flex-center text-secondary hover:text-primary rounded-full p-8 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+					<x-svg.ex class="size-7" />
+				</div>
+				<div class="bg-primary flex-center text-secondary hover:text-primary rounded-full p-8 shadow-neu-xs dark:shadow-neu-dark-xs">
+					<x-svg.ex class="size-7" />
+				</div>
+				<div class="bg-primary flex-center text-secondary hover:text-primary rounded-full p-3 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs">
+					<div class="rounded-full p-5 shadow-neu-xs dark:shadow-neu-dark-xs"><x-svg.ex class="size-7" /></div>
+				</div>
+			</div>
+		</x-grid.item>
+
 		
 	</x-grid>
 
