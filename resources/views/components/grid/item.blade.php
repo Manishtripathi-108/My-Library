@@ -6,9 +6,11 @@
 	</h3>
 
 	{{-- Content --}}
-	<div class="flex-center *:animate-swash-in *:on-scroll-animation {{ $contentClass }} flex-col rounded-lg border border-gray-600 p-5">
+	<div class="flex-center {{ $contentClass }} flex-col rounded-lg border border-gray-600 p-5">
 
-		{{ $slot }}
+		<div class="on-scroll-animation size-full flex-center animate-swash-in">
+			{{ $slot }}
+		</div>
 
 		{{-- Show Code Button --}}
 		@if ($htmlCode != '' || $cssCode != '')
