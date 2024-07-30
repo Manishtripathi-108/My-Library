@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Buttons">
 
 	<x-grid title="Buttons">
 		<x-slot name="description">

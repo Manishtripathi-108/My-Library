@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Forms | Neumorphism">
 
 	<x-grid title="Forms">
 		<x-slot name="description">

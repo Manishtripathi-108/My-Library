@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Shadows | Neumorphism">
 	{{-- Light Shadows --}}
 	<h2 class="bg-light-primary py-5 text-center font-playfair text-2xl font-bold tracking-wider text-light-text-secondary">
 		Light Shadows

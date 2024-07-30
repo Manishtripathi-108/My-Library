@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Icons | Neumorphism">
 
 	<x-grid title="Icons">
 		<x-slot name="description">

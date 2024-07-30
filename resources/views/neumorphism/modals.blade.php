@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Modals | Neumorphism">
 
 	<x-grid title="Modals">
 		<x-slot name="description">

@@ -1,9 +1,4 @@
-<x-app-layout>
-	{{-- Sidebar --}}
-	<x-slot name="leftSidenav">
-		<livewire:layout.left-sidenav />
-	</x-slot>
-
+<x-app-layout title="Cards">
 	<div class="flex flex-col items-center justify-center gap-y-5 p-5">
 		<x-grid title="Cards">
 

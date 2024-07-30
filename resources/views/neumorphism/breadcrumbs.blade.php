@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Breadcrumbs | Neumorphism">
 
 	<x-grid title="Breadcrumbs">
 

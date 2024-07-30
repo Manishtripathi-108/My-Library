@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Neumorphism">
 
 	{{-- Content --}}
 	<div class="flex flex-col items-center justify-center gap-y-5 px-5 md:px-2">

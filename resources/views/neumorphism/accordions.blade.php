@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Accordions | Neumorphism">
 	<x-grid title="Accordions">
 
 		<x-slot name="description">

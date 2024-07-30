@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Alerts | Neumorphism">
 
 	<x-grid title="Alerts">
 

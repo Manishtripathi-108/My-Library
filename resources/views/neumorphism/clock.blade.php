@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Clocks | Neumorphism">
 	<div class="p-5 md:px-2">
 		<x-grid title="Clocks">
 	

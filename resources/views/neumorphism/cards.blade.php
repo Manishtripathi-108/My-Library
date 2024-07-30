@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Blog Cards | Neumorphism">
 
 	<x-grid title="Blog Cards">
 

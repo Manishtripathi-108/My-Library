@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Order Confirmation Page">
 	<div class="bg-primary dark:bg-dark flex justify-center">
 		<div class="bg-secondary rounded-lg px-8 md:my-5 md:w-11/12 md:px-14">
 

@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Badges | Neumorphism">
 
 	<x-grid title="Badges">
 		<x-slot name="description">
