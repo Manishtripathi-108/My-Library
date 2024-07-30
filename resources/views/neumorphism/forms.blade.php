@@ -127,7 +127,7 @@
 					}
 
 					.neu-input-group:focus-within .neu-input-icon {
-						@apply shadow-neu-xs dark:shadow-neu-dark-xs;
+						@apply shadow-neu-xs dark:shadow-neu-dark-xs border-light-secondary border dark:border-dark-secondary;
 					}
 				</style>
 			</x-slot>
