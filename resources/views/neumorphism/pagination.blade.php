@@ -135,4 +135,10 @@
 
 	</x-grid>
 
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Pagination</x-sidenav-list>
+		<x-sidenav-list>Pagination with Icons</x-sidenav-list>
+		<x-sidenav-list>Rounded Pagination</x-sidenav-list>
+	</x-slot>
+
 </x-app-layout>
