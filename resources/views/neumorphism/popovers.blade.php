@@ -44,7 +44,10 @@
 				</div>
 			</div>
 		</x-grid.item>
-
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Popovers</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
