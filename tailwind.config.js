@@ -12,152 +12,46 @@ export default {
     theme: {
         extend: {
             animation: {
-                'auth-slide-top': 'auth-slide-top 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
-                'auth-slide-bottom': 'auth-slide-bottom 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
-                'auth-scale-up-center': 'auth-scale-up-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                /* ---------------------------------- Auth Animations ---------------------------------- */
                 'auth-scale-down-center': 'auth-scale-down-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-scale-up-center': 'auth-scale-up-center 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-slide-bottom': 'auth-slide-bottom 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
+                'auth-slide-top': 'auth-slide-top 0.7s cubic-bezier(0.73,-0.67,0.27,1.67) forwards',
                 'auth-slider': 'auth-slider 1.25s',
 
-                /* ---------------------------------- Blob ---------------------------------- */
+                /* ---------------------------------- Blob & Border Radius ---------------------------------- */
                 'blob': 'blob 10s infinite',
-
-                /* ---------------------------------- Space --------------------------------- */
-                'space-out-up': 'spaceOutUp 2s',
-                'space-out-right': 'spaceOutRight 2s',
-                'space-out-down': 'spaceOutDown 2s',
-                'space-out-left': 'spaceOutLeft 2s',
-                'space-in-up': 'spaceInUp 2s',
-                'space-in-right': 'spaceInRight 2s',
-                'space-in-down': 'spaceInDown 2s',
-                'space-in-left': 'spaceInLeft 2s',
-
-                /* ------------------------------- Perspective ------------------------------ */
-                'perspective-down': 'perspectiveDown 2s',
-                'perspective-down-return': 'perspectiveDownReturn 2s',
-                'perspective-left': 'perspectiveLeft 2s',
-                'perspective-left-return': 'perspectiveLeftReturn 2s',
-                'perspective-right': 'perspectiveRight 2s',
-                'perspective-right-return': 'perspectiveRightReturn 2s',
-                'perspective-up': 'perspectiveUp 2s',
-                'perspective-up-return': 'perspectiveUpReturn 2s',
-
-                /* ---------------------------------- Rotate --------------------------------- */
-                'rotate-down': 'rotateDown 2s',
-                'rotate-left': 'rotateLeft 2s',
-                'rotate-right': 'rotateRight 2s',
-                'rotate-up': 'rotateUp 2s',
-
-                /* ---------------------------------- Slide --------------------------------- */
-                'slide-down': 'slideDown 2s',
-                'slide-down-return': 'slideDownReturn 2s',
-                'slide-left': 'slideLeft 2s',
-                'slide-left-return': 'slideLeftReturn 2s',
-                'slide-right': 'slideRight 2s',
-                'slide-right-return': 'slideRightReturn 2s',
-                'slide-up': 'slideUp 2s',
-                'slide-up-return': 'slideUpReturn 2s',
-
-                /* ---------------------------------- Open ---------------------------------- */
-                'open-down-left': 'openDownLeft 2s',
-                'open-down-left-return': 'openDownLeftReturn 2s',
-                'open-down-right': 'openDownRight 2s',
-                'open-down-right-return': 'openDownRightReturn 2s',
-                'open-up-left': 'openUpLeft 2s',
-                'open-up-left-return': 'openUpLeftReturn 2s',
-                'open-up-right': 'openUpRight 2s',
-                'open-up-right-return': 'openUpRightReturn 2s',
-                'open-down-left-out': 'openDownLeftOut 2s',
-                'open-down-right-out': 'openDownRightOut 2s',
-                'open-up-left-out': 'openUpLeftOut 2s',
-                'open-up-right-out': 'openUpRightOut 2s',
+                'border-radius': 'border-radius 10s linear infinite alternate forwards',
 
                 /* ---------------------------------- Bling ---------------------------------- */
-                'puff-in': 'puffIn 2s',
-                'puff-out': 'puffOut 2s',
-                'vanish-in': 'vanishIn 2s',
-                'vanish-out': 'vanishOut 2s',
+                'puff-in': 'puff-in 2s',
+                'puff-out': 'puff-out 2s',
+                'vanish-in': 'vanish-in 2s',
+                'vanish-out': 'vanish-out 2s',
 
                 /* ---------------------------------- Boing ---------------------------------- */
-                'boing-in-up': 'boingInUp 2s',
-                'boing-out-down': 'boingOutDown 2s',
+                'boing-in-up': 'boing-in-up 2s',
+                'boing-out-down': 'boing-out-down 2s',
 
                 /* ---------------------------------- Bomb ---------------------------------- */
-                'bomb-left-out': 'bombLeftOut 2s',
-                'bomb-right-out': 'bombRightOut 2s',
-
-                /* ---------------------------------- Magic ---------------------------------- */
-                'magic': 'magic 2s',
-                'swap': 'swap 2s',
-                'twister-in-down': 'twisterInDown 2s',
-                'twister-in-up': 'twisterInUp 2s',
-
-                /* ---------------------------------- Math ---------------------------------- */
-                'foolish-in': 'foolishIn 2s',
-                'foolish-out': 'foolishOut 2s',
-                'hole-out': 'holeOut 2s',
-                'swash-in': 'swashIn 2s',
-                'swash-out': 'swashOut 2s',
-
-                /* ---------------------------------- Tin ---------------------------------- */
-                'tin-down-in': 'tinDownIn 2s',
-                'tin-down-out': 'tinDownOut 2s',
-                'tin-left-in': 'tinLeftIn 2s',
-                'tin-left-out': 'tinLeftOut 2s',
-                'tin-right-in': 'tinRightIn 2s',
-                'tin-right-out': 'tinRightOut 2s',
-                'tin-up-in': 'tinUpIn 2s',
-                'tin-up-out': 'tinUpOut 2s',
+                'bomb-left-out': 'bomb-left-out 2s',
+                'bomb-right-out': 'bomb-right-out 2s',
 
                 /* ---------------------------------- Circle ---------------------------------- */
-                'circle-in-hesitate': 'circle-in-hesitate 2s',
-                'circle-in-center': 'circle-in-center 2s',
-                'circle-in-top-right': 'circle-in-top-right 2s',
-                'circle-in-top-left': 'circle-in-top-left 2s',
-                'circle-in-bottom-right': 'circle-in-bottom-right 2s',
                 'circle-in-bottom-left': 'circle-in-bottom-left 2s',
-                'circle-out-hesitate': 'circle-out-hesitate 2s',
-                'circle-out-center': 'circle-out-center 2s',
-                'circle-out-top-right': 'circle-out-top-right 2s',
-                'circle-out-top-left': 'circle-out-top-left 2s',
-                'circle-out-bottom-right': 'circle-out-bottom-right 2s',
+                'circle-in-bottom-right': 'circle-in-bottom-right 2s',
+                'circle-in-center': 'circle-in-center 2s',
+                'circle-in-hesitate': 'circle-in-hesitate 2s',
+                'circle-in-swoop': 'circle-in-swoop 2s',
+                'circle-in-top-left': 'circle-in-top-left 2s',
+                'circle-in-top-right': 'circle-in-top-right 2s',
                 'circle-out-bottom-left': 'circle-out-bottom-left 2s',
-                'circle-in-swoop': 'in-circle-swoop 2s',
-                'circle-out-swoop': 'out-circle-swoop 2s',
-
-
-                /* ---------------------------------- Cube ---------------------------------- */
-                'square-in-center': 'square-in-center 2s',
-                'square-in-hesitate': 'square-in-hesitate 2s',
-                'square-in-top-right': 'square-in-top-right 2s',
-                'square-in-top-left': 'square-in-top-left 2s',
-                'square-in-bottom-right': 'square-in-bottom-right 2s',
-                'square-in-bottom-left': 'square-in-bottom-left 2s',
-                'square-out-center': 'square-out-center 2s',
-                'square-out-hesitate': 'square-out-hesitate 2s',
-                'square-out-top-right': 'square-out-top-right 2s',
-                'square-out-top-left': 'square-out-top-left 2s',
-                'square-out-bottom-right': 'square-out-bottom-right 2s',
-                'square-out-bottom-left': 'square-out-bottom-left 2s',
-
-                /* ---------------------------------- Wipe ---------------------------------- */
-                'wipe-in-right': 'wipe-in-right 2s',
-                'wipe-in-left': 'wipe-in-left 2s',
-                'wipe-in-up': 'wipe-in-up 2s',
-                'wipe-in-down': 'wipe-in-down 2s',
-                'wipe-in-top-right': 'wipe-in-top-right 2s',
-                'wipe-in-top-left': 'wipe-in-top-left 2s',
-                'wipe-in-bottom-right': 'wipe-in-bottom-right 2s',
-                'wipe-in-bottom-left': 'wipe-in-bottom-left 2s',
-                'wipe-cinematic-in': 'wipe-cinematic-in 2s',
-                'wipe-out-right': 'wipe-out-right 2s',
-                'wipe-out-left': 'wipe-out-left 2s',
-                'wipe-out-up': 'wipe-out-up 2s',
-                'wipe-out-down': 'wipe-out-down 2s',
-                'wipe-out-top-right': 'wipe-out-top-right 2s',
-                'wipe-out-top-left': 'wipe-out-top-left 2s',
-                'wipe-out-bottom-right': 'wipe-out-bottom-right 2s',
-                'wipe-out-bottom-left': 'wipe-out-bottom-left 2s',
-                'wipe-cinematic-out': 'wipe-cinematic-out 2s',
+                'circle-out-bottom-right': 'circle-out-bottom-right 2s',
+                'circle-out-center': 'circle-out-center 2s',
+                'circle-out-hesitate': 'circle-out-hesitate 2s',
+                'circle-out-swoop': 'circle-out-swoop 2s',
+                'circle-out-top-left': 'circle-out-top-left 2s',
+                'circle-out-top-right': 'circle-out-top-right 2s',
 
                 /* ---------------------------------- Diamond ---------------------------------- */
                 'diamond-in-center': 'diamond-in-center 2s',
@@ -167,231 +61,176 @@ export default {
                 'polygon-in-opposing-corners': 'polygon-in-opposing-corners 2s',
                 'polygon-out-opposing-corners': 'polygon-out-opposing-corners 2s',
 
+                /* ---------------------------------- Magic ---------------------------------- */
+                'magic': 'magic 2s',
+                'swap': 'swap 2s',
+                'twister-in-down': 'twister-in-down 2s',
+                'twister-in-up': 'twister-in-up 2s',
+
+                /* ---------------------------------- Math ---------------------------------- */
+                'foolish-in': 'foolish-in 2s',
+                'foolish-out': 'foolish-out 2s',
+                'hole-out': 'hole-out 2s',
+                'swash-in': 'swash-in 2s',
+                'swash-out': 'swash-out 2s',
+
+                /* ---------------------------------- Open ---------------------------------- */
+                'open-down-left': 'open-down-left 2s',
+                'open-down-left-out': 'open-down-left-out 2s',
+                'open-down-left-return': 'open-down-left-return 2s',
+                'open-down-right': 'open-down-right 2s',
+                'open-down-right-out': 'open-down-right-out 2s',
+                'open-down-right-return': 'open-down-right-return 2s',
+                'open-up-left': 'open-up-left 2s',
+                'open-up-left-out': 'open-up-left-out 2s',
+                'open-up-left-return': 'open-up-left-return 2s',
+                'open-up-right': 'open-up-right 2s',
+                'open-up-right-out': 'open-up-right-out 2s',
+                'open-up-right-return': 'open-up-right-return 2s',
+
+                /* ---------------------------------- Perspective ------------------------------ */
+                'perspective-down': 'perspective-down 2s',
+                'perspective-down-return': 'perspective-down-return 2s',
+                'perspective-left': 'perspective-left 2s',
+                'perspective-left-return': 'perspective-left-return 2s',
+                'perspective-right': 'perspective-right 2s',
+                'perspective-right-return': 'perspective-right-return 2s',
+                'perspective-up': 'perspective-up 2s',
+                'perspective-up-return': 'perspective-up-return 2s',
+
+                /* ---------------------------------- Rotate --------------------------------- */
+                'rotate-down': 'rotate-down 2s',
+                'rotate-left': 'rotate-left 2s',
+                'rotate-right': 'rotate-right 2s',
+                'rotate-up': 'rotate-up 2s',
+
+                /* ---------------------------------- Slide --------------------------------- */
+                'slide-down': 'slide-down 2s',
+                'slide-down-return': 'slide-down-return 2s',
+                'slide-left': 'slide-left 2s',
+                'slide-left-return': 'slide-left-return 2s',
+                'slide-right': 'slide-right 2s',
+                'slide-right-return': 'slide-right-return 2s',
+                'slide-up': 'slide-up 2s',
+                'slide-up-return': 'slide-up-return 2s',
+
+                /* ---------------------------------- Space --------------------------------- */
+                'space-in-down': 'space-in-down 2s',
+                'space-in-left': 'space-in-left 2s',
+                'space-in-right': 'space-in-right 2s',
+                'space-in-up': 'space-in-up 2s',
+                'space-out-down': 'space-out-down 2s',
+                'space-out-left': 'space-out-left 2s',
+                'space-out-right': 'space-out-right 2s',
+                'space-out-up': 'space-out-up 2s',
+
+
+                /* ---------------------------------- square ---------------------------------- */
+                'square-in-bottom-left': 'square-in-bottom-left 2s',
+                'square-in-bottom-right': 'square-in-bottom-right 2s',
+                'square-in-center': 'square-in-center 2s',
+                'square-in-hesitate': 'square-in-hesitate 2s',
+                'square-in-top-left': 'square-in-top-left 2s',
+                'square-in-top-right': 'square-in-top-right 2s',
+                'square-out-bottom-left': 'square-out-bottom-left 2s',
+                'square-out-bottom-right': 'square-out-bottom-right 2s',
+                'square-out-center': 'square-out-center 2s',
+                'square-out-hesitate': 'square-out-hesitate 2s',
+                'square-out-top-left': 'square-out-top-left 2s',
+                'square-out-top-right': 'square-out-top-right 2s',
+
+                /* ---------------------------------- Tin ---------------------------------- */
+                'tin-down-in': 'tin-down-in 2s',
+                'tin-down-out': 'tin-down-out 2s',
+                'tin-left-in': 'tin-left-in 2s',
+                'tin-left-out': 'tin-left-out 2s',
+                'tin-right-in': 'tin-right-in 2s',
+                'tin-right-out': 'tin-right-out 2s',
+                'tin-up-in': 'tin-up-in 2s',
+                'tin-up-out': 'tin-up-out 2s',
+
+                /* ---------------------------------- Wipe ---------------------------------- */
+                'wipe-cinematic-in': 'wipe-cinematic-in 2s',
+                'wipe-cinematic-out': 'wipe-cinematic-out 2s',
+                'wipe-in-bottom-left': 'wipe-in-bottom-left 2s',
+                'wipe-in-bottom-right': 'wipe-in-bottom-right 2s',
+                'wipe-in-left': 'wipe-in-left 2s',
+                'wipe-in-right': 'wipe-in-right 2s',
+                'wipe-in-top-left': 'wipe-in-top-left 2s',
+                'wipe-in-top-right': 'wipe-in-top-right 2s',
+                'wipe-in-up': 'wipe-in-up 2s',
+                'wipe-out-bottom-left': 'wipe-out-bottom-left 2s',
+                'wipe-out-bottom-right': 'wipe-out-bottom-right 2s',
+                'wipe-out-left': 'wipe-out-left 2s',
+                'wipe-out-right': 'wipe-out-right 2s',
+                'wipe-out-top-left': 'wipe-out-top-left 2s',
+                'wipe-out-top-right': 'wipe-out-top-right 2s',
+                'wipe-out-up': 'wipe-out-up 2s',
+                'wipe-out-down': 'wipe-out-down 2s',
             },
             keyframes: {
                 /* ---------------------------------- Auth ---------------------------------- */
-                'auth-slide-top': {
-                    '0%': { transform: 'translateY(160px)' },
-                    '100%': { transform: 'translateY(-200px)' },
-                },
-                'auth-slide-bottom': {
-                    '0%': { transform: 'translateY(-200px)' },
-                    '100%': { transform: 'translateY(160px)' },
+                'auth-scale-down-center': {
+                    '0%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
+                    '100%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
                 },
                 'auth-scale-up-center': {
                     '0%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
                     '100%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
                 },
-                'auth-scale-down-center': {
-                    '0%': { transform: 'scale(1)', opacity: '1', visibility: 'visible' },
-                    '100%': { transform: 'scale(0)', opacity: '0', visibility: 'hidden' },
+                'auth-slide-bottom': {
+                    '0%': { transform: 'translateY(-200px)' },
+                    '100%': { transform: 'translateY(160px)' },
+                },
+                'auth-slide-top': {
+                    '0%': { transform: 'translateY(160px)' },
+                    '100%': { transform: 'translateY(-200px)' },
                 },
                 'auth-slider': {
                     '0%, 10%, 100%': { width: '400px' },
                     '30%, 50%': { width: '500px' },
                 },
 
-                /* ---------------------------------- Blob ---------------------------------- */
-                blob: {
+                /* ---------------------------------- Blob & Border Radius ---------------------------------- */
+                'blob': {
                     '0%, 100%': { borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' },
                     '50%': { borderRadius: '76% 24% 37% 63% / 68% 67% 33% 32%' },
                 },
-
-                /* ---------------------------------- Space --------------------------------- */
-                spaceOutUp: {
-                    '0%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
-                },
-                spaceInRight: {
-                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
-                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
-                },
-                spaceOutDown: {
-                    '0%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
-                },
-                spaceOutLeft: {
-                    '0%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
-                    '100%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
-                },
-                spaceInUp: {
-                    '0%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
-                    '100%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
-                },
-                spaceOutRight: {
-                    '0%': { opacity: '1', transformOrigin: '100% 50%', transform: 'scale(1) translate(0%, 0%)' },
-                    '100%': { opacity: '0', transformOrigin: '100% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
-                },
-                spaceInDown: {
-                    '0%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
-                    '100%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
-                },
-                spaceInLeft: {
-                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
-                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
-                },
-
-                /* ------------------------------- Perspective ------------------------------ */
-                perspectiveDown: {
-                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
-                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
-                },
-                perspectiveDownReturn: {
-                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
-                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
-                },
-                perspectiveLeft: {
-                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
-                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
-                },
-                perspectiveLeftReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
-                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
-                },
-                perspectiveRight: {
-                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
-                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
-                },
-                perspectiveRightReturn: {
-                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
-                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
-                },
-                perspectiveUp: {
-                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
-                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
-                },
-                perspectiveUpReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
-                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
-                },
-
-                /* ---------------------------------- Rotate --------------------------------- */
-                rotateDown: {
-                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'perspective(800px) rotateX(-180deg) translateZ(300px)' },
-                },
-                rotateLeft: {
-                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(-180deg) translateZ(300px)' },
-                },
-                rotateRight: {
-                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(180deg) translateZ(150px)' },
-                },
-                rotateUp: {
-                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateX(180deg) translateZ(100px)' },
-                },
-
-                /* ---------------------------------- Slide --------------------------------- */
-                slideDown: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
-                },
-                slideDownReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
-                },
-                slideLeft: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
-                },
-                slideLeftReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
-                },
-                slideRight: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
-                },
-                slideRightReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
-                },
-                slideUp: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
-                },
-                slideUpReturn: {
-                    '0%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
-                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
-                },
-
-                /* ---------------------------------- Open ---------------------------------- */
-                openUpLeft: {
-                    '0%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openUpLeftReturn: {
-                    '0%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                    '100%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                },
-                openUpRight: {
-                    '0%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openUpRightReturn: {
-                    '0%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                    '100%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                },
-                openUpLeftOut: {
-                    '0%': { opacity: '1', transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { opacity: '0', transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openUpRightOut: {
-                    '0%': { opacity: '1', transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { opacity: '0', transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openDownLeftOut: {
-                    '0%': { opacity: '1', transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { opacity: '0', transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openDownRightOut: {
-                    '0%': { opacity: '1', transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { opacity: '0', transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openDownLeft: {
-                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openDownLeftReturn: {
-                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
-                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                },
-                openDownRight: {
-                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
-                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                },
-                openDownRightReturn: {
-                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
-                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                'border-radius': {
+                    '0%, 100%': { borderRadius: '63% 37% 54% 46% / 55% 48% 52% 45%' },
+                    '14%': { borderRadius: '40% 60% 54% 46% / 49% 60% 40% 51%' },
+                    '28%': { borderRadius: '54% 46% 38% 62% / 49% 70% 30% 51%' },
+                    '42%': { borderRadius: '61% 39% 55% 45% / 61% 38% 62% 39%' },
+                    '56%': { borderRadius: '61% 39% 67% 33% / 70% 50% 50% 30%' },
+                    '70%': { borderRadius: '50% 50% 34% 66% / 56% 68% 32% 44%' },
+                    '84%': { borderRadius: '46% 54% 50% 50% / 35% 61% 39% 65%' },
                 },
 
                 /* ---------------------------------- Bling ---------------------------------- */
-                puffIn: {
+                'puff-in': {
                     '0%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(2px)' },
                     '100%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
                 },
-                puffOut: {
+                'puff-out': {
                     '0%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
                     '100%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(2px)' },
                 },
-                vanishIn: {
+                'vanish-in': {
                     '0%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(90px)' },
                     '100%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
                 },
-                vanishOut: {
+                'vanish-out': {
                     '0%': { opacity: 1, transformOrigin: '50% 50%', transform: 'scale(1, 1)', filter: 'blur(0px)' },
                     '100%': { opacity: 0, transformOrigin: '50% 50%', transform: 'scale(2, 2)', filter: 'blur(20px)' },
                 },
 
                 /* ---------------------------------- Boing ---------------------------------- */
-                boingInUp: {
+                'boing-in-up': {
                     '0%': { opacity: '0', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(-90deg)' },
                     '50%': { opacity: '1', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(50deg)' },
                     '100%': { opacity: '1', transformOrigin: '50% 0%', transform: 'perspective(800px) rotateX(0deg)' },
                 },
-                boingOutDown: {
+                'boing-out-down': {
                     '0%': { opacity: '1', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
                     '20%': { opacity: '1', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(10deg)' },
                     '30%': { opacity: '1', transformOrigin: '0% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
@@ -400,109 +239,15 @@ export default {
                 },
 
                 /* ---------------------------------- Bomb ---------------------------------- */
-                bombLeftOut: {
+                'bomb-left-out': {
                     '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'rotate(0deg)', filter: 'blur(0px)' },
                     '50%': { opacity: '1', transformOrigin: '-100% 50%', transform: 'rotate(-160deg)', filter: 'blur(0px)' },
                     '100%': { opacity: '0', transformOrigin: '-100% 50%', transform: 'rotate(-160deg)', filter: 'blur(20px)' },
                 },
-                bombRightOut: {
+                'bomb-right-out': {
                     '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'rotate(0deg)', filter: 'blur(0px)' },
                     '50%': { opacity: '1', transformOrigin: '200% 50%', transform: 'rotate(160deg)', filter: 'blur(0px)' },
                     '100%': { opacity: '0', transformOrigin: '200% 50%', transform: 'rotate(160deg)', filter: 'blur(20px)' },
-                },
-
-                /* ---------------------------------- Magic ---------------------------------- */
-                magic: {
-                    '0%': { opacity: '1', transformOrigin: '100% 200%', transform: 'scale(1, 1) rotate(0deg)' },
-                    '100%': { opacity: '0', transformOrigin: '200% 500%', transform: 'scale(0, 0) rotate(270deg)' },
-                },
-                swap: {
-                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) translate(-700px, 0px)' },
-                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) translate(0px, 0px)' },
-                },
-                twisterInDown: {
-                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
-                    '30%': { transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
-                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) rotate(0deg) translateY(0%)' },
-                },
-                twisterInUp: {
-                    '0%': { opacity: '0', transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
-                    '30%': { transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
-                    '100%': { opacity: '1', transformOrigin: '0 0', transform: 'scale(1, 1) rotate(0deg) translateY(0)' },
-                },
-
-                /* ---------------------------------- Math ---------------------------------- */
-                foolishIn: {
-                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(360deg)' },
-                    '20%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '40%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '80%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(0deg)' },
-                },
-                foolishOut: {
-                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(360deg)' },
-                    '20%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '40%': { opacity: '1', transformOrigin: '100% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '80%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(0deg)' },
-                },
-                holeOut: {
-                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotateY(0deg)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotateY(180deg)' },
-                },
-                swashIn: {
-                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
-                    '90%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
-                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
-                },
-                swashOut: {
-                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
-                    '80%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
-                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
-                },
-
-                /* ---------------------------------- Tin ---------------------------------- */
-                tinDownIn: {
-                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
-                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
-                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
-                },
-                tinDownOut: {
-                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
-                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
-                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
-                },
-                tinLeftIn: {
-                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
-                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
-                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
-                },
-                tinLeftOut: {
-                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
-                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
-                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
-                },
-                tinRightIn: {
-                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
-                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
-                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
-                },
-                tinRightOut: {
-                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
-                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
-                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
-                },
-                tinUpIn: {
-                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
-                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
-                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
-                },
-                tinUpOut: {
-                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
-                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
-                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
                 },
 
                 /* ---------------------------------- Circle ---------------------------------- */
@@ -565,6 +310,256 @@ export default {
                     to: { 'clip-path': 'var(--circle-top-right-out)' },
                 },
 
+                /* ---------------------------------- Diamond ---------------------------------- */
+                'diamond-in-center': {
+                    from: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                    to: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                },
+                'diamond-in-hesitate': {
+                    '0%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
+                    '100%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                },
+                'diamond-out-center': {
+                    from: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                    to: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                },
+                'diamond-out-hesitate': {
+                    '0%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
+                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
+                    '100%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
+                },
+                'polygon-in-opposing-corners': {
+                    from: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
+                    to: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
+                },
+                'polygon-out-opposing-corners': {
+                    from: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
+                    to: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
+                },
+
+                /* ---------------------------------- Magic ---------------------------------- */
+                'magic': {
+                    '0%': { opacity: '1', transformOrigin: '100% 200%', transform: 'scale(1, 1) rotate(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '200% 500%', transform: 'scale(0, 0) rotate(270deg)' },
+                },
+                'swap': {
+                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) translate(-700px, 0px)' },
+                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) translate(0px, 0px)' },
+                },
+                'twister-in-down': {
+                    '0%': { opacity: '0', transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
+                    '30%': { transformOrigin: '0 100%', transform: 'scale(0, 0) rotate(360deg) translateY(-100%)' },
+                    '100%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(1, 1) rotate(0deg) translateY(0%)' },
+                },
+                'twister-in-up': {
+                    '0%': { opacity: '0', transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
+                    '30%': { transformOrigin: '100% 0', transform: 'scale(0, 0) rotate(360deg) translateY(100%)' },
+                    '100%': { opacity: '1', transformOrigin: '0 0', transform: 'scale(1, 1) rotate(0deg) translateY(0)' },
+                },
+
+                /* ---------------------------------- Math ---------------------------------- */
+                'foolish-in': {
+                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(360deg)' },
+                    '20%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '40%': { opacity: '1', transformOrigin: '100% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '80%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(0deg)' },
+                },
+                'foolish-out': {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotate(360deg)' },
+                    '20%': { opacity: '1', transformOrigin: '0% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '40%': { opacity: '1', transformOrigin: '100% 0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '60%': { opacity: '1', transformOrigin: '0%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '80%': { opacity: '1', transformOrigin: '0% 100%', transform: 'scale(0.5, 0.5) rotate(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotate(0deg)' },
+                },
+                'hole-out': {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1) rotateY(0deg)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0) rotateY(180deg)' },
+                },
+                'swash-in': {
+                    '0%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
+                    '90%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
+                },
+                'swash-out': {
+                    '0%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(1, 1)' },
+                    '80%': { opacity: '1', transformOrigin: '50% 50%', transform: 'scale(0.9, 0.9)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 50%', transform: 'scale(0, 0)' },
+                },
+
+                /* ---------------------------------- Open ---------------------------------- */
+                'open-up-left': {
+                    '0%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-up-left-return': {
+                    '0%': { transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                'open-up-right': {
+                    '0%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-up-right-return': {
+                    '0%': { transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                'open-up-left-out': {
+                    '0%': { opacity: '1', transformOrigin: 'top left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'top left', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-up-right-out': {
+                    '0%': { opacity: '1', transformOrigin: 'top right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'top right', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-down-left-out': {
+                    '0%': { opacity: '1', transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-down-right-out': {
+                    '0%': { opacity: '1', transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { opacity: '0', transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-down-left': {
+                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-down-left-return': {
+                    '0%': { transformOrigin: 'bottom left', transform: 'rotate(-110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'bottom left', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+                'open-down-right': {
+                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                },
+                'open-down-right-return': {
+                    '0%': { transformOrigin: 'bottom right', transform: 'rotate(110deg)', animationTimingFunction: 'ease-in-out' },
+                    '100%': { transformOrigin: 'bottom right', transform: 'rotate(0deg)', animationTimingFunction: 'ease-out' },
+                },
+
+                /* ---------------------------------- Perspective ------------------------------ */
+                'perspective-down': {
+                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
+                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
+                },
+                'perspective-down-return': {
+                    '0%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(-180deg)' },
+                    '100%': { transformOrigin: '0 100%', transform: 'perspective(800px) rotateX(0deg)' },
+                },
+                'perspective-left': {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
+                },
+                'perspective-left-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(-180deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg)' },
+                },
+                'perspective-right': {
+                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
+                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
+                },
+                'perspective-right-return': {
+                    '0%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(180deg)' },
+                    '100%': { transformOrigin: '100% 0', transform: 'perspective(800px) rotateY(0deg)' },
+                },
+                'perspective-up': {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
+                },
+                'perspective-up-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(180deg)' },
+                    '100%': { transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg)' },
+                },
+
+                /* ---------------------------------- Rotate --------------------------------- */
+                'rotate-down': {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'perspective(800px) rotateX(-180deg) translateZ(300px)' },
+                },
+                'rotate-left': {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(-180deg) translateZ(300px)' },
+                },
+                'rotate-right': {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateY(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateY(180deg) translateZ(150px)' },
+                },
+                'rotate-up': {
+                    '0%': { opacity: '1', transformOrigin: '0 0', transform: 'perspective(800px) rotateX(0deg) translateZ(0px)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0', transform: 'perspective(800px) rotateX(180deg) translateZ(100px)' },
+                },
+
+                /* ---------------------------------- Slide --------------------------------- */
+                'slide-down': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
+                },
+                'slide-down-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                },
+                'slide-left': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
+                },
+                'slide-left-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(-100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                },
+                'slide-right': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
+                },
+                'slide-right-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateX(100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateX(0%)' },
+                },
+                'slide-up': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
+                },
+                'slide-up-return': {
+                    '0%': { transformOrigin: '0 0', transform: 'translateY(-100%)' },
+                    '100%': { transformOrigin: '0 0', transform: 'translateY(0%)' },
+                },
+
+                /* ---------------------------------- Space --------------------------------- */
+                'space-in-down': {
+                    '0%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                'space-in-left': {
+                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
+                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                'space-in-right': {
+                    '0%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
+                    '100%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                'space-in-up': {
+                    '0%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
+                    '100%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
+                },
+                'space-out-down': {
+                    '0%': { opacity: '1', transformOrigin: '50% 100%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 100%', transform: 'scale(0.2) translate(0%, 200%)' },
+                },
+                'space-out-left': {
+                    '0%': { opacity: '1', transformOrigin: '0% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '0% 50%', transform: 'scale(0.2) translate(-200%, 0%)' },
+                },
+                'space-out-right': {
+                    '0%': { opacity: '1', transformOrigin: '100% 50%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '100% 50%', transform: 'scale(0.2) translate(200%, 0%)' },
+                },
+                'space-out-up': {
+                    '0%': { opacity: '1', transformOrigin: '50% 0%', transform: 'scale(1) translate(0%, 0%)' },
+                    '100%': { opacity: '0', transformOrigin: '50% 0%', transform: 'scale(0.2) translate(0%, -200%)' },
+                },
+
                 /* ---------------------------------- Square ---------------------------------- */
                 'square-in-center': {
                     from: { 'clip-path': 'inset(100% 100% 100% 100%)' },
@@ -615,6 +610,48 @@ export default {
                 'square-out-bottom-left': {
                     from: { 'clip-path': 'inset(0 0 0 0)' },
                     to: { 'clip-path': 'inset(100% 100% 0 0)' },
+                },
+
+                /* ---------------------------------- Tin ---------------------------------- */
+                'tin-down-in': {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                },
+                'tin-down-out': {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(900%)' },
+                },
+                'tin-left-in': {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                },
+                'tin-left-out': {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(-900%)' },
+                },
+                'tin-right-in': {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                },
+                'tin-right-out': {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateX(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateX(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateX(900%)' },
+                },
+                'tin-up-in': {
+                    '0%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
+                    '50%, 70%, 90%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '60%, 80%, 100%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                },
+                'tin-up-out': {
+                    '0%, 20%, 40%, 50%': { opacity: '1', transform: 'scale(1, 1) translateY(0)' },
+                    '10%, 30%': { opacity: '1', transform: 'scale(1.1, 1.1) translateY(0)' },
+                    '100%': { opacity: '0', transform: 'scale(1, 1) translateY(-900%)' },
                 },
 
                 /* ---------------------------------- Wipe ---------------------------------- */
@@ -692,39 +729,6 @@ export default {
                     '30%, 70%': { 'clip-path': 'inset(10% 0 10% 0)' },
                     '100%': { 'clip-path': 'inset(100% 0 100% 0)' },
                 },
-
-                /* ---------------------------------- Diamond ---------------------------------- */
-                'diamond-in-center': {
-                    from: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
-                    to: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
-                },
-                'diamond-in-hesitate': {
-                    '0%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
-                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
-                    '100%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
-                },
-                'diamond-out-center': {
-                    from: { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
-                    to: { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
-                },
-                'diamond-out-hesitate': {
-                    '0%': { 'clip-path': 'polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%)' },
-                    '50%': { 'clip-path': 'polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%)' },
-                    '100%': { 'clip-path': 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)' },
-                },
-                'polygon-in-opposing-corners': {
-                    from: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
-                    to: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
-                },
-                'polygon-out-opposing-corners': {
-                    from: { 'clip-path': 'polygon(0 0, 0 100%, 100% 100%, 100% 0)' },
-                    to: { 'clip-path': 'polygon(0 0, 50% 50%, 100% 100%, 50% 50%)' },
-                },
-
-
-
-
-
             },
             backgroundImage: {
                 'btn-gradient': 'linear-gradient(145deg, #e1c9ac, #fffbeb)',
