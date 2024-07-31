@@ -558,41 +558,26 @@
 	</x-grid>
 
 	<x-slot name="rightSidenav">
-		<div class="text-secondary mt-2 list-none text-xs">
-			Blog Cards
-			<div class="pl-2">
-				<x-sidenav-list>Blog Card 1</x-sidenav-list>
-				<x-sidenav-list>Blog Card 2</x-sidenav-list>
-				<x-sidenav-list>Blog Card 3</x-sidenav-list>
-			</div>
-		</div>
+		<x-sidenav-list>Blog Cards</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Blog Card 1</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Blog Card 2</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Blog Card 3</x-sidenav-list>
 
-		<div class="text-secondary mt-3 list-none text-xs">
-			Profile Cards
-			<div class="pl-2">
-				<x-sidenav-list>Profile Card 1</x-sidenav-list>
-				<x-sidenav-list>Profile Card 2</x-sidenav-list>
-				<x-sidenav-list>Profile Card 3</x-sidenav-list>
-				<x-sidenav-list>Profile Card 4</x-sidenav-list>
-				<x-sidenav-list>Profile Card 5</x-sidenav-list>
-			</div>
-		</div>
+		<x-sidenav-list>Profile Cards</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Profile Card 1</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Profile Card 2</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Profile Card 3</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Profile Card 4</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Profile Card 5</x-sidenav-list>
+		
+		<x-sidenav-list>Pricing Cards</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Pricing Card 1</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Pricing Card 2</x-sidenav-list>
 
-		<div class="text-secondary mt-3 list-none text-xs">
-			Pricing Cards
-			<div class="pl-2">
-				<x-sidenav-list>Pricing Card 1</x-sidenav-list>
-				<x-sidenav-list>Pricing Card 2</x-sidenav-list>
-			</div>
-		</div>
-
-		<div class="text-secondary mt-3 list-none text-xs">
-			Call To Actions Cards
-			<div class="pl-2">
-				<x-sidenav-list>CTA 1</x-sidenav-list>
-				<x-sidenav-list>CTA 2</x-sidenav-list>
-			</div>
-		</div>
+		
+		<x-sidenav-list>Call To Actions Cards (CTA)</x-sidenav-list>
+		<x-sidenav-list class="pl-2">CTA 1</x-sidenav-list>
+		<x-sidenav-list class="pl-2">CTA 2</x-sidenav-list>
 
 	</x-slot>
 

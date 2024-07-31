@@ -39,14 +39,12 @@
 
 	{{-- Right Sidenav --}}
 	<x-slot name="rightSidenav">
-		<ul class="lg:ml-4">
-			<x-sidenav-list>Basic Card Component</x-sidenav-list>
-			<x-sidenav-list>Image Card Component</x-sidenav-list>
-			<x-sidenav-list>Badge Card Component</x-sidenav-list>
-			<x-sidenav-list>Icon Card Component</x-sidenav-list>
-			<x-sidenav-list>Notebook Page Card Component</x-sidenav-list>
-			<x-sidenav-list>Notebook Page Card Component 2</x-sidenav-list>
-			<x-sidenav-list>Reflect Hover Card Component</x-sidenav-list>
-		</ul>
+		<x-sidenav-list>Basic Card Component</x-sidenav-list>
+		<x-sidenav-list>Image Card Component</x-sidenav-list>
+		<x-sidenav-list>Badge Card Component</x-sidenav-list>
+		<x-sidenav-list>Icon Card Component</x-sidenav-list>
+		<x-sidenav-list>Notebook Page Card Component</x-sidenav-list>
+		<x-sidenav-list>Notebook Page Card Component 2</x-sidenav-list>
+		<x-sidenav-list>Reflect Hover Card Component</x-sidenav-list>
 	</x-slot>
 </x-app-layout>

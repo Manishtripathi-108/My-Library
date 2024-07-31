@@ -77,11 +77,9 @@
 	</x-grid>
 
 	<x-slot name="rightSidenav">
-
 		<x-sidenav-list>Basic Alert</x-sidenav-list>
 		<x-sidenav-list>Icon Alert</x-sidenav-list>
 		<x-sidenav-list>Extra Content Alert</x-sidenav-list>
-
 	</x-slot>
 
 </x-app-layout>
