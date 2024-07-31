@@ -68,10 +68,6 @@
 				{{ __('Navbars') }}
 			</x-sidenav-link>
 
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.navs')" :active="request()->routeIs('neumorphism.navs')" wire:navigate>
-				{{ __('Navs') }}
-			</x-sidenav-link>
-
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.pagination')" :active="request()->routeIs('neumorphism.pagination')" wire:navigate>
 				{{ __('Paginations') }}
 			</x-sidenav-link>

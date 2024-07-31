@@ -124,10 +124,6 @@ Route::prefix('neumorphism')->group(function () {
         return view('neumorphism.modals');
     })->name('neumorphism.modals');
 
-    Route::get('/navs', function () {
-        return view('neumorphism.navs');
-    })->name('neumorphism.navs');
-
     Route::get('/navbars', function () {
         return view('neumorphism.navbars');
     })->name('neumorphism.navbars');
