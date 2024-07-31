@@ -91,7 +91,19 @@
 
 	{{-- -----------------------------AlpineJS----------------------------- --}}
 	<script>
+		// Copy to clipboard function
+		function copyToClipboard(text, callback) {
+			navigator.clipboard.writeText(text).then(() => {
+				callback('Copied to clipboard');
+			}).catch(err => {
+				console.error('Failed to copy text: ', err);
+				callback('Failed to copy text');
+			});
+		}
+
+		// AlpineJS
 		document.addEventListener('alpine:init', () => {
+			// rightSidebar Navigation: Scroll to the component and update the active id
 			Alpine.data('sidebarNavigation', () => ({
 				activeId: '',
 				scrollToComponent(id) {
