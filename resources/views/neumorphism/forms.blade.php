@@ -773,15 +773,12 @@
 		<x-sidenav-list>Form with Icons</x-sidenav-list>
 		<x-sidenav-list>Select Input</x-sidenav-list>
 		<x-sidenav-list>Textarea</x-sidenav-list>
-		<div class="text-secondary mt-2 list-none text-xs">
-			File Uploads
-			<div class="pl-2">
-				<x-sidenav-list>Basic File Upload</x-sidenav-list>
-				<x-sidenav-list>Upload File Name Preview</x-sidenav-list>
-				<x-sidenav-list>Upload Image with Preview</x-sidenav-list>
-			</div>
-		</div>
+
 		<x-sidenav-list>File Uploads</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Basic File Upload</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Upload File Name Preview</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Upload Image with Preview</x-sidenav-list>
+
 		<x-sidenav-list>CheckBoxes</x-sidenav-list>
 		<x-sidenav-list>Radio</x-sidenav-list>
 		<x-sidenav-list>Switch</x-sidenav-list>

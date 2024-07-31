@@ -21,6 +21,10 @@
 				@include('neumorphism.product-card', ['type' => 3])
 			</x-grid.item>
 
+		</x-grid>
+
+		{{-- ------------------------------ Checkout ----------------------------- --}}
+		<x-grid title="Checkout">
 			<x-grid.item title="Checkout Card">
 				@include('neumorphism.product-card', ['type' => 4])
 			</x-grid.item>
@@ -32,7 +36,6 @@
 			<x-grid.item title="Checkout summary 2">
 				@include('neumorphism.product-card', ['type' => 6])
 			</x-grid.item>
-
 		</x-grid>
 
 		{{-- ------------------------------ Tab ----------------------------- --}}
@@ -212,30 +215,22 @@
 					</div>
 				</div>
 			</x-grid.item>
-
 		</x-grid>
 
 	</div>
 
 	{{-- Right Sidenav --}}
 	<x-slot name="rightSidenav">
-		<div class="text-secondary mt-2 list-none text-xs">
-			Product Cards
-			<div class="pl-2">
-				<x-sidenav-list>Simple Card</x-sidenav-list>
-				<x-sidenav-list>Product Without Shadow</x-sidenav-list>
-				<x-sidenav-list>Product With Rating</x-sidenav-list>
-				<x-sidenav-list>Featured Product Item</x-sidenav-list>
-			</div>
-		</div>
-		<div class="text-secondary mt-2 list-none text-xs">
-			Checkout
-			<div class="pl-2">
-				<x-sidenav-list>Checkout Card</x-sidenav-list>
-				<x-sidenav-list>Checkout Summary</x-sidenav-list>
-				<x-sidenav-list>Checkout Summary 2</x-sidenav-list>
-			</div>
-		</div>
+		<x-sidenav-list>Product Cards</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Simple Card</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Product Without Shadow</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Product With Rating</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Featured Product Item</x-sidenav-list>
+
+		<x-sidenav-list>Checkout</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Checkout Card</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Checkout Summary</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Checkout Summary 2</x-sidenav-list>
 		<x-sidenav-list>Tab</x-sidenav-list>
 	</x-slot>
 </x-app-layout>
