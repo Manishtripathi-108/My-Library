@@ -8,22 +8,22 @@
 			<div class="flex-center w-full flex-col" x-data="{ tab: 'credit' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
-				<nav>
-					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
-						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'credit' }" @click="tab = 'credit'">
+				<nav class="w-full">
+					<div class="flex flex-col flex-wrap gap-5 sm:flex-row">
+						<button class="neu-btn cursor-pointer" type="button" :class="{ 'active': tab === 'credit' }" @click="tab = 'credit'">
 							Credit Card
 						</button>
-						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'paypal' }" @click="tab = 'paypal'">
+						<button class="neu-btn cursor-pointer" type="button" :class="{ 'active': tab === 'paypal' }" @click="tab = 'paypal'">
 							Paypal
 						</button>
-						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'bank' }" @click="tab = 'bank'">
+						<button class="neu-btn cursor-pointer" type="button" :class="{ 'active': tab === 'bank' }" @click="tab = 'bank'">
 							Bank/Wire Transfer
 						</button>
 					</div>
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content mt-4 max-w-[700px] lg:mt-6">
+				<div class="mt-4 max-w-[700px] lg:mt-6">
 
 					<!-- -------------------------- Credit Card ------------------------- -->
 					<div x-show="tab === 'credit'" x-transition>
@@ -184,17 +184,17 @@
 			<div class="flex-center w-full flex-col" x-data="{ tab: 'tab1' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
-				<nav>
-					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
-						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
+				<nav class="w-full">
+					<div class="flex flex-col flex-wrap gap-5 sm:flex-row">
+						<button class="neu-btn neu-icon-btn cursor-pointer" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
 							<x-svg.naruto class="size-7" />
 							Naruto
 						</button>
-						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
+						<button class="neu-btn neu-icon-btn cursor-pointer" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
 							<x-svg.deku class="size-7" />
 							My Hero Academia
 						</button>
-						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
+						<button class="neu-btn neu-icon-btn cursor-pointer" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
 							<x-svg.gojo class="size-7" />
 							Jujutsu Kaisen
 						</button>
@@ -202,7 +202,7 @@
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
+				<div class="mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
 
 					<!-- -------------------------- Tab 1 ------------------------- -->
 					<div x-show="tab === 'tab1'">
@@ -251,22 +251,22 @@
 			<div class="flex-center w-full flex-col" x-data="{ tab: 'tab1' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
-				<nav>
-					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
-						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
+				<nav class="w-full">
+					<div class="flex-center flex-wrap gap-5 sm:flex-row">
+						<button class="neu-btn neu-icon-only-btn w-fit cursor-pointer p-4" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
 							<x-svg.naruto class="size-12" />
 						</button>
-						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
+						<button class="neu-btn neu-icon-only-btn w-fit cursor-pointer p-4" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
 							<x-svg.deku class="size-12" />
 						</button>
-						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
+						<button class="neu-btn neu-icon-only-btn w-fit cursor-pointer p-4" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
 							<x-svg.gojo class="size-12" />
 						</button>
 					</div>
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
+				<div class="mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
 
 					<!-- -------------------------- Tab 1 ------------------------- -->
 					<div x-show="tab === 'tab1'">
@@ -312,20 +312,20 @@
 		</x-grid.item>
 
 		<x-grid.item title="Vertical Tab">
-			<div class="flex-center w-full" x-data="{ tab: 'tab1' }">
+			<div class="flex-center w-full flex-col gap-4 sm:flex-row lg:gap-6" x-data="{ tab: 'tab1' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
-				<nav>
-					<div class="mb-0 flex flex-col flex-wrap gap-y-5 pl-0 sm:flex-row">
-						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
+				<nav class="w-full">
+					<div class="flex flex-col flex-wrap gap-5">
+						<button class="neu-btn neu-icon-btn w-full cursor-pointer" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
 							<x-svg.naruto class="size-7" />
 							Naruto
 						</button>
-						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
+						<button class="neu-btn neu-icon-btn w-full cursor-pointer" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
 							<x-svg.deku class="size-7" />
 							My Hero Academia
 						</button>
-						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
+						<button class="neu-btn neu-icon-btn w-full cursor-pointer" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
 							<x-svg.gojo class="size-7" />
 							Jujutsu Kaisen
 						</button>
@@ -333,7 +333,7 @@
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content ml-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:ml-6">
+				<div class="max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
 
 					<!-- -------------------------- Tab 1 ------------------------- -->
 					<div x-show="tab === 'tab1'">
@@ -378,5 +378,12 @@
 			</div>
 		</x-grid.item>
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Default Tab</x-sidenav-list>
+		<x-sidenav-list>Tab With Icons</x-sidenav-list>
+		<x-sidenav-list>Icons only Tab</x-sidenav-list>
+		<x-sidenav-list>Vertical Tab</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
