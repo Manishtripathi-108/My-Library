@@ -1,30 +1,29 @@
 <x-app-layout title="Tabs">
-
 	<x-grid title="Tabs">
 		<x-slot name="description">
 			Tabs are a design pattern for switching between different views or functional aspects of an application. They are used in web applications to organize content and functionality in a minimal and efficient way.
 		</x-slot>
 
 		<x-grid.item title="Default Tab">
-			<div class="w-full" x-data="{ tab: 'credit' }">
+			<div class="flex-center w-full flex-col" x-data="{ tab: 'credit' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
 				<nav>
 					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
-						<button class="text-secondary neu-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'credit' }" @click="tab = 'credit'">
+						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'credit' }" @click="tab = 'credit'">
 							Credit Card
 						</button>
-						<button class="text-secondary neu-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'paypal' }" @click="tab = 'paypal'">
+						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'paypal' }" @click="tab = 'paypal'">
 							Paypal
 						</button>
-						<button class="text-secondary neu-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'bank' }" @click="tab = 'bank'">
+						<button class="neu-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'bank' }" @click="tab = 'bank'">
 							Bank/Wire Transfer
 						</button>
 					</div>
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content mt-4 max-w-[700px] lg:mt-12">
+				<div class="tab-content mt-4 max-w-[700px] lg:mt-6">
 
 					<!-- -------------------------- Credit Card ------------------------- -->
 					<div x-show="tab === 'credit'" x-transition>
@@ -182,20 +181,20 @@
 		</x-grid.item>
 
 		<x-grid.item title="Tab With Icons">
-			<div class="w-full" x-data="{ tab: 'tab1' }">
+			<div class="flex-center w-full flex-col" x-data="{ tab: 'tab1' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
 				<nav>
 					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
-						<button class="text-secondary neu-btn neu-icon-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'tab1' }" @click="tab = 'tab1'">
+						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
 							<x-svg.naruto class="size-7" />
 							Naruto
 						</button>
-						<button class="text-secondary neu-btn neu-icon-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'tab2' }" @click="tab = 'tab2'">
+						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
 							<x-svg.deku class="size-7" />
 							My Hero Academia
 						</button>
-						<button class="text-secondary neu-btn neu-icon-btn group cursor-pointer no-underline" type="button" :class="{ 'shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm text-primary': tab === 'tab3' }" @click="tab = 'tab3'">
+						<button class="neu-btn neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
 							<x-svg.gojo class="size-7" />
 							Jujutsu Kaisen
 						</button>
@@ -203,7 +202,71 @@
 				</nav>
 
 				<!-- -------------------------- Tab-content ------------------------- -->
-				<div class="tab-content mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-12">
+				<div class="tab-content mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
+
+					<!-- -------------------------- Tab 1 ------------------------- -->
+					<div x-show="tab === 'tab1'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">Naruto</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>Naruto Uzumaki is a young ninja with a dream to become the strongest ninja and the leader of his village, the Hokage. Along his journey, he faces numerous challenges, makes new friends, and fights powerful enemies.</p>
+						</div>
+					</div>
+
+					<!-- -------------------------- Tab 2 ------------------------- -->
+					<div x-show="tab === 'tab2'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">My Hero Academia</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>My Hero Academia follows Izuku Midoriya, a young boy born without superpowers in a world where they are common. Despite this, he dreams of becoming a hero and is scouted by All Might, the greatest hero of all time.</p>
+						</div>
+					</div>
+
+					<!-- -------------------------- Tab 3 ------------------------- -->
+					<div x-show="tab === 'tab3'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">Jujutsu Kaisen</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>Jujutsu Kaisen follows Yuji Itadori, a high school student who joins a secret organization of sorcerers to kill a powerful Curse named Ryomen Sukuna. However, after swallowing a cursed object, he becomes the host of Sukuna.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</x-grid.item>
+
+		<x-grid.item title="Icons only tab">
+			<div class="flex-center w-full flex-col" x-data="{ tab: 'tab1' }">
+
+				<!-- -------------------------- Tab-btn ------------------------- -->
+				<nav>
+					<div class="mb-0 flex flex-col flex-wrap gap-x-5 pl-0 sm:flex-row">
+						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
+							<x-svg.naruto class="size-12" />
+						</button>
+						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
+							<x-svg.deku class="size-12" />
+						</button>
+						<button class="neu-btn neu-icon-only-btn cursor-pointer p-4 no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
+							<x-svg.gojo class="size-12" />
+						</button>
+					</div>
+				</nav>
+
+				<!-- -------------------------- Tab-content ------------------------- -->
+				<div class="tab-content mt-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:mt-6">
 
 					<!-- -------------------------- Tab 1 ------------------------- -->
 					<div x-show="tab === 'tab1'">

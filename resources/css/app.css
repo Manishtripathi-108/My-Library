@@ -347,7 +347,6 @@ html {
     .neu-btn.active,
     .neu-btn:active {
         @apply text-primary shadow-neu-inset-sm;
-        color: #767676;
         /* dark mode*/
         @apply dark:shadow-neu-dark-inset-xs;
     }
@@ -355,6 +354,31 @@ html {
     .neu-btn:hover:not(.active),
     .neu-btn:focus:not(.active) {
         @apply text-primary transform scale-105;
+    }
+
+    /*-- -------------------------------- neu-btn-pill -------------------------------- */
+    .neu-btn-pill {
+        @apply rounded-l-full rounded-r-full;
+    }
+
+    /*-- -------------------------------- neu-icon-btn -------------------------------- */
+    .neu-icon-btn {
+        @apply flex justify-center items-center gap-2 text-sm;
+    }
+
+    /*-- -------------------------------- neu-icon-only-btn ------------------------------*/
+    .neu-icon-only-btn {
+        @apply rounded-full p-2 shadow-neu-md-soft;
+
+        /* dark mode */
+        @apply dark:shadow-neu-dark-md dark:bg-none;
+    }
+
+    .neu-icon-only-square-btn {
+        @apply rounded-lg bg-btn-gradient p-2 shadow-neu-md-soft;
+
+        /* dark mode    */
+        @apply dark:shadow-neu-dark-md dark:bg-none;
     }
 
     /*-- -------------------------------- neu-btn Sizes -------------------------------- */
@@ -368,31 +392,6 @@ html {
 
     .neu-btn-xl {
         @apply py-4 px-5 text-lg;
-    }
-
-    /*-- -------------------------------- neu-btn-pill -------------------------------- */
-    .neu-btn-pill {
-        @apply rounded-l-full rounded-r-full;
-    }
-
-    /*-- -------------------------------- neu-icon-btn -------------------------------- */
-    .neu-icon-btn {
-        @apply flex justify-center items-center gap-2 text-sm;
-    }
-
-    /*-- -------------------------------- neu-icon-only-btn -------------------------------- */
-    .neu-icon-only-btn {
-        @apply rounded-full bg-btn-gradient p-2 shadow-neu-md-soft;
-
-        /* dark mode */
-        @apply dark:shadow-neu-dark-md dark:bg-none;
-    }
-
-    .neu-icon-only-square-btn {
-        @apply rounded-lg bg-btn-gradient p-2 shadow-neu-md-soft;
-
-        /* dark mode    */
-        @apply dark:shadow-neu-dark-md dark:bg-none;
     }
 
     /* -------------------------------------------------------------------------- */
