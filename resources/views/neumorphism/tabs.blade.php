@@ -247,7 +247,7 @@
 			</div>
 		</x-grid.item>
 
-		<x-grid.item title="Icons only tab">
+		<x-grid.item title="Icons only Tab">
 			<div class="flex-center w-full flex-col" x-data="{ tab: 'tab1' }">
 
 				<!-- -------------------------- Tab-btn ------------------------- -->
@@ -311,6 +311,72 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Vertical Tab">
+			<div class="flex-center w-full" x-data="{ tab: 'tab1' }">
+
+				<!-- -------------------------- Tab-btn ------------------------- -->
+				<nav>
+					<div class="mb-0 flex flex-col flex-wrap gap-y-5 pl-0 sm:flex-row">
+						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab1' }" @click="tab = 'tab1'">
+							<x-svg.naruto class="size-7" />
+							Naruto
+						</button>
+						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab2' }" @click="tab = 'tab2'">
+							<x-svg.deku class="size-7" />
+							My Hero Academia
+						</button>
+						<button class="neu-btn w-full neu-icon-btn cursor-pointer no-underline" type="button" :class="{ 'active': tab === 'tab3' }" @click="tab = 'tab3'">
+							<x-svg.gojo class="size-7" />
+							Jujutsu Kaisen
+						</button>
+					</div>
+				</nav>
+
+				<!-- -------------------------- Tab-content ------------------------- -->
+				<div class="tab-content ml-4 max-w-[700px] shadow-neu-inset-md dark:shadow-neu-dark-inset-md lg:ml-6">
+
+					<!-- -------------------------- Tab 1 ------------------------- -->
+					<div x-show="tab === 'tab1'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">Naruto</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>Naruto Uzumaki is a young ninja with a dream to become the strongest ninja and the leader of his village, the Hokage. Along his journey, he faces numerous challenges, makes new friends, and fights powerful enemies.</p>
+						</div>
+					</div>
+
+					<!-- -------------------------- Tab 2 ------------------------- -->
+					<div x-show="tab === 'tab2'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">My Hero Academia</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>My Hero Academia follows Izuku Midoriya, a young boy born without superpowers in a world where they are common. Despite this, he dreams of becoming a hero and is scouted by All Might, the greatest hero of all time.</p>
+						</div>
+					</div>
+
+					<!-- -------------------------- Tab 3 ------------------------- -->
+					<div x-show="tab === 'tab3'">
+						<!-- -------------------------- Heading ------------------------- -->
+						<div class="text-primary border-b border-light-secondary px-6 py-4 dark:border-dark-secondary">
+							<h3 class="text-lg">Jujutsu Kaisen</h3>
+						</div>
+
+						<!-- -------------------------- Details ------------------------- -->
+						<div class="text-secondary p-6">
+							<p>Jujutsu Kaisen follows Yuji Itadori, a high school student who joins a secret organization of sorcerers to kill a powerful Curse named Ryomen Sukuna. However, after swallowing a cursed object, he becomes the host of Sukuna.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</x-grid.item>
 	</x-grid>
 
 </x-app-layout>
