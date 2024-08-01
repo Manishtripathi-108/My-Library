@@ -5,7 +5,7 @@
 			Tables are a design pattern for displaying large amounts of data in rows and columns, making them efficient for doing comparative analysis on categorical items. They are commonly used in financial reports, project management reports, and any other reports that require a lot of data to be shown in a tabular format.
 		</x-slot>
 
-		<x-grid.item title="Basic Table">
+		<x-grid.item title="Table" contentClass="max-w-sm sm:max-w-full overflow-x-auto">
 			<table class="bg-primary min-w-full rounded-lg border border-light-secondary shadow-neu-lg dark:border-dark-secondary dark:shadow-neu-dark-lg">
 				<thead class="text-primary *:*:font-karla *:*:px-4 *:*:py-3 *:*:tracking-wider *:*:text-left">
 					<tr>
@@ -45,9 +45,11 @@
 					</tr>
 				</tbody>
 			</table>
-
 		</x-grid.item>
-
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Table</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
