@@ -77,7 +77,7 @@
 				left: 74vmin;
 				border-radius: 100%;
 				filter: blur(1px);
-				box-shadow: 2vmin 5vmin 0vmin -0.65vmin #00000005, 1.82vmin 4.95vmin 0vmin -1vmin #ffffff;
+				box-shadow: 2vmin 5vmin 0vmin -0.65vmin currentColor05, 1.82vmin 4.95vmin 0vmin -1vmin #ffffff;
 			}
 
 			.cuboid {
