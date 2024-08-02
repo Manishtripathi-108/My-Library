@@ -369,7 +369,14 @@
 				</li>
 			</ol>
 		</x-grid.item>
-
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Basic Timeline</x-sidenav-list>
+		<x-sidenav-list>Centered Timeline</x-sidenav-list>
+		<x-sidenav-list>Centered Timeline Separated</x-sidenav-list>
+		<x-sidenav-list>Centered Timeline With Icons</x-sidenav-list>
+		<x-sidenav-list>Horizontal Timeline</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
