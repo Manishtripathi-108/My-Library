@@ -787,7 +787,7 @@ export default {
                     highlight: "#B1AFFF",
                     text: "#1B1B1B",
                     'text-secondary': '#767676',
-                    'text-tertiary': '#6f7378',
+                    'text-tertiary': '#4b5563',
                 },
                 dark: {
                     primary: "#131419",
@@ -797,7 +797,7 @@ export default {
                     highlight: "#8888FF",
                     text: "#FFE9D0",
                     'text-secondary': '#aaaaaa',
-                    'text-tertiary': '#88929c',
+                    'text-tertiary': '#4b5563',
                 },
             },
             fontFamily: {
