@@ -155,8 +155,4 @@ Route::prefix('neumorphism')->group(function () {
     Route::get('/timelines', function () {
         return view('neumorphism.timelines');
     })->name('neumorphism.timelines');
-
-    Route::get('/tooltips', function () {
-        return view('neumorphism.tooltips');
-    })->name('neumorphism.tooltips');
 });

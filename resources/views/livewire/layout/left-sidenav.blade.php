@@ -95,10 +95,6 @@
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.toasts')" :active="request()->routeIs('neumorphism.toasts')" wire:navigate>
 				{{ __('Toasts') }}
 			</x-sidenav-link>
-
-			<x-sidenav-link class="text-xs" :href="route('neumorphism.tooltips')" :active="request()->routeIs('neumorphism.tooltips')" wire:navigate>
-				{{ __('Tooltips') }}
-			</x-sidenav-link>
 		</div>
 	</div>
 
