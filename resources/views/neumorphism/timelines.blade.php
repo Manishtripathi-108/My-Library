@@ -313,6 +313,63 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Horizontal Timeline">
+			<ol class="items-center sm:flex">
+				<li class="relative mb-6 sm:mb-0">
+					<div class="flex items-center">
+						<div class="bg-primary size-8 text-secondary z-10 flex shrink-0 items-center justify-center rounded-full p-1 shadow-neu-inset-xs ring-0 ring-light-primary dark:shadow-neu-dark-inset-xs dark:ring-dark-primary sm:ring-8">
+							<x-svg.naruto class="size-7" />
+						</div>
+						<div class="bg-primary hidden w-full p-0.5 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs sm:flex"></div>
+					</div>
+					<div class="mt-3 sm:h-44 sm:pe-8">
+						<h3 class="text-primary font-alegreya text-lg font-semibold tracking-wide">Naruto Begins</h3>
+						<time class="text-tertiary mb-2 block font-karla text-sm font-normal leading-none tracking-wide">October 2002</time>
+						<p class="text-secondary font-karla text-base font-normal tracking-wide">Naruto Uzumaki starts his journey to become Hokage.</p>
+					</div>
+				</li>
+				<li class="relative mb-6 sm:mb-0">
+					<div class="flex items-center">
+						<div class="bg-primary size-8 text-secondary z-10 flex shrink-0 items-center justify-center rounded-full p-1 shadow-neu-inset-xs ring-0 ring-light-primary dark:shadow-neu-dark-inset-xs dark:ring-dark-primary sm:ring-8">
+							<x-svg.naruto class="size-7" />
+						</div>
+						<div class="bg-primary hidden w-full p-0.5 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs sm:flex"></div>
+					</div>
+					<div class="mt-3 sm:h-44 sm:pe-8">
+						<h3 class="text-primary font-alegreya text-lg font-semibold tracking-wide">Sasuke's Vengeance</h3>
+						<time class="text-tertiary mb-2 block font-karla text-sm font-normal leading-none tracking-wide">November 2002</time>
+						<p class="text-secondary font-karla text-base font-normal tracking-wide">Sasuke Uchiha seeks revenge against his brother.</p>
+					</div>
+				</li>
+				<li class="relative mb-6 sm:mb-0">
+					<div class="flex items-center">
+						<div class="bg-primary size-8 text-secondary z-10 flex shrink-0 items-center justify-center rounded-full p-1 shadow-neu-inset-xs ring-0 ring-light-primary dark:shadow-neu-dark-inset-xs dark:ring-dark-primary sm:ring-8">
+							<x-svg.naruto class="size-7" />
+						</div>
+						<div class="bg-primary hidden w-full p-0.5 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs sm:flex"></div>
+					</div>
+					<div class="mt-3 sm:h-44 sm:pe-8">
+						<h3 class="text-primary font-alegreya text-lg font-semibold tracking-wide">Sakura's Growth</h3>
+						<time class="text-tertiary mb-2 block font-karla text-sm font-normal leading-none tracking-wide">December 2002</time>
+						<p class="text-secondary font-karla text-base font-normal tracking-wide">Sakura Haruno trains to become a skilled medical ninja.</p>
+					</div>
+				</li>
+				<li class="relative mb-6 sm:mb-0">
+					<div class="flex items-center">
+						<div class="bg-primary size-8 text-secondary z-10 flex shrink-0 items-center justify-center rounded-full p-1 shadow-neu-inset-xs ring-0 ring-light-primary dark:shadow-neu-dark-inset-xs dark:ring-dark-primary sm:ring-8">
+							<x-svg.gojo class="size-7" />
+						</div>
+						<div class="bg-primary hidden w-full p-0.5 shadow-neu-inset-xs dark:shadow-neu-dark-inset-xs sm:flex"></div>
+					</div>
+					<div class="mt-3 sm:h-44 sm:pe-8">
+						<h3 class="text-primary font-alegreya text-lg font-semibold tracking-wide">Kakashi's Leadership</h3>
+						<time class="text-tertiary mb-2 block font-karla text-sm font-normal leading-none tracking-wide">January 2003</time>
+						<p class="text-secondary font-karla text-base font-normal tracking-wide">Kakashi Hatake becomes the mentor of Team 7.</p>
+					</div>
+				</li>
+			</ol>
+		</x-grid.item>
+
 	</x-grid>
 
 </x-app-layout>
