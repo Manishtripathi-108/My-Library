@@ -30,10 +30,10 @@
 			</div>
 		</x-grid.item>
 
-		<x-grid.item title="Vertical Centered Timeline">
+		<x-grid.item title="Centered Timeline">
 			<section class="relative flex min-h-screen flex-col justify-center overflow-hidden">
 				<div class="mx-auto w-full max-w-6xl px-4 py-24 md:px-6">
-					<!-- Vertical Timeline -->
+					<!-- Timeline -->
 					<div class="before:bg-primary relative space-y-8 before:absolute before:inset-0 before:ml-5 before:h-full before:w-0.5 before:-translate-x-px before:rounded-sm before:p-1 before:shadow-neu-inset-xs dark:before:shadow-neu-dark-inset-xs md:before:mx-auto md:before:translate-x-0">
 
 						<!-- Item 1 -->
@@ -121,7 +121,7 @@
 			</section>
 		</x-grid.item>
 
-		<x-grid.item title="Vertical Centered Timeline">
+		<x-grid.item title="Centered Timeline Separated">
 			<div class="mx-auto w-full max-w-6xl px-4 py-24 md:px-6">
 				<ol class="relative space-y-6">
 					<!-- Naruto Begins -->
@@ -211,7 +211,106 @@
 					</li>
 				</ol>
 			</div>
+		</x-grid.item>
 
+		<x-grid.item title="Centered Timeline With Icons">
+			<div class="mx-auto w-full max-w-6xl px-4 py-24 md:px-6">
+				<ol class="relative space-y-6">
+					<!-- Naruto Begins -->
+					<li class="group relative flex justify-between md:justify-normal md:odd:flex-row-reverse">
+						<div class="flex w-10 flex-col items-center md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+							<div class="bg-primary flex-center text-secondary mt-2 rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+								<x-svg.naruto class="size-7" />
+							</div>
+							<div class="flex h-full">
+								<div class="after:absolute after:mt-4 after:h-[calc(100%-3.2rem)] after:-translate-x-1/2 after:rounded after:p-1 after:shadow-neu-inset-xs after:dark:shadow-neu-dark-inset-xs"></div>
+							</div>
+						</div>
+						<div class="w-[calc(100%-4rem)] p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm md:w-[calc(50%-2.5rem)]">
+							<time class="text-secondary mb-1 font-karla text-sm font-normal leading-none tracking-wider">October 2002</time>
+							<h3 class="text-primary font-playfair text-lg font-semibold tracking-wide">Naruto Begins</h3>
+							<p class="text-secondary font-karla text-base font-normal tracking-wider">
+								The journey of Naruto Uzumaki begins as he starts his training to become a powerful ninja and earn the title of Hokage. Naruto, an orphan with a mysterious past, struggles to gain the recognition and respect of his village, Konoha. Despite his mischievous behavior and lack of talent, he is determined to prove himself. His journey is filled with trials and adventures, as he makes friends and faces formidable enemies. Naruto's dream is not just about personal glory.
+							</p>
+						</div>
+					</li>
+
+					<!-- Deku Enrolls in U.A. High -->
+					<li class="group relative flex justify-between md:justify-normal md:odd:flex-row-reverse">
+						<div class="flex w-10 flex-col items-center md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+							<div class="bg-primary flex-center text-secondary mt-2 rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+								<x-svg.deku class="size-7" />
+							</div>
+							<div class="flex h-full">
+								<div class="after:absolute after:mt-4 after:h-[calc(100%-3.2rem)] after:-translate-x-1/2 after:rounded after:p-1 after:shadow-neu-inset-xs after:dark:shadow-neu-dark-inset-xs"></div>
+							</div>
+						</div>
+						<div class="w-[calc(100%-4rem)] p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm md:w-[calc(50%-2.5rem)]">
+							<time class="text-secondary mb-1 font-karla text-sm font-normal leading-none tracking-wider">April 2016</time>
+							<h3 class="text-primary font-playfair text-lg font-semibold tracking-wide">Deku Enrolls in U.A. High</h3>
+							<p class="text-secondary font-karla text-base font-normal tracking-wider">
+								Izuku Midoriya, also known as Deku, starts his journey to become the world's greatest hero by enrolling in U.A. High School. Born without a quirk in a world where superpowers are the norm, Izuku's dream of becoming a hero seemed impossible. However, his unwavering determination and pure heart catch the attention of the world's greatest hero, All Might. Recognizing Izuku's potential, All Might chooses him as his successor and bestows upon him the powerful quirk, One For All. Enrolling in U.A.
+							</p>
+						</div>
+					</li>
+
+					<!-- Koro-sensei's Arrival -->
+					<li class="group relative flex justify-between md:justify-normal md:odd:flex-row-reverse">
+						<div class="flex w-10 flex-col items-center md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+							<div class="bg-primary flex-center text-secondary mt-2 rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+								<x-svg.venom class="size-7" />
+							</div>
+							<div class="flex h-full">
+								<div class="after:absolute after:mt-4 after:h-[calc(100%-3.2rem)] after:-translate-x-1/2 after:rounded after:p-1 after:shadow-neu-inset-xs after:dark:shadow-neu-dark-inset-xs"></div>
+							</div>
+						</div>
+						<div class="w-[calc(100%-4rem)] p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm md:w-[calc(50%-2.5rem)]">
+							<time class="text-secondary mb-1 font-karla text-sm font-normal leading-none tracking-wider">January 2015</time>
+							<h3 class="text-primary font-playfair text-lg font-semibold tracking-wide">Koro-sensei's Arrival</h3>
+							<p class="text-secondary font-karla text-base font-normal tracking-wider">
+								Koro-sensei, a powerful and mysterious creature, becomes the homeroom teacher of Class 3-E and sets them a challenging task. He threatens to destroy the Earth within a year unless his students can assassinate him. Despite his menacing declaration, Koro-sensei proves to be a kind and effective teacher, dedicated to helping his students succeed in both their academic and assassination goals. His unique teaching methods and superhuman abilities make him a formidable opponent and an inspiring mentor.
+						</div>
+					</li>
+
+					<!-- Titan Attack -->
+					<li class="group relative flex justify-between md:justify-normal md:odd:flex-row-reverse">
+						<div class="flex w-10 flex-col items-center md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+							<div class="bg-primary flex-center text-secondary mt-2 rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+								<x-svg.brook class="size-7" />
+							</div>
+							<div class="flex h-full">
+								<div class="after:absolute after:mt-4 after:h-[calc(100%-3.2rem)] after:-translate-x-1/2 after:rounded after:p-1 after:shadow-neu-inset-xs after:dark:shadow-neu-dark-inset-xs"></div>
+							</div>
+						</div>
+						<div class="w-[calc(100%-4rem)] p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm md:w-[calc(50%-2.5rem)]">
+							<time class="text-secondary mb-1 font-karla text-sm font-normal leading-none tracking-wider">April 2013</time>
+							<h3 class="text-primary font-playfair text-lg font-semibold tracking-wide">Titan Attack</h3>
+							<p class="text-secondary font-karla text-base font-normal tracking-wider">
+								The Colossal Titan breaches the wall, marking the beginning of humanity's fight for survival against the Titans in Attack on Titan. On that fateful day, humanity's worst nightmare becomes reality as the massive Titan shatters the protective barrier of Wall Maria, allowing hordes of smaller Titans to invade and wreak havoc. Eren Yeager, a young boy who witnesses the destruction and the death of his mother, vows to eradicate every Titan and avenge the loss of his loved ones.
+							</p>
+						</div>
+					</li>
+
+					<!-- Luffy Declares War -->
+					<li class="group relative flex justify-between md:justify-normal md:odd:flex-row-reverse">
+						<div class="flex w-10 flex-col items-center md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+							<div class="bg-primary flex-center text-secondary mt-2 rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
+								<x-svg.one-piece-anime class="size-7" />
+							</div>
+							<div class="flex h-full">
+								<div class="after:absolute after:mt-4 after:h-[calc(100%-3.2rem)] after:-translate-x-1/2 after:rounded after:p-1 after:shadow-neu-inset-xs group-last:after:h-[calc(100%-4.3rem)] after:dark:shadow-neu-dark-inset-xs"></div>
+							</div>
+						</div>
+						<div class="w-[calc(100%-4rem)] p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-sm md:w-[calc(50%-2.5rem)]">
+							<time class="text-secondary mb-1 font-karla text-sm font-normal leading-none tracking-wider">April 2006</time>
+							<h3 class="text-primary font-playfair text-lg font-semibold tracking-wide">Luffy Declares War</h3>
+							<p class="text-secondary font-karla text-base font-normal tracking-wider">
+								In a bold move, Monkey D. Luffy declares war on the World Government to save his crewmate, Nico Robin. During the Enies Lobby arc, Robin is captured by the government for her knowledge of the ancient and forbidden Poneglyphs. Determined to rescue her and prove that no one can take away his friends, Luffy and his crew launch a daring assault on the government stronghold, Enies Lobby.
+							</p>
+						</div>
+					</li>
+				</ol>
+			</div>
 		</x-grid.item>
 
 	</x-grid>
