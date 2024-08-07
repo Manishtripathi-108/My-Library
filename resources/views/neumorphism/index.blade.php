@@ -53,15 +53,15 @@
 
 		<x-grid.item title="Login & Signup Form">
 			<div class="bg-primary relative h-[600px] w-full overflow-hidden rounded-xl p-6 shadow-neu-lg dark:shadow-neu-dark-lg" x-data="formSwitch()">
-				<!-- Form Container A: Create Account -->
-				<!-- all occurrences 600px here needs to be changed to same as width of the above div for now it is w-full -->
-				<div class="bg-primary absolute left-[calc(100%-600px)] top-0 z-[100] flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="registerContainer">
-					<form class="flex h-full w-full flex-col items-center justify-center" method="" action="">
+				<!-- Register Container -->
+				<!-- left-[40%] is the initial position of the container, where 40% is width of switch container -->
+				<div class="bg-primary absolute left-[40%] top-0 z-0 flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="registerContainer">
+					<form class="flex h-full w-full flex-col items-center justify-center" method="post" action="/register">
 						<h2 class="form_title text-primary mb-8 text-3xl font-bold">Create Account</h2>
-						<div class="flex-center text-primary">
-							<x-svg.lock class="size-7" />
-							<x-svg.lock class="size-7" />
-							<x-svg.lock class="size-7" />
+						<div class="flex-center text-primary gap-5">
+							<x-svg.google class="size-7" />
+							<x-svg.facebook class="size-7" />
+							<x-svg.twitter class="size-7" />
 						</div>
 						<span class="text-secondary mb-3 mt-8">or use email for registration</span>
 
@@ -75,18 +75,18 @@
 							<input class="{{ $class }}" type="{{ $type }}" placeholder="{{ $placeholder[$loop->index] }}">
 						@endforeach
 
-						<button class="neu-btn mt-12" @click.prevent="preventDefault">SIGN UP</button>
+						<button class="neu-btn mt-12" @click.prevent="register">SIGN UP</button>
 					</form>
 				</div>
 
-				<!-- Form Container B: Sign In -->
-				<div class="bg-primary absolute left-[calc(100%-600px)] top-0 z-0 flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="loginContainer">
-					<form class="flex h-full w-full flex-col items-center justify-center" method="" action="">
+				<!-- Login Container -->
+				<div class="bg-primary absolute left-[40%] top-0 z-[100] flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="loginContainer">
+					<form class="flex h-full w-full flex-col items-center justify-center" method="post" action="/login">
 						<h2 class="form_title text-primary mb-8 text-3xl font-bold">Sign in to Website</h2>
-						<div class="flex-center text-primary">
-							<x-svg.lock class="size-7" />
-							<x-svg.lock class="size-7" />
-							<x-svg.lock class="size-7" />
+						<div class="flex-center text-primary gap-5">
+							<x-svg.google class="size-7" />
+							<x-svg.facebook class="size-7" />
+							<x-svg.twitter class="size-7" />
 						</div>
 						<span class="text-secondary mb-3 mt-8">or use your email account</span>
 
@@ -94,8 +94,8 @@
 							<input class="{{ $class }}" type="{{ $types[$i] }}" placeholder="{{ $placeholder[$i] }}">
 						@endfor
 
-						<a class="text-primary mb-8 mt-6 border-b border-solid border-b-[#a0a5a8] text-[15px]">Forgot your password?</a>
-						<button class="neu-btn mt-12" @click.prevent="preventDefault">SIGN IN</button>
+						<a class="text-primary mb-8 mt-6 border-b border-solid border-b-[#a0a5a8] text-[15px]" href="#">Forgot your password?</a>
+						<button class="neu-btn mt-12" @click.prevent="login">SIGN IN</button>
 					</form>
 				</div>
 
@@ -105,25 +105,71 @@
 					<div class="switch-circles bg-primary size-[500px] absolute bottom-[-60%] left-[-60%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
 					<div class="switch-circles bg-primary size-[350px] absolute bottom-[-60%] left-[-60%] top-[-30%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
 
-					<!-- Switch Content 1: Sign In -->
-					<div class="px-13 absolute flex w-full flex-col items-center justify-center py-12 transition-all duration-[1.25s]" x-ref="SwitchSignIN">
+					<!-- Login -->
+					<div class="px-13 absolute flex w-full flex-col items-center justify-center py-12 transition-all duration-[1.25s]" x-ref="switchSignIN">
 						<h2 class="text-primary mb-8 text-3xl font-bold">Welcome Back !</h2>
 						<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
-							<x-joke />
+							To keep connected with us please login with your personal info.
 						</p>
 						<button class="neu-btn mt-12" @click="changeForm">SIGN IN</button>
 					</div>
 
-					<!-- Switch Content 2: Sign Up -->
+					<!-- Register -->
 					<div class="px-13 invisible absolute flex w-full flex-col items-center justify-center py-12 opacity-0 transition-all duration-[1.25s]" x-ref="switchSignUp">
 						<h2 class="text-primary mb-8 text-3xl font-bold">Hello Friend !</h2>
 						<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
-							<x-joke />
+							Enter your personal details and start your journey with us.
 						</p>
 						<button class="neu-btn mt-12" @click="changeForm">SIGN UP</button>
 					</div>
 				</div>
 			</div>
+
+			<x-slot name="jsCode">
+				<script>
+					function formSwitch() {
+						return {
+							preventDefault(e) {
+								e.preventDefault();
+							},
+							changeForm() {
+								const {
+									switchContainer,
+									switchSignIN,
+									switchSignUp,
+									registerContainer,
+									loginContainer
+								} = this.$refs;
+
+								// Add Animation Class to the Switch Container
+								switchContainer.classList.add("animate-auth-slider");
+								setTimeout(() => {
+									switchContainer.classList.remove("animate-auth-slider");
+								}, 1500);
+
+								const toggleClasses = (element, classes) => {
+									classes.forEach(cls => element.classList.toggle(cls));
+								};
+
+								toggleClasses(switchContainer, ["left-[60%]"]);
+								switchContainer.querySelectorAll(".switch-circles").forEach(circle => {
+									toggleClasses(circle, ["left-[60%]"]);
+								});
+
+								toggleClasses(switchSignIN, ["invisible", "opacity-0"]);
+								toggleClasses(switchSignUp, ["invisible", "opacity-0"]);
+
+								toggleClasses(registerContainer, ["left-0", "left-[40%]", "z-[200]"]);
+								toggleClasses(loginContainer, ["left-0", "left-[40%]"]);
+							}
+						}
+					}
+
+					document.addEventListener('alpine:init', () => {
+						Alpine.data('formSwitch', formSwitch);
+					});
+				</script>
+			</x-slot>
 
 			@pushOnce('scripts')
 				<script>
@@ -133,27 +179,34 @@
 								e.preventDefault();
 							},
 							changeForm() {
-								this.$refs.switchContainer.classList.add("animate-auth-slider");
+								const {
+									switchContainer,
+									switchSignIN,
+									switchSignUp,
+									registerContainer,
+									loginContainer
+								} = this.$refs;
+
+								// Add Animation Class to the Switch Container
+								switchContainer.classList.add("animate-auth-slider");
 								setTimeout(() => {
-									this.$refs.switchContainer.classList.remove("animate-auth-slider");
+									switchContainer.classList.remove("animate-auth-slider");
 								}, 1500);
 
-								this.$refs.switchContainer.classList.toggle("left-[calc(100%-400px)]");
-								this.$refs.switchContainer.querySelectorAll(".switch-circles").forEach(circle => {
-									circle.classList.toggle("left-[calc(100%-400px)]");
+								const toggleClasses = (element, classes) => {
+									classes.forEach(cls => element.classList.toggle(cls));
+								};
+
+								toggleClasses(switchContainer, ["left-[60%]"]);
+								switchContainer.querySelectorAll(".switch-circles").forEach(circle => {
+									toggleClasses(circle, ["left-[60%]"]);
 								});
 
-								this.$refs.SwitchSignIN.classList.toggle("invisible");
-								this.$refs.SwitchSignIN.classList.toggle("opacity-0");
-								this.$refs.switchSignUp.classList.toggle("invisible");
-								this.$refs.switchSignUp.classList.toggle("opacity-0");
+								toggleClasses(switchSignIN, ["invisible", "opacity-0"]);
+								toggleClasses(switchSignUp, ["invisible", "opacity-0"]);
 
-								this.$refs.registerContainer.classList.toggle("left-0");
-								this.$refs.registerContainer.classList.toggle("left-[calc(100%-600px)]");
-								this.$refs.loginContainer.classList.toggle("left-0");
-								this.$refs.loginContainer.classList.toggle("left-[calc(100%-600px)]");
-
-								this.$refs.loginContainer.classList.toggle("z-[200]");
+								toggleClasses(registerContainer, ["left-0", "left-[40%]", "z-[200]"]);
+								toggleClasses(loginContainer, ["left-0", "left-[40%]"]);
 							}
 						}
 					}

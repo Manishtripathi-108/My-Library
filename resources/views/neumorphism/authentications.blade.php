@@ -49,6 +49,194 @@
 			</div>
 		</x-grid.item>
 
+		<x-grid.item title="Sign In">
+		</x-grid.item>
+
+		<x-grid.item title="Register & Login">
+			<div class="bg-primary relative h-[600px] w-full overflow-hidden rounded-xl p-6 shadow-neu-lg dark:shadow-neu-dark-lg" x-data="formSwitch()">
+				<!-- Register Container -->
+				<!-- left-[40%] is the initial position of the container, where 40% is width of switch container -->
+				<div class="bg-primary absolute left-[40%] top-0 z-0 flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="registerContainer">
+					<form class="flex h-full w-full flex-col items-center justify-center" method="post" action="/register">
+						<h2 class="form_title text-primary mb-8 text-3xl font-bold">Create Account</h2>
+						<div class="flex-center text-primary gap-5">
+							<x-svg.google class="size-7" />
+							<x-svg.facebook class="size-7" />
+							<x-svg.twitter class="size-7" />
+						</div>
+						<span class="text-secondary mb-3 mt-8">or use email for registration</span>
+
+						@php
+							$class = 'bg-primary my-1 w-3/5 rounded-lg border-none py-3 pl-6 text-sm tracking-wider shadow-neu-inset-xs outline-none transition-all duration-[1.25s] focus:shadow-neu-xs dark:shadow-neu-dark-inset-xs';
+							$types = ['text', 'email', 'password'];
+							$placeholder = ['Name', 'Email', 'Password'];
+						@endphp
+
+						@foreach ($types as $type)
+							<input class="{{ $class }}" type="{{ $type }}" placeholder="{{ $placeholder[$loop->index] }}">
+						@endforeach
+
+						<button class="neu-btn mt-12" @click.prevent="register">SIGN UP</button>
+					</form>
+				</div>
+
+				<!-- Login Container -->
+				<div class="bg-primary absolute left-[40%] top-0 z-[100] flex h-full w-3/5 items-center justify-center p-6 transition-all duration-[1.25s]" x-ref="loginContainer">
+					<form class="flex h-full w-full flex-col items-center justify-center" method="post" action="/login">
+						<h2 class="form_title text-primary mb-8 text-3xl font-bold">Sign in to Website</h2>
+						<div class="flex-center text-primary gap-5">
+							<x-svg.google class="size-7" />
+							<x-svg.facebook class="size-7" />
+							<x-svg.twitter class="size-7" />
+						</div>
+						<span class="text-secondary mb-3 mt-8">or use your email account</span>
+
+						@for ($i = 1; $i < 3; $i++)
+							<input class="{{ $class }}" type="{{ $types[$i] }}" placeholder="{{ $placeholder[$i] }}">
+						@endfor
+
+						<a class="text-primary mb-8 mt-6 border-b border-solid border-b-[#a0a5a8] text-[15px]" href="#">Forgot your password?</a>
+						<button class="neu-btn mt-12" @click.prevent="login">SIGN IN</button>
+					</form>
+				</div>
+
+				<!-- Switch Container -->
+				<div class="bg-primary absolute left-0 top-0 z-[200] flex h-full w-2/5 items-center justify-center overflow-hidden p-[50px] shadow-neu-md-soft transition-all duration-[1.25s] dark:shadow-neu-dark-md" x-ref="switchContainer">
+					<!-- Background Circles for Animation -->
+					<div class="switch-circles bg-primary size-[500px] absolute bottom-[-60%] left-[-60%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
+					<div class="switch-circles bg-primary size-[350px] absolute bottom-[-60%] left-[-60%] top-[-30%] rounded-full shadow-neu-inset-sm transition-all duration-[1.25s] dark:shadow-neu-dark-inset-sm"></div>
+
+					<!-- Login -->
+					<div class="px-13 absolute flex w-full flex-col items-center justify-center py-12 transition-all duration-[1.25s]" x-ref="switchSignIN">
+						<h2 class="text-primary mb-8 text-3xl font-bold">Welcome Back !</h2>
+						<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
+							To keep connected with us please login with your personal info.
+						</p>
+						<button class="neu-btn mt-12" @click="changeForm">SIGN IN</button>
+					</div>
+
+					<!-- Register -->
+					<div class="px-13 invisible absolute flex w-full flex-col items-center justify-center py-12 opacity-0 transition-all duration-[1.25s]" x-ref="switchSignUp">
+						<h2 class="text-primary mb-8 text-3xl font-bold">Hello Friend !</h2>
+						<p class="text-secondary px-2 text-center text-sm leading-relaxed tracking-wide">
+							Enter your personal details and start your journey with us.
+						</p>
+						<button class="neu-btn mt-12" @click="changeForm">SIGN UP</button>
+					</div>
+				</div>
+			</div>
+
+			<x-slot name="jsCode">
+				<script>
+					function formSwitch() {
+						return {
+							preventDefault(e) {
+								e.preventDefault();
+							},
+							changeForm() {
+								const {
+									switchContainer,
+									switchSignIN,
+									switchSignUp,
+									registerContainer,
+									loginContainer
+								} = this.$refs;
+
+								// Add Animation Class to the Switch Container
+								switchContainer.classList.add("animate-auth-slider");
+								setTimeout(() => {
+									switchContainer.classList.remove("animate-auth-slider");
+								}, 1500);
+
+								const toggleClasses = (element, classes) => {
+									classes.forEach(cls => element.classList.toggle(cls));
+								};
+
+								toggleClasses(switchContainer, ["left-[60%]"]);
+								switchContainer.querySelectorAll(".switch-circles").forEach(circle => {
+									toggleClasses(circle, ["left-[60%]"]);
+								});
+
+								toggleClasses(switchSignIN, ["invisible", "opacity-0"]);
+								toggleClasses(switchSignUp, ["invisible", "opacity-0"]);
+
+								toggleClasses(registerContainer, ["left-0", "left-[40%]", "z-[200]"]);
+								toggleClasses(loginContainer, ["left-0", "left-[40%]"]);
+							}
+						}
+					}
+
+					document.addEventListener('alpine:init', () => {
+						Alpine.data('formSwitch', formSwitch);
+					});
+				</script>
+			</x-slot>
+
+			@pushOnce('scripts')
+				<script>
+					function formSwitch() {
+						return {
+							preventDefault(e) {
+								e.preventDefault();
+							},
+							changeForm() {
+								const {
+									switchContainer,
+									switchSignIN,
+									switchSignUp,
+									registerContainer,
+									loginContainer
+								} = this.$refs;
+
+								// Add Animation Class to the Switch Container
+								switchContainer.classList.add("animate-auth-slider");
+								setTimeout(() => {
+									switchContainer.classList.remove("animate-auth-slider");
+								}, 1500);
+
+								const toggleClasses = (element, classes) => {
+									classes.forEach(cls => element.classList.toggle(cls));
+								};
+
+								toggleClasses(switchContainer, ["left-[60%]"]);
+								switchContainer.querySelectorAll(".switch-circles").forEach(circle => {
+									toggleClasses(circle, ["left-[60%]"]);
+								});
+
+								toggleClasses(switchSignIN, ["invisible", "opacity-0"]);
+								toggleClasses(switchSignUp, ["invisible", "opacity-0"]);
+
+								toggleClasses(registerContainer, ["left-0", "left-[40%]", "z-[200]"]);
+								toggleClasses(loginContainer, ["left-0", "left-[40%]"]);
+							}
+						}
+					}
+
+					document.addEventListener('alpine:init', () => {
+						Alpine.data('formSwitch', formSwitch);
+					});
+				</script>
+			@endPushOnce
+		</x-grid.item>
+
+		<x-grid.item title="Email Verification">
+		</x-grid.item>
+
+		<x-grid.item title="Forgot Password">
+		</x-grid.item>
+
+		<x-grid.item title="Reset Password">
+		</x-grid.item>
+
+		<x-grid.item title="Two Factor Challenge">
+		</x-grid.item>
+
+		<x-grid.item title="Confirm Password">
+		</x-grid.item>
+
+		<x-grid.item title="Logout">
+		</x-grid.item>
+
 	</x-grid>
 
 </x-app-layout>
