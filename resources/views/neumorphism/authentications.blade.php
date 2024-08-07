@@ -50,6 +50,27 @@
 		</x-grid.item>
 
 		<x-grid.item title="Sign In">
+			<div class="bg-primary w-full max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg" x-data="{ showForm: true }" x-show="showForm" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90">
+				<h2 class="text-secondary mb-4 text-2xl font-bold">Sign In</h2>
+				<form class="space-y-4" action="#" method="POST">
+					<div>
+						<label class="text-secondary mb-2 block" for="email">Email Address</label>
+						<input class="bg-primary focus:ring-primary w-full rounded-lg px-4 py-2 shadow-neu-inset-sm focus:border-transparent focus:outline-none focus:ring-2 dark:shadow-neu-dark-inset-sm" id="email" name="email" type="email" placeholder="Enter your email">
+					</div>
+					<div>
+						<label class="text-secondary mb-2 block" for="password">Password</label>
+						<input class="bg-primary focus:ring-primary w-full rounded-lg px-4 py-2 shadow-neu-inset-sm focus:border-transparent focus:outline-none focus:ring-2 dark:shadow-neu-dark-inset-sm" id="password" name="password" type="password" placeholder="Enter your password">
+					</div>
+					<div class="flex items-center justify-between">
+						<label class="text-secondary flex items-center">
+							<input class="neu-form-checkbox mr-2" type="checkbox" checked>
+							Remember Me
+						</label>
+						<a class="text-primary hover:underline" href="#">Forgot Password?</a>
+					</div>
+					<button class="neu-btn mx-auto" type="submit">Sign In</button>
+				</form>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Register & Login">
@@ -220,21 +241,57 @@
 		</x-grid.item>
 
 		<x-grid.item title="Email Verification">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Email Verification</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Please verify your email to proceed.</p>
+				<input class="neu-form-input" type="email" placeholder="Enter your email">
+				<button class="neu-btn ml-auto mt-4 w-fit">Verify Email</button>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Forgot Password">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Forgot Password</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Enter your email to reset your password.</p>
+				<input class="neu-form-input" type="email" placeholder="Enter your email">
+				<button class="neu-btn ml-auto mt-4 w-fit">Send Reset Link</button>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Reset Password">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Reset Password</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Enter your new password below.</p>
+				<input class="neu-form-input mb-3" type="password" placeholder="New Password">
+				<input class="neu-form-input" type="password" placeholder="Confirm New Password">
+				<button class="neu-btn ml-auto mt-4 w-fit">Reset Password</button>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Two Factor Challenge">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Two Factor Challenge</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Enter the code sent to your device.</p>
+				<input class="neu-form-input" type="text" placeholder="Authentication Code">
+				<button class="neu-btn ml-auto mt-4 w-fit">Verify Code</button>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Confirm Password">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Confirm Password</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Please confirm your password to continue.</p>
+				<input class="neu-form-input" type="password" placeholder="Password">
+				<button class="neu-btn ml-auto mt-4 w-fit">Confirm Password</button>
+			</div>
 		</x-grid.item>
 
 		<x-grid.item title="Logout">
+			<div class="neu-form-group bg-primary max-w-md rounded-lg p-6 shadow-neu-lg dark:shadow-neu-dark-lg">
+				<h2 class="neu-form-label mb-3 font-playfair text-lg font-bold tracking-wide">Logout</h2>
+				<p class="neu-form-text mb-3 font-karla text-base">Are you sure you want to logout?</p>
+				<button class="neu-btn ml-auto mt-4 w-fit">Logout</button>
+			</div>
 		</x-grid.item>
 
 	</x-grid>
