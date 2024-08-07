@@ -84,6 +84,10 @@ Route::prefix('neumorphism')->group(function () {
         return view('neumorphism.alerts');
     })->name('neumorphism.alerts');
 
+    Route::get('/authentications', function () {
+        return view('neumorphism.authentications');
+    })->name('neumorphism.authentications');
+
     Route::get('/badges', function () {
         return view('neumorphism.badges');
     })->name('neumorphism.badges');

@@ -24,6 +24,10 @@
 				{{ __('Alerts') }}
 			</x-sidenav-link>
 
+			<x-sidenav-link class="text-xs" :href="route('neumorphism.authentications')" :active="request()->routeIs('neumorphism.authentications')" wire:navigate>
+				{{ __('Authentications') }}
+			</x-sidenav-link>
+
 			<x-sidenav-link class="text-xs" :href="route('neumorphism.badges')" :active="request()->routeIs('neumorphism.badges')" wire:navigate>
 				{{ __('Badges') }}
 			</x-sidenav-link>
