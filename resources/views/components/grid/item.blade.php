@@ -8,7 +8,7 @@
 	{{-- Content --}}
 	<div class="flex-center {{ $contentClass }} flex-col rounded-lg border border-gray-600 p-5">
 
-		<div class="on-scroll-animation size-full flex-center animate-swash-in">
+		<div class="on-scroll-animation size-full flex-center animate-swash-in p-5">
 			{{ $slot }}
 		</div>
 

@@ -293,7 +293,18 @@
 				<button class="neu-btn ml-auto mt-4 w-fit">Logout</button>
 			</div>
 		</x-grid.item>
-
 	</x-grid>
+
+	<x-slot name="rightSidenav">
+		<x-sidenav-list>Sign Up</x-sidenav-list>
+		<x-sidenav-list>Sign In</x-sidenav-list>
+		<x-sidenav-list>Register & Login</x-sidenav-list>
+		<x-sidenav-list>Email Verification</x-sidenav-list>
+		<x-sidenav-list>Forgot Password</x-sidenav-list>
+		<x-sidenav-list>Reset Password</x-sidenav-list>
+		<x-sidenav-list>Two Factor Challenge</x-sidenav-list>
+		<x-sidenav-list>Confirm Password</x-sidenav-list>
+		<x-sidenav-list>Logout</x-sidenav-list>
+	</x-slot>
 
 </x-app-layout>
