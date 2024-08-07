@@ -375,7 +375,7 @@
 		</x-slot>
 
 		<x-grid.item title="Switch">
-			@include('neumorphism.switch')
+			<input class="bg-primary after:text-primary size-52 flex cursor-pointer appearance-none items-center justify-center rounded-full border-8 border-light-secondary shadow-neu-xl-soft outline-none after:content-['OFF'] checked:shadow-neu-inset-lg checked:after:content-['ON'] dark:border-dark-secondary dark:shadow-neu-dark-xl checked:dark:shadow-neu-dark-inset-lg" type="checkbox">
 		</x-grid.item>
 
 	</x-grid>
@@ -388,7 +388,28 @@
 		</x-slot>
 
 		<x-grid.item title="Radio Button">
-			@include('neumorphism.radio-btn')
+			<div class="neu-form-group-radio">
+				<label class="neu-form-radio-label" for="radio1">
+					<input class="neu-form-radio" id="radio1" name="radio1" type="radio" value="Radio 1" checked>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Checked Radio</span>
+				</label>
+				<label class="neu-form-radio-label" for="radio2">
+					<input class="neu-form-radio" id="radio2" name="radio1" type="radio" value="Radio 2">
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Radio 1</span>
+				</label>
+				<label class="neu-form-radio-label" for="radio3">
+					<input class="neu-form-radio" id="radio3" name="radio1" type="radio" value="Radio 3">
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Radio 2</span>
+				</label>
+				<label class="neu-form-radio-label" for="radio4">
+					<input class="neu-form-radio" id="radio4" name="radio1" type="radio" value="Radio 4" disabled>
+					<div class="neu-form-radio-indicator"></div>
+					<span class="neu-form-radio-text">Disabled Radio</span>
+				</label>
+			</div>
 		</x-grid.item>
 
 	</x-grid>
