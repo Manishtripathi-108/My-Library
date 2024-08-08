@@ -58,15 +58,110 @@ Route::prefix('auth')->group(function () {
 // Route for the Components
 Route::prefix('components')->group(function () {
 
-    // Route for the cards
-    Route::get('/cards', function () {
-        return view('cards.index');
-    })->name('cards');
+    // Route for the accordions
+    Route::get('/accordions', function () {
+        return view('accordions.index');
+    })->name('accordions');
+
+    // Route for the alerts
+    Route::get('/alerts', function () {
+        return view('alerts.index');
+    })->name('alerts');
+
+    // Route for the avatars
+    Route::get('/avatars', function () {
+        return view('avatars.index');
+    })->name('avatars');
+
+    // Route for the badges
+    Route::get('/badges', function () {
+        return view('badges.index');
+    })->name('badges');
+
+    // Route for the breadcrumbs
+    Route::get('/breadcrumbs', function () {
+        return view('breadcrumbs.index');
+    })->name('breadcrumbs');
 
     // Route for the buttons
     Route::get('/buttons', function () {
         return view('buttons.index');
     })->name('buttons');
+
+    // Route for the cards
+    Route::get('/cards', function () {
+        return view('cards.index');
+    })->name('cards');
+
+    // Route for the carousels
+    Route::get('/carousels', function () {
+        return view('carousels.index');
+    })->name('carousels');
+
+    // Route for the dialogs
+    Route::get('/dialogs', function () {
+        return view('dialogs.index');
+    })->name('dialogs');
+
+    // Route for the dropdowns
+    Route::get('/dropdowns', function () {
+        return view('dropdowns.index');
+    })->name('dropdowns');
+
+    // Route for the forms
+    Route::get('/forms', function () {
+        return view('forms.index');
+    })->name('forms');
+
+    // Route for the icons
+    Route::get('/icons', function () {
+        return view('icons.index');
+    })->name('icons');
+
+    // Route for the lists
+    Route::get('/lists', function () {
+        return view('lists.index');
+    })->name('lists');
+
+    // Route for the modals
+    Route::get('/modals', function () {
+        return view('modals.index');
+    })->name('modals');
+
+    // Route for the notifications
+    Route::get('/notifications', function () {
+        return view('notifications.index');
+    })->name('notifications');
+
+    // Route for the pagination
+    Route::get('/pagination', function () {
+        return view('pagination.index');
+    })->name('pagination');
+
+    // Route for the progress bars
+    Route::get('/progress-bars', function () {
+        return view('progress-bars.index');
+    })->name('progress-bars');
+
+    // Route for the sliders
+    Route::get('/sliders', function () {
+        return view('sliders.index');
+    })->name('sliders');
+
+    // Route for the tables
+    Route::get('/tables', function () {
+        return view('tables.index');
+    })->name('tables');
+
+    // Route for the tabs
+    Route::get('/tabs', function () {
+        return view('tabs.index');
+    })->name('tabs');
+
+    // Route for the tooltips
+    Route::get('/tooltips', function () {
+        return view('tooltips.index');
+    })->name('tooltips');
 });
 
 // Route for the neumorphism components

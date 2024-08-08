@@ -104,24 +104,80 @@
 
 	{{-- Components --}}
 	<div x-data="{ open: {{ request()->is('components/*') ? 'true' : 'false' }} }">
-		<button type="button" title="Components" class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+		<button class="cursor-pointer select-none px-3 py-1 transition-all" type="button" title="Components" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
 			{{ __('Components') }}
 		</button>
 
 		<div class="ml-2" x-cloak x-show="open" x-transition>
+			<x-sidenav-link class="text-xs" :href="route('accordions')" :active="request()->routeIs('accordions')" wire:navigate>
+				{{ __('Accordions') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('alerts')" :active="request()->routeIs('alerts')" wire:navigate>
+				{{ __('Alerts') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('avatars')" :active="request()->routeIs('avatars')" wire:navigate>
+				{{ __('Avatars') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('badges')" :active="request()->routeIs('badges')" wire:navigate>
+				{{ __('Badges') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('breadcrumbs')" :active="request()->routeIs('breadcrumbs')" wire:navigate>
+				{{ __('Breadcrumbs') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('buttons')" :active="request()->routeIs('buttons')" wire:navigate>
+				{{ __('Buttons') }}
+			</x-sidenav-link>
 			<x-sidenav-link class="text-xs" :href="route('cards')" :active="request()->routeIs('cards')" wire:navigate>
 				{{ __('Cards') }}
 			</x-sidenav-link>
-
-			<x-sidenav-link class="text-xs" :href="route('buttons')" :active="request()->routeIs('buttons')" wire:navigate>
-				{{ __('Buttons') }}
+			<x-sidenav-link class="text-xs" :href="route('carousels')" :active="request()->routeIs('carousels')" wire:navigate>
+				{{ __('Carousels') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('dialogs')" :active="request()->routeIs('dialogs')" wire:navigate>
+				{{ __('Dialogs') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('dropdowns')" :active="request()->routeIs('dropdowns')" wire:navigate>
+				{{ __('Dropdowns') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('forms')" :active="request()->routeIs('forms')" wire:navigate>
+				{{ __('Forms') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('icons')" :active="request()->routeIs('icons')" wire:navigate>
+				{{ __('Icons') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('lists')" :active="request()->routeIs('lists')" wire:navigate>
+				{{ __('Lists') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('modals')" :active="request()->routeIs('modals')" wire:navigate>
+				{{ __('Modals') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('notifications')" :active="request()->routeIs('notifications')" wire:navigate>
+				{{ __('Notifications') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('pagination')" :active="request()->routeIs('pagination')" wire:navigate>
+				{{ __('Paginations') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('progress-bars')" :active="request()->routeIs('progress-bars')" wire:navigate>
+				{{ __('Progress Bars') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('sliders')" :active="request()->routeIs('sliders')" wire:navigate>
+				{{ __('Sliders') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('tables')" :active="request()->routeIs('tables')" wire:navigate>
+				{{ __('Tables') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('tabs')" :active="request()->routeIs('tabs')" wire:navigate>
+				{{ __('Tabs') }}
+			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('tooltips')" :active="request()->routeIs('tooltips')" wire:navigate>
+				{{ __('Tooltips') }}
 			</x-sidenav-link>
 		</div>
 	</div>
 
 	{{-- BG-Pages --}}
 	<div x-data="{ open: {{ request()->is('pages/*') ? 'true' : 'false' }} }">
-		<button type="button" title="Background Pages" class="cursor-pointer select-none px-3 py-1 transition-all" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
+		<button class="cursor-pointer select-none px-3 py-1 transition-all" type="button" title="Background Pages" style="-webkit-tap-highlight-color: transparent;" :class="{ 'text-primary': open, 'text-secondary hover:text-primary': !open }" @click="open = !open">
 			{{ __('Background Pages') }}
 		</button>
 
