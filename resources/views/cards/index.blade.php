@@ -10,7 +10,7 @@
 		</x-grid.item>
 
 		<x-grid.item title="Basic Card">
-			@include('cards.image-card', ['type' => 2])
+			@include('cards.image-cards', ['type' => 1])
 		</x-grid.item>
 
 		<x-grid.item title="Comment Card">
@@ -22,7 +22,7 @@
 		</x-grid.item>
 
 		<x-grid.item title="Image Card">
-			@include('cards.image-card', ['type' => 1])
+			@include('cards.image-cards', ['type' => 2])
 		</x-grid.item>
 
 		<x-grid.item title="Notebook Page Card">
