@@ -28,18 +28,18 @@
 	@break
 
 	@case(2)
-		<div class="group relative h-[500px] w-[360px] overflow-hidden rounded-md shadow-md">
-			<div class="absolute bottom-0 left-0 z-[1] w-full translate-y-0 bg-[#86B971] px-12 py-10 text-center transition-all duration-[0.35s] ease-[cubic-bezier(0.1,0.72,0.4,0.97)] will-change-[bottom,background-color,transform,padding] before:absolute before:-top-20 before:left-0 before:z-[-1] before:h-[120px] before:w-full before:bg-inherit before:content-[''] before:[clip-path:ellipse(60%_80px_at_bottom_center)] after:absolute after:-bottom-20 after:left-0 after:z-[-1] after:h-[120px] after:w-full after:bg-inherit after:content-[''] after:[clip-path:ellipse(60%_80px_at_top_center)] group-hover:bottom-full group-hover:translate-y-full group-hover:bg-[#DEE8C2] group-hover:px-[60px] group-hover:transition-all group-hover:duration-[0.35s] group-hover:ease-[cubic-bezier(0.1,0.72,0.4,0.97)]">
-				<h3 class="mb-4 text-2xl">
-					Make your <span class="text-green-700">choice</span> right now!
+		<div class="group relative h-[600px] w-[360px] overflow-hidden rounded-md shadow-md">
+			<div class="group/bubble absolute bottom-0 left-0 z-10 w-full translate-y-0 bg-gray-400 px-12 py-5 text-center transition-all duration-500 ease-[cubic-bezier(0.1,0.72,0.4,0.97)] will-change-[bottom,background-color,transform,padding] before:absolute before:-top-20 before:left-0 before:z-[-1] before:h-[120px] before:w-full before:bg-inherit before:content-[''] before:[clip-path:ellipse(60%_80px_at_bottom_center)] after:absolute after:-bottom-20 after:left-0 after:z-[-1] after:h-[120px] after:w-full after:bg-inherit after:content-[''] after:[clip-path:ellipse(60%_80px_at_top_center)] group-hover:bottom-full group-hover:translate-y-full group-hover:bg-gray-600 group-hover:px-[60px] group-hover:transition-all group-hover:ease-[cubic-bezier(0.1,0.72,0.4,0.97)]">
+				<h3 class="mb-4 text-2xl text-black group-hover:text-white">
+					Discover the <span class="text-gray-700 group-hover:text-gray-200">Legendary Fox</span>
 				</h3>
-				<p class="text-xs">Join the adventures of Naruto Uzumaki as he strives to become Hokage.</p>
-				<a class="group-hover absolute bottom-4 left-2/4 flex -translate-x-2/4 translate-y-[10%] flex-wrap items-center p-2.5 text-green-700 no-underline opacity-0 transition-all duration-[0.35s] group-hover:opacity-100" href="#">
-					<span>Learn How</span>
-					<x-svg.naruto class="ml-1 w-4 transition-transform duration-[0.3s] group-hover:translate-x-1" />
+				<p class="text-xs text-gray-700 group-hover:text-gray-300">Embark on a journey with the legendary blue fox, a mystical creature revered for its wisdom and mysterious power to reveal hidden paths.</p>
+				<a class="mt-2 flex flex-wrap items-center justify-center text-sm no-underline opacity-0 transition-all duration-1000 group-hover:p-2.5 group-hover:text-gray-400 group-hover:opacity-100" href="#">
+					<span>Unveil the Secrets</span>
+					<x-svg.right class="size-4 ml-1 transition-transform duration-500 group-hover:translate-x-1" />
 				</a>
 			</div>
-			<img class="absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover object-center transition-transform duration-[0.35s] ease-[cubic-bezier(0.1,0.72,0.4,0.97)] group-hover:scale-100" src="{{ asset('images/portrait/cute-girl.png') }}" alt="Naruto Uzumaki">
+			<img class="absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover object-center transition-transform duration-500 ease-[cubic-bezier(0.1,0.72,0.4,0.97)] group-hover:scale-100" src="{{ asset('images/portrait/animal-fox.png') }}" alt="Legendary Fox">
 		</div>
 	@break
 
