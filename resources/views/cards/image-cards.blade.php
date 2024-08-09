@@ -39,8 +39,34 @@
 					<x-svg.naruto class="ml-1 w-4 transition-transform duration-[0.3s] group-hover:translate-x-1" />
 				</a>
 			</div>
-			<img class="absolute left-0 top-0 -z-10 h-full w-full scale-[1.2] object-cover object-center transition-transform duration-[0.35s] ease-[cubic-bezier(0.1,0.72,0.4,0.97)] group-hover:scale-100" src="{{ asset('images/portrait/cute-girl.png') }}" alt="Naruto Uzumaki">
+			<img class="absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover object-center transition-transform duration-[0.35s] ease-[cubic-bezier(0.1,0.72,0.4,0.97)] group-hover:scale-100" src="{{ asset('images/portrait/cute-girl.png') }}" alt="Naruto Uzumaki">
 		</div>
+	@break
+
+	@case(3)
+		<div class="flex h-[600px] items-center justify-center">
+			<div class="group container flex max-h-[350px] max-w-[600px] items-center justify-center gap-5">
+				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flower-2.png') }}" alt="Flower Art">
+				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flower-page.png') }}" alt="Flower Page">
+				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flowers-oil-art.png') }}" alt="Oil Art of Flowers">
+			</div>
+		</div>
+
+		@pushOnce('styles')
+			<style>
+				.webkit-box-reflect {
+					-webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+				}
+			</style>
+		@endPushOnce
+
+		<x-slot name="cssCode">
+			<style>
+				.webkit-box-reflect {
+					-webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+				}
+			</style>
+		</x-slot>
 	@break
 
 	@default

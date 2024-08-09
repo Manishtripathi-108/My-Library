@@ -11,7 +11,7 @@
 
 			<section class="mt-3 flex flex-row items-center pt-6">
 				<div class="h-11 w-11 overflow-hidden rounded-full">
-					<img class="h-full w-full object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Legendary Blue Fox Avatar">
+					<img class="h-full w-full object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Legendary Blue Fox Avatar">
 				</div>
 				<div class="ml-4 flex flex-col">
 					<span class="text-primary font-karla text-sm font-bold">Kurama</span>
@@ -34,7 +34,7 @@
 
 			<section class="mt-3 flex flex-row items-center pt-6">
 				<div class="h-11 w-11 overflow-hidden rounded-full">
-					<img class="h-full w-full object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Legendary Blue Fox Avatar">
+					<img class="h-full w-full object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Legendary Blue Fox Avatar">
 				</div>
 				<div class="ml-4 flex flex-col">
 					<span class="text-primary font-karla text-sm font-bold">Kurama</span>
