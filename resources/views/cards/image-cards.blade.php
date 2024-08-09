@@ -5,7 +5,7 @@
 		<div class="w-5/6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 			<div class="bg-primary relative overflow-hidden rounded-lg p-5 shadow-md transition duration-150 ease-in-out focus-within:translate-y-[-5px] focus-within:shadow-lg hover:translate-y-[-5px] hover:shadow-lg dark:shadow-gray-600">
 				<figure class="overflow-hidden rounded-lg">
-					<img class="block max-w-full" src="{{ asset('images/landscape/one_piece.png') }}" alt="One Piece" />
+					<img class="block max-w-full" src="{{ asset('images/landscape/anime-one-piece.png') }}" alt="One Piece" />
 				</figure>
 				<div class="mt-6 flex items-center justify-between">
 					<a class="text-primary pr-4 text-lg font-semibold leading-tight no-underline" href="#">Join Luffy's Adventure</a>
@@ -46,9 +46,9 @@
 	@case(3)
 		<div class="flex h-[600px] items-center justify-center">
 			<div class="group container flex max-h-[350px] max-w-[600px] items-center justify-center gap-5">
-				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flower-2.png') }}" alt="Flower Art">
-				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flower-page.png') }}" alt="Flower Page">
-				<img class="webkit-box-reflect perspective-800 rotateY-25 group-hover:hover:rotateY-0 h-full w-[30%] origin-center transform object-cover opacity-100 transition duration-500 group-hover:opacity-30 group-hover:hover:opacity-100" src="{{ asset('images/portrait/flowers-oil-art.png') }}" alt="Oil Art of Flowers">
+				<img class="webkit-box-reflect h-full w-[30%] origin-center object-cover opacity-100 transition duration-500 [transform:perspective(800px)_rotateY(25deg)] group-hover:opacity-30 group-hover:hover:opacity-100 group-hover:hover:[transform:perspective(800px)_rotateY(0deg)]" src="{{ asset('images/portrait/flower-2.png') }}" alt="Flower Art">
+				<img class="webkit-box-reflect h-full w-[30%] origin-center object-cover opacity-100 transition duration-500 [transform:perspective(800px)_rotateY(25deg)] group-hover:opacity-30 group-hover:hover:opacity-100 group-hover:hover:[transform:perspective(800px)_rotateY(0deg)]" src="{{ asset('images/portrait/flower-page.png') }}" alt="Flower Page">
+				<img class="webkit-box-reflect h-full w-[30%] origin-center object-cover opacity-100 transition duration-500 [transform:perspective(800px)_rotateY(25deg)] group-hover:opacity-30 group-hover:hover:opacity-100 group-hover:hover:[transform:perspective(800px)_rotateY(0deg)]" src="{{ asset('images/portrait/flowers-oil-art.png') }}" alt="Oil Art of Flowers">
 			</div>
 		</div>
 
@@ -73,7 +73,7 @@
 		<div class="w-5/6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 			<div class="bg-primary relative overflow-hidden rounded-lg p-5 shadow-md transition duration-150 ease-in-out focus-within:translate-y-[-5px] focus-within:shadow-lg hover:translate-y-[-5px] hover:shadow-lg dark:shadow-gray-600">
 				<figure class="overflow-hidden rounded-lg">
-					<img class="block max-w-full" src="{{ asset('images/landscape/one_piece.png') }}" alt="One Piece" />
+					<img class="block max-w-full" src="{{ asset('images/landscape/anime-one-piece.png') }}" alt="One Piece" />
 				</figure>
 				<div class="mt-6 flex items-center justify-between">
 					<a class="text-primary pr-4 text-lg font-semibold leading-tight no-underline" href="#">Join Luffy's Adventure</a>

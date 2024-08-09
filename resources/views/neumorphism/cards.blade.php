@@ -29,7 +29,7 @@
 							<div class="flex items-center justify-between">
 								<div class="flex items-center">
 									<a class="text-primary flex items-center font-karla" href="#" title="23k followers">
-										<img class="mr-2 h-8 w-8 rounded-full object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+										<img class="mr-2 h-8 w-8 rounded-full object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 										Jo J. Moore
 									</a>
 								</div>
@@ -46,7 +46,7 @@
 
 		<x-grid.item title="Blog Card 2">
 			<div class="bg-primary flex-center w-full flex-col place-items-center overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs sm:w-3/4 sm:flex-row">
-				<img class="h-auto w-full object-cover sm:w-1/3" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+				<img class="h-auto w-full object-cover sm:w-1/3" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 				<div class="w-full">
 					<div class="p-6">
 						<a href="#">
@@ -68,7 +68,7 @@
 					<div class="mb-4">
 						<div class="flex items-center justify-between">
 							<a class="text-primary flex items-center" href="#">
-								<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+								<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 								its me the fox hero
 							</a>
 							<div class="relative inline-block text-left" x-data="{ open: false }">
@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-					<img class="aspect-square h-auto w-full rounded-lg object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+					<img class="aspect-square h-auto w-full rounded-lg object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 				</div>
 				<div class="w-full px-5 py-2">
 					<a href="#">
@@ -117,7 +117,7 @@
 		<x-grid.item title="Profile Card 1">
 			<div class="bg-primary text-primary relative flex w-11/12 max-w-[350px] flex-col items-center rounded-2xl border-4 border-solid border-transparent bg-clip-padding p-12 text-center shadow-neu-xs after:absolute after:-bottom-1 after:-left-1 after:-right-1 after:-top-1 after:-z-10 after:block after:rounded-2xl dark:shadow-neu-dark-xs">
 				<div class="size-44 relative overflow-hidden rounded-full">
-					<img class="absolute left-2/4 top-2/4 aspect-auto w-full -translate-x-2/4 -translate-y-2/4 object-cover" src="{{ asset('images/square/blue-fox.png') }}" />
+					<img class="absolute left-2/4 top-2/4 aspect-auto w-full -translate-x-2/4 -translate-y-2/4 object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" />
 				</div>
 
 				<h2 class="text-nowrap text-primary mt-6 text-2xl font-semibold">Ashborn GodSlayer</h2>
@@ -153,7 +153,7 @@
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
 						<div class="p-6 pb-10">
 							<div class="bg-primary size-40 relative mx-auto -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 							</div>
 							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
 							<span class="text-secondary font-karla text-sm">Boss</span>
@@ -195,7 +195,7 @@
 				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative mx-auto -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox">
+							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
 						</div>
 						<div class="p-6">
 							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
@@ -258,7 +258,7 @@
 					<div class="bg-primary rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="p-6">
 							<div class="bg-primary size-40 relative -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
 							</div>
 							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
 							<span class="text-secondary font-karla text-sm">Web Designer</span>
@@ -293,7 +293,7 @@
 				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary p-6 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
 						</div>
 						<div class="py-6">
 							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
@@ -332,9 +332,9 @@
 				<div class="bg-primary rounded-lg border border-light-secondary text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 					<div class="p-6">
 						<div class="relative">
-							<div class="h-52 rounded-lg bg-cover" style="background-image: url({{ asset('images/landscape/girl-in-cyberspace.jpeg') }});"></div>
+							<div class="h-52 rounded-lg bg-cover" style="background-image: url({{ asset('images/landscape/scene-night-tree.png') }});"></div>
 							<div class="bg-primary size-36 relative mx-auto -mt-16 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-								<img class="size-full rounded-full object-cover" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+								<img class="size-full rounded-full object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
 							</div>
 						</div>
 						<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
@@ -344,26 +344,18 @@
 						</a>
 						<p class="text-secondary mt-5 font-karla tracking-wide"><x-joke /></p>
 						<div class="my-4 flex justify-center space-x-3">
-							<div>
-								<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
-									<x-svg.facebook class="size-5" />
-								</a>
-							</div>
-							<div>
-								<a class="text-blue-400 hover:text-blue-600" href="#" target="_blank">
-									<x-svg.twitter class="size-5" />
-								</a>
-							</div>
-							<div>
-								<a class="text-blue-300 hover:text-blue-500" href="#" target="_blank">
-									<x-svg.ex class="size-5" />
-								</a>
-							</div>
-							<div>
-								<a class="text-pink-400 hover:text-pink-600" href="#" target="_blank">
-									<x-svg.ex class="size-5" />
-								</a>
-							</div>
+							<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
+								<x-svg.facebook class="size-5" />
+							</a>
+							<a class="text-blue-400 hover:text-blue-600" href="#" target="_blank">
+								<x-svg.twitter class="size-5" />
+							</a>
+							<a class="text-blue-300 hover:text-blue-500" href="#" target="_blank">
+								<x-svg.ex class="size-5" />
+							</a>
+							<a class="text-pink-400 hover:text-pink-600" href="#" target="_blank">
+								<x-svg.ex class="size-5" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -375,7 +367,7 @@
 				<div class="bg-primary preserve-3d group-hover:trans-rotate-y-180 relative rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs transition-all duration-700 ease-Out-back dark:border-dark-secondary dark:shadow-neu-dark-xs">
 					<div class="flex-center backface-hidden size-full relative z-10 flex-col">
 						<div class="bg-primary size-1/2 mt-4 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-							<img class="h-auto w-full rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs" src="{{ asset('images/square/blue-fox.png') }}" alt="Fox Avatar">
+							<img class="h-auto w-full rounded-full border border-light-secondary p-2 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
 						</div>
 						<div class="mt-5">
 							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
@@ -569,12 +561,11 @@
 		<x-sidenav-list class="pl-2">Profile Card 3</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Profile Card 4</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Profile Card 5</x-sidenav-list>
-		
+
 		<x-sidenav-list>Pricing Cards</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Pricing Card 1</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Pricing Card 2</x-sidenav-list>
 
-		
 		<x-sidenav-list>Call To Actions Cards (CTA)</x-sidenav-list>
 		<x-sidenav-list class="pl-2">CTA 1</x-sidenav-list>
 		<x-sidenav-list class="pl-2">CTA 2</x-sidenav-list>
