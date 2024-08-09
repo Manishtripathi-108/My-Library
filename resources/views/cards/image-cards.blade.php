@@ -44,4 +44,27 @@
 	@break
 
 	@default
+		<div class="w-5/6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
+			<div class="bg-primary relative overflow-hidden rounded-lg p-5 shadow-md transition duration-150 ease-in-out focus-within:translate-y-[-5px] focus-within:shadow-lg hover:translate-y-[-5px] hover:shadow-lg dark:shadow-gray-600">
+				<figure class="overflow-hidden rounded-lg">
+					<img class="block max-w-full" src="{{ asset('images/landscape/one_piece.png') }}" alt="One Piece" />
+				</figure>
+				<div class="mt-6 flex items-center justify-between">
+					<a class="text-primary pr-4 text-lg font-semibold leading-tight no-underline" href="#">Join Luffy's Adventure</a>
+					<button class="duration-250 bg-primary z-10 flex h-10 w-10 items-center justify-center rounded-full text-xl text-gray-600 shadow-sm transition ease-in-out hover:bg-red-500 hover:text-white focus:bg-red-500 focus:text-white">
+						<x-svg.heart class="size-6" />
+					</button>
+				</div>
+				<div class="mt-5 flex flex-wrap items-center border-t border-gray-600 pt-5">
+					<div class="text-primary flex items-center gap-2">
+						<x-svg.zoro class="size-6" />
+						<span>2,465</span>
+					</div>
+					<div class="text-primary ml-4 flex items-center gap-2">
+						<x-svg.calendar class="size-5" />
+						<span>Jul 26, 2019</span>
+					</div>
+				</div>
+			</div>
+		</div>
 @endswitch
