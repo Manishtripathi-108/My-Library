@@ -69,6 +69,20 @@
 		</x-slot>
 	@break
 
+	@case(4)
+		<div class="group relative flex h-[24rem] w-[20rem] items-center justify-center overflow-hidden rounded-xl bg-[url('https://mfiles.alphacoders.com/100/1007814.png')] bg-[length:20rem] bg-center bg-no-repeat shadow-[0_70px_63px_-60px_#000] transition-[background] duration-700 hover:bg-[length:40rem] hover:bg-left">
+			<div class="relative h-[23rem] w-[19rem] rounded-xl border border-transparent bg-transparent transition-[border] duration-1000 hover:border-solid hover:border-light-primary">
+				<h2 class="m-5 font-playfair text-xl font-black text-light-primary opacity-0 transition-opacity duration-1000 group-hover:opacity-100">Monkey D. Luffy</h2>
+				<div class="absolute top-56 flex h-32 w-12 flex-col items-center justify-around gap-2 text-light-primary">
+					<x-svg.one-piece-anime class="size-8 opacity-0 transition-opacity duration-1000 hover:scale-110 group-hover:opacity-100" />
+					<x-svg.luffy class="size-8 opacity-0 transition-opacity duration-1000 hover:scale-110 group-hover:opacity-100" />
+					<x-svg.zoro class="size-8 opacity-0 transition-opacity duration-1000 hover:scale-110 group-hover:opacity-100" />
+					<x-svg.brook class="size-8 opacity-0 transition-opacity duration-1000 hover:scale-110 group-hover:opacity-100" />
+				</div>
+			</div>
+		</div>
+	@break
+
 	@default
 		<div class="w-5/6 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
 			<div class="bg-primary relative overflow-hidden rounded-lg p-5 shadow-md transition duration-150 ease-in-out focus-within:translate-y-[-5px] focus-within:shadow-lg hover:translate-y-[-5px] hover:shadow-lg dark:shadow-gray-600">

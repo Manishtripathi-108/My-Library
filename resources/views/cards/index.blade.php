@@ -36,6 +36,10 @@
 		<x-grid.item title="Reflecting Image Cards">
 			@include('cards.image-cards', ['type' => 3])
 		</x-grid.item>
+
+		<x-grid.item title="Zoom on Hover Card">
+			@include('cards.image-cards', ['type' => 4])
+		</x-grid.item>
 	</x-grid>
 
 	<x-grid title="Profile Cards">
@@ -102,6 +106,7 @@
 		<x-sidenav-list class="pl-2">Basic Image Card</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Hover Image Card</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Reflecting Image Cards</x-sidenav-list>
+		<x-sidenav-list class="pl-2">Zoom on Hover Card</x-sidenav-list>
 
 		<x-sidenav-list>Profile Cards</x-sidenav-list>
 		<x-sidenav-list class="pl-2">Profile Card 1</x-sidenav-list>
