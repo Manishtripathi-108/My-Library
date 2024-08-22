@@ -1,30 +1,4 @@
 <x-app-layout title="Welcome Page">
-	<div class="*:flex *:text-xs *:items-center *:justify-center m-5 grid grid-cols-4 gap-4 md:grid-cols-8">
-		{{-- Auth --}}
-		<a class="neu-btn" href="{{ route('register') }}">Register</a>
-		<a class="neu-btn" href="{{ route('login') }}">Login</a>
-
-		{{-- Pages --}}
-		<a class="neu-btn" href="{{ route('book-page') }}">Book</a>
-		<a class="neu-btn" href="{{ route('background-building') }}">Background Building</a>
-		<a class="neu-btn" href="{{ route('background-sunrise') }}">Background Sunrise</a>
-		<a class="neu-btn" href="{{ route('order-confirmation') }}">Order Confirm</a>
-
-		{{-- Auth Page --}}
-		<a class="neu-btn" href="{{ route('auth.login-signup') }}">Auth Page</a>
-
-		{{-- Cards --}}
-		<a class="neu-btn" href="{{ route('cards') }}">Cards</a>
-
-		{{-- Buttons --}}
-		<a class="neu-btn" href="{{ route('buttons') }}">Buttons</a>
-
-		{{-- Neumorphism --}}
-		<a class="neu-btn" href="{{ route('neumorphism') }}">Neumorphism</a>
-		<a class="neu-btn" href="{{ route('neumorphism.shadows') }}">Neumorphism Shadows</a>
-
-	</div>
-
 	<div class="w-full">
 
 	</div>
