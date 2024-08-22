@@ -143,6 +143,11 @@ Route::prefix('components')->group(function () {
         return view('progress-bars.index');
     })->name('progress-bars');
 
+    // Route for the sidebars
+    Route::get('/sidebars', function () {
+        return view('sidebars.index');
+    })->name('sidebars');
+
     // Route for the sliders
     Route::get('/sliders', function () {
         return view('sliders.index');

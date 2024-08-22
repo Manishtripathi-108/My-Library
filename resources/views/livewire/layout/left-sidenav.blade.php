@@ -160,6 +160,9 @@
 			<x-sidenav-link class="text-xs" :href="route('progress-bars')" :active="request()->routeIs('progress-bars')" wire:navigate>
 				{{ __('Progress Bars') }}
 			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('sidebars')" :active="request()->routeIs('sidebars')" wire:navigate>
+				{{ __('Sidebars') }}
+			</x-sidenav-link>
 			<x-sidenav-link class="text-xs" :href="route('sliders')" :active="request()->routeIs('sliders')" wire:navigate>
 				{{ __('Sliders') }}
 			</x-sidenav-link>
