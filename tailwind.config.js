@@ -37,6 +37,12 @@ export default {
                 'bomb-left-out': 'bomb-left-out 2s',
                 'bomb-right-out': 'bomb-right-out 2s',
 
+                /* ---------------------------------- Bounce ---------------------------------- */
+                'bounce-down': 'bounce-down 2s',
+                'bounce-up': 'bounce-up 2s',
+                'bounce-left': 'bounce-left 2s',
+                'bounce-right': 'bounce-right 2s',
+
                 /* ---------------------------------- Circle ---------------------------------- */
                 'circle-in-bottom-left': 'circle-in-bottom-left 2s',
                 'circle-in-bottom-right': 'circle-in-bottom-right 2s',
@@ -236,6 +242,24 @@ export default {
                     '30%': { opacity: '1', transformOrigin: '0% 100%', transform: 'perspective(800px) rotateX(0deg) rotateY(0deg)' },
                     '40%': { opacity: '1', transformOrigin: '0% 100%', transform: 'perspective(800px) rotateX(10deg) rotateY(10deg)' },
                     '100%': { opacity: '0', transformOrigin: '100% 100%', transform: 'perspective(800px) rotateX(90deg) rotateY(0deg)' },
+                },
+
+                /* --------------------------------- Bounce --------------------------------- */
+                'bounce-down': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-25%)' },
+                },
+                'bounce-up': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(25%)' },
+                },
+                'bounce-left': {
+                    '0%, 100%': { transform: 'translateX(0)' },
+                    '50%': { transform: 'translateX(25%)' },
+                },
+                'bounce-right': {
+                    '0%, 100%': { transform: 'translateX(0)' },
+                    '50%': { transform: 'translateX(-25%)' },
                 },
 
                 /* ---------------------------------- Bomb ---------------------------------- */
