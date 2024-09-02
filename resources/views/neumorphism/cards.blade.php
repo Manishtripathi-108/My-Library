@@ -549,26 +549,75 @@
 
 	</x-grid>
 
+	<x-grid title="Counter Cards">
+		<x-slot name="description">
+			Counter cards are used to display statistics in a visually appealing way. They can be used to display the number of users, downloads, sales, and other statistics.
+		</x-slot>
+
+		<x-grid.item title="Counter cards">
+			<div class="flex flex-wrap justify-center gap-6">
+
+				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
+					<div class="rounded-lg p-6 shadow-neu-md-soft dark:shadow-neu-dark-md">
+						<div class="bg-light-gray flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+							<x-svg.naruto class="size-12" />
+						</div>
+						<div class="bg-light-gray rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+							<span class="text-secondary block text-4xl font-bold">1000</span>
+							<span class="text-secondary text-lg">Naruto</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
+					<div class="rounded-lg p-6 shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
+						<div class="bg-light-gray flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-xs dark:shadow-neu-dark-xs">
+							<x-svg.luffy class="size-12" />
+						</div>
+						<div class="bg-light-gray rounded-lg py-4 shadow-neu-xs dark:shadow-neu-dark-xs">
+							<span class="text-secondary block text-4xl font-bold">2000</span>
+							<span class="text-secondary text-lg">One Piece</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
+					<div class="rounded-lg p-3 shadow-neu-inset-md dark:shadow-neu-dark-inset-sm">
+						<div class="rounded-lg p-6 shadow-neu-md-soft dark:shadow-neu-dark-md">
+							<div class="bg-light-gray flex-center size-20 mx-auto mb-4 rounded-full p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+								<x-svg.deku class="size-12" />
+							</div>
+							<div class="bg-light-gray rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+								<span class="text-secondary block text-4xl font-bold">208</span>
+								<span class="text-secondary text-lg">My Hero Academia</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</x-grid.item>
+
+	</x-grid>
+
 	<x-slot name="rightSidenav">
-		<x-sidenav-list>Blog Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Blog Card 1</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Blog Card 2</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Blog Card 3</x-sidenav-list>
 
-		<x-sidenav-list>Profile Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 1</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 2</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 3</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 4</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 5</x-sidenav-list>
+		@php
+			$list = [
+			    'Blog Cards' => ['Blog Card 1', 'Blog Card 2', 'Blog Card 3'],
+			    'Profile Cards' => ['Profile Card 1', 'Profile Card 2', 'Profile Card 3', 'Profile Card 4', 'Profile Card 5'],
+			    'Pricing Cards' => ['Pricing Card 1', 'Pricing Card 2'],
+			    'Call To Actions Cards (CTA)' => ['CTA 1', 'CTA 2'],
+			    'Counter Cards' => ['Counter cards'],
+			];
+		@endphp
 
-		<x-sidenav-list>Pricing Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Pricing Card 1</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Pricing Card 2</x-sidenav-list>
-
-		<x-sidenav-list>Call To Actions Cards (CTA)</x-sidenav-list>
-		<x-sidenav-list class="pl-2">CTA 1</x-sidenav-list>
-		<x-sidenav-list class="pl-2">CTA 2</x-sidenav-list>
+		@foreach ($list as $category => $items)
+			<x-sidenav-category>{{ $category }}</x-sidenav-category>
+			@foreach ($items as $item)
+				<x-sidenav-list>{{ $item }}</x-sidenav-list>
+			@endforeach
+		@endforeach
 
 	</x-slot>
 
