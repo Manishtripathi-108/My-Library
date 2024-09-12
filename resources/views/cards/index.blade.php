@@ -98,22 +98,23 @@
 
 	{{-- Right Sidenav --}}
 	<x-slot name="rightSidenav">
-		<x-sidenav-list>Badge Card</x-sidenav-list>
-		<x-sidenav-list>Comment Card</x-sidenav-list>
-		<x-sidenav-list>Icon Card</x-sidenav-list>
+		@php
+			$list = [
+			    'Badge Card' => [],
+			    'Comment Card' => [],
+			    'Icon Card' => [],
+			    'Image Cards' => ['Basic Image Card', 'Hover Image Card', 'Reflecting Image Cards', 'Zoom on Hover Card'],
+			    'Profile Cards' => ['Profile Card 1'],
+			    'Notebook Page Cards' => ['Page Card', 'Page Card 2'],
+			];
+		@endphp
 
-		<x-sidenav-list>Image Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Basic Image Card</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Hover Image Card</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Reflecting Image Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Zoom on Hover Card</x-sidenav-list>
-
-		<x-sidenav-list>Profile Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Profile Card 1</x-sidenav-list>
-
-		<x-sidenav-list>Notebook Page Cards</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Page Card</x-sidenav-list>
-		<x-sidenav-list class="pl-2">Page Card 2</x-sidenav-list>
+		@foreach ($list as $category => $items)
+			<x-sidenav-category>{{ $category }}</x-sidenav-category>
+			@foreach ($items as $item)
+				<x-sidenav-list>{{ $item }}</x-sidenav-list>
+			@endforeach
+		@endforeach
 
 	</x-slot>
 </x-app-layout>
