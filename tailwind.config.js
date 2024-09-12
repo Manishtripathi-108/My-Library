@@ -816,7 +816,7 @@ export default {
                 dark: {
                     primary: "#131419",
                     'primary-dim': '#1D1D1D',
-                    secondary: "#303030",
+                    secondary: "#1f2937",
                     accent: "#66CCFF",
                     highlight: "#8888FF",
                     text: "#FFE9D0",
