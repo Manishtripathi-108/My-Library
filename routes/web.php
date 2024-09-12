@@ -26,6 +26,11 @@ require __DIR__ . '/auth.php';
 
 Route::prefix('pages')->group(function () {
 
+    // 404 Page
+    Route::get('/404-pages', function () {
+        return view('pages.404-pages');
+    })->name('404-pages');
+
     // Page with Book
     Route::get('/book-page', function () {
         return view('pages.book');

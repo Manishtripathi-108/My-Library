@@ -185,6 +185,10 @@
 		</button>
 
 		<div class="ml-2" x-cloak x-show="open" x-transition>
+			<x-sidenav-link class="text-xs" :href="route('404-pages')" :active="request()->routeIs('404-pages')" wire:navigate>
+				{{ __('404') }}
+			</x-sidenav-link>
+
 			<x-sidenav-link class="text-xs" :href="route('book-page')" :active="request()->routeIs('book-page')" wire:navigate>
 				{{ __('Book') }}
 			</x-sidenav-link>
