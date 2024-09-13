@@ -356,6 +356,36 @@
 			</div>
 		</x-grid.item>
 
-	</x-grid>
+		<x-grid.item title="Dark 404 (use Torch to lighten up)">
+			<section class="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[url('https://wallpapercave.com/wp/6SLzBEY.jpg')] bg-cover bg-left-top bg-no-repeat" id="torch_404">
+				<div class="text">
+					<h1 class="mt-52 text-center font-mono text-9xl font-bold text-black">404</h1>
+					<h2 class="mt-36 text-center font-mono text-xl font-bold text-white">Uh, Ohh</h2>
+					<h3 class="font-mono text-lg font-bold text-white">Sorry we cant find what you are looking for 'cuz its so dark in here</h3>
+				</div>
+				<div class="size-52 absolute -ml-36 -mt-36 mb-0 mr-0 rounded-full opacity-100 shadow-[0_0_0_9999em_#000000f7] after:left-0 after:top-0 after:block after:h-full after:w-full after:rounded-full after:shadow-[inset_0_0_40px_2px_#000,0_0_20px_4px_rgba(13,13,10,0.2)]" id="torch"></div>
+			</section>
 
+			<x-slot name="jsCode">
+				<script>
+					document.getElementById('torch_404').addEventListener('mousemove', function(event) {
+						var torch = document.querySelector('#torch');
+						torch.style.top = event.pageY + 'px';
+						torch.style.left = event.pageX + 'px';
+					});
+				</script>
+			</x-slot>
+
+		</x-grid.item>
+
+	</x-grid>
+	@pushOnce('scripts')
+		<script>
+			document.getElementById('torch_404').addEventListener('mousemove', function(event) {
+				var torch = document.querySelector('#torch');
+				torch.style.top = event.pageY + 'px';
+				torch.style.left = event.pageX + 'px';
+			});
+		</script>
+	@endPushOnce
 </x-app-layout>
