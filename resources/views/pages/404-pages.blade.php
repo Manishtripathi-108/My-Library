@@ -465,9 +465,397 @@
 			</x-slot>
 		</x-grid.item>
 
+		<x-grid.item title="Train 404 Page">
+			<section class="h-screen w-full flex-center">
+				<x-svg.404-train />
+			</section>
+
+			<x-slot name="cssCode">
+				<style>
+					.st0 {
+						fill: #fff
+					}
+
+					.st2 {
+						fill: #5d89af
+					}
+
+					.st3 {
+						fill: #709abf
+					}
+
+					.st4,
+					.st6 {
+						fill: #fff;
+						stroke: #b3dcdf;
+						stroke-miterlimit: 10
+					}
+
+					.st6 {
+						stroke: #5d89af;
+						stroke-width: 2
+					}
+
+					.st7,
+					.st8,
+					.st9 {
+						stroke: #709abf;
+						stroke-miterlimit: 10
+					}
+
+					.st7 {
+						stroke-width: 5;
+						stroke-linecap: round;
+						fill: none
+					}
+
+					.st8,
+					.st9 {
+						fill: #fff
+					}
+
+					.st9 {
+						fill: none
+					}
+
+					.st10 {}
+
+					#cloud1 {
+						animation: cloud003 15s linear infinite;
+					}
+
+					#cloud2 {
+						animation: cloud002 25s linear infinite;
+					}
+
+					#cloud3 {
+						animation: cloud003 20s linear infinite;
+					}
+
+					#cloud4 {
+						animation: float 4s linear infinite;
+					}
+
+					#cloud5 {
+						animation: float 8s linear infinite;
+					}
+
+					#cloud7 {
+						animation: float 5s linear infinite;
+					}
+
+					#tracks {
+						animation: slide 650ms linear infinite;
+					}
+
+					#bumps {
+						animation: land 10000ms linear infinite;
+					}
+
+					@keyframes jig {
+						0% {
+							transform: translateY(0px);
+						}
+
+						50% {
+							transform: translateY(1px);
+						}
+
+						100% {
+							transform: translateY(0px);
+						}
+					}
+
+					#car-layers {
+						animation: jig 0.35s linear infinite;
+					}
+
+					@keyframes land {
+						from {
+							transform: translateX(0);
+						}
+
+						to {
+							transform: translateX(1000px);
+						}
+					}
+
+					@keyframes slide {
+						from {
+							transform: translateX(0px);
+						}
+
+						to {
+							transform: translateX(100px);
+						}
+					}
+
+					@keyframes cloud001 {
+						0% {
+							transform: translateX(-1000px) translateY(3px);
+						}
+
+						100% {
+							transform: translateX(1000px) translateY(0);
+						}
+					}
+
+					@keyframes cloud002 {
+						0% {
+							transform: translateX(-1000px) translateY(3px);
+						}
+
+						100% {
+							transform: translateX(1000px) translateY(0);
+						}
+					}
+
+					@keyframes cloud003 {
+						0% {
+							transform: translateX(-1000px) translateY(3px);
+						}
+
+						100% {
+							transform: translateX(1000px) translateY(0);
+						}
+					}
+
+					@keyframes float {
+						0% {
+							transform: translateY(0px) translateX(0);
+						}
+
+						50% {
+							transform: translateY(8px) translateX(5px);
+						}
+
+						100% {
+							transform: translateY(0px) translateX(0);
+						}
+					}
+
+					#braceFront,
+					#braceBack {
+						animation: braces 1s linear infinite;
+					}
+
+					@keyframes braces {
+						0% {
+							transform: translateX(-2px);
+						}
+
+						25% {
+							transform: translateX(3px);
+						}
+
+						50% {
+							transform: translateX(-2px);
+						}
+
+						75% {
+							transform: translateX(3px);
+						}
+
+						100% {
+							transform: translateX(-2px);
+						}
+					}
+				</style>
+			</x-slot>
+		</x-grid.item>
+
 	</x-grid>
 	@pushOnce('styles')
 		<style>
+			.st0 {
+				fill: #fff
+			}
+
+			.st2 {
+				fill: #5d89af
+			}
+
+			.st3 {
+				fill: #709abf
+			}
+
+			.st4,
+			.st6 {
+				fill: #fff;
+				stroke: #b3dcdf;
+				stroke-miterlimit: 10
+			}
+
+			.st6 {
+				stroke: #5d89af;
+				stroke-width: 2
+			}
+
+			.st7,
+			.st8,
+			.st9 {
+				stroke: #709abf;
+				stroke-miterlimit: 10
+			}
+
+			.st7 {
+				stroke-width: 5;
+				stroke-linecap: round;
+				fill: none
+			}
+
+			.st8,
+			.st9 {
+				fill: #fff
+			}
+
+			.st9 {
+				fill: none
+			}
+
+			.st10 {}
+
+			#cloud1 {
+				animation: cloud003 15s linear infinite;
+			}
+
+			#cloud2 {
+				animation: cloud002 25s linear infinite;
+			}
+
+			#cloud3 {
+				animation: cloud003 20s linear infinite;
+			}
+
+			#cloud4 {
+				animation: float 4s linear infinite;
+			}
+
+			#cloud5 {
+				animation: float 8s linear infinite;
+			}
+
+			#cloud7 {
+				animation: float 5s linear infinite;
+			}
+
+			#tracks {
+				animation: slide 650ms linear infinite;
+			}
+
+			#bumps {
+				animation: land 10000ms linear infinite;
+			}
+
+			@keyframes jig {
+				0% {
+					transform: translateY(0px);
+				}
+
+				50% {
+					transform: translateY(1px);
+				}
+
+				100% {
+					transform: translateY(0px);
+				}
+			}
+
+			#car-layers {
+				animation: jig 0.35s linear infinite;
+			}
+
+			@keyframes land {
+				from {
+					transform: translateX(0);
+				}
+
+				to {
+					transform: translateX(1000px);
+				}
+			}
+
+			@keyframes slide {
+				from {
+					transform: translateX(0px);
+				}
+
+				to {
+					transform: translateX(100px);
+				}
+			}
+
+			@keyframes cloud001 {
+				0% {
+					transform: translateX(-1000px) translateY(3px);
+				}
+
+				100% {
+					transform: translateX(1000px) translateY(0);
+				}
+			}
+
+			@keyframes cloud002 {
+				0% {
+					transform: translateX(-1000px) translateY(3px);
+				}
+
+				100% {
+					transform: translateX(1000px) translateY(0);
+				}
+			}
+
+			@keyframes cloud003 {
+				0% {
+					transform: translateX(-1000px) translateY(3px);
+				}
+
+				100% {
+					transform: translateX(1000px) translateY(0);
+				}
+			}
+
+			@keyframes float {
+				0% {
+					transform: translateY(0px) translateX(0);
+				}
+
+				50% {
+					transform: translateY(8px) translateX(5px);
+				}
+
+				100% {
+					transform: translateY(0px) translateX(0);
+				}
+			}
+
+			#braceFront,
+			#braceBack {
+				animation: braces 1s linear infinite;
+			}
+
+			@keyframes braces {
+				0% {
+					transform: translateX(-2px);
+				}
+
+				25% {
+					transform: translateX(3px);
+				}
+
+				50% {
+					transform: translateX(-2px);
+				}
+
+				75% {
+					transform: translateX(3px);
+				}
+
+				100% {
+					transform: translateX(-2px);
+				}
+			}
+
 			#boyLight {
 				animation: swing ease-in-out 1.3s infinite alternate;
 				transform-origin: 98% 98%;
