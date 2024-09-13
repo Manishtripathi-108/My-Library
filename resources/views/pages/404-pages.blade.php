@@ -375,10 +375,176 @@
 					});
 				</script>
 			</x-slot>
+		</x-grid.item>
 
+		<x-grid.item title="Animated 404">
+			<section class="container">
+				<div class="mb-5 mt-5" id="container-for-404-svg">
+					<x-svg.404 />
+				</div>
+			</section>
+
+			<x-slot name="cssCode">
+				<style>
+					#boyLight {
+						animation: swing ease-in-out 1.3s infinite alternate;
+						transform-origin: 98% 98%;
+						transform-box: fill-box;
+					}
+
+					#girlLight {
+						animation: swing ease-in-out 1.3s infinite alternate;
+						transform-origin: 0% 97%;
+						transform-box: fill-box;
+					}
+
+					#girlHair {
+						animation: swingHair ease-in-out 1.3s infinite alternate;
+						transform-origin: 60% 0%;
+						transform-box: fill-box;
+					}
+
+					#zero {
+						transform-origin: bottom;
+						transform-box: fill-box;
+						animation: translateXRotateScale ease-in-out 2s infinite alternate;
+					}
+
+					#container-for-404-svg svg {
+						animation: translateY ease-in-out 2s infinite alternate;
+					}
+
+					@keyframes translateY {
+						0% {
+							transform: translateY(0);
+						}
+
+						50% {
+							transform: translateY(10px);
+						}
+
+						100% {
+							transform: translateY(0);
+						}
+					}
+
+					@keyframes translateXRotateScale {
+						0% {
+							transform: translateX(0) rotateY(0deg) scale(1);
+						}
+
+						50% {
+							transform: translateX(10px) rotateY(180deg) scale(1.4);
+						}
+
+						100% {
+							transform: translateX(0) rotateY(360deg) scale(1);
+						}
+					}
+
+					@keyframes swing {
+						0% {
+							transform: rotate(10deg);
+						}
+
+						100% {
+							transform: rotate(-10deg);
+						}
+					}
+
+					@keyframes swingHair {
+						0% {
+							transform: rotate(6deg);
+						}
+
+						100% {
+							transform: rotate(-6deg);
+						}
+					}
+				</style>
+			</x-slot>
 		</x-grid.item>
 
 	</x-grid>
+	@pushOnce('styles')
+		<style>
+			#boyLight {
+				animation: swing ease-in-out 1.3s infinite alternate;
+				transform-origin: 98% 98%;
+				transform-box: fill-box;
+			}
+
+			#girlLight {
+				animation: swing ease-in-out 1.3s infinite alternate;
+				transform-origin: 0% 97%;
+				transform-box: fill-box;
+			}
+
+			#girlHair {
+				animation: swingHair ease-in-out 1.3s infinite alternate;
+				transform-origin: 60% 0%;
+				transform-box: fill-box;
+			}
+
+			#zero {
+				transform-origin: bottom;
+				transform-box: fill-box;
+				animation: translateXRotateScale ease-in-out 2s infinite alternate;
+			}
+
+			#container-for-404-svg svg {
+				animation: translateY ease-in-out 2s infinite alternate;
+			}
+
+			@keyframes translateY {
+				0% {
+					transform: translateY(0);
+				}
+
+				50% {
+					transform: translateY(10px);
+				}
+
+				100% {
+					transform: translateY(0);
+				}
+			}
+
+			@keyframes translateXRotateScale {
+				0% {
+					transform: translateX(0) rotateY(0deg) scale(1);
+				}
+
+				50% {
+					transform: translateX(10px) rotateY(180deg) scale(1.4);
+				}
+
+				100% {
+					transform: translateX(0) rotateY(360deg) scale(1);
+				}
+			}
+
+			@keyframes swing {
+				0% {
+					transform: rotate(10deg);
+				}
+
+				100% {
+					transform: rotate(-10deg);
+				}
+			}
+
+			@keyframes swingHair {
+				0% {
+					transform: rotate(6deg);
+				}
+
+				100% {
+					transform: rotate(-6deg);
+				}
+			}
+		</style>
+	@endPushOnce
 	@pushOnce('scripts')
 		<script>
 			document.getElementById('torch_404').addEventListener('mousemove', function(event) {
