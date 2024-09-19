@@ -1,7 +1,6 @@
 <x-app-layout title="Blog Cards | Neumorphism">
 
 	<x-grid title="Blog Cards">
-
 		<x-slot name="description">
 			Blog cards are used to display blog posts in a visually appealing way. They can be used to display a featured image, title, author, and other details.
 		</x-slot>
@@ -10,11 +9,13 @@
 			<div class="flex-center w-full flex-wrap gap-5">
 				<div class="w-full px-3 md:w-2/5">
 					<div class="bg-primary overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
-						<img class="h-auto w-full rounded-t-lg" src="{{ asset('images/square/om.png') }}" alt="">
+						<img class="h-auto w-full rounded-t-lg" src="{{ asset('images/square/animal-brown-cat.png') }}" alt="Motivational Flower">
 						<div class="p-6">
-							<span class="text-tertiary text-primary flex items-center gap-2 text-sm"> <x-svg.ex class="size-4" /> Shiva</span>
-							<h3 class="text-primary mt-3 font-karla text-lg">&#2384; the most powerful symbol in Hinduism</h3>
-							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
+							<span class="text-tertiary text-primary flex items-center gap-2 text-sm">
+								<img class="mr-2 h-8 w-8 rounded-full object-cover" src="{{ asset('images/square/man-with-mask.png') }}" alt="Ichigo">
+								Naruto Uzumaki</span>
+							<h3 class="text-primary mt-3 font-karla text-lg">"Hard work is worthless for those that don't believe in themselves."</h3>
+							<p class="text-secondary mt-3 font-karla tracking-wide">Never give up. Your determination will take you farther than your talent.</p>
 							<a class="neu-btn mt-4 inline-block text-sm" href="#">Learn More</a>
 						</div>
 					</div>
@@ -23,20 +24,20 @@
 				<div class="w-full px-3 md:w-2/5">
 					<div class="bg-primary overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="p-4">
-							<img class="h-auto w-full rounded" src="{{ asset('images/square/om.png') }}" alt="">
+							<img class="h-auto w-full rounded" src="{{ asset('images/square/flower-white-lotus.png') }}" alt="Sword Anime Hero">
 						</div>
 						<div class="p-6 pt-2">
 							<div class="flex items-center justify-between">
 								<div class="flex items-center">
 									<a class="text-primary flex items-center font-karla" href="#" title="23k followers">
-										<img class="mr-2 h-8 w-8 rounded-full object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
-										Jo J. Moore
+										<img class="mr-2 h-8 w-8 rounded-full object-cover" src="{{ asset('images/square/man-with-mask.png') }}" alt="Ichigo">
+										Ichigo Kurosaki
 									</a>
 								</div>
 								<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calendar class="size-3" />20 June 2024</div>
 							</div>
-							<h3 class="text-primary mt-4 font-karla text-lg">&#2384; the most powerful symbol in Hinduism</h3>
-							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
+							<h3 class="text-primary mt-4 font-karla text-lg">"If you want to grant your own wish, then you should clear your own path to it." - </h3>
+							<p class="text-secondary mt-3 font-karla tracking-wide">Be your own hero and create your own destiny.</p>
 							<a class="neu-btn mt-3 inline-block text-sm" href="#">Learn More</a>
 						</div>
 					</div>
@@ -46,16 +47,16 @@
 
 		<x-grid.item title="Blog Card 2">
 			<div class="bg-primary flex-center w-full flex-col place-items-center overflow-hidden rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs sm:w-3/4 sm:flex-row">
-				<img class="h-auto w-full object-cover sm:w-1/3" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
+				<img class="h-auto w-full object-cover sm:w-1/3" src="{{ asset('images/square/man-with-mask.png') }}" alt="Warrior Spirit">
 				<div class="w-full">
 					<div class="p-6">
 						<a href="#">
-							<h3 class="text-primary mb-5 font-karla text-2xl">Red Fox</h3>
+							<h3 class="text-primary mb-5 font-karla text-2xl">Yato</h3>
 						</a>
-						<p class="text-secondary mb-6 font-karla tracking-wide"><x-joke /></p>
+						<p class="text-secondary mb-6 font-karla tracking-wide">"Even if things are painful and tough, people should appreciate what it means to be alive."</p>
 						<div class="flex-center">
 							<div class="text-secondary flex items-center gap-1 font-karla text-sm"><x-svg.calendar class="size-3" />20 June 2024</div>
-							<a class="text-secondary flex-center ml-auto gap-2 text-sm" href="#"><x-svg.comments class="size-4" /></span>21</a>
+							<a class="text-secondary flex-center ml-auto gap-2 text-sm" href="#"><x-svg.comments class="size-4" />21</a>
 						</div>
 					</div>
 				</div>
@@ -68,8 +69,8 @@
 					<div class="mb-4">
 						<div class="flex items-center justify-between">
 							<a class="text-primary flex items-center" href="#">
-								<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
-								its me the fox hero
+								<img class="size-8 mr-2 rounded-full object-cover font-karla" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
+								Spirit Fox Hero
 							</a>
 							<div class="relative inline-block text-left" x-data="{ open: false }">
 								<button class="inline-flex w-full justify-center px-2 py-1 text-gray-700" @click="open=!open"><x-svg.3dots class="size-7" /></button>
@@ -84,13 +85,13 @@
 							</div>
 						</div>
 					</div>
-					<img class="aspect-square h-auto w-full rounded-lg object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox">
+					<img class="aspect-square h-auto w-full rounded-lg object-cover" src="{{ asset('images/square/scene-purpul-apocalipse.png') }}" alt="Fox Spirit">
 				</div>
 				<div class="w-full px-5 py-2">
 					<a href="#">
-						<h3 class="text-primary my-4 text-2xl">New Joke By Fox</h3>
+						<h3 class="text-primary my-1 text-2xl">"Courage is the magic that turns dreams into reality."</h3>
 					</a>
-					<p class="text-secondary mb-4"><x-joke /><x-joke /><x-joke /></p>
+					<p class="text-secondary mb-4">Be fearless. The universe rewards those who are brave.</p>
 				</div>
 				<div class="w-full px-5 py-4">
 					<div class="flex items-center justify-between gap-2">
@@ -253,15 +254,15 @@
 
 		<x-grid.item title="Profile Card 3">
 			<div class="flex w-full flex-wrap justify-center">
-				{{-- Profile Card 1 --}}
+				<!-- Profile Card 1 -->
 				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="p-6">
 							<div class="bg-primary size-40 relative -mt-24 rounded-lg border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
+								<img class="size-full rounded-lg object-cover" src="{{ asset('images/square/man-orange.png') }}" alt="Fox Avatar">
 							</div>
-							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Fox</h3>
-							<span class="text-secondary font-karla text-sm">Web Designer</span>
+							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Kenshiro</h3>
+							<span class="text-secondary text-sm">Fist of the North Star</span>
 							<div class="my-3 flex space-x-3">
 								<div>
 									<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
@@ -284,20 +285,20 @@
 									</a>
 								</div>
 							</div>
-							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
+							<p class="text-secondary mt-3 font-karla tracking-wide">"You are already dead."</p>
 						</div>
 					</div>
 				</div>
 
-				{{-- Profile Card 2 --}}
+				<!-- Profile Card 2 -->
 				<div class="mt-4 w-full px-3 pt-24 md:w-1/2 md:pt-20">
 					<div class="bg-primary rounded-lg border border-light-secondary p-6 shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 						<div class="bg-primary size-44 relative -mt-24 rounded-full border border-light-secondary p-3 shadow-neu-inset-xs dark:border-dark-secondary dark:shadow-neu-dark-inset-xs">
-							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/animal-blue-fox.png') }}" alt="Fox Avatar">
+							<img class="size-full rounded-full object-cover p-3 shadow-neu-xs dark:shadow-neu-dark-xs" src="{{ asset('images/square/animal-flower-crow.png') }}" alt="Avatar">
 						</div>
-						<div class="py-6">
-							<h3 class="text-primary font-alegreya text-2xl font-semibold">Fox</h3>
-							<span class="text-secondary font-karla text-sm">Marketing</span>
+						<span>
+							<h3 class="text-primary mt-5 font-alegreya text-2xl font-semibold">Kenshiro</h3>
+							<span class="text-secondary text-sm">Fist of the North Star</span>
 							<div class="my-3 flex space-x-3">
 								<div>
 									<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
@@ -320,8 +321,8 @@
 									</a>
 								</div>
 							</div>
-							<p class="text-secondary mt-3 font-karla tracking-wide"><x-joke /></p>
-						</div>
+							<p class="text-secondary mt-3 font-karla tracking-wide">"You are already dead."</p>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -342,7 +343,7 @@
 							<x-svg.person-plus class="size-6 mr-1 inline-block" />
 							Follow
 						</a>
-						<p class="text-secondary mt-5 font-karla tracking-wide"><x-joke /></p>
+						<p class="text-secondary mt-5 font-karla tracking-wide">Be your own hero and create your own destiny.</p>
 						<div class="my-4 flex justify-center space-x-3">
 							<a class="text-blue-600 hover:text-blue-800" href="#" target="_blank">
 								<x-svg.facebook class="size-5" />
@@ -398,7 +399,7 @@
 									</a>
 								</div>
 							</div>
-							<p class="text-secondary mt-3"><x-joke /></p>
+							<p class="text-secondary mt-3">Be your own hero and create your own destiny.</p>
 							<a class="neu-btn neu-icon-btn mt-4 inline-flex text-sm" href="#">
 								<x-svg.person-plus class="size-5" /> Follow
 							</a>
@@ -424,6 +425,7 @@
 				</style>
 			</x-slot>
 		</x-grid.item>
+
 	</x-grid>
 
 	<x-grid title="Pricing Cards">
@@ -505,11 +507,12 @@
 								<span class="hidden dark:block"><x-svg.man-spaceship /></span>
 							</div>
 							<div class="w-full md:w-1/2">
-								<h2 class="text-primary mb-4 font-alegreya text-3xl">Welcome to the <span class="hidden font-alegreya text-inherit dark:block">Moon</span><span class="font-alegreya text-inherit dark:hidden">Sun</span></h2>
-								<p class="text-secondary mb-6"><x-joke /></p>
+								<h2 class="text-primary mb-4 font-alegreya text-3xl">Embark on the <span class="hidden font-alegreya text-inherit dark:block">Lunar Odyssey</span><span class="font-alegreya text-inherit dark:hidden">Solar Journey</span></h2>
+								<p class="text-secondary mb-6">Experience the mysteries of space. Are you ready to explore?</p>
 								<a class="neu-btn neu-icon-btn neu-btn-lg inline-flex" href="#">
-									<span class="hidden dark:block"><x-svg.moon class="size-5" /></span><span class="dark:hidden"><x-svg.sun class="size-5" /></span>
-									Go to<span class="m-0 hidden p-0 dark:block">Moon</span><span class="m-0 p-0 dark:hidden">Sun</span>
+									<span class="hidden dark:block"><x-svg.moon class="size-5" /></span>
+									<span class="dark:hidden"><x-svg.sun class="size-5" /></span>
+									Begin<span class="m-0 hidden p-0 dark:block">Lunar Odyssey</span><span class="m-0 p-0 dark:hidden">Solar Journey</span>
 								</a>
 							</div>
 						</div>
@@ -522,22 +525,22 @@
 			<div class="w-full px-3">
 				<div class="bg-primary rounded-lg border border-light-secondary p-5 text-center shadow-neu-xs dark:border-dark-secondary dark:shadow-neu-dark-xs">
 					<div class="p-5">
-						<h2 class="text-secondary text-4xl">Ready to go to Space?</h2>
+						<h2 class="text-secondary text-4xl">Prepare for a Galactic Adventure!</h2>
 					</div>
 					<div class="lg:px-5">
-						<p class="text-secondary mb-10 text-lg"><x-joke /> </p>
+						<p class="text-secondary mb-10 text-lg">The stars are within reach. Download the app to launch your journey now!</p>
 						<div class="flex-center flex-col space-y-3 md:flex-row md:space-x-3 md:space-y-0">
 							<a class="neu-btn-lg neu-btn neu-icon-btn w-full md:w-auto" href="#">
 								<x-svg.apple-appstore class="size-8" />
 								<div class="text-left">
-									<small class="text-secondary block">Download on the</small>
+									<small class="text-secondary block">Get it on</small>
 									<div class="text-secondary text-xl">App Store</div>
 								</div>
 							</a>
 							<a class="neu-btn-lg neu-btn neu-icon-btn w-full md:w-auto" href="#">
 								<x-svg.google-play class="size-8" />
 								<div class="text-left">
-									<small class="text-secondary block">Download on the</small>
+									<small class="text-secondary block">Get it on</small>
 									<div class="text-secondary text-xl">Google Play</div>
 								</div>
 							</a>
@@ -557,37 +560,40 @@
 		<x-grid.item title="Counter cards">
 			<div class="flex flex-wrap justify-center gap-6">
 
+				<!-- card 1-->
 				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
 					<div class="rounded-lg p-6 shadow-neu-md-soft dark:shadow-neu-dark-md">
-						<div class="bg-light-gray flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+						<div class="text-primary flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
 							<x-svg.naruto class="size-12" />
 						</div>
-						<div class="bg-light-gray rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+						<div class="text-primary rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
 							<span class="text-secondary block text-4xl font-bold">1000</span>
 							<span class="text-secondary text-lg">Naruto</span>
 						</div>
 					</div>
 				</div>
 
+				<!--card 2-->
 				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
 					<div class="rounded-lg p-6 shadow-neu-inset-md dark:shadow-neu-dark-inset-md">
-						<div class="bg-light-gray flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-xs dark:shadow-neu-dark-xs">
+						<div class="text-primary flex-center mx-auto mb-4 rounded-lg p-4 shadow-neu-xs dark:shadow-neu-dark-xs">
 							<x-svg.luffy class="size-12" />
 						</div>
-						<div class="bg-light-gray rounded-lg py-4 shadow-neu-xs dark:shadow-neu-dark-xs">
+						<div class="text-primary rounded-lg py-4 shadow-neu-xs dark:shadow-neu-dark-xs">
 							<span class="text-secondary block text-4xl font-bold">2000</span>
 							<span class="text-secondary text-lg">One Piece</span>
 						</div>
 					</div>
 				</div>
 
+				<!--card 3-->
 				<div class="w-full text-center sm:w-1/2 lg:w-1/3">
 					<div class="rounded-lg p-3 shadow-neu-inset-md dark:shadow-neu-dark-inset-sm">
 						<div class="rounded-lg p-6 shadow-neu-md-soft dark:shadow-neu-dark-md">
-							<div class="bg-light-gray flex-center size-20 mx-auto mb-4 rounded-full p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+							<div class="text-primary flex-center size-20 mx-auto mb-4 rounded-full p-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
 								<x-svg.deku class="size-12" />
 							</div>
-							<div class="bg-light-gray rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
+							<div class="text-primary rounded-lg py-4 shadow-neu-inset-sm dark:shadow-neu-dark-inset-xs">
 								<span class="text-secondary block text-4xl font-bold">208</span>
 								<span class="text-secondary text-lg">My Hero Academia</span>
 							</div>
