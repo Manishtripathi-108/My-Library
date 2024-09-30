@@ -13,6 +13,10 @@
 			@include('sidebars.sidebar-with-icons')
 		</x-grid.item>
 
+        <x-grid.item title="Mobile Menu">
+            @include('sidebars.mobile-menu')
+        </x-grid.item>
+
 	</x-grid>
 
 </x-app-layout>
