@@ -823,7 +823,7 @@ html {
     }
 
     .bg-table {
-        background: url("e:\Zoro\Code\Laravel\ui-library\public\images\products\vintage-bottle.jpeg");
+        background: url("https://cdn.pixabay.com/photo/2022/11/29/19/05/boho-7625140_960_720.jpg");
         position: relative;
         background-size: cover;
         background-position: center;
