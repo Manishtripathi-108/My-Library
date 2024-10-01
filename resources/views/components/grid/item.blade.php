@@ -1,4 +1,12 @@
-@props(['title' => '', 'contentClass' => '', 'htmlCode' => $slot, 'cssCode' => '', 'jsCode' => '', 'id' => $attributes->get('id') ?? Str::slug($title)])
+@props([
+    'contentClass' => '',
+    'cssCode' => '',
+    'htmlCode' => $slot,
+    'id' => $attributes->get('id') ?? Str::slug($title),
+    'jsCode' => '',
+    'modal' => '',
+    'title' => '',
+])
 
 <div id="{{ $id }}" x-data="{ code_open: false }" {{ $attributes->class(['col-span-1 grid-items w-full mt-10 border-b border-gray-600 pb-10']) }}>
 	<h3 class="text-secondary mb-8 font-alegreya text-2xl font-bold tracking-wider">
@@ -7,6 +15,11 @@
 
 	{{-- Content --}}
 	<div class="flex-center {{ $contentClass }} flex-col rounded-lg border border-gray-600 p-5">
+
+		{{-- Modals --}}
+		@if ($modal != '')
+			{{ $modal }}
+		@endif
 
 		<div class="on-scroll-animation size-full flex-center animate-swash-in p-5">
 			{{ $slot }}
@@ -44,7 +57,14 @@
 
 			<div class="p-5">
 				{{-- HTML Code --}}
-				<pre class="scrollbar-thin" x-show="code_tab === 'html-code'"><code class="language-html">{{ e($htmlCode) }}</code></pre>
+				<pre class="scrollbar-thin" x-show="code_tab === 'html-code'"><code class="language-html">
+					{{ e($htmlCode) }}
+		
+					{{-- Modal --}}
+					@if ($modal != '')
+{{ e($modal) }}
+@endif
+				</code></pre>
 
 				{{-- CSS Code --}}
 				@if ($cssCode != '')
