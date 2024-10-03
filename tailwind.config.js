@@ -1,5 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
@@ -1599,7 +1597,6 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 poppins: ["Poppins", "sans-serif"],
                 playfair: ['"Playfair Display"', "Georgia", "serif"],
                 karla: ["Karla", "Arial", "sans-serif"],
