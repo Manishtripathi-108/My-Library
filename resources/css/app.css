@@ -441,6 +441,16 @@ html {
         animation-range: entry 0 cover 35%;
     }
 
+    .start-animation {
+        opacity: 1;
+        animation-play-state: running; /* Start the animation */
+    }
+
+    .stop-animation {
+        opacity: 0;
+        animation-play-state: paused; /* Stop the animation */
+    }
+
     /* ----------------------- Animation duration classes ----------------------- */
     .animation-duration-100 {
         animation-duration: 0.1s;

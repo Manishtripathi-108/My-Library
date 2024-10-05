@@ -115,6 +115,9 @@
 			<x-sidenav-link class="text-xs" :href="route('alerts')" :active="request()->routeIs('alerts')" wire:navigate>
 				{{ __('Alerts') }}
 			</x-sidenav-link>
+			<x-sidenav-link class="text-xs" :href="route('animations')" :active="request()->routeIs('animations')" wire:navigate>
+				{{ __('Animations') }}
+			</x-sidenav-link>
 			<x-sidenav-link class="text-xs" :href="route('avatars')" :active="request()->routeIs('avatars')" wire:navigate>
 				{{ __('Avatars') }}
 			</x-sidenav-link>

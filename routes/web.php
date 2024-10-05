@@ -16,7 +16,7 @@ Route::view('profile', 'profile')
 
 require __DIR__ . '/auth.php';
 
-
+// Route for the pages
 Route::prefix('pages')->group(function () {
 
     // 404 Page
@@ -65,6 +65,11 @@ Route::prefix('components')->group(function () {
     Route::get('/alerts', function () {
         return view('alerts.index');
     })->name('alerts');
+
+    // Route for the animations
+    Route::get('/animations', function () {
+        return view('animations.index');
+    })->name('animations');
 
     // Route for the avatars
     Route::get('/avatars', function () {

@@ -167,6 +167,7 @@ export default {
                 "wipe-in-top-left": "wipe-in-top-left 2s",
                 "wipe-in-top-right": "wipe-in-top-right 2s",
                 "wipe-in-up": "wipe-in-up 2s",
+                "wipe-in-down": "wipe-in-down 2s",
                 "wipe-out-bottom-left": "wipe-out-bottom-left 2s",
                 "wipe-out-bottom-right": "wipe-out-bottom-right 2s",
                 "wipe-out-left": "wipe-out-left 2s",
@@ -478,12 +479,12 @@ export default {
                     "100%": { "clip-path": "circle(0% at bottom left)" },
                 },
                 "circle-in-swoop": {
-                    from: { "clip-path": "var(--circle-top-right-out)" },
-                    to: { "clip-path": "var(--circle-bottom-right-in)" },
+                    from: { "clip-path": "circle(0% at top right)" },
+                    to: { "clip-path": "circle(150% at bottom right)" },
                 },
                 "circle-out-swoop": {
-                    from: { "clip-path": "var(--circle-bottom-right-in)" },
-                    to: { "clip-path": "var(--circle-top-right-out)" },
+                    from: { "clip-path": "circle(150% at bottom right)" },
+                    to: { "clip-path": "circle(0% at top right)" },
                 },
 
                 /* ---------------------------------- Diamond ---------------------------------- */
